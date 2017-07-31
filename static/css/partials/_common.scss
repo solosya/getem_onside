@@ -2,8 +2,11 @@
 .row > * {
     min-height: 0;
 }
-
+html {
+    height:100%;
+}
 body{
+    height:100%;
     overflow-y:scroll;
     -webkit-overflow-scrolling:touch;
 
@@ -41,6 +44,8 @@ ul.search-sub-menu {
     }
 
 }
+
+
 
 .search-icon{
     background-image: url(../images/search.svg);

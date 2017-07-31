@@ -1,7 +1,7 @@
 //Fonts
-$font-family-sans-serif:    "adelle-sans", Helvetica, Arial, sans-serif;
+$font-family-sans-serif:    "roboto", Helvetica, Arial, sans-serif;
 $font-family-serif:    		"PT Serif", "Times New Roman", Times, serif;
-$base-font-family: 			"adelle-sans", Helvetica, Arial, sans-serif !default;
+$base-font-family: 			"roboto", Helvetica, Arial, sans-serif !default;
 
 
 $font-size-base:            16px;
@@ -64,7 +64,7 @@ $btn-primary-border:             darken($btn-primary-bg, 5%) !default;
 
 
 // Cards
-$cards: (
+$colors: (
 	article:     		#fece0f,
 	facebook:    		#3d5c95,
 	google-plus: 		#f37b65,
@@ -73,6 +73,8 @@ $cards: (
 	twitter:     		#2eb1eb,
 	youtube:     		#e34336,
     vimeo:       		#00b3ec,
+
+    red: 				#ec1c24,
 );
 
 

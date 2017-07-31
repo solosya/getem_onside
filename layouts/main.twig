@@ -28,8 +28,9 @@
     <link rel="shortcut icon" href="{{favicon}}" />
     <link rel="icon" href="{{favicon}}" sizes="any" type="image/svg+xml" />
 
-    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7018996/6322372/css/fonts.css" />    
-    
+    {# <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7018996/6322372/css/fonts.css" />     #}
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
+
     {% set primaryFont = networkData['styling']['fonts']['primaryFont'] %}
     {% set secFont = networkData['styling']['fonts']['secondaryFont'] %}
 
@@ -47,7 +48,7 @@
 
 
     {% if _AppHelper.getApplicationEnv() == 'PROD'%}
-        <link rel="stylesheet" href="{{networkData.templatePath}}/static/deploy/concat.min.css?v=f6367c4f" type="text/css" media="all">
+        <link rel="stylesheet" href="{{networkData.templatePath}}/static/deploy/concat.min.css?v=8f0d0a28" type="text/css" media="all">
 
     {% else %}
 {#             <link type="text/css" rel="stylesheet" href="{{networkData.templatePath}}/static/css/jquery.fancybox.css?ver=2" />
@@ -67,8 +68,8 @@
 
 
 
-    <script src="https://use.typekit.net/mwx4nhf.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script> 
+    <!--    <script src="https://use.typekit.net/mwx4nhf.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>  -->
 
 
 <!--[if lt IE 9]>

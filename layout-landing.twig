@@ -1,37 +1,70 @@
-{{ set(this, 'title', _Blog.getBlogTitle()) }}
-{% set networkData = _Network.getNetworkData() %}
+{% set networkData   = _Network.getNetworkData() %}
+
+
+<main id="main" class="container site-main" role="main">
+    
+    <section class="row main">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-offset-1 col-sm-4">
+                    <img src="{{networkData.templatePath}}/static/images/get-em-on-side-logo.jpg?v=4">
+                </div>
+                
+
+
+                <div class="col-sm-7 subdetails">
+
+
+                    <section class="subscribe">
+                        
+                        <h1>COMING SOON</h1>
+                        <p>Register for updates on our launch</p>
+
+                        <div class="input-group subscribe-group">
+                            
+                        <!-- Begin MailChimp Signup Form -->
+
+                        <div id="mc_embed_signup">
+                            <form   action="//centralnews.us15.list-manage.com/subscribe/post?u=f951467ba4375a98673dddecd&amp;id=effe44468e" 
+                                    method="post" 
+                                    id="mc-embedded-subscribe-form" 
+                                    name="mc-embedded-subscribe-form" 
+                                    class="validate" 
+                                    target="_blank" 
+                                    novalidate>
+
+                                <div id="mc_embed_signup_scroll">
+                                    <input type="email" value="" name="EMAIL" class="field form-control" id="mce-EMAIL" placeholder="Email address" required>
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                        <input type="text" name="b_f951467ba4375a98673dddecd_effe44468e" tabindex="-1" value="">
+                                    </div>
+                                        {# <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"> #}
+                                    <button class="btn btn-default" type="submit" id="mc-embedded-subscribe">
+                                        <span class="icon-submit icon"></span>
+                                    </button>
+
+                                </div>
+                            </form>
+                        </div>
+
+                            <!--End mc_embed_signup-->
+
+                    </section>
+
+
+
+                </div>
 
 
 
 
-{{this.registerJs("CardController();")}}
 
-{% set limit = 10 %}
-
-{% set articlesArr = _Blog.getBlogFeed({'limit': limit, 'offset': 0}) %}
-{% set articles = articlesArr.articles %}
-
-{% set events = _Event.getEvents() %}
-
-
-<!-- used to index each article as we loop over throughout the template -->
-{% set articleCount = 0 %}
-{% set testCount = 0 %}
+        </div>
 
 
 
-    <main id="main" class="index_container site-main" role="main">
-        
+    </section>
 
 
-        <section class="row">
-            <div class="col-sm-12">
-                <h1>Landing page</h1>
-            </div>
-
-
-
-        </section>
-
-
-    </main><!-- .site-main -->
+</main>

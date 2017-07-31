@@ -254,7 +254,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+  font-family: "roboto", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.42857;
   color: #000;
@@ -7285,7 +7285,11 @@ ul.menu > li > ul.sub-menu.breaking-news-menu > li > ul.sub-sub-menu > li {
 .row > * {
   min-height: 0; }
 
+html {
+  height: 100%; }
+
 body {
+  height: 100%;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   background: rgba(151, 151, 151, 0.15); }
@@ -7357,7 +7361,7 @@ button.bootbox-close-button {
 
 h4.modal-title {
   margin-top: 10px;
-  font-family: "adelle-sans", Helvetica, Arial, sans-serif; }
+  font-family: "roboto", Helvetica, Arial, sans-serif; }
 
 .container-fluid {
   max-width: 1600px; }
@@ -7386,7 +7390,7 @@ figcaption {
     font-size: 0.78125em;
     color: #6c6c6c;
     font-style: italic;
-    font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+    font-family: "roboto", Helvetica, Arial, sans-serif;
     float: left; }
     figcaption > p.credit {
       font-style: normal;
@@ -7404,7 +7408,7 @@ span.leadsentence {
   font-weight: bold; }
 
 .advertiser-content {
-  font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+  font-family: "roboto", Helvetica, Arial, sans-serif;
   font-size: 0.75em;
   color: #6c6c6c; }
 
@@ -7608,7 +7612,7 @@ span.leadsentence {
   width: 100%; }
   .sidebar-news header > h3 {
     font-size: 1.0625rem;
-    font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+    font-family: "roboto", Helvetica, Arial, sans-serif;
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 0;
@@ -7756,7 +7760,7 @@ span.leadsentence {
           bottom: 0;
           right: 20px;
           display: inline-block;
-          font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+          font-family: "roboto", Helvetica, Arial, sans-serif;
           font-size: 0.625em; } }
       .site-footer .icon-wrapper span a {
         color: white;
@@ -7854,7 +7858,7 @@ span.leadsentence {
     .site-footer .publish-mobile span {
       color: white;
       font-size: 0.625em;
-      font-family: "adelle-sans", Helvetica, Arial, sans-serif; }
+      font-family: "roboto", Helvetica, Arial, sans-serif; }
       .site-footer .publish-mobile span a {
         color: white;
         text-decoration: none; }
@@ -7869,7 +7873,7 @@ span.leadsentence {
     .site-footer .publish a {
       color: white;
       font-size: 0.6875em;
-      font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+      font-family: "roboto", Helvetica, Arial, sans-serif;
       text-decoration: none; }
   .site-footer .section-links-mobile {
     margin-bottom: 35px; }
@@ -8499,7 +8503,7 @@ ul.menu > li > ul.sub-menu.breaking-news-menu > li > ul.sub-sub-menu > li {
         display: inline-block;
         margin-right: 37px; }
         .site-header .site-header-main .navbar-right .section-links ul li a {
-          font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+          font-family: "roboto", Helvetica, Arial, sans-serif;
           font-size: 0.875rem;
           color: white;
           letter-spacing: 2.2px; }
@@ -8684,7 +8688,7 @@ body.article {
         .article article.article-main .page-content .content-block-top h1 {
           font-size: 1.5rem; } }
     .article article.article-main .page-content .content-block-top p.author {
-      font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+      font-family: "roboto", Helvetica, Arial, sans-serif;
       font-size: 0.75rem;
       font-weight: bold;
       line-height: 1.67;
@@ -8756,7 +8760,7 @@ body.article {
       padding: 0;
       font-size: 1.625rem;
       font-weight: bold;
-      font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+      font-family: "roboto", Helvetica, Arial, sans-serif;
       padding-left: 30px;
       border: 0;
       line-height: 1.46;
@@ -8799,7 +8803,7 @@ body.article {
       padding-left: 0;
       margin-bottom: 25px; } }
   .article article.article-main .related-articles section > h2 {
-    font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+    font-family: "roboto", Helvetica, Arial, sans-serif;
     text-align: center;
     font-size: 1.0625rem;
     font-weight: bold;
@@ -8984,7 +8988,7 @@ body.article {
   .channel .section > .header h1 {
     letter-spacing: 3px;
     font-size: 1.625rem;
-    font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+    font-family: "roboto", Helvetica, Arial, sans-serif;
     padding: 0;
     margin: 0;
     margin-bottom: 26px; }
@@ -9064,7 +9068,7 @@ body.article {
       float: right;
       padding-left: 11px;
       padding: 10px;
-      font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+      font-family: "roboto", Helvetica, Arial, sans-serif;
       font-size: 0.75em;
       font-weight: normal;
       border-left: solid 1px #dadada;
@@ -9090,300 +9094,64 @@ body.article {
       .channel .section-sidepanel-news a.card .content .author p {
         display: block; }
 
-body.page .page-about {
-  background: #fff; }
-  body.page .page-about .page-banner {
-    height: 550px;
-    background-image: url("https://res.cloudinary.com/cognitives/image/upload/c_fill,dpr_auto,f_auto,fl_lossy,h_550,q_auto,w_1280/v1496728861/d4z3txcbw3sbetvwghvm.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 10px; }
-    body.page .page-about .page-banner > .banner-text {
-      padding-top: 95px;
-      color: #fff; }
-      body.page .page-about .page-banner > .banner-text h1 {
-        font-size: 3rem;
-        line-height: 1.4;
-        width: 600px; }
-      body.page .page-about .page-banner > .banner-text h2 {
-        width: 400px; }
-        @media screen and (max-width: 620px) {
-          body.page .page-about .page-banner > .banner-text h2 {
-            width: 225px; } }
-      body.page .page-about .page-banner > .banner-text p {
-        font-size: 1.0625rem;
-        line-height: 2;
-        font-weight: lighter;
-        margin-bottom: 20px;
-        width: 600px; }
-  body.page .page-about .statement {
-    margin: 40px 0 90px 0; }
-    body.page .page-about .statement h1 {
-      font-size: 2.375rem;
-      font-weight: lighter;
-      margin-bottom: 25px; }
-    body.page .page-about .statement p {
-      font-size: 1.0625rem;
-      line-height: 2;
-      font-weight: 300;
-      margin-bottom: 20px; }
-  body.page .page-about .partner {
-    margin-bottom: 35px; }
-    body.page .page-about .partner > div > img {
-      border-radius: 500px;
-      margin: 1em auto 0 auto;
-      display: block; }
-    body.page .page-about .partner h1 {
-      font-size: 2.375rem;
-      font-weight: lighter;
-      margin-bottom: 25px; }
-    body.page .page-about .partner p {
-      font-size: 1rem;
-      line-height: 2;
-      font-weight: lighter; }
-      body.page .page-about .partner p a {
-        color: #009E91; }
-
-body.page .page-project .page-banner {
-  height: 560px;
-  margin-bottom: 180px;
-  background-image: url("http://res.cloudinary.com/cognitives/image/upload/c_fill,dpr_auto,f_auto,fl_lossy,g_faces,h_720,q_auto,w_1280/ibpe1rnsfvvsn3ugt7rb\a"); }
-  @media screen and (max-width: 1119px) and (min-width: 769px) {
-    body.page .page-project .page-banner {
-      margin-bottom: 85px; } }
-  @media screen and (max-width: 768px) {
-    body.page .page-project .page-banner {
-      background-position-x: -450px;
-      background-position-y: -150px;
-      height: 275px; } }
-  body.page .page-project .page-banner .cta {
-    height: 346px;
-    width: 353px;
-    background: #39bddc;
+.layout-landing {
+  background: #ec1c24; }
+  .layout-landing main {
+    height: 100%; }
+  .layout-landing .main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .layout-landing .main img {
+      position: relative;
+      top: -35px;
+      left: 40px; }
+  .layout-landing .site-header, .layout-landing .site-footer {
+    display: none; }
+  .layout-landing .subdetails:before {
+    content: '';
+    display: block;
+    background: #fff;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: -60px; }
+  .layout-landing .subscribe > h1 {
     margin: 0;
-    margin-top: 214px;
-    padding: 60px 25px 0 25px; }
-    @media screen and (max-width: 768px) {
-      body.page .page-project .page-banner .cta {
-        height: auto;
-        width: 100%;
-        margin-top: 250px;
-        padding: 35px 25px 10px 25px; } }
-    body.page .page-project .page-banner .cta h1 {
-      margin: 0;
-      color: #fff;
-      font-weight: bold;
-      line-height: 1.04;
-      font-size: 3rem;
-      margin-bottom: 25px; }
-      body.page .page-project .page-banner .cta h1:after {
-        content: "";
-        display: block;
-        background: #fff;
-        width: 115px;
-        height: 1px;
-        margin-top: 30px; }
-      @media screen and (max-width: 768px) {
-        body.page .page-project .page-banner .cta h1 {
-          font-size: 2.5rem; } }
-      @media screen and (max-width: 620px) {
-        body.page .page-project .page-banner .cta h1 {
-          font-size: 1.875rem; } }
-
-body.page .page-project .statement {
-  margin-bottom: 170px; }
-  @media screen and (max-width: 1119px) {
-    body.page .page-project .statement {
-      margin-bottom: 85px; } }
-  @media screen and (max-width: 768px) {
-    body.page .page-project .statement {
-      margin-bottom: 15px; } }
-  body.page .page-project .statement figure {
-    margin-top: 30px; }
-    @media screen and (max-width: 768px) {
-      body.page .page-project .statement figure {
-        margin-bottom: 20px; } }
-  body.page .page-project .statement h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    line-height: 1.33;
-    color: #000000;
-    margin: 0 0 25px 0; }
-    body.page .page-project .statement h2 > span {
-      color: #39bddc; }
-  body.page .page-project .statement p {
-    font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+    font-family: "roboto", Helvetica, Arial, sans-serif;
+    font-size: 4.5rem;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+    color: #fff;
+    margin-bottom: 87px;
+    line-height: 1; }
+  .layout-landing .subscribe > p {
     font-size: 1.25rem;
-    line-height: 1.8;
-    color: #333333;
-    margin-bottom: 34px; }
-    @media screen and (min-width: 768px) {
-      body.page .page-project .statement p:last-child {
-        margin-bottom: 0; } }
-
-body.page .page-project .perspective {
-  margin-bottom: 170px; }
-  @media screen and (max-width: 1119px) {
-    body.page .page-project .perspective {
-      margin-bottom: 85px; } }
-  @media screen and (max-width: 768px) {
-    body.page .page-project .perspective {
-      margin-bottom: 15px; } }
-  body.page .page-project .perspective figure {
-    margin-top: 30px; }
-  body.page .page-project .perspective h2 {
-    font-size: 1.125rem;
-    font-weight: bold;
-    line-height: 1.78;
-    color: #39bddc;
-    margin: 42px 0 20px 0;
-    text-transform: uppercase; }
-    @media screen and (max-width: 768px) {
-      body.page .page-project .perspective h2 {
-        margin: 15px 0 15px 0; } }
-  body.page .page-project .perspective p {
-    color: #333333;
-    margin-bottom: 34px;
-    font-size: 1.125rem; }
-    @media screen and (max-width: 768px) {
-      body.page .page-project .perspective p {
-        margin-bottom: 15px; } }
-    @media screen and (min-width: 768px) {
-      body.page .page-project .perspective p:last-child {
-        margin-bottom: 0; } }
-
-body.page .page-project .full-image img {
-  height: 453px; }
-
-body.page .page-project .journalists {
-  margin: 60px -15px 160px -15px; }
-  @media screen and (max-width: 1119px) {
-    body.page .page-project .journalists {
-      margin: 30px -15px 65px -15px; } }
-  @media screen and (max-width: 768px) {
-    body.page .page-project .journalists {
-      margin: 10px -15px 15px -15px; } }
-  body.page .page-project .journalists h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    line-height: 1.33;
-    color: #000000;
-    margin: 0 0 25px 0; }
-    body.page .page-project .journalists h2 > span {
-      color: #39bddc; }
-  body.page .page-project .journalists p {
-    font-size: 18px;
-    line-height: 1.44;
-    color: #333333; }
-
-body.page .page-project .hotspots {
-  margin-bottom: 100px; }
-  @media screen and (max-width: 1119px) {
-    body.page .page-project .hotspots {
-      margin-bottom: 50px; } }
-  @media screen and (max-width: 768px) {
-    body.page .page-project .hotspots {
-      margin-bottom: 15px; } }
-  body.page .page-project .hotspots .hotspot {
-    margin-bottom: 95px; }
-    @media screen and (max-width: 1119px) {
-      body.page .page-project .hotspots .hotspot {
-        margin-bottom: 50px; } }
-    @media screen and (max-width: 768px) {
-      body.page .page-project .hotspots .hotspot {
-        margin-bottom: 15px; } }
-    body.page .page-project .hotspots .hotspot figure {
-      margin-top: 30px; }
-    body.page .page-project .hotspots .hotspot h2 {
-      font-size: 18px;
-      line-height: 1.78;
-      color: #333333;
-      padding-bottom: 12px;
-      margin-bottom: 18px;
-      margin-top: 10px;
-      font-weight: normal;
-      border-bottom: 1px solid black; }
-    body.page .page-project .hotspots .hotspot p {
-      font-size: 0.875rem;
-      font-weight: bold;
-      line-height: 1.57;
-      color: #333333;
-      margin-bottom: 24px; }
-      @media screen and (max-width: 768px) {
-        body.page .page-project .hotspots .hotspot p {
-          margin-bottom: 15px; } }
-
-body.channel.hotspots .hotspot {
-  margin-bottom: 55px; }
-  body.channel.hotspots .hotspot h1 {
-    font-size: 1.625rem;
-    margin-bottom: 12px; }
-  body.channel.hotspots .hotspot .card-sm {
-    margin-bottom: 0;
-    margin-left: 60px; }
-    body.channel.hotspots .hotspot .card-sm figure {
-      height: 250px; }
-      @media screen and (max-width: 620px) {
-        body.channel.hotspots .hotspot .card-sm figure {
-          width: 116px;
-          height: 116px;
-          flex: 0 0 116px; } }
-    body.channel.hotspots .hotspot .card-sm h2 {
-      font-weight: bold;
-      line-height: 1.29; }
-  body.channel.hotspots .hotspot .card-lg {
-    margin-bottom: 0; }
-  body.channel.hotspots .hotspot .line {
-    width: 100%;
-    border-bottom: 1px solid #979797;
-    margin-top: 30px; }
-  @media screen and (max-width: 991px) {
-    body.channel.hotspots .hotspot .card-sm {
-      margin-top: 20px;
-      margin-left: 0; }
-      body.channel.hotspots .hotspot .card-sm a.card {
-        height: auto; }
-        body.channel.hotspots .hotspot .card-sm a.card figure {
-          float: left; }
-        body.channel.hotspots .hotspot .card-sm a.card .content {
-          height: 242px;
-          padding: 23px 28px 0 24px;
-          width: auto; }
-          body.channel.hotspots .hotspot .card-sm a.card .content .category {
-            margin-bottom: 15px; }
-          body.channel.hotspots .hotspot .card-sm a.card .content h2 {
-            font-weight: bold;
-            font-size: 1.5rem;
-            height: 64px;
-            margin-bottom: 7px;
-            line-height: 1.3em; }
-          body.channel.hotspots .hotspot .card-sm a.card .content > p {
-            display: block;
-            height: 66px;
-            font-size: 1rem;
-            padding-bottom: 16px;
-            margin-bottom: 16px;
-            border-bottom: 2px solid #dadada; } }
-  @media screen and (max-width: 991px) and (max-width: 620px) {
-    body.channel.hotspots .hotspot .card-sm a.card {
-      margin-top: 20px;
-      margin-left: -15px;
-      height: auto; }
-      body.channel.hotspots .hotspot .card-sm a.card figure {
-        float: left; }
-      body.channel.hotspots .hotspot .card-sm a.card .content {
-        height: 115px;
-        padding: 7px 0 0 10px;
-        width: 100%; }
-        body.channel.hotspots .hotspot .card-sm a.card .content .category {
-          margin-bottom: 5px; }
-        body.channel.hotspots .hotspot .card-sm a.card .content h2 {
-          font-weight: normal;
-          font-size: 1rem;
-          margin-bottom: 7px;
-          line-height: 1.3em; }
-        body.channel.hotspots .hotspot .card-sm a.card .content > p {
-          display: none; } }
+    font-weight: 400;
+    color: #fff; }
+  .layout-landing .subscribe .input-group {
+    width: 400px; }
+    .layout-landing .subscribe .input-group input {
+      border: none;
+      vertical-align: top;
+      border-radius: 0;
+      width: 70%;
+      display: inline-block;
+      height: 50px; }
+    .layout-landing .subscribe .input-group button {
+      border: none;
+      padding: 0; }
+      .layout-landing .subscribe .input-group button .icon-submit {
+        background-image: url(../icons/arrow.svg);
+        width: 42px;
+        height: 50px;
+        vertical-align: top;
+        display: inline-block;
+        background-size: 22px 12px;
+        background-position: center;
+        background-repeat: no-repeat; }
 
 .card {
   display: block; }
@@ -9425,7 +9193,7 @@ body.channel.hotspots .hotspot {
         line-height: 1;
         display: block; }
       .card article .content h2 {
-        font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+        font-family: "roboto", Helvetica, Arial, sans-serif;
         font-size: 3em;
         font-weight: 700;
         margin-top: 0;
@@ -9434,7 +9202,7 @@ body.channel.hotspots .hotspot {
         display: none; }
       .card article .content .author p {
         padding-top: 5px;
-        font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+        font-family: "roboto", Helvetica, Arial, sans-serif;
         font-size: 1.03125em;
         font-weight: 700;
         color: #333333; }
@@ -9446,9 +9214,9 @@ body.channel.hotspots .hotspot {
         color: #979797; }
   .card.social .content > p {
     display: block;
-    font-family: "adelle-sans", Helvetica, Arial, sans-serif; }
+    font-family: "roboto", Helvetica, Arial, sans-serif; }
   .card.social .content .author > p {
-    font-family: "adelle-sans", Helvetica, Arial, sans-serif; }
+    font-family: "roboto", Helvetica, Arial, sans-serif; }
 
 /*! Overlay Button */
 .btn_overlay {
@@ -9702,7 +9470,7 @@ body.channel.hotspots .hotspot {
           text-transform: uppercase; }
           @media screen and (max-width: 620px) {
             .featured-slider a.card article .content .category {
-              font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+              font-family: "roboto", Helvetica, Arial, sans-serif;
               font-size: 0.625em; } }
         .featured-slider a.card article .content h2 {
           order: 3;
@@ -9790,7 +9558,7 @@ body.channel.hotspots .hotspot {
             .featured-slider a.card article .content .author img {
               display: none; }
             .featured-slider a.card article .content .author p {
-              font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+              font-family: "roboto", Helvetica, Arial, sans-serif;
               font-size: 0.75em;
               padding: 0;
               color: #FFF;
@@ -9939,7 +9707,7 @@ body.channel.hotspots .hotspot {
   .card-rec a.card.social article {
     background: rgba(0, 0, 0, 0.8); }
   .card-rec a.card.social .content > p {
-    font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+    font-family: "roboto", Helvetica, Arial, sans-serif;
     font-size: 1.375rem;
     color: white;
     font-style: normal;
@@ -10367,7 +10135,7 @@ body.channel.hotspots .hotspot {
         margin-bottom: 4px; }
         @media screen and (max-width: 620px) {
           .card-lg a.card > article > .content > .category {
-            font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+            font-family: "roboto", Helvetica, Arial, sans-serif;
             font-size: 0.625em;
             margin-bottom: 5px;
             text-transform: uppercase; } }
