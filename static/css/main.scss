@@ -11,7 +11,6 @@
 @import "user_posts";
 // @import "profile-admin";
 @import "modal";
-@import "menu";
 
 
 
@@ -19,17 +18,15 @@
 @import "common";
 // @import "icons";
 @import "placeholder";
-@import "sidebar-news";
-// @import "most-popular";
+// @import "sidebar-news";
 @import "site-footer";
-@import "page-hero";
+// @import "page-hero";
 
 //Header
 @import "primary-menu";
 @import "site-header";
 
 //Home page
-// @import "slider";
 @import "page-index";
 
 // MODAL
@@ -41,8 +38,6 @@
 @import "section-page";
 
 //Static Pages
-// @import "page-about";
-// @import "page-project";
 
 // layouts
 @import "layout-landing";

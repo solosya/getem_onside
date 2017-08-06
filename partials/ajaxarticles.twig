@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row ajaxArticles">
      <section class="col-sm-12">
         <div class="row">
             <div id="{{container}}" 
@@ -7,11 +7,12 @@
                  data-blogid="{{blogid}}"
                  data-articlecount="10"
                  data-containerclass="{{card_style}}"
+                 data-loadtype="{{loadtype}}"
                  data-existing-nonpinned-count="{{non_pinned}}">
              </div>
             <a class="loadMoreArticles" 
                 data-container="{{container}}"
-                href="#">Load more articles</a>
+                href="#">Load more</a>
         </div>
 
         {% set noDataCls = 'hide' %}

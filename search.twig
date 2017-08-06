@@ -1,6 +1,6 @@
 {{ set(this, 'title', 'Search - ' ~ search) }}
 
-{{this.registerJs("SearchController.listing();")}}
+{{this.registerJs("CardController();")}}
 
 {% set limit = 20 %}
 {% set articles = _Search.searchArticles({'limit': limit, 'offset': 0, 'search': search}) %}
@@ -28,20 +28,38 @@
 
 
 
-
-
                 
                 <div class="row">
-
-                    {% for i in 0..12 %}
-                        {% if articles[i] %}                                                                
-                            {{this.render('partials/_single-article.twig', {article: articles[articleCount], position: (articleCount+1), containerClass: 'col-sm-4 card-sm s360x215'}) | raw}}
-                            {% set articleCount = articleCount + 1 %}
-                        {% endif %}
+                    {% for article in articles %}                                                                
+                        {{this.render('partials/_single-article.twig', {
+                            article: article, 
+                            position: (articleCount+1), 
+                            imageSize: {width: 360, height: 215},
+                            containerClass: 'col-sm-12 card-search card-search-mob'}) | raw}}
+                        {% set articleCount = articleCount + 1 %}
                     {% endfor %}
-
                 </div><!-- .row-->
+
+
+
+                {{ this.render('partials/ajaxarticles.twig', {
+                    limit: limit, 
+                    non_pinned: articlesArr.existingNonPinnedCount, 
+                    articles: articles,
+                    card_style: "col-sm-12 card-search card-search-mob",
+                    container:"mainAjaxArticles",
+                    loadtype: "search"
+                }) | raw }}
+
+
+
+
+
             </div><!-- .container-->
+
+
+
+
         </section><!-- .top-stories-->
 
 

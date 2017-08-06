@@ -2,98 +2,63 @@
 
 
 {% set imageSuppress = imageSuppress is defined and imageSuppress == 'true' ? 'true' : 'false'  %}
+{% set template = (template is defined and template != '') ? template : 'main'  %}
 {% set swap = swap is defined and swap == 'false' ? '' : 'swap'  %}
+{% set hash = hash is defined and hash != '' ? hash : ''  %}
+{% set lightbox = ''  %}
+{% set articleImg = '' %}
+
+{% if behaviour is defined %} 
+    {% if behaviour == 'noclick' %}
+        {% set article = article | merge({'url' : 'javascript: void(0)'}) %}
+    {% elseif behaviour == 'lightbox' %}
+        {% set lightbox = behaviour %}
+    {% endif %}
+{% endif %}
+
+
+{% set imgWidth = 0 %}
+{% set imgHeight = 0 %}
+{% if imageSize is defined %}
+    {% set imgWidth  = (imageSize.width  is defined) ? imageSize.width  : 0 %}
+    {% set imgHeight = (imageSize.height is defined) ? imageSize.height : 0 %}
+{% endif %}
+
 
 {% if article.articleId > 0 or (isArticle is defined and isArticle == 'true') %}
-    {% set articleImg = '' %}
-    {% if article.featuredMedia | length > 0 %}
-        {% set imgWidth = 1280 %}
-        {% set imgHeight = 720 %}
 
-        {% if 's100x110' in containerClass %}
-            {% set imgWidth = 100 %}
-            {% set imgHeight = 110 %}
+    {% set hasArticleMediaClass = ((article.hasMedia == 'TRUE' or article.hasPreviewMedia == 'TRUE') and imageSuppress == 'false') ? 'withImage__content': 'without__image' %}
 
-        {% elseif 's203x130' in containerClass %}
-            {% set imgWidth = 203 %}
-            {% set imgHeight = 130 %}
-
-        {% elseif 's265x242' in containerClass %}
-            {% set imgWidth = 265 %}
-            {% set imgHeight = 242 %}
+    {% set params = {
+        placeholder:     'https://placeholdit.imgix.net/~text?txtsize=33&txt=Loading&w='~imgWidth~'&h='~imgHeight~'',
+        figureClass:     article.featuredMedia['type'] == 'video' ? 'video' : '',
+        articleImgSmall: _Media.getMediaUrl(article.featuredMedia,500, 500, {'crop': 'fill', 'gravity': 'faces'} ),
+        articleImg:      _Media.getMediaUrl(article.featuredMedia,imgWidth, imgHeight, {'crop': 'fill', 'gravity': 'faces'} ),
+        publishDate:     _AppHelper.getDateTimeBasedOnTimezone(article.publishDate, 'F, Y'),
+        articleTitle:    quotes.smarten(titleTruncateLength is defined ? article.title | truncate(titleTruncateLength) : article.title),
+        profileImg:      _Media.getMediaUrl(article.createdBy['media'], 34, 34, {radius: 'max', gravity: 'face', 'crop': 'thumb', type: 'user'}),
+        imageSuppress:   imageSuppress
+    } %}
 
 
-        {% elseif 's300x242' in containerClass %}
-            {% set imgWidth = 300 %}
-            {% set imgHeight = 242 %}
-
-
-        {% elseif 's330x235' in containerClass %}
-            {% set imgWidth = 330 %}
-            {% set imgHeight = 235 %}
-
-        {% elseif 's750x375' in containerClass %}
-            {% set imgWidth = 750 %}
-            {% set imgHeight = 375 %}
-
-       {% endif %}
-
-    {% endif %}
-
-    {% set placeholder = 'https://placeholdit.imgix.net/~text?txtsize=33&txt=Loading&w='~imgWidth~'&h='~imgHeight~'' %}
-    {% set promotedClass = (article.isPromoted) ? 'ad_icon' : '' %}
-    {% set hasArticleMediaClass = (article.hasMedia == 'TRUE' or article.hasPreviewMedia == 'TRUE') ? 'withImage__content': 'without__image' %}
-
-    {% set publishDate = _AppHelper.getDateTimeBasedOnTimezone(article.publishDate, 'F, Y') %}
-
-    {% set profileImg = _Media.getMediaUrl(article.createdBy['media'], 34, 34, {radius: 'max', gravity: 'face', 'crop': 'thumb', type: 'user'}) %}
-    
-    {% set articleTitle =  quotes.smarten(titleTruncateLength is defined ? article.title | truncate(titleTruncateLength) : article.title)  %}
-
-    {% set figureClass =  article.featuredMedia['type'] == 'video' ? 'video' : '' %}
-
-
-    <div class="{{containerClass}}" data-title="{{ articleTitle | raw }}">
-        {% set articleImgSmall = _Media.getMediaUrl(article.featuredMedia,500, 500, {'crop': 'fill', 'gravity': 'faces'} ) %}
-        {% set articleImg = _Media.getMediaUrl(article.featuredMedia,imgWidth, imgHeight, {'crop': 'fill', 'gravity': 'faces'} ) %}
+    <div class="{{containerClass}}" data-title="{{ articleTitle | raw }}" data-hash="{{hash}}">
 
         <a  href="{{article.url}}" 
             class="{{swap}} card article {{hasArticleMediaClass}}" 
             data-id="{{article.articleId}}" 
+            data-guid="{{article.articleId}}" 
             data-position="{{position}}" 
-            data-social="0" 
-            data-article-image="{{articleImg}}" 
+            data-social="0"
+            data-article-image="{{params.articleImg}}" 
             data-article-text="{{Helper.htmlToText(article.title, -1) | raw | escape('html')}}">
 
-            <article class="">
-                {% if (article.hasMedia == 'TRUE' or article.hasPreviewMedia == 'TRUE') and imageSuppress == 'false' %}
-                    <figure class="{{figureClass}}">
-                        <picture>
-                            <source media="(max-width: 620px)" srcset="{{articleImgSmall}}">
-                            <img class="img-responsive" src="{{articleImg}}" data-original="{{articleImg}}"  {% if articleImg is not empty %} style="background-image:url('{{placeholder}}');" {%endif%}>
-                        </picture>
-                    </figure>
-                {% endif %}
+            <article class="{{lightbox}} {{params.figureClass}}">
 
+                {{ this.render('_article-'~template~'.twig', {article: article, params:params} ) | raw }}
 
-                <div class="content">
-                    <div class="category">{{article.label}}</div>
-                    
-                    <h2>{{ articleTitle }}</h2>
-                    
-                    {% if cardClass != 'instagram no-caption' %}  
-                        <p>{{ quotes.smarten(article.excerpt | raw) }}</p>
-                    {% endif %}
-                    
-                    <time datetime="{{publishDate}}">{{publishDate}}</time>
-                    
-                    <div class="author">
-                        <img src="{{profileImg}}" class="img-circle">
-                        <p>{{ article.createdBy['displayName'] }}</p>
-                    </div><!-- .author-->
-
-                </div>
             </article>
+
+
 
             {% if article.userHasBlogAccess == '1' and swap != '' %}
             <div class="btn_overlay articleMenu">
@@ -105,7 +70,7 @@
                     <i class="fa fa-eye-slash"></i><span class="hide">Hide</span>
                 </button>
 
-                <button onclick="window.location = '{{article.editUrl}}'; return false;" title="Edit" class="btnhide social-tooltip" type="button">
+                <button onclick="window.open('{{article.editUrl}}', '_blank'); return false;" title="Edit" class="btnhide social-tooltip" type="button">
                     <i class="fa fa-edit"></i><span class="hide">Edit</span>
                 </button>
                  {% set pinTitle = 'Pin Article' %}
@@ -139,7 +104,7 @@
     {% set hasArticleMediaClass = (social.hasMedia == 'TRUE') ? 'withImage__content': 'without__image' %}
     {% set hasArticleContentClass = (social.content) ? '': 'without__content' %}
 
-    <div class="{{containerClass}}">
+    <div class="{{containerClass}}" data-hash="{{hash}}">
         <a  href="{{social.url}}"
             target="_blank"
             class="{{swap}} card social {{ social.source }} {{hasArticleContentClass}} {{hasArticleMediaClass}}" 
@@ -150,6 +115,8 @@
             data-social="1" 
             data-article-image="{{social.media['path']}}" 
             data-article-text="{{Helper.htmlToText(social.content, -1) | raw | escape('html')}}">
+
+
 
             <article class="socialarticle {{ social.source }}">
                 {% if social.hasMedia == 'TRUE' and imageSuppress == 'false' %}  
@@ -162,7 +129,6 @@
                         {%endif%}
 
 
-                        {# <div class="image-wrapper lazyload" data-original="{{social.media['path']}}" {% if social.media['path'] is not empty %} style="background-image:url('{{placeholder}}');"{%endif%}></div> #}
                         {% if social.media['type'] == 'video' and social.media['videoUrl'] is not empty %}
                             <div class="play_icon video-player" data-source="{{social.source}}" data-url="{{social.media['videoUrl']}}" data-poster="{{social.media['path']}}"></div>
                         {% endif %}
@@ -172,12 +138,12 @@
 
                 <div class="content">
                     <div class="category {{social.source}}">{{social.source}}</div>
-                    
+                    <time datetime="2016-11-16">{{_AppHelper.getDateTimeBasedOnTimezone(social.publishDate, 'F, Y')}}</time>
+
                     <p id="updateSocial{{article.socialId}}" data-update="0">
-                             {{ quotes.smarten(social.content  | raw) }}
+                        {{ quotes.smarten(social.content  | raw) }}
                     </p>
 
-                    <time datetime="2016-11-16">{{_AppHelper.getDateTimeBasedOnTimezone(social.publishDate, 'F, Y')}}</time>
                     
                     <div class="author">
                         <img src="{{social.user.media.path}}" class="img-circle">
@@ -186,6 +152,8 @@
 
                 </div>
             </article>
+
+
 
             {% if article.userHasBlogAccess == '1' and swap != '' %}
             <div class="btn_overlay articleMenu">

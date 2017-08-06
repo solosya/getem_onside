@@ -12,11 +12,19 @@
         justify-content:center;
         align-items:center;
 
+        .logo {
+           img {
+               position:relative;
+               top:-35px;
+               left:40px;
+               @media screen and (max-width: $sm-break) {
+                   left:0;
+               }
+           } 
+           @media screen and (max-width: $sm-break) {
+               text-align:center;
+           }
 
-        img {
-            position:relative;
-            top:-35px;
-            left:40px;
         }
     }
 
@@ -34,6 +42,13 @@
             height:100%;
             position: absolute;
             left: -60px;
+            @media screen and (max-width: $md-break) {
+                left:-30px;
+            }
+            @media screen and (max-width: $mmd-break) {
+                display:none;
+            }
+
         }
     }
 
@@ -48,12 +63,21 @@
             color: #fff;
             margin-bottom:87px;
             line-height:1;
+            @media screen and (max-width: $sm-break) {
+                margin-bottom:17px;
+                text-align:center;
+            }
+
         }
 
         >p {
             font-size: rem(20);
             font-weight: 400;
             color:#fff;
+            @media screen and (max-width: $sm-break) {
+                text-align:center;
+            }
+
         }
 
         .input-group {
@@ -65,8 +89,15 @@
                 width:70%;
                 display: inline-block;
                 height: 50px;
+                @media screen and (max-width: $sm-break) {
+                    width:87%;
+                }
             }
 
+            @media screen and (max-width: $sm-break) {
+                width:100%;
+                text-align:center;
+            }
 
             button {
                 border:none;

@@ -129,7 +129,9 @@
                     {% for i in 0..3 %}
 
                         {% if articles[articleCount] %}                                                                
-                            {{this.render('partials/_single-article.twig', {article: articles[articleCount], containerClass:  rowCards[i] }) | raw }}
+                            {{this.render('partials/_single-article.twig', {
+                                article: articles[articleCount], 
+                                containerClass:  rowCards[i] }) | raw }}
                             {% set articleCount = articleCount + 1 %}
                         {% endif %}
 
@@ -147,7 +149,10 @@
             {% for i in 0..2 %}
 
                 {% if articles[articleCount] %}                                                                
-                    {{this.render('partials/_single-article.twig', {article: articles[articleCount], containerClass:  'col-sm-4 card-rec s330x235' }) | raw }}
+                    {{this.render('partials/_single-article.twig', {
+                        article: articles[articleCount], 
+                        imageSize: {width: 330, height: 235},
+                        containerClass:  'col-sm-4 card-rec' }) | raw }}
                     {% set articleCount = articleCount + 1 %}
                 {% endif %}
 
