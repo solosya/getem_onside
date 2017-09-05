@@ -5,6 +5,12 @@ body.layout-landing {
     main.site-main {
         margin:0 auto;
         height:100%;
+        @media screen and (min-width: 1200px) {
+            width:1180px;
+        }
+        section {
+            margin:0;
+        }
     }
 
     .main {
@@ -76,6 +82,7 @@ body.layout-landing {
             font-size: rem(20);
             font-weight: 400;
             color:#fff;
+            margin-bottom:11px;
             @media screen and (max-width: $sm-break) {
                 text-align:center;
             }
