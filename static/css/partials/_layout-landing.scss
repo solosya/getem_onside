@@ -1,0 +1,126 @@
+.layout-landing {
+    background:color(red);
+
+    main {
+        height:100%;
+    }
+
+    .main {
+        height:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        .logo {
+           img {
+               position:relative;
+               top:-35px;
+               left:40px;
+               @media screen and (max-width: $sm-break) {
+                   left:0;
+               }
+           } 
+           @media screen and (max-width: $sm-break) {
+               text-align:center;
+           }
+
+        }
+    }
+
+
+    .site-header, .site-footer {
+        display:none;
+    }
+
+    .subdetails {
+        &:before {
+            content:'';
+            display:block;
+            background:#fff;
+            width:1px;
+            height:100%;
+            position: absolute;
+            left: -60px;
+            @media screen and (max-width: $md-break) {
+                left:-30px;
+            }
+            @media screen and (max-width: $mmd-break) {
+                display:none;
+            }
+
+        }
+    }
+
+
+    .subscribe {
+        > h1 {
+            margin:0;
+            font-family: $base-font-family;
+            font-size: rem(72);
+            font-weight: 300;
+            letter-spacing: 0.6px;
+            color: #fff;
+            margin-bottom:87px;
+            line-height:1;
+            @media screen and (max-width: $sm-break) {
+                margin-bottom:17px;
+                text-align:center;
+            }
+
+        }
+
+        >p {
+            font-size: rem(20);
+            font-weight: 400;
+            color:#fff;
+            @media screen and (max-width: $sm-break) {
+                text-align:center;
+            }
+
+        }
+
+        .input-group {
+            width:400px;
+            input {
+                border:none;
+                vertical-align: top;
+                border-radius: 0;
+                width:70%;
+                display: inline-block;
+                height: 50px;
+                @media screen and (max-width: $sm-break) {
+                    width:87%;
+                }
+            }
+
+            @media screen and (max-width: $sm-break) {
+                width:100%;
+                text-align:center;
+            }
+
+            button {
+                border:none;
+                padding:0;
+                .icon-submit {
+                    background-image: url(../icons/arrow.svg);
+                    width: 42px;
+                    height: 50px;
+
+                    vertical-align: top;
+                    display: inline-block;
+                    background-size: 22px 12px;
+                    background-position:center;
+                    background-repeat: no-repeat;
+                }
+
+            }
+        }
+
+
+
+
+    }
+
+
+}
