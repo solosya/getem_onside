@@ -1,6 +1,6 @@
 .most-popular{
     > h2 {
-        font-size: em(30);
+        font-size: rem(30);
         font-family: $font-family-sans-serif;
         color: #e22f22;
     }
@@ -28,20 +28,20 @@
         > .content{
             > .category{
                 display:inline;
-                font-size: em(14);
+                font-size: rem(14);
                 color: #8a8b93;
                 font-weight: bold;
                 text-transform: uppercase;
                 line-height: 1.42857;
                 @media screen and (max-width: $sm-break){
-                    font-size: em(11.2);
+                    font-size: rem(11.2);
                 }
             }
             > time{
                 padding:0;
                 border:none;
                 float: right;
-                font-size: em(12);
+                font-size: rem(12);
                 color: #8a8b93;
                 line-height: 1.82857;
                 @media screen and (max-width: $sm-break){
@@ -50,14 +50,14 @@
             }
 
             > h2{
-                font-size: em(20);
+                font-size: rem(20);
                 font-weight: normal;
                 margin-bottom: 24px;
                 margin-top: 21px;
 
                 @media screen and (max-width: $sm-break){
                     margin-bottom: 17px;
-                    font-size: em(16);
+                    font-size: rem(16);
                     margin-top: 5px;
                 }
                 &:after{

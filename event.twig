@@ -1,7 +1,7 @@
 {{ set(this, 'title', event.title) }}
 {{this.registerLinkTag({rel:'amphtml', href:_AppHelper.getServerUrl(false)~'?amp=1'})}}
 
-{% set networkData = _Network.getNetworkData() %}
+{% set network = _Network.getNetworkData() %}
 {% set img = false %}
 {% if event.media | length > 0 %}
     {% set img = event.media[0] %}

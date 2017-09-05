@@ -1,10 +1,9 @@
 {% import "quotes.twig" as quotes %}
 
-
-{% set imageSuppress = imageSuppress is defined and imageSuppress == 'true' ? 'true' : 'false'  %}
-{% set template = (template is defined and template != '') ? template : 'main'  %}
+{% set imageSuppress = imageSuppress is defined and imageSuppress == true ? 'true' : 'false'  %}
 {% set swap = swap is defined and swap == 'false' ? '' : 'swap'  %}
-{% set hash = hash is defined and hash != '' ? hash : ''  %}
+{% set inline = inline is defined and inline != '' ? inline : ''  %}
+
 {% set lightbox = ''  %}
 {% set articleImg = '' %}
 
@@ -20,28 +19,41 @@
 {% set imgWidth = 0 %}
 {% set imgHeight = 0 %}
 {% if imageSize is defined %}
-    {% set imgWidth  = (imageSize.width  is defined) ? imageSize.width  : 0 %}
+    {% set imgWidth = (imageSize.width is defined) ? imageSize.width : 0 %}
     {% set imgHeight = (imageSize.height is defined) ? imageSize.height : 0 %}
 {% endif %}
 
-
 {% if article.articleId > 0 or (isArticle is defined and isArticle == 'true') %}
 
+    {% set placeholder = 'https://placeholdit.imgix.net/~text?txtsize=33&txt=Loading&w='~imgWidth~'&h='~imgHeight~'' %}
+    {% set promotedClass = (article.isPromoted) ? 'ad_icon' : '' %}
     {% set hasArticleMediaClass = ((article.hasMedia == 'TRUE' or article.hasPreviewMedia == 'TRUE') and imageSuppress == 'false') ? 'withImage__content': 'without__image' %}
 
-    {% set params = {
-        placeholder:     'https://placeholdit.imgix.net/~text?txtsize=33&txt=Loading&w='~imgWidth~'&h='~imgHeight~'',
-        figureClass:     article.featuredMedia['type'] == 'video' ? 'video' : '',
-        articleImgSmall: _Media.getMediaUrl(article.featuredMedia,500, 500, {'crop': 'fill', 'gravity': 'faces'} ),
-        articleImg:      _Media.getMediaUrl(article.featuredMedia,imgWidth, imgHeight, {'crop': 'fill', 'gravity': 'faces'} ),
-        publishDate:     _AppHelper.getDateTimeBasedOnTimezone(article.publishDate, 'F, Y'),
-        articleTitle:    quotes.smarten(titleTruncateLength is defined ? article.title | truncate(titleTruncateLength) : article.title),
-        profileImg:      _Media.getMediaUrl(article.createdBy['media'], 34, 34, {radius: 'max', gravity: 'face', 'crop': 'thumb', type: 'user'}),
-        imageSuppress:   imageSuppress
-    } %}
+    {% set publishDate = (article.publishDate is defined) ? article.publishDate : article.publishedDate %}
+    {% set publishDateTime = (article.publishDateTime is defined) ? article.publishDateTime : article.publishedDateTime %}
+
+    {% set publishDate = _AppHelper.getDateTimeBasedOnTimezone(publishDate, 'F Y') %}
+
+    {% set publishedAgo = _AppHelper.getSecondsSincePublished(publishDateTime) %}
+    
+    {% if publishedAgo < 86400 %}
+        {% set publishDate = _AppHelper.getRelativeTime(publishDateTime) ~ " ago" %}
+    {% endif %}
 
 
-    <div class="{{containerClass}}" data-title="{{ articleTitle | raw }}" data-hash="{{hash}}">
+
+
+    {% set profileImg = _Media.getMediaUrl(article.createdBy['media'], 34, 34, {radius: 'max', gravity: 'face', 'crop': 'thumb', type: 'user'}) %}
+    
+    {% set articleTitle =  quotes.smarten(titleTruncateLength is defined ? article.title | truncate(titleTruncateLength) : article.title)  %}
+
+
+    {% set figureClass =  article.featuredMedia['type'] == 'video' ? 'video' : '' %}
+
+
+    <div class="{{containerClass}}" data-title="{{ articleTitle | raw }}" {{inline}}>
+        {% set articleImgSmall = _Media.getMediaUrl(article.featuredMedia,500, 360, {'crop': 'fill', 'gravity': 'faces'} ) %}
+        {% set articleImg = _Media.getMediaUrl(article.featuredMedia,imgWidth, imgHeight, {'crop': 'fill', 'gravity': 'faces'} ) %}
 
         <a  href="{{article.url}}" 
             class="{{swap}} card article {{hasArticleMediaClass}}" 
@@ -49,16 +61,37 @@
             data-guid="{{article.articleId}}" 
             data-position="{{position}}" 
             data-social="0"
-            data-article-image="{{params.articleImg}}" 
+            data-article-image="{{articleImg}}" 
             data-article-text="{{Helper.htmlToText(article.title, -1) | raw | escape('html')}}">
 
-            <article class="{{lightbox}} {{params.figureClass}}">
+            <article class="{{lightbox}}">
+                {% if (article.hasMedia == 'TRUE' or article.hasPreviewMedia == 'TRUE') and imageSuppress == 'false' %}
+                    <figure class="{{figureClass}}">
+                        <picture>
+                            <source media="(max-width: 620px)" srcset="{{articleImgSmall}}">
+                            <img class="img-responsive" src="{{articleImg}}" data-original="{{articleImg}}"  {% if articleImg is not empty %} style="background-image:url('{{placeholder}}');" {%endif%}>
+                        </picture>
+                    </figure>
+                {% endif %}
 
-                {{ this.render('_article-'~template~'.twig', {article: article, params:params} ) | raw }}
 
+                <div class="content">
+                    <div class="category">{{article.label}}</div>
+                    
+                    <h2 class="{{figureClass}}">{{ articleTitle }}</h2>
+                    
+                    <p class="excerpt">{{ quotes.smarten(article.excerpt | raw) }}</p>
+                   
+                    <div class="author">
+                        <img src="{{profileImg}}" class="img-circle">
+                        <p>{{ article.createdBy['displayName'] }}</p>
+                        <time datetime="{{publishDate}}">{{publishDate}}</time>
+                    </div>
+
+                    <time datetime="{{publishDate}}">{{publishDate}}</time>
+
+                </div>
             </article>
-
-
 
             {% if article.userHasBlogAccess == '1' and swap != '' %}
             <div class="btn_overlay articleMenu">
@@ -104,7 +137,7 @@
     {% set hasArticleMediaClass = (social.hasMedia == 'TRUE') ? 'withImage__content': 'without__image' %}
     {% set hasArticleContentClass = (social.content) ? '': 'without__content' %}
 
-    <div class="{{containerClass}}" data-hash="{{hash}}">
+    <div class="{{containerClass}}">
         <a  href="{{social.url}}"
             target="_blank"
             class="{{swap}} card social {{ social.source }} {{hasArticleContentClass}} {{hasArticleMediaClass}}" 
@@ -115,8 +148,6 @@
             data-social="1" 
             data-article-image="{{social.media['path']}}" 
             data-article-text="{{Helper.htmlToText(social.content, -1) | raw | escape('html')}}">
-
-
 
             <article class="socialarticle {{ social.source }}">
                 {% if social.hasMedia == 'TRUE' and imageSuppress == 'false' %}  
@@ -129,6 +160,7 @@
                         {%endif%}
 
 
+                        {# <div class="image-wrapper lazyload" data-original="{{social.media['path']}}" {% if social.media['path'] is not empty %} style="background-image:url('{{placeholder}}');"{%endif%}></div> #}
                         {% if social.media['type'] == 'video' and social.media['videoUrl'] is not empty %}
                             <div class="play_icon video-player" data-source="{{social.source}}" data-url="{{social.media['videoUrl']}}" data-poster="{{social.media['path']}}"></div>
                         {% endif %}
@@ -137,23 +169,24 @@
 
 
                 <div class="content">
-                    <div class="category {{social.source}}">{{social.source}}</div>
-                    <time datetime="2016-11-16">{{_AppHelper.getDateTimeBasedOnTimezone(social.publishDate, 'F, Y')}}</time>
+                    <div class="icon"></div>
 
+                    <div class="category {{social.source}}">{{social.source}}</div>
+                    
                     <p id="updateSocial{{article.socialId}}" data-update="0">
-                        {{ quotes.smarten(social.content  | raw) }}
+                             {{ quotes.smarten(social.content  | raw) }}
                     </p>
 
                     
                     <div class="author">
                         <img src="{{social.user.media.path}}" class="img-circle">
                         <p class="">{{ (social.source == _Article.socialArticleSourceTwitter()) ? '@' : ''}}{{ social.user['name'] | lower }}</p>
+                        <time datetime="">{{_AppHelper.getDateTimeBasedOnTimezone(social.publishDate, 'F, Y')}}</time>
                     </div><!-- .author-->
+                    <time datetime="">{{_AppHelper.getDateTimeBasedOnTimezone(social.publishDate, 'F, Y')}}</time>
 
                 </div>
             </article>
-
-
 
             {% if article.userHasBlogAccess == '1' and swap != '' %}
             <div class="btn_overlay articleMenu">
