@@ -29,7 +29,7 @@ gulp.task('cache',  function() {
 
 gulp.task('minify-css', function () {
     return gulp.src([
-        './static/css/concat.css',
+        './static/deploy/concat.css',
     ]) 
     .pipe(gp_rename({suffix: '.min'}))
     .pipe(minifyCss())
@@ -45,11 +45,12 @@ gulp.task('concat', function () {
         './static/development/js/plugins/jquery.noty-2.3.8/demo/animate.css',
         './static/development/js/sdk/media-player/mediaelementplayer.css',
         './static/development/js/plugins/owl.carousel.min.css',
-        './static/development/js/plugins/owl.theme.default.css',
+        './static/development/js/plugins/owl.theme.default.css'
+
     ]) // path to your file
     .pipe(concat('concat.css'))
 
-    .pipe(gulp.dest('./static/css'));
+    .pipe(gulp.dest('./static/deploy'));
 });
 
 
@@ -61,7 +62,7 @@ gulp.task('sass', function() {
         .pipe(sass({includePaths: [
             './static/css/partials', 
         ]}).on('error', sass.logError))
-        .pipe(sourcemaps.write('.'))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('./static/css'));
 });
 
@@ -87,7 +88,8 @@ gulp.task('scripts', function(){
         './static/development/js/plugins/jquery.lazyload.min.js',
         './static/development/js/plugins/jquery.dotdotdot.min.js',
         './static/development/js/plugins/owl.carousel.min.js',
-
+        './static/development/js/plugins/owl.carousel2.thumbs.min.js',
+        
         './static/development/js/sdk/cloudinary/jquery.cloudinary.js',
         './static/development/js/sdk/common.js',
         './static/development/js/sdk/blog.js',
@@ -125,6 +127,8 @@ gulp.task('user_scripts', function(){
         './assets/scripts/plugins/jquery.lazyload.min.js',
         './assets/scripts/plugins/jquery.dotdotdot.min.js',
         './assets/scripts/plugins/owl.carousel.min.js',
+        './static/development/js/plugins/owl.carousel.min.js',
+        './static/development/js/plugins/owl.carousel2.thumbs.min.js',
 
         './assets/scripts/sdk/search.js',
         './assets/scripts/sdk/video-player.js',

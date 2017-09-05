@@ -8,6 +8,7 @@ $('document').ready(function() {
     var scrollMetric = [pageWindow.scrollTop()];
     var menuContainer = $("#mainHeader");
     var masthead = $('#masthead');
+    var articleAd = $('#articleAdScroll');
 
     $('.video-player').videoPlayer();
     
@@ -32,12 +33,12 @@ $('document').ready(function() {
     // };
 
 
-    // var isScolledPast = function(position){
-    //     if (scrollMetric[0] >= position) {
-    //         return true;
-    //     }
-    //     return false;
-    // };
+    var isScolledPast = function(position){
+        if (scrollMetric[0] >= position) {
+            return true;
+        }
+        return false;
+    };
 
 
     // var scrollUpMenu = function() {
@@ -55,6 +56,17 @@ $('document').ready(function() {
     //     }
     // }
 
+
+    var adScroll = function() {
+        if ( scrollMetric[1] === 'up' && !isScolledPast(200)) {
+            articleAd.removeClass('bottomAd').addClass('fixad');
+        } 
+        else if ( scrollMetric[1] === 'down' && isScolledPast(200)) {
+            articleAd.removeClass('fixad').addClass('bottomAd');
+        }
+    }
+
+
     var removeMobileMenuStyles = function() {
         var menu = $('#sb-custom-menu');
 
@@ -62,8 +74,8 @@ $('document').ready(function() {
             masthead.removeClass('mobile-menu-active')
                     .removeClass('fixHeader');
         } else if (pageWindow.width() < 620 && menu.hasClass('open')) {
-            masthead.addClass('mobile-menu-active')
-                    .addClass('fixHeader'); 
+            masthead.addClass('mobile-menu-active');
+                    // .addClass('fixHeader'); 
         }
     }
 
@@ -76,16 +88,17 @@ $('document').ready(function() {
     }).resize();
 
     //On Scroll
-    // pageWindow.scroll(function() {
-    //     console.log('scrolling');
-    //     var direction = 'down';
-    //     var scroll = pageWindow.scrollTop();
-    //     if (scroll < scrollMetric[0]) {
-    //         direction = 'up';
-    //     }
-    //     scrollMetric = [scroll, direction];
-    //     scrollUpMenu();
-    // });
+    pageWindow.scroll(function() {
+        // console.log('scrolling');
+        var direction = 'down';
+        var scroll = pageWindow.scrollTop();
+        if (scroll < scrollMetric[0]) {
+            direction = 'up';
+        }
+        scrollMetric = [scroll, direction];
+        adScroll();
+        // console.log(scrollMetric);
+    });
 
 
 
@@ -102,8 +115,8 @@ $('document').ready(function() {
         thisMenuElem.find('.menuContainer').toggleClass("show-on-tablet");
         thisMenuElem.toggleClass('open');
         if (pageWindow.width() < 620) {
-            masthead.toggleClass('mobile-menu-active')
-                    .toggleClass('fixHeader');
+            masthead.toggleClass('mobile-menu-active');
+                    // .toggleClass('fixHeader');
         }
         e.preventDefault();
     });
@@ -116,16 +129,24 @@ $('document').ready(function() {
     //     }
     // });
 
-
-    $(".sb-custom-menu > .menuContainer > ul > li").hover(function (e) {
-
-    // $(".sb-custom-menu > .menuContainer > ul > li").bind("mouseenter", function (e) {
-        if (pageWindow.width() > sbCustomMenuBreakPoint) {
-            $(this).children("ul").stop(true, false).slideToggle(0);
-            $(this).toggleClass('now-active');
-            e.preventDefault();
-        }
+    $("ul > li.menu-item-search").on("click", function (e) {
+        $("#searchPanel").show();
+        $("#searchPanel input").focus();
     });
+    $("#searchclose").on("click", function (e) {
+        $("#searchPanel").hide();
+    });
+
+
+    // $(".sb-custom-menu > .menuContainer > ul > li").hover(function (e) {
+
+    // // $(".sb-custom-menu > .menuContainer > ul > li").bind("mouseenter", function (e) {
+    //     if (pageWindow.width() > sbCustomMenuBreakPoint) {
+    //         $(this).children("ul").stop(true, false).slideToggle(0);
+    //         $(this).toggleClass('now-active');
+    //         e.preventDefault();
+    //     }
+    // });
 
 
     $(".sb-custom-menu > .menuContainer > ul > li > span").on("click", function(e) {
@@ -168,18 +189,24 @@ $('document').ready(function() {
     }), 750);
 
 
-    console.log('doing carousel');
     $("#owl-thumbnails").owlCarousel({
         items: 1,
+        thumbs: true,
+        thumbsPrerendered: true,
         URLhashListener:true,
+        startPosition: 'URLHash',
         pagination: true,
+        dots: false,
         nav: true,
         navText: [
-            "<i class='fa fa-angle-left fa-2x'></i>",
-            "<i class='fa fa-angle-right fa-2x'></i>"
+            "",
+            ""
         ]
     });   
 
+
+
+    adScroll();
 
 
 });

@@ -1,8 +1,9 @@
 {{ use('yii/web/JqueryAsset') }}
-{{ register_jquery_asset() }}
+
 {% set networkData   = _Network.getNetworkData() %}
 {% set blogData      = _Blog.getBlog() %}
 {% set pageClass     = _Page.getBodyClass() %}
+{% set layout        = _Page.getLayoutName() %}
 {% set pageTypeClass = blogData.type %}
 {% set blogName      = blogData.title %}
 {% set layout        = blogData.layout %}
@@ -47,14 +48,17 @@
 
 
     {% if _AppHelper.getApplicationEnv() == 'PROD'%}
-        <link rel="stylesheet" href="{{networkData.templatePath}}/static/deploy/concat.min.css?v=f239b27h" type="text/css" media="all">
+    <link rel="stylesheet" href="{{networkData.templatePath}}/static/deploy/concat.min.css?v=3b588b0c" type="text/css" media="all">
 
     {% else %}
 {#             <link type="text/css" rel="stylesheet" href="{{networkData.templatePath}}/static/css/jquery.fancybox.css?ver=2" />
         <link type="text/css" rel="stylesheet" href="{{networkData.templatePath}}/static/css/animate.css?ver=1" />
         <link type="text/css" rel="stylesheet" href="{{networkData.templatePath}}/static/css/mediaelementplayer.css?ver=1" /> #}
 
-        <link rel='stylesheet' href='{{networkData.templatePath}}/static/css/concat.css' type='text/css' media='all' />
+        <link rel='stylesheet' href='{{networkData.templatePath}}/static/deploy/concat.css' type='text/css' media='all' />
+        <link rel='stylesheet' href='{{networkData.templatePath}}/static/development/js/plugins/owl.carousel.css' type='text/css' media='all' />
+        <link rel='stylesheet' href='{{networkData.templatePath}}/static/development/js/plugins/owl.theme.default.css' type='text/css' media='all' />
+
     {% endif %}
 
     {% if isPage %}
@@ -103,24 +107,8 @@
         <!-- End Google Analytics -->
     {% endif %}
     
-    {# {% set blogList = _Blog.getBlogList() %} #}
 
-{#     {% if blogList | length > 0 %}
-        <style type="text/css">
-            {% for blog in blogList %}
-                {% if blog.featuredColor is not empty %}
-                    {% set blogClass = 'card--blog_'~blog.id %}
-                    .card.{{blogClass | lower}} .title-section span {
-                        color: {{blog.featuredColor}} !important;
-                    }
-                    .card.{{blogClass | lower}} .caption_bottom .author_name {
-                        color: {{blog.featuredColor}} !important;
-                    }
-                {% endif %}
-            {% endfor%}
-        </style>
-    {% endif %}
- #}
+
     {{ this.head() }}
 
 </head>
@@ -128,7 +116,6 @@
 
 <body class="{{ pageTypeClass }} {{ layout }} {{ pageClass }}">
 {{ this.beginBody() }}
-
       
 
     {{ this.render('partials/_header_navigation.twig', {
@@ -138,7 +125,7 @@
     }) | raw }}
 
 
-    {{ content | raw}}
+    {{ content | raw }}
 
 
 

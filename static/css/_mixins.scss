@@ -8,14 +8,170 @@
 	  opacity: $value;
 	  background-color: #000;
 	  z-index: 1;
-
-	    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.69+0,0.31+37,0+100 */
-	    // background: -moz-linear-gradient(top, rgba(0,0,0,0.69) 0%, rgba(0,0,0,0.31) 37%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-	    // background: -webkit-linear-gradient(top, rgba(0,0,0,0.69) 0%,rgba(0,0,0,0.31) 37%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-	    // background: linear-gradient(to bottom, rgba(0,0,0,0.69) 0%,rgba(0,0,0,0.31) 37%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 	}
 }
+@mixin tintafter($value:0.4) {
+	&:after {
+	  content: '';
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  width: 100%;
+	  opacity: $value;
+	  background-color: #000;
+	  z-index: 1;
+	}
+}
+
+@mixin gradientbefore() {
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		height:100%;
+		bottom: 0;
+		width: 100%;
+		z-index: 1;
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.0), #000000);
+        background-image: -o-linear-gradient(rgba(0, 0, 0, 0.0), #000000);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.0), #000000);
+    }
+}
+
+@mixin gradientafter() {
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		z-index: 1;
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.0), #000000);
+        background-image: -o-linear-gradient(rgba(0, 0, 0, 0.0), #000000);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.0), #000000);
+    }
+}
+
+
+@mixin card-image-size($width, $height) {
+	width: $width;
+    height: $height;
+}
+
+@mixin card-image-none {
+	> article {
+		> figure{
+			display:none;
+		}
+	}
+}
+
+
+@mixin card-image-full {
+	> article {
+		> figure{
+			position: absolute;
+			left: 0;
+			top: 0;
+			height:100%;
+			width: 100%;
+			z-index:1;
+		}
+		> .content {
+			position:relative;
+			z-index:2;
+		}
+	}
+}
+
+@mixin card-image-left($width, $height:100%) {
+	> article {
+		> figure{
+			@include card-image-size($width, $height);
+			float: left;
+		}
+		> .content {
+			display:block;
+			width:auto;
+		}
+	}
+}
+
+
+@mixin card-image-right($width, $height:100%) {
+	> article {
+		> figure{
+			@include card-image-size($width, $height);
+			float: right;
+		}
+		> .content {
+			display:block;
+			width:auto;
+		}
+	}
+}
+
+
+@mixin card-image-top($width, $height:100%) {
+	> article {
+		> figure{
+			@include card-image-size($width, $height);
+			float: none;
+		}
+		> .content {
+			display:block;
+		}
+	}
+}
+
+@mixin card-image-bottom($width, $height:100%) {
+	> article {
+
+		@include flexbox;
+		@include flex-direction(column);
+
+		> figure{
+			@include card-image-size($width, $height);
+			order:2;
+		}
+		> .content {
+			order:1;
+			display:block;
+		}
+	}
+}
+
+
+
+// @mixin card-main-base() {
+//     a.card {
+//         > article {
+//             > figure{
+//             }
+//             > .content{
+//                 > .category{
+//                 }
+//                 > h2{
+//                 }
+//                 > p.excerpt {
+//                 }
+// 			    .author {
+// 				   	img {
+// 					}
+// 				   	p {
+// 					}
+// 				   	> time {
+// 					}
+// 			    }
+			    
+// 			    > time{
+// 			   	}
+//             }
+//         }
+//     }
+// }
+
+
 
 
 // // Responsive sizes

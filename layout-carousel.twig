@@ -1,6 +1,6 @@
 {% set networkData   = _Network.getNetworkData() %}
 
-{% set limit = 8 %}
+{% set limit = 1 %}
 
 {% set articlesArr = _Blog.getBlogFeed({'limit': limit, 'offset': 0}) %}
 {% set articles = articlesArr.articles %}
@@ -10,8 +10,8 @@
 <main id="main" class="container site-main" role="main">
     
     <section class="row main">
-
-        <div id="owl-thumbnails" class="owl-carousel">
+        
+        <div id="owl-thumbnails" class="owl-carousel owl-theme">
             {% for article in articles %}  
                 {% if articles[articleCount] %}
                     {{this.render('partials/_single-article.twig', {
