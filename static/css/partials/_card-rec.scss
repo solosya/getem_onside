@@ -15,32 +15,34 @@
                 > .category{
                 }
                 > h2{
-                    font-family:$font-family-sans-serif;
-                    font-weight:600;
+                    font-family:$font-family-serif;
+                    font-weight:normal;
                     margin-top: 12px;
+                    padding-bottom:18px;
+                    border-bottom:1px solid color(grey);
                     line-height: 1.3;
                 }
                 >p.excerpt {
                     display:none;
                 }
-                .author{
-                    position:absolute;
-                    bottom:5px;
-                    p{
-                        display:block;
-                        font-weight:700;
-                        color:color(red);
-                        border:none;
-                    }
-                    time{
-                        display:block;
-                        font-family:$font-family-sans-serif;
-                        margin-top:5px;
-                    }
-                }
+                // .author{
+                //     position:absolute;
+                //     bottom:5px;
+                //     p{
+                //         display:block;
+                //         font-weight:700;
+                //         color:color(red);
+                //         border:none;
+                //     }
+                //     time{
+                //         display:block;
+                //         font-family:$font-family-sans-serif;
+                //         margin-top:5px;
+                //     }
+                // }
                 
-                > time{
-                }
+                // > time{
+                // }
             }
         }
 
@@ -156,7 +158,7 @@
 
 
         a.card {
-            @include card-image-left(300px, 192px);
+            @include card-image-left(234px, 159px);
             
 
             height:100%;
@@ -167,14 +169,15 @@
 
 
                     h2{
-                        font-size: rem(20);
+                        font-size: rem(24);
+                        margin-bottom:15px;
                     }
 
-                    .author{
-                        p{
-                            font-size: rem(14);
-                        }
-                    }
+                    // .author{
+                    //     p{
+                    //         font-size: rem(14);
+                    //     }
+                    // }
                 }
             }
         }

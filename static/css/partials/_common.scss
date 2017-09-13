@@ -71,7 +71,7 @@ div.space40 {
 hr.divide {
     margin:28px 0;
     border: 0;
-    border-top: 1px solid color(lightgrey);
+    border-top: 1px solid color(lightergrey);
 }
 
 hr.divide.visible-xs-block {
@@ -82,22 +82,22 @@ hr.divide.visible-xs-block {
 hr.divide24 {
     margin:24px 0;
     border: 0;
-    border-top: 1px solid color(lightgrey);
+    border-top: 1px solid color(lightergrey);
 }
 hr.divide15 {
     margin:15px 0;
     border: 0;
-    border-top: 1px solid color(lightgrey);
+    border-top: 1px solid color(lightergrey);
 }
 hr.divide12 {
     margin:12px 0;
     border: 0;
-    border-top: 1px solid color(lightgrey);
+    border-top: 1px solid color(lightergrey);
 }
 hr.divide10 {
     margin:10px 0;
     border: 0;
-    border-top: 1px solid color(lightgrey);
+    border-top: 1px solid color(lightergrey);
 }
 
 .ad-square {
@@ -241,6 +241,24 @@ p.lead{
 }
 span.leadsentence{
     font-weight: bold;
+}
+
+
+@media (max-width: 767px){
+    .two-cols .col-md-1,
+    .two-cols .col-sm-1,
+    .two-cols .col-lg-1  {
+        width: 100%;
+        *width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    .two-cols .col-md-1,
+    .two-cols .col-sm-1,
+    .two-cols .col-lg-1 {
+        width: 50%;
+        *width: 50%;
+    }
 }
 
 

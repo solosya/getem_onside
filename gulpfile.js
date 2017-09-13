@@ -153,7 +153,7 @@ gulp.task('user_scripts', function(){
 
 gulp.task('watch', function (){
 	gulp.watch('./static/css/**/*.scss', ['styles']);
-	gulp.watch('./static/development/js/**/*.js', ['scripts']);
+	// gulp.watch('./static/development/js/**/*.js', ['scripts']);
 });
 
 gulp.task('default', ['scripts', 'user_scripts', 'styles']);
