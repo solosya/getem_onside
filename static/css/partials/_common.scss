@@ -107,7 +107,6 @@ hr.divide10 {
     // @media screen and (max-width: $mmd-break){
     //     margin: 30px 0;
     // }
-
 }
 
 .ad-large-vert {
@@ -217,8 +216,8 @@ figcaption{
     
     > p {
         font-size: rem(12.5);
-        color: #6c6c6c;
-        font-style: italic;
+        color: color(lightgrey);
+        font-style: bold;
         font-family: $base-font-family;
         float: left;
 

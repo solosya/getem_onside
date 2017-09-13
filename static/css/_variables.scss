@@ -1,7 +1,7 @@
 //Fonts
-$font-family-sans-serif:    "roboto", Helvetica, Arial, sans-serif;
+$font-family-sans-serif:    "Lato", Helvetica, Arial, sans-serif;
 $font-family-serif:    		"PT Serif", "Times New Roman", Times, serif;
-$base-font-family: 			"roboto", Helvetica, Arial, sans-serif !default;
+$base-font-family: 			"Lato", Helvetica, Arial, sans-serif !default;
 
 
 $font-size-base:            16px;
@@ -9,7 +9,7 @@ $font-unit:                 0em;
 $browser-context:           $font-size-base;
 $baseFontSize:				16px; /* ($baseFontSize * 1) + 0px; */
 
-// $headings-font-family:      "adelle-sans", Helvetica, Arial, sans-serif;
+$headings-font-family:      "Roboto Slab", Helvetica, Arial, sans-serif;
 // $headings-font-weight:      700;
 // $font-size-h1:              ((60px / $font-size-base) + $font-unit); //48px
 // $font-size-h2:              ((34px / $font-size-base) + $font-unit); //26px
@@ -64,7 +64,7 @@ $colors: (
     vimeo:       		#00b3ec,
 
     red: 				#ec1c24,
-    lightgrey: 			rgba(74,74,74,.3),
+    lightgrey: 			#6b6d71,
     mediumgrey: 		rgba(74,74,74,.7),
 	darkgrey: 			#4A4A4A,
 	grey:          		#B9B9B9,
@@ -90,7 +90,7 @@ $logo-width:                52px;
 $logo-height:               52px;
 $sticked-logo-height:       34px;
 $sticked-logo-width:        34px;
-$navbar-height:             70px;
+$navbar-height:             110px;
 
 $center:					center;
 

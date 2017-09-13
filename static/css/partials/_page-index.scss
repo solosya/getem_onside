@@ -50,7 +50,7 @@ body.special {
             >p.header {
                 font-size: rem(27);
                 color:white;
-                font-family:$font-family-serif;
+                font-family:$font-family-sans-serif;
                 margin-bottom:0;
             }
             >p.local {
@@ -90,62 +90,6 @@ body.special {
     }
 
 
-    #weather-mob {
-        @media screen and (min-width: $sm-break){
-            display:none;
-        }
-    }
-
-    #weather-dt {
-        @media screen and (max-width: $sm-break-down){
-            display:none;
-        }
-    }
-
-
-    .weather {
-        height:35px;
-        margin-bottom:8px;
-        border-bottom: 1px solid (lightgrey);
-        
-        @media screen and (max-width: $sm-break-down){
-            border-bottom: none;
-        }
-
-
-        >div {
-            float:left;
-            display:inline-block;
-            margin-right:10px;
-        }
-        .temp {
-            margin:0;
-            margin-top:5px;
-            float:left;
-            color:color(red);
-            font-size: rem(16);
-        }
-        .location {
-            font-size: rem(13);
-            font-weight:600;
-            margin:0;
-            text-transform: uppercase;
-            line-height: 1;
-            margin-top: 3px;
-        }
-        .description {
-            font-size: rem(13);
-            margin:0;
-            color: color(lightgrey);
-        }
-        .icon {
-            float:left;
-            vertical-align:top;
-            margin-right:10px;
-        }
-    }
-
-
 
     .home-main-stories {
         height:400px;
@@ -181,13 +125,13 @@ body.special {
 
     .most-popular, .events {
         >h2 {
-            font-weight:600;
-            font-size: rem(22);
-            color: color(red);
+            font-family: $font-family-sans-serif;
+            font-size: rem(18);
+            color: #000;
             margin-bottom:13px;
             line-height:1;
             padding-bottom: 10px;
-            border-bottom:1px solid color(lightgrey);
+            text-transform: uppercase;
         }
     }
 
@@ -199,7 +143,7 @@ body.special {
     .section-header {
         p>a {
             margin:0;
-            font-family: $font-family-serif;
+            font-family: $font-family-sans-serif;
             font-size: rem(14);
             font-style:italic;
             color:color(red);
@@ -207,10 +151,11 @@ body.special {
         
         div.hk {
             display:flex;
+
             h2 {
+                font-family: $font-family-sans-serif;
                 flex-grow: 0;
                 font-size: rem(20);
-                font-weight:600;
                 margin-bottom:25px;
 
             }

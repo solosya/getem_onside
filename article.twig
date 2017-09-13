@@ -33,12 +33,11 @@
 
                         <div class="content-block-top">
 
-                            <p class="category">{{article.label}}</p
-                            ><time datetime="{{publishedDate}}">{{article.publishedDate}}</time>
+                            <time datetime="{{publishedDate}}">{{article.publishedDate}}</time>
                             
                             <h1>{{ quotes.smarten(article.title) }}</h1>
                             
-                            <p class="author"><span>By</span> {{ article.createdBy['displayName'] }}</p>
+                            <p class="author">{{ article.createdBy['displayName'] }}</p>
 
 {#                             <div class="time_to_read">
                                 {% set readtime = 3 %}
@@ -102,8 +101,8 @@
                             <div class="row">
 
                                 <div class="col-sm-9">
-                                    <div class="ad-side-container" style="height:450px;position:relative;">
-                                        <div id="articleAdScroll" class="ad-square fixad" style="width:300px;"></div>
+                                    <div class="ad-side-container">
+                                        <div class="ad-square" style="width:300px;"></div>
                                     </div>
 
                                     <h2 class="sidebar-header">Latest articles</h2>
@@ -111,22 +110,31 @@
 
 
 
-                                {% for i in 0..3 if articles[testCount] %}
-                                    <div class="col-md-9 col-sm-4">
+                                <div class="col-md-9 col-sm-4">
+                                    {% for i in 0..2 if articles[testCount] %}
                                         {{this.render('partials/_single-article.twig', {
                                             article: articles[testCount], 
                                             position: (articleCount+1),
-                                            imageSuppress: true,
                                             containerClass: 'feature-side feature-side-tablet feature-side-mobile'
                                         }) | raw}}
                                         
-                                        {% if i < 4 %}
+                                        {% if i < 2 %}
                                             <hr class="divide15">
                                         {% endif %}
 
                                         {% set articleCount = articleCount + 1 %}
+                                    {% endfor %}
+
+                                    <div class="ad-side-container" style="margin-top:30px;">
+                                        <div style="width:300px;background-color:pink;">
+                                            <img src=
+                                        </div>
                                     </div>
-                                {% endfor %}
+
+
+                                </div>
+
+
                             </div>
 
 

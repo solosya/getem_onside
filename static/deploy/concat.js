@@ -28838,7 +28838,7 @@ var socialCardTemplate =  '<div class="{{containerClass}}">' +
                                     <article class="">\
                                         {{#if social.hasMedia}}\
                                             <figure class="{{videoClass}}">\
-                                                <img class="img-responsive" src="{{social.media.path}}" style="background-image:url()">\
+                                                <img class="img-responsive" src="{{social.media.path}}" style="background-image:url(placeholder">\
                                             </figure>\
                                         {{/if}}\
                                         \
@@ -30291,7 +30291,7 @@ $('document').ready(function() {
 
     //On Scroll
     pageWindow.scroll(function() {
-        console.log('scrolling');
+        // console.log('scrolling');
         var direction = 'down';
         var scroll = pageWindow.scrollTop();
         if (scroll < scrollMetric[0]) {
@@ -30299,7 +30299,7 @@ $('document').ready(function() {
         }
         scrollMetric = [scroll, direction];
         adScroll();
-        console.log(scrollMetric);
+        // console.log(scrollMetric);
     });
 
 
@@ -30584,7 +30584,7 @@ UserArticlesController.Load = (function ($) {
                                         
                                         var ImageUrl = $.image({media:data.userArticles[i]['featuredMedia'], mediaOptions:{width: 500 ,height:350, crop: 'limit'} });
                                         data.userArticles[i]['imageUrl'] = ImageUrl;
-                                        data.userArticles[i]['placeholder'] = '';
+                                        data.userArticles[i]['placeholder'] = 'placeholder';
                                         var articleTemplate = Handlebars.compile(systemCardTemplate);
                                         var article = articleTemplate(data.userArticles[i]);
                                         $('#userArticleContainer').append(article);

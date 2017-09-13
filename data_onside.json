@@ -22,14 +22,14 @@
 		},
 		"timezone":"Pacific/Auckland",
 		"defaultDomain": {
-			"domain": "http:\/\/theme.aap.io/",
+			"domain": "http:\/\/theme.aap.dev/",
 			"expiry": null,
 			"isChannel": "1",
 			"isNamecheap": "0",
 			"isExternal": "0"
 		},
-		"defaultBlogUrl": "http:\/\/theme.aap.io/",
-		"networkLogoLinkUrl": "http:\/\/theme.aap.io/",
+		"defaultBlogUrl": "http:\/\/theme.aap.dev/",
+		"networkLogoLinkUrl": "http:\/\/theme.aap.dev/",
 		"networkType": "semi_open",
 		"networkBlogs": [
 			{
@@ -82,7 +82,7 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861433",
-				"url": "http:\/\/theme.aap.io\/@image"
+				"url": "http:\/\/theme.aap.dev\/@image"
 			},
 			{
 				"id": "718",
@@ -108,7 +108,7 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861433",
-				"url": "http:\/\/theme.aap.io\/@new-zealand"
+				"url": "http:\/\/theme.aap.dev\/@new-zealand"
 			},
 			{
 				"id": "723",
@@ -134,7 +134,7 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493862086",
-				"url": "http:\/\/theme.aap.io\/@world"
+				"url": "http:\/\/theme.aap.dev\/@world"
 			},
 			{
 				"id": "720",
@@ -160,7 +160,7 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861466",
-				"url": "http:\/\/theme.aap.io\/@Business"
+				"url": "http:\/\/theme.aap.dev\/@Business"
 			},
 
 
@@ -187,7 +187,7 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861482",
-				"url": "http:\/\/theme.aap.io\/@sport"
+				"url": "http:\/\/theme.aap.dev\/@sport"
 			},
 			{
 				"id": "731",
@@ -212,7 +212,7 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861446",
-				"url": "http:\/\/theme.aap.io\/@community"
+				"url": "http:\/\/theme.aap.dev\/@community"
 			},
 			{
 				"id": "722",
@@ -238,7 +238,7 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861496",
-				"url": "http:\/\/theme.aap.io\/@conference-2014"
+				"url": "http:\/\/theme.aap.dev\/@conference-2014"
 			}
 		],
 		"styling": {
@@ -271,7 +271,7 @@
 		"logoMedia": {
 			"id": "thwonhdizwdbwl7x6dqx",
 			"cloudName": "cognitives",
-			"path": "http:\/\/theme.aap.io\/themes\/wbf\/static\/images\/logo-reverse-medium.png"
+			"path": "http:\/\/theme.aap.dev\/themes\/wbf\/static\/images\/logo-reverse-medium.png"
 		}
 	},
 	"homeblogsetting": {
@@ -323,7 +323,7 @@
 			"pageGuid": null,
 			"pageTitle": null,
 			"pageStatus": null,
-			"link": "http:\/\/theme.aap.io\/@australia",
+			"link": "http:\/\/theme.aap.dev\/@australia",
 			"isExternal": 0,
 			"children": []
 		},
@@ -352,7 +352,7 @@
 			"pageGuid": null,
 			"pageTitle": null,
 			"pageStatus": null,
-			"link": "http:\/\/theme.aap.io\/@new-zealand",
+			"link": "http:\/\/theme.aap.dev\/@new-zealand",
 			"isExternal": 0,
 			"children": []
 		},
@@ -381,7 +381,7 @@
 			"pageGuid": null,
 			"pageTitle": null,
 			"pageStatus": null,
-			"link": "http:\/\/theme.aap.io\/@world",
+			"link": "http:\/\/theme.aap.dev\/@world",
 			"isExternal": 0,
 			"children": []
 		},
@@ -410,7 +410,7 @@
 			"pageGuid": null,
 			"pageTitle": null,
 			"pageStatus": null,
-			"link": "http:\/\/theme.aap.io\/@business",
+			"link": "http:\/\/theme.aap.dev\/@business",
 			"isExternal": 0,
 			"children": []
 		},
@@ -439,7 +439,7 @@
 			"pageGuid": null,
 			"pageTitle": null,
 			"pageStatus": null,
-			"link": "http:\/\/theme.aap.io\/@sport",
+			"link": "http:\/\/theme.aap.dev\/@sport",
 			"isExternal": 0,
 			"children": []
 		},
@@ -468,7 +468,7 @@
 			"pageGuid": null,
 			"pageTitle": null,
 			"pageStatus": null,
-			"link": "http:\/\/theme.aap.io\/@community",
+			"link": "http:\/\/theme.aap.dev\/@community",
 			"isExternal": 0,
 			"children": []
 		},
@@ -497,7 +497,7 @@
 			"pageGuid": null,
 			"pageTitle": null,
 			"pageStatus": null,
-			"link": "http:\/\/theme.aap.io\/@weather",
+			"link": "http:\/\/theme.aap.dev\/@weather",
 			"isExternal": 0,
 			"children": []
 		}
@@ -534,7 +534,7 @@
 			"excerpt": "James Tedesco's departure from the Wests Tigers to join the Sydney Roosters has been confirmed, with the NSW Origin fullback signing a four-year deal from next year. Tedesco's future was subject to much speculation in recent weeks when the Tigers...",
 			"status": "published",
 			"publishDate": "May 04 2017",
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24354\/roosters-snare-tigers-star-james-tedesco",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24354\/roosters-snare-tigers-star-james-tedesco",
 			"hasMedia": true,
 			"isPromoted": "0",
 			"keywords": null,
@@ -549,7 +549,7 @@
 				"id": "717",
 				"guid": "12e8a424-abf6-4c08-94ed-1b2cc3d79428",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/"
+				"url": "http:\/\/theme.aap.dev/"
 			},
 			"channel": {
 				"id": null,
@@ -592,7 +592,7 @@
 			"excerpt": "Gun forward Jesse Hogan will return to training for Melbourne on Thursday, with the AFL club believing he is eager to play against Hawthorn on Sunday. Hogan was granted a leave of absence last week following the death of his father, Tony. The 2015...",
 			"status": "published",
 			"publishDate": "May 04 2017",
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24355\/hogan-poised-for-afl-return-dees-coach",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24355\/hogan-poised-for-afl-return-dees-coach",
 			"hasMedia": true,
 			"isPromoted": "0",
 			"keywords": null,
@@ -607,7 +607,7 @@
 				"id": "717",
 				"guid": "12e8a424-abf6-4c08-94ed-1b2cc3d79428",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/"
+				"url": "http:\/\/theme.aap.dev/"
 			},
 			"channel": {
 				"id": null,
@@ -650,7 +650,7 @@
 			"excerpt": "Worcestershire will keep an Australian flavour with Test spinner Nathan Lyon set to replace John Hastings during the Champions Trophy. It will be 29-year-old Lyon's first taste of county cricket after taking 247 wickets in 67 Tests. Lyon, who became...",
 			"status": "published",
 			"publishDate": "May 04 2017",
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24356\/worcestershire-sign-lyon-for-county-cameo",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24356\/worcestershire-sign-lyon-for-county-cameo",
 			"hasMedia": true,
 			"isPromoted": "0",
 			"keywords": null,
@@ -665,7 +665,7 @@
 				"id": "717",
 				"guid": "12e8a424-abf6-4c08-94ed-1b2cc3d79428",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/"
+				"url": "http:\/\/theme.aap.dev/"
 			},
 			"channel": {
 				"id": null,
@@ -708,7 +708,7 @@
 			"excerpt": "He may already be pushing for a NSW Origin spot but rising forward Paul Vaughan admits he is still far from the finished article. Vaughan will have the chance to push his Origin claims with a strong performance for Country against City in Mudgee on...",
 			"status": "published",
 			"publishDate": "May 04 2017",
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24357\/origin-aspirant-vaughan-on-the-improve",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24357\/origin-aspirant-vaughan-on-the-improve",
 			"hasMedia": true,
 			"isPromoted": "0",
 			"keywords": null,
@@ -723,7 +723,7 @@
 				"id": "717",
 				"guid": "12e8a424-abf6-4c08-94ed-1b2cc3d79428",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/"
+				"url": "http:\/\/theme.aap.dev/"
 			},
 			"channel": {
 				"id": null,
@@ -766,7 +766,7 @@
 			"excerpt": "Much-maligned Bernard Tomic has achieved something he hasn't managed to do since 2012 - win back-to-back ATP tour matches on clay. The 40th-ranked Australian, in something of a rut this season with five first round losses, scored a battling 7-5 6-3...",
 			"status": "published",
 			"publishDate": "May 04 2017",
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24358\/tomic-in-rare-back-to-back-clay-wins",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24358\/tomic-in-rare-back-to-back-clay-wins",
 			"hasMedia": true,
 			"isPromoted": "0",
 			"keywords": null,
@@ -781,7 +781,7 @@
 				"id": "717",
 				"guid": "12e8a424-abf6-4c08-94ed-1b2cc3d79428",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/"
+				"url": "http:\/\/theme.aap.dev/"
 			},
 			"channel": {
 				"id": null,
@@ -824,7 +824,7 @@
 			"excerpt": "Sydney Roosters assistant Justin Holbrook has reportedly signed a three-year deal to coach Super League side St Helens, sparking talk of a return to the NRL club for Jason Taylor. The Seven Network reported on Wednesday night that Holbrook, who is...",
 			"status": "published",
 			"publishDate": "May 04 2017",
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24359\/taylor-set-to-rejoin-roosters-report",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24359\/taylor-set-to-rejoin-roosters-report",
 			"hasMedia": true,
 			"isPromoted": "0",
 			"keywords": null,
@@ -839,7 +839,7 @@
 				"id": "717",
 				"guid": "12e8a424-abf6-4c08-94ed-1b2cc3d79428",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/"
+				"url": "http:\/\/theme.aap.dev/"
 			},
 			"channel": {
 				"id": null,
@@ -882,7 +882,7 @@
 			"excerpt": "Cooper Cronk says Johnathan Thurston's farewell tour begins with Australia's rugby league Test against New Zealand on Friday - and his could be starting, too. Thurston is all but certain to take on the Kiwis after completing Tuesday's training run...",
 			"status": "published",
 			"publishDate": "May 04 2017",
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24360\/cronk-could-join-thurston-on-farewell-tour",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24360\/cronk-could-join-thurston-on-farewell-tour",
 			"hasMedia": true,
 			"isPromoted": "0",
 			"keywords": null,
@@ -897,7 +897,7 @@
 				"id": "717",
 				"guid": "12e8a424-abf6-4c08-94ed-1b2cc3d79428",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/"
+				"url": "http:\/\/theme.aap.dev/"
 			},
 			"channel": {
 				"id": null,
@@ -940,7 +940,7 @@
 			"excerpt": "Jordan De Goey has done his AFL penance and when Ben Reid returns, it will be in defence. But coach Nathan Buckley would not confirm if two of Collingwood's best 22 players will return this Saturday for their massive game against fierce rivals...",
 			"status": "published",
 			"publishDate": "May 04 2017",
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24361\/buckley-talks-up-de-goey-reid-in-afl",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24361\/buckley-talks-up-de-goey-reid-in-afl",
 			"hasMedia": true,
 			"isPromoted": "0",
 			"keywords": null,
@@ -955,7 +955,7 @@
 				"id": "717",
 				"guid": "12e8a424-abf6-4c08-94ed-1b2cc3d79428",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/"
+				"url": "http:\/\/theme.aap.dev/"
 			},
 			"channel": {
 				"id": null,
@@ -998,7 +998,7 @@
 			"excerpt": "Brisbane Lions captain Dayne Beams is expected to be sidelined for at least a fortnight with a quad injury. Scans have revealed the former Collingwood premiership winner suffered damage to his right quad in last round's AFL loss to Port Adelaide.\"The...",
 			"status": "published",
 			"publishDate": "May 04 2017",
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24362\/lions-skipper-beams-out-for-fortnight",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24362\/lions-skipper-beams-out-for-fortnight",
 			"hasMedia": true,
 			"isPromoted": "0",
 			"keywords": null,
@@ -1013,7 +1013,7 @@
 				"id": "717",
 				"guid": "12e8a424-abf6-4c08-94ed-1b2cc3d79428",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/"
+				"url": "http:\/\/theme.aap.dev/"
 			},
 			"channel": {
 				"id": null,
@@ -1056,7 +1056,7 @@
 			"excerpt": "Sydney FC striker Bobo is set to sign a marquee contract extension with the A-League grand finalists by next week. The Brazilian $1 million man has effectively sealed his future with Graham Arnold's record-breaking premiers following an impressive...",
 			"status": "published",
 			"publishDate": "May 04 2017",
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24363\/bobo-on-verge-of-re-signing-with-sydney-fc",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24363\/bobo-on-verge-of-re-signing-with-sydney-fc",
 			"hasMedia": true,
 			"isPromoted": "0",
 			"keywords": null,
@@ -1071,7 +1071,7 @@
 				"id": "717",
 				"guid": "12e8a424-abf6-4c08-94ed-1b2cc3d79428",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/"
+				"url": "http:\/\/theme.aap.dev/"
 			},
 			"channel": {
 				"id": null,
@@ -1109,6 +1109,7 @@
 	],
 	"blogfeed": [
 		{
+			"card_description": "article with image",
 			"guid": "98f1d0d8-0325-46a3-9013-bfa25a92492a",
 			"articleId": "24362",
 			"socialId": null,
@@ -1132,7 +1133,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -1193,8 +1194,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24362\/lions-skipper-beams-out-for-fortnight",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=98f1d0d8-0325-46a3-9013-bfa25a92492a",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24362\/lions-skipper-beams-out-for-fortnight",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=98f1d0d8-0325-46a3-9013-bfa25a92492a",
 			"publishDate": "July 05 2017",
 			"metaPublishDate": "2017-07-05",
 			"publishDateTime": "2017-07-05 07:00:42",
@@ -1208,9 +1209,8 @@
 			}
 		},
 
-
-
 		{
+			"card_description": "article with video",
 			"guid": "98f1d0d8-0325-46a3-9013-bfa25a92492a",
 			"articleId": "24362",
 			"socialId": null,
@@ -1234,7 +1234,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -1295,8 +1295,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24362\/lions-skipper-beams-out-for-fortnight",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=98f1d0d8-0325-46a3-9013-bfa25a92492a",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24362\/lions-skipper-beams-out-for-fortnight",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=98f1d0d8-0325-46a3-9013-bfa25a92492a",
 			"publishDate": "July 04 2017",
 			"metaPublishDate": "2017-07-04",
 			"publishDateTime": "2017-07-04 07:00:42",
@@ -1311,8 +1311,8 @@
 		},
 
 
-
 		{
+			"card_description": "article without image",
 			"guid": "98f1d0d8-0325-46a3-9013-bfa25a92492a",
 			"articleId": "24362",
 			"socialId": null,
@@ -1336,7 +1336,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -1397,8 +1397,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24362\/lions-skipper-beams-out-for-fortnight",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=98f1d0d8-0325-46a3-9013-bfa25a92492a",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24362\/lions-skipper-beams-out-for-fortnight",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=98f1d0d8-0325-46a3-9013-bfa25a92492a",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -1413,9 +1413,8 @@
 		},
 
 
-
-
 		{
+			"card_description": "youtube",
 			"guid": null,
 			"articleId": null,
 			"socialId": "1",
@@ -1439,7 +1438,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -1500,8 +1499,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24354\/roosters-snare-tigers-star-james-tedesco",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=3e297d23-4f17-4ecc-84fe-4c4fa826a5e7",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24354\/roosters-snare-tigers-star-james-tedesco",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=3e297d23-4f17-4ecc-84fe-4c4fa826a5e7",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -1542,6 +1541,7 @@
 			}
 		},
 		{
+			"card_description": "????",
 			"guid": "98f1d0d8-0325-46a3-9013-bfa25a92492a",
 			"articleId": "24362",
 			"socialId": null,
@@ -1565,7 +1565,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -1626,8 +1626,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24362\/lions-skipper-beams-out-for-fortnight",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=98f1d0d8-0325-46a3-9013-bfa25a92492a",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24362\/lions-skipper-beams-out-for-fortnight",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=98f1d0d8-0325-46a3-9013-bfa25a92492a",
 			"publishDate": "July 05 2017",
 			"metaPublishDate": "2017-07-05",
 			"publishDateTime": "2017-07-05 07:00:42",
@@ -1644,6 +1644,7 @@
 
 
 		{
+			"card_description": "instagram without caption",
 			"guid": null,
 			"articleId": null,
 			"socialId": "1",
@@ -1667,7 +1668,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -1728,8 +1729,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24354\/roosters-snare-tigers-star-james-tedesco",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=3e297d23-4f17-4ecc-84fe-4c4fa826a5e7",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24354\/roosters-snare-tigers-star-james-tedesco",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=3e297d23-4f17-4ecc-84fe-4c4fa826a5e7",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -1770,6 +1771,7 @@
 			}
 		},
 		{
+			"card_description": "instagram with caption",
 			"guid": null,
 			"articleId": null,
 			"socialId": "1",
@@ -1793,7 +1795,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -1854,8 +1856,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24354\/roosters-snare-tigers-star-james-tedesco",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=3e297d23-4f17-4ecc-84fe-4c4fa826a5e7",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24354\/roosters-snare-tigers-star-james-tedesco",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=3e297d23-4f17-4ecc-84fe-4c4fa826a5e7",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -1921,7 +1923,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -1982,8 +1984,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24359\/taylor-set-to-rejoin-roosters-report",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=95a8debc-5c9d-420e-a7b9-49188d6c054c",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24359\/taylor-set-to-rejoin-roosters-report",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=95a8debc-5c9d-420e-a7b9-49188d6c054c",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -2020,7 +2022,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -2081,8 +2083,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24363\/bobo-on-verge-of-re-signing-with-sydney-fc",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=fcd2771a-5454-49db-9b94-093fa612dc00",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24363\/bobo-on-verge-of-re-signing-with-sydney-fc",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=fcd2771a-5454-49db-9b94-093fa612dc00",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -2121,7 +2123,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -2182,8 +2184,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24354\/roosters-snare-tigers-star-james-tedesco",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=3e297d23-4f17-4ecc-84fe-4c4fa826a5e7",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24354\/roosters-snare-tigers-star-james-tedesco",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=3e297d23-4f17-4ecc-84fe-4c4fa826a5e7",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -2247,7 +2249,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -2308,8 +2310,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24354\/roosters-snare-tigers-star-james-tedesco",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=3e297d23-4f17-4ecc-84fe-4c4fa826a5e7",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24354\/roosters-snare-tigers-star-james-tedesco",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=3e297d23-4f17-4ecc-84fe-4c4fa826a5e7",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -2374,7 +2376,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -2435,8 +2437,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24360\/cronk-could-join-thurston-on-farewell-tour",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=f878d86d-63f9-48d8-b4d4-7ba7ea7781dd",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24360\/cronk-could-join-thurston-on-farewell-tour",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=f878d86d-63f9-48d8-b4d4-7ba7ea7781dd",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -2474,7 +2476,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -2535,8 +2537,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24362\/lions-skipper-beams-out-for-fortnight",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=98f1d0d8-0325-46a3-9013-bfa25a92492a",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24362\/lions-skipper-beams-out-for-fortnight",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=98f1d0d8-0325-46a3-9013-bfa25a92492a",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -2574,7 +2576,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -2635,8 +2637,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24362\/lions-skipper-beams-out-for-fortnight",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=98f1d0d8-0325-46a3-9013-bfa25a92492a",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24362\/lions-skipper-beams-out-for-fortnight",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=98f1d0d8-0325-46a3-9013-bfa25a92492a",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -2675,7 +2677,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -2736,8 +2738,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24362\/lions-skipper-beams-out-for-fortnight",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=98f1d0d8-0325-46a3-9013-bfa25a92492a",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24362\/lions-skipper-beams-out-for-fortnight",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=98f1d0d8-0325-46a3-9013-bfa25a92492a",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -2774,7 +2776,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -2835,8 +2837,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24354\/roosters-snare-tigers-star-james-tedesco",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=3e297d23-4f17-4ecc-84fe-4c4fa826a5e7",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24354\/roosters-snare-tigers-star-james-tedesco",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=3e297d23-4f17-4ecc-84fe-4c4fa826a5e7",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -2873,7 +2875,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -2934,8 +2936,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24361\/buckley-talks-up-de-goey-reid-in-afl",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=fbd21f95-1e15-4bd2-95fc-6689b010cf50",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24361\/buckley-talks-up-de-goey-reid-in-afl",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=fbd21f95-1e15-4bd2-95fc-6689b010cf50",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -2972,7 +2974,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -3033,8 +3035,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24355\/hogan-poised-for-afl-return-dees-coach",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=017fcdf7-5aa3-4b0c-8232-17bea590fe6d",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24355\/hogan-poised-for-afl-return-dees-coach",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=017fcdf7-5aa3-4b0c-8232-17bea590fe6d",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -3071,7 +3073,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -3132,8 +3134,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24358\/tomic-in-rare-back-to-back-clay-wins",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=3c082c06-57cc-45d6-b9b7-e17669884ece",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24358\/tomic-in-rare-back-to-back-clay-wins",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=3c082c06-57cc-45d6-b9b7-e17669884ece",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -3170,7 +3172,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -3231,8 +3233,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24359\/taylor-set-to-rejoin-roosters-report",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=95a8debc-5c9d-420e-a7b9-49188d6c054c",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24359\/taylor-set-to-rejoin-roosters-report",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=95a8debc-5c9d-420e-a7b9-49188d6c054c",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -3269,7 +3271,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -3330,8 +3332,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24363\/bobo-on-verge-of-re-signing-with-sydney-fc",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=fcd2771a-5454-49db-9b94-093fa612dc00",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24363\/bobo-on-verge-of-re-signing-with-sydney-fc",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=fcd2771a-5454-49db-9b94-093fa612dc00",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -3368,7 +3370,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -3429,8 +3431,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24357\/origin-aspirant-vaughan-on-the-improve",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=806928ed-579e-4e58-9e25-b3be10e26ed1",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24357\/origin-aspirant-vaughan-on-the-improve",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=806928ed-579e-4e58-9e25-b3be10e26ed1",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -3467,7 +3469,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -3528,8 +3530,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24356\/worcestershire-sign-lyon-for-county-cameo",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=e3f28fb9-f785-4a3a-a39c-4b6e679ffab7",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24356\/worcestershire-sign-lyon-for-county-cameo",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=e3f28fb9-f785-4a3a-a39c-4b6e679ffab7",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -3566,7 +3568,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -3627,8 +3629,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24360\/cronk-could-join-thurston-on-farewell-tour",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=f878d86d-63f9-48d8-b4d4-7ba7ea7781dd",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24360\/cronk-could-join-thurston-on-farewell-tour",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=f878d86d-63f9-48d8-b4d4-7ba7ea7781dd",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -3667,7 +3669,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -3728,8 +3730,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24362\/lions-skipper-beams-out-for-fortnight",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=98f1d0d8-0325-46a3-9013-bfa25a92492a",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24362\/lions-skipper-beams-out-for-fortnight",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=98f1d0d8-0325-46a3-9013-bfa25a92492a",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -3766,7 +3768,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -3827,8 +3829,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24354\/roosters-snare-tigers-star-james-tedesco",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=3e297d23-4f17-4ecc-84fe-4c4fa826a5e7",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24354\/roosters-snare-tigers-star-james-tedesco",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=3e297d23-4f17-4ecc-84fe-4c4fa826a5e7",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -3865,7 +3867,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -3926,8 +3928,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24361\/buckley-talks-up-de-goey-reid-in-afl",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=fbd21f95-1e15-4bd2-95fc-6689b010cf50",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24361\/buckley-talks-up-de-goey-reid-in-afl",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=fbd21f95-1e15-4bd2-95fc-6689b010cf50",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -3964,7 +3966,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -4025,8 +4027,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24355\/hogan-poised-for-afl-return-dees-coach",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=017fcdf7-5aa3-4b0c-8232-17bea590fe6d",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24355\/hogan-poised-for-afl-return-dees-coach",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=017fcdf7-5aa3-4b0c-8232-17bea590fe6d",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -4063,7 +4065,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -4124,8 +4126,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24358\/tomic-in-rare-back-to-back-clay-wins",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=3c082c06-57cc-45d6-b9b7-e17669884ece",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24358\/tomic-in-rare-back-to-back-clay-wins",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=3c082c06-57cc-45d6-b9b7-e17669884ece",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -4162,7 +4164,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -4223,8 +4225,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24359\/taylor-set-to-rejoin-roosters-report",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=95a8debc-5c9d-420e-a7b9-49188d6c054c",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24359\/taylor-set-to-rejoin-roosters-report",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=95a8debc-5c9d-420e-a7b9-49188d6c054c",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -4261,7 +4263,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -4322,8 +4324,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24363\/bobo-on-verge-of-re-signing-with-sydney-fc",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=fcd2771a-5454-49db-9b94-093fa612dc00",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24363\/bobo-on-verge-of-re-signing-with-sydney-fc",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=fcd2771a-5454-49db-9b94-093fa612dc00",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -4360,7 +4362,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -4421,8 +4423,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24357\/origin-aspirant-vaughan-on-the-improve",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=806928ed-579e-4e58-9e25-b3be10e26ed1",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24357\/origin-aspirant-vaughan-on-the-improve",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=806928ed-579e-4e58-9e25-b3be10e26ed1",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -4459,7 +4461,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -4520,8 +4522,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24356\/worcestershire-sign-lyon-for-county-cameo",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=e3f28fb9-f785-4a3a-a39c-4b6e679ffab7",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24356\/worcestershire-sign-lyon-for-county-cameo",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=e3f28fb9-f785-4a3a-a39c-4b6e679ffab7",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -4558,7 +4560,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -4619,8 +4621,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24360\/cronk-could-join-thurston-on-farewell-tour",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=f878d86d-63f9-48d8-b4d4-7ba7ea7781dd",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24360\/cronk-could-join-thurston-on-farewell-tour",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=f878d86d-63f9-48d8-b4d4-7ba7ea7781dd",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -4642,8 +4644,8 @@
 			"slug": "test-article",
 			"excerpt": "Aunty Faye was one of the founding caseworkers at the first ever Community Services Intensive Family Based Service in Casino - Malanee Bugilmah which opening in 1994.",
 			"content": "<hr /><p><a href=\"http://themedev.cognitives.io\"><em>Download PDF</em></a></p><hr /><h1>Headline 1</h1><p>The numbers are raw and confronting. Compared to non-Aboriginal people:</p><p>Aboriginal people are between two and five times more likely to experience violence than non Aboriginal people. Aboriginal women are five times more likely to be victims of homicide (ANROWS 2104)</p><p><img alt=\"\" class=\"img-responsive\" src=\"https://res.cloudinary.com/cognitives/image/upload/v1500525573/ffaz4gn0bu1uuunbq7p1.jpg\" style=\"max-width: 100% !important;\" /></p><p>&nbsp;</p><p>\"Aboriginal women are 35 times more likely to be hospitalised due to family violence related abuse (ANROWS 2014)</p><h2>Headline 3</h2><p>\"An estimated 27% of men and women who experienced violence by a current partner said that children in their care had witnessed the violence (ABS 2006b:11).</p><h3>Headline 3</h3><p>We have consulted with the Department of Environment, Land, Water and Planning (DELWP), the Cities of Whittlesea and Yarra, and Moorabool Shire Council, and we considered their views when reaching our audit conclusions. As required by Section 16(3) of the Audit Act 1994, we gave a draft copy of this report to those agencies and asked for their submissions and comments.</p><blockquote><p>We also provided a copy of the report to the Department of Premier and Cabinet.<br />The following is a summary of those responses. The full responses are included in Appendix A.</p></blockquote><hr /><h4>Headline 4</h4><p>In many kinship groups the role of males in Aboriginal society has been significantly diminished as a result of the process of colonisation. Since the colonial 'takeover', the role of men as providers and protectors have been diminished. The taking away of men's roles in the social structure has also contributed in a significant way to the breakdown and collapse of community life. This \"redundancy of Aboriginal male role and status is often compensated by an aggressive assertion of male rights over women and children\" (Bragg 2000). This disrupts the traditional equality between the gender roles.</p><h5>Headline 5</h5><ul><li>Be mindful of your knowledge and behaviours and the stereotypes you may have about Aboriginal family violence. What has informed these beliefs? Have you already made up your mind about the family before knocking on their door?</li><li>Be mindful of the 'white privilege and power' that you and the system embody. Do not underestimate the potency and significance of child removal in Aboriginal communities. Understand that Aboriginal men, women and families have very real reasons about why they might not trust the system. Many will be deeply afraid of losing their children. Let them know that you are there to help them and support them to keep their children safe and well.</li><li>Make efforts to know and be respectful of the extended family and kinship structure and the roles, responsibilities and obligations embedded within this structure. Ask about who are the most important people to talk to and include in safety and risk assessments. Can you approach an Elder or a respected community member to help you work with a family?</li></ul><h6>Headline 6</h6><p>Australian Human Rights Commission. (2006) Aboriginal and Torres Strait Islander Social Justice Commissioner, Addressing family violence in Indigenous communities.<br /><br />Blagg, H. (2000) Aboriginal family and youth Violence. Paper presented at the Restorative Justice and Family Violence Conference. Canberra. http://www.crc.law.uwa.edu.au/data/page/50334/melbournepapeRANZOC.pdf. Accessed May 29 2015</p>",
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24362\/lions-skipper-beams-out-for-fortnight",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=98f1d0d8-0325-46a3-9013-bfa25a92492a",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24362\/lions-skipper-beams-out-for-fortnight",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=98f1d0d8-0325-46a3-9013-bfa25a92492a",
 			"shortUrl": "https:\/\/goo.gl\/bth3Tl",
 			"externalUrl": null,
 			"type": "article",
@@ -4681,7 +4683,7 @@
 				"title": "Home Truths: Videos",
 				"id": "720",
 				"guid": "667a8f2d-47ee-40db-89d0-86dadc56bfd0",
-				"url": "http:\/\/theme.aap.io\/@home-truths-videos",
+				"url": "http:\/\/theme.aap.dev\/@home-truths-videos",
 				"media": {
 					"thumb": {
 						"id": null,
@@ -4746,8 +4748,8 @@
 			"slug": "roosters-snare-tigers-star-james-tedesco",
 			"excerpt": "James Tedesco's departure from the Wests Tigers to join the Sydney Roosters has been confirmed, with the NSW Origin fullback signing a four-year deal from next year. Tedesco's future was subject to much speculation in recent weeks when the Tigers...",
 			"content": "<p>James Tedesco's departure from the Wests Tigers to join the Sydney Roosters has been confirmed, with the NSW Origin fullback signing a four-year deal from next year.<\/p><p>Tedesco's future was subject to much speculation in recent weeks when the Tigers withdrew a contract extension offer after he failed to sign before a deadline.<\/p><p>The 24-year-old has played 78 games in six seasons at the Tigers, making his State of Origin debut in game three last year.<\/p><p>Tedesco, the Dally M fullback of the year in 2016, is a likely replacement for veteran Michael Gordon, with the 33-year-old on a one-year deal and possibly set for retirement.<\/p><p>\"James is a tremendously exciting talent whose signature we are pleased to have secured and we look forward to welcoming him to the Roosters in 2018,\" Rooster chief executive Joe Kelly in a statement.<\/p><p>Confirmation of the 24-year-old Tedesco's departure means the Tigers have failed to keep three of their biggest off-contract stars, with captain Aaron Woods (Canterbury) and five-eighth Mitchell Moses (Parramatta) also to exit.<\/p><p>Halfback Luke Brooks signed a two-year contract extension last month.<\/p>",
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24354\/roosters-snare-tigers-star-james-tedesco",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=3e297d23-4f17-4ecc-84fe-4c4fa826a5e7",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24354\/roosters-snare-tigers-star-james-tedesco",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=3e297d23-4f17-4ecc-84fe-4c4fa826a5e7",
 			"shortUrl": "https:\/\/goo.gl\/8lrBja",
 			"externalUrl": null,
 			"type": "article",
@@ -4785,7 +4787,7 @@
 				"title": "Get Em on Side",
 				"id": "717",
 				"guid": "12e8a424-abf6-4c08-94ed-1b2cc3d79428",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"media": {
 					"thumb": {
 						"id": null,
@@ -4828,8 +4830,8 @@
 			"slug": "buckley-talks-up-de-goey-reid-in-afl",
 			"excerpt": "Jordan De Goey has done his AFL penance and when Ben Reid returns, it will be in defence. But coach Nathan Buckley would not confirm if two of Collingwood's best 22 players will return this Saturday for their massive game against fierce rivals...",
 			"content": "<p>Jordan De Goey has done his AFL penance and when Ben Reid returns, it will be in defence.<\/p><p>But coach Nathan Buckley would not confirm if two of Collingwood's best 22 players will return this Saturday for their massive game against fierce rivals Carlton.<\/p><p>The MCG blockbuster will mark Collingwood's 125th anniversary.<\/p><p>While Buckley will not commit publicly before Thursday's main training session, De Goey and Reid are obviously front and centre in their selection frame.<\/p><p>De Goey has not played at all this season after lying to the club about a pre-season hand fracture, while Reid was rested for Sunday's big win over Geelong.<\/p><p>Their one definite change is the loss of Travis Varcoe, who suffered a hamstring injury against the Cats and is out for two or three weeks.<\/p><p>De Goey helped his chances with a strong VFL performance last weekend.<\/p><p>\"Jordy has attacked what's been asked of him from the football club with everything in his power,\" Buckley said.<\/p><p>\"He's ticked every box we've asked him to look at ... we're not going to hold him in the shackles for any longer than he needs to be.<\/p><p>\"He's suitably chastened with the penalties he received and the reasons for him - we don't need to whip him any further.<\/p><p>\"He couldn't have done any more in that six or seven weeks.\"<\/p><p>Still, Buckley is keeping his options open, noting teammates such as Ben Crocker and Rupert Wills are also pressing for senior spots.<\/p><p>\"I suppose I don't want to be on the hook either way,\" Buckley said.<\/p><p>Reid's recall is obvious, but it's more a question of whether he plays as a key defender or key forward.<\/p><p>His replacement Lynden Dunn was excellent on Geelong's Tom Hawkins.<\/p><p>But Buckley's preference, despite their misfiring attack, it to keep the swingman down back.<\/p><p>\"For mine, Reidy's an All-Australian defender and if he's not our best tall defender, he's very close to it,\" Buckley said.<\/p><p>\"As I've said continually, we won't be undoing a part of the ground that's been pretty strong for us, to fix another, if we believe there are other alternatives we want to look at first.<\/p><p>\"If we bring him back in, we'll play him down back.\"<\/p><p>Buckley's focus is to build on the Geelong win, but he is well aware of the potent symbolism around Saturday's blockbuster.<\/p><p>Carlton would love nothing more than to spoil the party with an upset win over their biggest rivals.<\/p><p>\"In my time I've been very aware of how much a Carlton victory means to the Magpie army,\" Buckley said.<\/p>",
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24361\/buckley-talks-up-de-goey-reid-in-afl",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=fbd21f95-1e15-4bd2-95fc-6689b010cf50",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24361\/buckley-talks-up-de-goey-reid-in-afl",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=fbd21f95-1e15-4bd2-95fc-6689b010cf50",
 			"shortUrl": "https:\/\/goo.gl\/Ey3gUf",
 			"externalUrl": null,
 			"type": "article",
@@ -4867,7 +4869,7 @@
 				"title": "Get Em on Side",
 				"id": "717",
 				"guid": "12e8a424-abf6-4c08-94ed-1b2cc3d79428",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"media": {
 					"thumb": {
 						"id": null,
@@ -4910,8 +4912,8 @@
 			"slug": "hogan-poised-for-afl-return-dees-coach",
 			"excerpt": "Gun forward Jesse Hogan will return to training for Melbourne on Thursday, with the AFL club believing he is eager to play against Hawthorn on Sunday. Hogan was granted a leave of absence last week following the death of his father, Tony. The 2015...",
 			"content": "<p>Gun forward Jesse Hogan will return to training for Melbourne on Thursday, with the AFL club believing he is eager to play against Hawthorn on Sunday.<\/p><p>Hogan was granted a leave of absence last week following the death of his father, Tony.<\/p><p>The 2015 Rising Star winner missed the Demons' scrappy win over Essendon last week, and has been left in control of when he would return to the side.<\/p><p>But on first impressions on his return to the club, coach Simon Goodwin believes he'll line up against the Hawks this weekend.<\/p><p>\"He'll train fully today and we're really hopeful he'll play on Sunday,\" Goodwin said,<\/p><p>\"It's great to have him back at the club. He's in pretty good spirits for what he's been going through.<\/p><p>\"It'll be get through main training with a view to playing this week. Jesse is keen to do that at this stage.\"<\/p><p>Alongside Hogan, plenty of eyes will be on Jordan Lewis at the MCG.<\/p><p>For the first time in 268 AFL games, Lewis will line up against the club he helped win four premierships.<\/p><p>Goodwin admitted his veteran midfielder had been asked for reconnaissance but it would be of limited worth.<\/p><p>\"I'd be lying if I said I hadn't spoken to him about Hawthorn. He was there for such a long period of success,\" he said.<\/p><p>\"He's shared some stuff but they're a different team as well (this year).<\/p><p>\"They're playing a different way (but) he knows some individual players and a bit about how they play. We'll take a bit from that.<\/p><p>\"He'll have some mixed emotions there's no doubt. Deep down I know he's looking forward to playing against his old club.\"<\/p><p>Last year, the Demons (3-3) enjoyed a round 20 breakthrough success against Hawthorn (1-5) - their first in nine years.<\/p><p>It seems a lifetime ago, but it's worth remembering the Hawks entered the match with a 15-3 record and on course for a fourth successive premiership.<\/p><p>But since then the Hawks have won just three of 12 matches, exiting the finals in straight sets and starting this season abysmally.<\/p><p>\"It's probably 10 or 11 games ago in terms of AFL games but it feels like such a long time ago,\" Goodwin said.<\/p><p>\"I've only seen them play once live (this season) and it was against the Eagles. They were pretty good that day and we're preparing for their best.\"<\/p>",
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24355\/hogan-poised-for-afl-return-dees-coach",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=017fcdf7-5aa3-4b0c-8232-17bea590fe6d",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24355\/hogan-poised-for-afl-return-dees-coach",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=017fcdf7-5aa3-4b0c-8232-17bea590fe6d",
 			"shortUrl": "https:\/\/goo.gl\/RWvYiz",
 			"externalUrl": null,
 			"type": "article",
@@ -4949,7 +4951,7 @@
 				"title": "Get Em on Side",
 				"id": "717",
 				"guid": "12e8a424-abf6-4c08-94ed-1b2cc3d79428",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"media": {
 					"thumb": {
 						"id": null,
@@ -4992,8 +4994,8 @@
 			"slug": "tomic-in-rare-back-to-back-clay-wins",
 			"excerpt": "Much-maligned Bernard Tomic has achieved something he hasn't managed to do since 2012 - win back-to-back ATP tour matches on clay. The 40th-ranked Australian, in something of a rut this season with five first round losses, scored a battling 7-5 6-3...",
 			"content": "<p>Much-maligned Bernard Tomic has achieved something he hasn't managed to do since 2012 - win back-to-back ATP tour matches on clay.<\/p><p>The 40th-ranked Australian, in something of a rut this season with five first round losses, scored a battling 7-5 6-3 second round win over Brazilian Rogerio Dutra Silva at the Istanbul Open.<\/p><p>He's now likely to face top-seeded Canadian Milos Raonic for a spot in the semi-finals.<\/p><p>Seeded sixth at the low key ATP tournament, Tomic had battled to a three-set win in his opening round match and things looked to be headed down an equally difficult path when he was broken mid way through the first set by Dutra Silva.<\/p><p>But Tomic showed the kind of composure that he's been missing for much of 2017, feeding off his opponent's errors to break back before upping his game to snatch the opening set.<\/p><p>He lifted another cog in the second against the world No.69, breaking for a 4-2 lead.<\/p><p>There were a few nervous moments in Tomic's subsequent service game but he calmly served out the match on his next opportunity to grab the valuable win.<\/p><p>\"He was playing very good in the first set and I was down one break so I was trying to make every ball,\" Tomic said.<\/p><p>\"I got a chance there to get a break back and from there I started to play very very aggressive.\"<\/p><p>The last time Tomic won consecutive clay court matches on tour was at the Munich Open in 2012 where he made the quarter-finals.<\/p><p>He has not advanced pass the second round of the French Open in seven attempts.<\/p><p>A perennial struggler on the slow courts of Europe, Tomic usually makes up ground on the faster paced hard courts and then his favourite surface, grass.<\/p><p>But a poor finish to 2016 and lackadaisical start to this year saw his ranking slide from an all-time high of No.17 to outside the top 40.<\/p><p>He has designs on climbing back into the all-important top 32 in the world for Wimbledon, in order to avoid coming up against seeded players for at least the first two rounds.<\/p><p>But the lower tier Istanbul tournament is unlikely to see him earn the kind of points he needs to make a ranking charge unless he wins a few more matches.<\/p><p>Tomic also has semi-final points from Queens to defend and his fourth round appearance at Wimbledon last year so must to continue to rack up the wins over the next few months or risk a further rankings slide.<\/p>",
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24358\/tomic-in-rare-back-to-back-clay-wins",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=3c082c06-57cc-45d6-b9b7-e17669884ece",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24358\/tomic-in-rare-back-to-back-clay-wins",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=3c082c06-57cc-45d6-b9b7-e17669884ece",
 			"shortUrl": "https:\/\/goo.gl\/wcbASJ",
 			"externalUrl": null,
 			"type": "article",
@@ -5031,7 +5033,7 @@
 				"title": "Get Em on Side",
 				"id": "717",
 				"guid": "12e8a424-abf6-4c08-94ed-1b2cc3d79428",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"media": {
 					"thumb": {
 						"id": null,
@@ -5074,8 +5076,8 @@
 			"slug": "taylor-set-to-rejoin-roosters-report",
 			"excerpt": "Sydney Roosters assistant Justin Holbrook has reportedly signed a three-year deal to coach Super League side St Helens, sparking talk of a return to the NRL club for Jason Taylor. The Seven Network reported on Wednesday night that Holbrook, who is...",
 			"content": "<p>Sydney Roosters assistant Justin Holbrook has reportedly signed a three-year deal to coach Super League side St Helens, sparking talk of a return to the NRL club for Jason Taylor.<\/p><p>The Seven Network reported on Wednesday night that Holbrook, who is also coach of the Junior Kangaroos, would take over at St Helens for the remainder of the season in the UK.<\/p><p>Taylor, who was sacked as head coach of the Wests Tigers in March, is reportedly in line to reunite with Trent Robinson at the Bondi Junction club.<\/p><p>Coach Robinson and assistant Taylor steered the Roosters to the 2013 premiership.<\/p><p>Holbrook, who was appointed as Taylor's replacement at the Roosters in 2014, is in Canberra for the Junior Kangaroos clash with the Junior Kiwis on Friday.<\/p>",
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24359\/taylor-set-to-rejoin-roosters-report",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=95a8debc-5c9d-420e-a7b9-49188d6c054c",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24359\/taylor-set-to-rejoin-roosters-report",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=95a8debc-5c9d-420e-a7b9-49188d6c054c",
 			"shortUrl": "https:\/\/goo.gl\/2NJUwf",
 			"externalUrl": null,
 			"type": "article",
@@ -5113,7 +5115,7 @@
 				"title": "Get Em on Side",
 				"id": "717",
 				"guid": "12e8a424-abf6-4c08-94ed-1b2cc3d79428",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"media": {
 					"thumb": {
 						"id": null,
@@ -5156,8 +5158,8 @@
 			"slug": "bobo-on-verge-of-re-signing-with-sydney-fc",
 			"excerpt": "Sydney FC striker Bobo is set to sign a marquee contract extension with the A-League grand finalists by next week. The Brazilian $1 million man has effectively sealed his future with Graham Arnold's record-breaking premiers following an impressive...",
 			"content": "<p>Sydney FC striker Bobo is set to sign a marquee contract extension with the A-League grand finalists by next week.<\/p><p>The Brazilian $1 million man has effectively sealed his future with Graham Arnold's record-breaking premiers following an impressive debut campaign featuring 15 goals - the fourth-highest in the league.<\/p><p>\"I hope to stay next season,\" Bobo said.<\/p><p>\"They've started talking, I think maybe this week or next week we finish the contract.\"<\/p><p>The Sky Blues are all too happy to lock in the 32-year-old all-time record goalscorer for Turkish outfit Besiktas, where he played alongside fellow marquee Filip Holosko.<\/p><p>For now, Bobo is after more silverware to add to his already-stocked cabinet.<\/p><p>Along with an A-League premiership, he already has a 2005 Brazilian Serie A title with Corinthians plus a Turkish Super League, four Turkish Cups and a Turkish Super Cup, all with Besiktas.<\/p><p>The grand final against Melbourne Victory beckons, though Bobo admits he's still coming to grips with the concept of a finals series.<\/p><p>\"It's different,\" he said.<\/p><p>\"We've had a week for preparations so we will be ready.<\/p><p>\"But we need to stay strong at home. We just have to win one more game to finish.\"<\/p><p>It's understood Sydney are also quietly confident of retaining Johnny Warren Medallist Milos Ninkovic, whose family are believed to be settled and enjoying life in Sydney.<\/p><p>The crux of the matter will be offering their biggest star a deal worthy of his sensational season, meaning the club will almost certainly have to offer him marquee wages and squeeze Holosko inside the cap.<\/p>",
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24363\/bobo-on-verge-of-re-signing-with-sydney-fc",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=fcd2771a-5454-49db-9b94-093fa612dc00",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24363\/bobo-on-verge-of-re-signing-with-sydney-fc",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=fcd2771a-5454-49db-9b94-093fa612dc00",
 			"shortUrl": "https:\/\/goo.gl\/Je2kn5",
 			"externalUrl": null,
 			"type": "article",
@@ -5195,7 +5197,7 @@
 				"title": "Get Em on Side",
 				"id": "717",
 				"guid": "12e8a424-abf6-4c08-94ed-1b2cc3d79428",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"media": {
 					"thumb": {
 						"id": null,
@@ -5238,8 +5240,8 @@
 			"slug": "origin-aspirant-vaughan-on-the-improve",
 			"excerpt": "He may already be pushing for a NSW Origin spot but rising forward Paul Vaughan admits he is still far from the finished article. Vaughan will have the chance to push his Origin claims with a strong performance for Country against City in Mudgee on...",
 			"content": "<p>He may already be pushing for a NSW Origin spot but rising forward Paul Vaughan admits he is still far from the finished article.<\/p><p>Vaughan will have the chance to push his Origin claims with a strong performance for Country against City in Mudgee on Sunday.<\/p><p>With Aaron Woods likely to miss the first Origin game another spot may open up for Vaughan, though Shannon Boyd could be in front of him after vaulting into the Kangaroos team to face New Zealand.<\/p><p>Vaughan's impressive form since joining St George Illawarra from Canberra after last season has been one of the most eyecatching aspects of the Dragons' strong start to the NRL season.<\/p><p>\"I just wanted to start afresh and play the footy that I know I'm capable of playing,' Vaughan told AAP<\/p><p>\"I think I'm halfway there and hopefully I can just keep on playing at a consistent level.<\/p><p>\"I think there's still a lot more improvement in my game and I'm always looking to learn new things and get better.<\/p><p>\"You've got some tough patches in the game where you just need to keep on pushing through. My work rate and decision-making under fatigue is probably something I can work on.\"<\/p><p>Vaughan, who will turn out for his fourth City Country clash on Sunday, is determined not to be distracted by the external buzz around his Origin prospects.<\/p><p>\"The biggest thing you want to come away and do at these camps is not let anyone down,\" he said.<\/p><p>\"If you get 17 blokes trying to do that, I think you'll get a pretty good result.\"<\/p><p>Lining up against him in the City pack will be Dragons clubmates Cameron McInnes, Hame Sele and Jake Marketo.<\/p>",
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24357\/origin-aspirant-vaughan-on-the-improve",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=806928ed-579e-4e58-9e25-b3be10e26ed1",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24357\/origin-aspirant-vaughan-on-the-improve",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=806928ed-579e-4e58-9e25-b3be10e26ed1",
 			"shortUrl": "https:\/\/goo.gl\/2XcSMe",
 			"externalUrl": null,
 			"type": "article",
@@ -5277,7 +5279,7 @@
 				"title": "Get Em on Side",
 				"id": "717",
 				"guid": "12e8a424-abf6-4c08-94ed-1b2cc3d79428",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"media": {
 					"thumb": {
 						"id": null,
@@ -5320,8 +5322,8 @@
 			"slug": "worcestershire-sign-lyon-for-county-cameo",
 			"excerpt": "Worcestershire will keep an Australian flavour with Test spinner Nathan Lyon set to replace John Hastings during the Champions Trophy. It will be 29-year-old Lyon's first taste of county cricket after taking 247 wickets in 67 Tests. Lyon, who became...",
 			"content": "<p>Worcestershire will keep an Australian flavour with Test spinner Nathan Lyon set to replace John Hastings during the Champions Trophy.<\/p><p>It will be 29-year-old Lyon's first taste of county cricket after taking 247 wickets in 67 Tests.<\/p><p>Lyon, who became the youngest Australian finger spinner to reach 100 Test wickets at the age of 26, said it would be a good opportunity to test his skill set against different opposition and conditions.<\/p><p>\"I always hoped the opportunity would come about,\" he told Melbourne radio station SEN.<\/p><p>\"To be honest I have never really had a pre-season in my whole time playing professional cricket so I am really looking forward to heading over and getting stuck in.\"<\/p><p>\"There are different things I can work on over there but I am just looking forward to the experience to be honest.\"<\/p><p>Allrounder Hastings was named in Australia's Champions Trophy 15-man squad last month alongside fast bowlers Mitchell Starc, James Pattinson, Josh Hazlewood and Pat Cummins.<\/p><p>The tournament starts on June 1 with Australia up against New Zealand a day later.<\/p><p>Lyon says while he will be with Worcestershire mainly to replace Hastings, he is grateful for the opportunity after a month's break on the back of the India tour.<\/p><p>\"It is not like I am there for the whole season,\" he said.<\/p><p>\"So I can go hard for a month and really try and put in some good work for Worcestershire.<\/p><p>\"I have enjoyed the four weeks off but I am looking forward to getting back in to playing cricket.\"<\/p>",
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24356\/worcestershire-sign-lyon-for-county-cameo",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=e3f28fb9-f785-4a3a-a39c-4b6e679ffab7",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24356\/worcestershire-sign-lyon-for-county-cameo",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=e3f28fb9-f785-4a3a-a39c-4b6e679ffab7",
 			"shortUrl": "https:\/\/goo.gl\/zjHnf8",
 			"externalUrl": null,
 			"type": "article",
@@ -5359,7 +5361,7 @@
 				"title": "Get Em on Side",
 				"id": "717",
 				"guid": "12e8a424-abf6-4c08-94ed-1b2cc3d79428",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"media": {
 					"thumb": {
 						"id": null,
@@ -5402,8 +5404,8 @@
 			"slug": "cronk-could-join-thurston-on-farewell-tour",
 			"excerpt": "Cooper Cronk says Johnathan Thurston's farewell tour begins with Australia's rugby league Test against New Zealand on Friday - and his could be starting, too. Thurston is all but certain to take on the Kiwis after completing Tuesday's training run...",
 			"content": "<p>Cooper Cronk says Johnathan Thurston's farewell tour begins with Australia's rugby league Test against New Zealand on Friday - and his could be starting, too.<\/p><p>Thurston is all but certain to take on the Kiwis after completing Tuesday's training run, ending a three-game NRL absence with a calf injury.<\/p><p>Fullback Darius Boyd is also set to take his part in the Canberra Test despite failing to finish the session due to a hamstring complaint.<\/p><p>\"(Boyd is) getting treatment and there's no issue whatsoever. He'll be lining up in the number one jersey on Friday night,\" Cronk said on Wednesday.<\/p><p>And while much of the spotlight also surrounds Kangaroos skipper Cameron Smith becoming just the second Australian to reach the 50 Tests, the party will also extend to Thurston.<\/p><p>The Kangaroos five-eighth has already announced his intention to retire from the representative scene at the end of the year, giving the team plenty of motivation in a World Cup year.<\/p><p>\"He's probably having a few farewells and swansongs this year in the representative arena ... and rightly so,\" said halfback Cronk.<\/p><p>\"But Johnathan Thurston's not a selfish player. He wouldn't be playing this game if he didn't think he could contribute and he will on Friday night.\"<\/p><p>The Test could also be one of many \"lasts\" for Cronk himself, who last month declared his plans to leave Melbourne at the end of the year and move to Sydney to join his fiancee.<\/p><p>The 33-year-old is weighing up whether he will retire following the World Cup.<\/p><p>\"I suppose in hindsight, it possibly could be (my final year),\" he said.<\/p><p>\"But I think there's a few other things to focus on in terms preparation for this week. This year has the potential to be a massive year for the Kangaroos.\"<\/p><p>Cronk re-iterated that he is unlikely to make a call until after the State of Origin series, which would also be another stop on a tour full of send-offs.<\/p><p>\"I'm not the type of player that just makes decisions off the cuff,\" he said.<\/p><p>\"I like to think them through and have the information in front of me. In due course, I guarantee you I'll let you know, but that time's not for a while, trust me.\"<\/p><p>The Kangaroos had a rest day on Wednesday, although Smith and his family joined ARLC chairman John Grant, NRL boss Todd Greenberg at a ceremony at the War Memorial.<\/p><p>Kiwis coach David Kidwell and captain Jesse Bromwich, as well as captains from the Junior Kangaroos, Kiwis, Jillaroos and Kiwi Ferns were also present.<\/p><p>The Kangaroos finalise preparations for the clash with the captain's run on Thursday.<\/p>",
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24360\/cronk-could-join-thurston-on-farewell-tour",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=f878d86d-63f9-48d8-b4d4-7ba7ea7781dd",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24360\/cronk-could-join-thurston-on-farewell-tour",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=f878d86d-63f9-48d8-b4d4-7ba7ea7781dd",
 			"shortUrl": "https:\/\/goo.gl\/A98lUC",
 			"externalUrl": null,
 			"type": "article",
@@ -5441,7 +5443,7 @@
 				"title": "Get Em on Side",
 				"id": "717",
 				"guid": "12e8a424-abf6-4c08-94ed-1b2cc3d79428",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"media": {
 					"thumb": {
 						"id": null,
@@ -5503,7 +5505,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -5564,8 +5566,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24362\/lions-skipper-beams-out-for-fortnight",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=98f1d0d8-0325-46a3-9013-bfa25a92492a",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24362\/lions-skipper-beams-out-for-fortnight",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=98f1d0d8-0325-46a3-9013-bfa25a92492a",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -5602,7 +5604,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -5663,8 +5665,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24354\/roosters-snare-tigers-star-james-tedesco",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=3e297d23-4f17-4ecc-84fe-4c4fa826a5e7",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24354\/roosters-snare-tigers-star-james-tedesco",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=3e297d23-4f17-4ecc-84fe-4c4fa826a5e7",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -5701,7 +5703,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -5762,8 +5764,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24361\/buckley-talks-up-de-goey-reid-in-afl",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=fbd21f95-1e15-4bd2-95fc-6689b010cf50",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24361\/buckley-talks-up-de-goey-reid-in-afl",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=fbd21f95-1e15-4bd2-95fc-6689b010cf50",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -5800,7 +5802,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -5861,8 +5863,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24355\/hogan-poised-for-afl-return-dees-coach",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=017fcdf7-5aa3-4b0c-8232-17bea590fe6d",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24355\/hogan-poised-for-afl-return-dees-coach",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=017fcdf7-5aa3-4b0c-8232-17bea590fe6d",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -5899,7 +5901,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -5960,8 +5962,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24358\/tomic-in-rare-back-to-back-clay-wins",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=3c082c06-57cc-45d6-b9b7-e17669884ece",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24358\/tomic-in-rare-back-to-back-clay-wins",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=3c082c06-57cc-45d6-b9b7-e17669884ece",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -5998,7 +6000,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -6059,8 +6061,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24359\/taylor-set-to-rejoin-roosters-report",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=95a8debc-5c9d-420e-a7b9-49188d6c054c",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24359\/taylor-set-to-rejoin-roosters-report",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=95a8debc-5c9d-420e-a7b9-49188d6c054c",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -6097,7 +6099,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -6158,8 +6160,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24363\/bobo-on-verge-of-re-signing-with-sydney-fc",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=fcd2771a-5454-49db-9b94-093fa612dc00",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24363\/bobo-on-verge-of-re-signing-with-sydney-fc",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=fcd2771a-5454-49db-9b94-093fa612dc00",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -6196,7 +6198,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -6257,8 +6259,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24357\/origin-aspirant-vaughan-on-the-improve",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=806928ed-579e-4e58-9e25-b3be10e26ed1",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24357\/origin-aspirant-vaughan-on-the-improve",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=806928ed-579e-4e58-9e25-b3be10e26ed1",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -6295,7 +6297,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -6356,8 +6358,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24356\/worcestershire-sign-lyon-for-county-cameo",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=e3f28fb9-f785-4a3a-a39c-4b6e679ffab7",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24356\/worcestershire-sign-lyon-for-county-cameo",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=e3f28fb9-f785-4a3a-a39c-4b6e679ffab7",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",
@@ -6394,7 +6396,7 @@
 			"blog": {
 				"id": "717",
 				"title": "Get Em on Side",
-				"url": "http:\/\/theme.aap.io/",
+				"url": "http:\/\/theme.aap.dev/",
 				"owner": {
 					"id": "570",
 					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
@@ -6455,8 +6457,8 @@
 				}
 			},
 			"previewMedia": false,
-			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24360\/cronk-could-join-thurston-on-farewell-tour",
-			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=f878d86d-63f9-48d8-b4d4-7ba7ea7781dd",
+			"url": "http:\/\/theme.aap.dev\/2017\/05\/04\/24360\/cronk-could-join-thurston-on-farewell-tour",
+			"editUrl": "http:\/\/theme.aap.dev\/admin\/article\/edit?guid=f878d86d-63f9-48d8-b4d4-7ba7ea7781dd",
 			"publishDate": "May 04 2017",
 			"metaPublishDate": "2017-05-04",
 			"publishDateTime": "2017-05-04 11:26:42",

@@ -27,7 +27,8 @@
                     // }
                 }
                 > h2{
-                    font-weight:600;
+                    font-family: $headings-font-family;
+                    font-weight: 700;
                     margin-top: 0;
                     overflow:hidden;
                     margin-bottom:6px;
@@ -42,7 +43,7 @@
 
                 .author{
                     p{
-                        font-family:$font-family-serif;
+                        font-family: $font-family-sans-serif;
                         color:white;
                         border-right: 1px solid color(white);
                     }
@@ -57,7 +58,7 @@
         }
         &.without__image {
         
-            background:color(offwhite);
+            background:color(white);
 
             article {
                 > .content {
@@ -88,7 +89,8 @@
             .content {
                 padding-top:31px;
                 .icon {
-                    margin-bottom:200px;
+                    display: inline-block;
+                    margin-bottom:230px;
                 }
 
                 > p {
@@ -100,6 +102,11 @@
                     max-height: 80px;
                     line-height: 1.18;
 
+                }
+                > .author {
+                    .icon {
+                        display: none;
+                    }
                 }
             }
             &.twitter{
@@ -120,6 +127,25 @@
                 }
             }
 
+            &.facebook{
+                .content{
+                    >p {
+                        max-height:130px;
+                        font-size:rem(22);
+                        line-height:1.27;
+                    }
+
+                }
+                &.without__image {
+                    .content {
+                        > p {
+                            color:black;
+                        }
+                    }
+                }
+            }
+
+
             &.instagram{
                 .content{
                     >p {
@@ -127,6 +153,13 @@
                         max-height:130px;
                         font-size:rem(22);
                         line-height:1.27;
+                    }
+                }
+                &.without__caption {
+                    .content {
+                        > h2 {
+                            display: none;
+                        }
                     }
                 }
             }

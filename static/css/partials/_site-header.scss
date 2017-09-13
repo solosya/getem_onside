@@ -64,9 +64,10 @@
         // }
 
         .header-top {
-            height:84px;
+            height:140px;
             padding-top:30px;
-            background:black;
+            padding-bottom:30px;
+            background:color(red);
 
             @media screen and (max-width: $sm-break) {
                 height:60px;
@@ -128,8 +129,8 @@
         .navbar-brand {
             display:inline-block;
             padding:0;
-            width: 140px;
-            height:37px;
+            width: 132px;
+            height:110px;
             background-repeat:no-repeat;
             background-size:cover;
 

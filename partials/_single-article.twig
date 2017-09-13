@@ -83,7 +83,8 @@
                     <p class="excerpt">{{ quotes.smarten(article.excerpt | raw) }}</p>
                    
                     <div class="author">
-                        <img src="{{profileImg}}" class="img-circle">
+                        <div class="icon"></div>
+<!--                        <img src="{{social.user.media.path}}" class="img-circle"> -->
                         <p>{{ article.createdBy['displayName'] }}</p>
                         <time datetime="{{publishDate}}">{{publishDate}}</time>
                     </div>
@@ -179,7 +180,8 @@
 
                     
                     <div class="author">
-                        <img src="{{social.user.media.path}}" class="img-circle">
+                        <div class="icon"></div>
+<!--                        <img src="{{social.user.media.path}}" class="img-circle"> -->
                         <p class="">{{ (social.source == _Article.socialArticleSourceTwitter()) ? '@' : ''}}{{ social.user['name'] | lower }}</p>
                         <time datetime="">{{_AppHelper.getDateTimeBasedOnTimezone(social.publishDate, 'F, Y')}}</time>
                     </div><!-- .author-->

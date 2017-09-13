@@ -2,7 +2,7 @@
 // 	background:#fff;
 // }
 .fixad {
-	position:fixed;
+	// position:fixed;
 }
 .bottomAd {
 	position:absolute;
@@ -56,43 +56,26 @@
 
 			.content-block-top {
 				margin-bottom: 10px;
-
-				p.category {
-					font-size:rem(13);
-					color:color(red);
-					float:left;
-					text-transform:uppercase;
-					margin-right:8px;
-				}
 				
 				> time {
-					font-size: rem(15);
-					font-family:$font-family-serif;
-					color: color(grey);
+					font-size: rem(14);
+					color: color(lightgrey);
+					font-family:$font-family-sans-serif;
 					position:relative;
 					top:-5px;
-					&:before {
-						content:'';
-						display:inline-block;
-						height:1px;
-						width:41px;
-						background:color(grey);
-						margin-right:8px;
-						margin-bottom:2px;
-					}
 				}
 
 
 				h1 {
 
 					font-size: rem(46);
-					font-weight: bold;
+					// font-weight: bold;
 					line-height: 1.23;
 					letter-spacing: 0.5px;
 					margin-top: 0;
 					margin-bottom: 0;
 					color:	#1c2a38;
-					font-family: $font-family-sans-serif;
+					font-family: $headings-font-family;
 					
 					@media screen and (max-width: $sm-break) {
 						margin-top: 40px;
@@ -121,12 +104,12 @@
 				p.author {
 					font-family: $base-font-family;
 					font-size: rem(16);
-					color: color(darkgrey);
+					color: color(lightgrey);
 					text-transform:uppercase;
 					margin-top:8px;
 					margin-bottom:20px;
 					>span {
-						font-family:$font-family-serif;
+						font-family:$font-family-sans-serif;
 						font-style:italic;
 						text-transform:lowercase;
 					}
@@ -162,10 +145,10 @@
 						font-family: $base-font-family;
 						font-size: rem(14);
 						line-height: 1.25;
-						color: color(darkgrey);
+						color: color(lightgrey);
 						margin-left:8px;
 					}
-				}	
+				}
 			}
 
 			
@@ -203,7 +186,7 @@
 				font-weight:700;
 				font-size: rem(22);
 				color:color(red);
-				font-family: $font-family-serif;
+				font-family: $font-family-sans-serif;
 				margin-bottom:16px;
 			}
 		}
@@ -215,6 +198,7 @@
 		    
 
 			h1 {
+				font-family: $font-family-sans-serif;
 				font-size: rem(20);
 				font-weight: 700;
 				text-transform: uppercase;

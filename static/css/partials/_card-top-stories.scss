@@ -1,6 +1,6 @@
 @mixin top-stories-base() {
     a.card {
-        @include card-image-none;
+        // @include card-image-none;
         height:100%;
 
         > article {

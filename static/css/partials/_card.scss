@@ -165,44 +165,46 @@ a.card {
 
     &.social {
         .content {
-
+            .icon {
+                width:24px;
+                height:24px;
+                background-repeat: no-repeat;
+            }
         }
 
         &.facebook{
             .content{
-
                 .icon {
-                    width:13px;
-                    height:27px;
                     background-image: url("../icons/facebook.svg");
-                    // background-size:cover;
-                    background-repeat: no-repeat;
+
+                    &.inverse {
+                        background-image: url("../icons/facebook-inverse.svg");
+                    }
                 }
+
             }
         }
 
         &.twitter{
             .content{
-
                 .icon {
-                    width:31px;
-                    height:31px;
                     background-image: url("../icons/twitter.svg");
-                    // background-size:cover;
-                    background-repeat: no-repeat;
+
+                    &.inverse {
+                        background-image: url("../icons/twitter-inverse.svg");
+                    }
                 }
             }
         }
 
         &.instagram{
             .content{
-
                 .icon {
-                    width:27px;
-                    height:27px;
                     background-image: url("../icons/instagram.svg");
-                    // background-size:cover;
-                    background-repeat: no-repeat;
+
+                    &.inverse {
+                        background-image: url("../icons/instagram-inverse.svg");
+                    }
                 }
             }
         }

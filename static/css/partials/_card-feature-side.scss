@@ -26,11 +26,11 @@
                     font-size: rem(10);
                 }
                 > h2{
-                    font-size: rem(16);
-                    font-weight:700;
+                    font-size: rem(14);
+                    font-weight:600;
                     margin-top: 4px;
                     overflow:hidden;
-                    line-height:1.15;
+                    line-height:1.14;
 
                 }
                 >p.excerpt {
@@ -59,12 +59,17 @@
         &.social {
             .content {
                 .icon {
-                    display:none;
+                    display: none;
                 }
 
                 >p {
                     max-height:65px;
                     margin-bottom:6px;
+                }
+                >.author{
+                    .icon {
+                        display: inline-block;
+                    }
                 }
             }
 
@@ -83,7 +88,7 @@
 
                 &.without__content {
                     .content{
-                        padding-top:34px;
+                        // padding-top:34px;
                         >p {
                             margin-top:0;
                         }
@@ -104,7 +109,7 @@
     @media screen and (min-width: $mmd-break){
         @include card-feature-side-base();
 
-        height:95px;
+        height:96px;
 
         &.divideright {
             &:after {
