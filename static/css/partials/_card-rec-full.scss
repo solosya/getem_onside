@@ -135,17 +135,22 @@
                 }
 
                 &.twitter, &.instagram{
+                    color:pink;
                     .content{
+                        >h2 {
+                            display: none;
+                        }
                         >p {
                             font-size:rem(22);
-                            line-height:1.18;
+                            line-height:1.27;
                         }
 
                     }
                     &.without__image {
                         .content {
-                            > p {
-                                color:black;
+                            > p.excerpt {
+                                display:inline-block;
+                                color:pink;
                             }
                         }
                     }

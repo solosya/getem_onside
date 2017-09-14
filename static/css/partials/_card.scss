@@ -1,14 +1,22 @@
-@mixin videoIcon() {
+@mixin cornerIcon($url) {
     position:absolute;
     content: '';
     width: 24px;
     height: 24px;
-    background-image: url(../icons/video-circle.svg);
+    background-image: url($url);
     background-repeat: no-repeat;
     background-size: contain;
     top: 34px;
     left: 30px;
     z-index: 100;
+}
+
+@mixin videoCorner() {
+    @include cornerIcon('../icons/video-circle.svg');
+}
+
+@mixin twitterCorner() {
+    @include cornerIcon('../icons/twitter-inverse.svg');
 }
 
 @mixin videoIconMiddle() {
@@ -68,7 +76,7 @@ a.card {
 
             &.video {
                 &:before{
-                    @include videoIcon();
+                    @include videoCorner();
                 }
             }
 
