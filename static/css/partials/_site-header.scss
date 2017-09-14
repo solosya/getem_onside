@@ -65,7 +65,7 @@
 
         .header-top {
             height:140px;
-            padding-top:30px;
+            padding-top:18px;
             padding-bottom:30px;
             background:color(red);
 
@@ -93,6 +93,70 @@
                     margin-left: -70px;
                 }
             }
+
+            .navbar-brand {
+                float:left;
+                position:relative;
+                left: -15px;
+                padding:0;
+                width: 132px;
+                height:110px;
+                background-repeat:no-repeat;
+                background-size:cover;
+
+                @media screen and (max-width: $sm-break){
+                    margin-top: 0;
+                    padding:8px;
+                    width: 120px;
+                    height:32px;
+                    background-size: 120px;
+                    background-repeat:no-repeat;
+                }
+
+
+            }
+
+
+            
+            .menu-right {
+                position:relative;
+                float: right;
+                text-align: right;
+
+                .social-links {
+                    // position:absolute;
+                    // right:0;
+                    margin-top: 23px;
+
+                    .icon{
+                        display: inline-block;
+                        width: 26px;
+                        height: 26px;
+                        margin-left: 13px;
+                        background-repeat:no-repeat;
+                        background: url('../icons/social-array.svg');
+                        // background-size:20px;
+
+                        &.facebook {
+                        }
+                        &.youtube {
+                            background-position: -43px 0;
+                        }
+                        &.twitter {
+                            background-position: -84px 0;
+                        }
+                        &.instagram {
+                            background-position: -125px 0;
+                        }
+                        &.email {
+                            background-position: -166px 0;
+                        }
+
+                    }
+                }
+            }
+
+
         }
 
         .header-bottom {
@@ -126,25 +190,7 @@
 
 
 
-        .navbar-brand {
-            display:inline-block;
-            padding:0;
-            width: 132px;
-            height:110px;
-            background-repeat:no-repeat;
-            background-size:cover;
 
-            @media screen and (max-width: $sm-break){
-                margin-top: 0;
-                padding:8px;
-                width: 120px;
-                height:32px;
-                background-size: 120px;
-                background-repeat:no-repeat;
-            }
-
-
-        }
         .navbar-right {
             margin-top:25px;
             @media screen and (max-width: $mobile-break){
