@@ -3,7 +3,12 @@
     a.card {
         > article {
             position:relative;
-            > figure {
+            > figure{
+                &.video {
+                    &:before{
+                        display: none;
+                    }
+                }                
             }
 
             > .content {
@@ -48,6 +53,7 @@
         a.card {
             @include card-image-top(auto, 160px);
             height:250px;
+            max-height:250px;
 
             > article {
 
@@ -57,7 +63,7 @@
 
 
                 > .content{
-                    height:100%;
+                    height:80px;
 
                     .author {
                         font-size: rem(11);
@@ -68,11 +74,12 @@
 
 
             &.without__image {
-                background:color(white);
                 .content {
                     padding:70px 30px 5px 30px;
 
-                    height:100%;
+                    .author {
+                        position: static;
+                    }
 
                     h2 {
                         font-size: rem(17);
@@ -85,10 +92,6 @@
 
             &.social {
                 .content {
-                    .icon {
-                        display:none;
-                    }
-
                     >p {
                         max-height:65px;
                         margin-bottom:6px;
@@ -97,19 +100,19 @@
 
                 &.facebook {
                     .content{
-                        .icon {
-                            width:10px;
-                            height:20px;
-                            background-size:contain;
+                        > .author {
+                            .icon {
+                                @include instagramIcon();
+                            }
                         }
                     }
                 }
                 &.twitter {
                     .content{
-                        .icon {
-                            width:22px;
-                            height:18px;
-                            background-size:contain;
+                        > .author {
+                            .icon {
+                                @include instagramIcon();
+                            }
                         }
                     }
                 }
@@ -117,6 +120,13 @@
                 &.instagram{ 
                     &.without__content {
                         @include card-image-top(auto, 209px);
+                    }
+                    .content {
+                        > .author {
+                            .icon {
+                                @include instagramIcon();
+                            }
+                        }                        
                     }
                 }
                 &.without__image {
@@ -132,7 +142,6 @@
                     }
                 }
             }
-
 
         }
     }

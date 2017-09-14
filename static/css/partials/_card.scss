@@ -120,6 +120,15 @@ a.card {
             }
 
             .author{
+
+                position:absolute;
+                bottom:0;
+                &.video {
+                    .icon {
+                        @include smallVideoIcon();
+                    }
+                }
+
                 display:inline-block;
                 vertical-align:top;
                 line-height:1.36;
@@ -148,8 +157,6 @@ a.card {
                 }
                 > time{
                     display:inline-block;
-                    // vertical-align:top;
-                    // line-height:1;
                     color:color(mediumgrey);
                     font-size: rem(11);
                     font-weight: 300;

@@ -36,15 +36,15 @@
                 >p.excerpt {
                     display:none;
                 }
-                .author{
-                    position:absolute;
-                    bottom:0;
-                    &.video {
-                        .icon {
-                            @include smallVideoIcon();
-                        }
-                    }
-                }               
+                // .author{
+                //     position:absolute;
+                //     bottom:0;
+                //     &.video {
+                //         .icon {
+                //             @include smallVideoIcon();
+                //         }
+                //     }
+                // }               
             }
         }
         &.social {
