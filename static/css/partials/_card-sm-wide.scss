@@ -13,7 +13,7 @@
             > figure{
                 &.video {
                     &:before{
-                        display: none;
+                        @include videoIconMiddle();
                     }
                 }                
             }
