@@ -1,32 +1,35 @@
-@mixin videoIconMiddle() {
-    position:absolute;
-    content: '';
-    width: 42px;
-    height: 42px;
-    background-image: url(../icons/play-icon.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 50%;
-    left: 50%;
-    margin-left:-21px;
-    margin-top:-21px;
-    z-index: 100;
-}
-
 @mixin videoIcon() {
     position:absolute;
     content: '';
-    width: 42px;
-    height: 42px;
-    background-image: url(../icons/play-icon.svg);
+    width: 24px;
+    height: 24px;
+    background-image: url(../icons/video-circle.svg);
     background-repeat: no-repeat;
-    background-size: cover;
-    top: 15px;
-    right: 15px;
+    background-size: contain;
+    top: 34px;
+    left: 30px;
     z-index: 100;
 }
 
+@mixin socialIcon($url) {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 100;
+}
 
+@mixin instagramIcon {
+    @include socialIcon('../icons/instagram.svg');
+}
+@mixin facebookIcon {
+    @include socialIcon('../icons/facebook.svg');
+}
+@mixin twitterIcon {
+    @include socialIcon('../icons/twitter.svg');
+}
 
 a.card {
 
@@ -80,11 +83,7 @@ a.card {
                 height:100%;
                 object-fit: cover;
             }
-
-
         }
-
-
 
 
 
@@ -121,6 +120,11 @@ a.card {
                 vertical-align:top;
                 line-height:1.36;
                 
+
+                .icon {
+                    display: none;
+                }
+
                 img{
                     display:none;
                     height:37px;
@@ -152,63 +156,6 @@ a.card {
                 display:none;
             }
         }
-    }
-
-
-
-
-
-
-
-
-
-
-    &.social {
-        .content {
-            .icon {
-                width:24px;
-                height:24px;
-                background-repeat: no-repeat;
-            }
-        }
-
-        &.facebook{
-            .content{
-                .icon {
-                    background-image: url("../icons/facebook.svg");
-
-                    &.inverse {
-                        background-image: url("../icons/facebook-inverse.svg");
-                    }
-                }
-
-            }
-        }
-
-        &.twitter{
-            .content{
-                .icon {
-                    background-image: url("../icons/twitter.svg");
-
-                    &.inverse {
-                        background-image: url("../icons/twitter-inverse.svg");
-                    }
-                }
-            }
-        }
-
-        &.instagram{
-            .content{
-                .icon {
-                    background-image: url("../icons/instagram.svg");
-
-                    &.inverse {
-                        background-image: url("../icons/instagram-inverse.svg");
-                    }
-                }
-            }
-        }
-
     }
 }
 

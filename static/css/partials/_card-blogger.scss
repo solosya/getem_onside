@@ -13,12 +13,6 @@
                 > figure{
                     overflow: hidden;
                     margin-bottom:6px;
-
-                    &.video {
-                        &:before{
-                           @include videoIcon();
-                        }
-                    }
                 }
 
 
@@ -112,12 +106,6 @@
                 > figure{
                     overflow: hidden;
                     margin-bottom:6px;
-
-                    &.video {
-                        &:before{
-                           @include videoIcon();
-                        }
-                    }
                 }
 
 

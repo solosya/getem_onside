@@ -5,6 +5,13 @@
 
             > figure {
                 margin-right:24px;
+
+                &.video {
+                    &:before{
+                        display: none;
+                    }
+                }
+
             }
 
             > .content {
@@ -173,10 +180,15 @@
 
                 > .content {
 
-
                     h2{
                         font-size: rem(24);
                         margin-bottom:14px;
+                    }
+
+                    .author {
+                        .icon {
+                            @include instagramIcon();
+                        }
                     }
 
                     // .author{

@@ -11,6 +11,11 @@
         > article {
             position:relative;
             > figure{
+                &.video {
+                    &:before{
+                        display: none;
+                    }
+                }                
             }
             > .content{
                 position:relative;
@@ -127,6 +132,11 @@
                             padding: 0;
                             padding-right:5px;
                         }
+
+                        .icon {
+                            @include instagramIcon();
+                        }
+                        
                     }
                 }
             }

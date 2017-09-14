@@ -160,11 +160,6 @@
 
                 > figure{
                     margin-right:8px;
-                    &.video {
-                        &:before{
-                            @include videoIconMiddle();
-                        }
-                    }
                 }
             }
 
