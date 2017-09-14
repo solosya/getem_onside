@@ -119,18 +119,19 @@
                                         }) | raw}}
                                         
                                         {% if i < 2 %}
-                                            <hr class="divide15">
+                                            <hr class="divide15 visible-md-block visible-lg-block">
+                                            <hr class="divide10 visible-xs-block visible-sm-block">
                                         {% endif %}
 
                                         {% set articleCount = articleCount + 1 %}
                                     {% endfor %}
 
-                                    <div class="ad-side-container" style="margin-top:30px;">
-                                        <div style="width:300px;background-color:pink;">
-                                            <img src=
-                                        </div>
-                                    </div>
+                                    <hr class="divide15 visible-md-block visible-lg-block space-only">
+                                    <hr class="divide10 visible-xs-block visible-sm-block space-only">
 
+                                    <div class="advert visible-md-block visible-lg-block">
+                                        <img src="{{networkData.templatePath}}/static/images/the-short-side-cta.png">
+                                    </div>
 
                                 </div>
 

@@ -96,7 +96,8 @@ body.special {
 
     .most-popular, .events {
         >h2 {
-            font-family: $font-family-sans-serif;
+            font-family: $font-family-serif;
+            font-weight: bold;
             font-size: rem(18);
             color: #000;
             margin-bottom:13px;
@@ -124,7 +125,8 @@ body.special {
             display:flex;
 
             h2 {
-                font-family: $font-family-sans-serif;
+                font-family: $font-family-serif;
+                font-weight: bold;
                 flex-grow: 0;
                 font-size: rem(20);
                 margin-bottom:25px;
