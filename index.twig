@@ -261,7 +261,7 @@
                             {{this.render('partials/_single-article.twig', {
                                 article: sections['trivia'].feed.articles[ruralCount], 
                                 imageSize: {width:300},
-                                containerClass: 'col-sm-1 card-sm-wide feature-side-mobile'
+                                containerClass: 'col-sm-1 card-sm feature-side-mobile'
                             }) | raw}}
                             {% set ruralCount = (dev) ? articleCount : ruralCount + 1 %}
                             {% if i < 2 %}

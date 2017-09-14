@@ -56,7 +56,7 @@
         {% set articleImg = _Media.getMediaUrl(article.featuredMedia,imgWidth, imgHeight, {'crop': 'fill', 'gravity': 'faces'} ) %}
 
         <a  href="{{article.url}}" 
-            class="{{swap}} card article {{hasArticleMediaClass}}" 
+            class="{{swap}} card article {{hasArticleMediaClass}} {{figureClass}}" 
             data-id="{{article.articleId}}" 
             data-guid="{{article.articleId}}" 
             data-position="{{position}}" 
@@ -64,7 +64,7 @@
             data-article-image="{{articleImg}}" 
             data-article-text="{{Helper.htmlToText(article.title, -1) | raw | escape('html')}}">
 
-            <article class="{{lightbox}} {{figureClass}}">
+            <article class="{{lightbox}}">
                 {% if (article.hasMedia == 'TRUE' or article.hasPreviewMedia == 'TRUE') and imageSuppress == 'false' %}
                     <figure class="{{figureClass}}">
                         <picture>

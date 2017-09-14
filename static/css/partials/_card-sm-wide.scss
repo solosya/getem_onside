@@ -23,7 +23,7 @@
                 > .category{
                 }
                 > h2{
-                    font-weight: bold;
+                    display: none;
                     // background:orange;
                 }
                 > p.excerpt {
@@ -41,7 +41,7 @@
                     }
                     &.video {
                         .icon {
-                            @include smallVideoIcon();
+                            display: none;
                         }
                     }                    
                 }
@@ -50,6 +50,7 @@
                 }
             }
         }
+
 
         &.without__image {
             background:color(white);
@@ -119,14 +120,14 @@
 
                     > p.excerpt {
                         font-size: rem(15);
-                        height:17px;
+                        height:40px;
                         line-height: 1;
-                        margin-top: 2px;
+                        margin-top: 3px;
                     }
 
                     > .author{
                         margin-top:5px;
-                        position: static;l
+                        position: static;
 
                         >p {
                             margin: 0;

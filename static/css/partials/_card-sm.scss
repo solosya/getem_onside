@@ -1,6 +1,13 @@
 @mixin card-sm-base() {
     position:relative;
+
+    p { 
+        font-family:$font-family-sans-serif;
+    }
+
     a.card {
+        height:250px;
+
         > article {
             position:relative;
             > figure{
@@ -8,41 +15,112 @@
                     &:before{
                         display: none;
                     }
-                }
+                }                
             }
-
-            > .content {
+            > .content{
                 position:relative;
-                padding: 0;
-
+                padding:0;
                 > .category{
                 }
                 > h2{
-                    font-weight: normal;
-                    font-size: rem(17);
-                    line-height:1.29;
-                    margin-top:5px;
-                    margin-bottom:10px;
-                    max-height:45px;
+                    font-weight: bold;
+                    // background:orange;
                 }
                 > p.excerpt {
-                    display:none;
+                    // background:pink;
                 }
                 .author {
+                    font-family:$font-family-sans-serif;
+
                     img {
                     }
                     p {
+                        font-family: inherit;
                     }
                     > time {
                     }
+                    &.video {
+                        .icon {
+                            @include smallVideoIcon();
+                        }
+                    }                    
                 }
-                
-                > time {
+                    
+                > time{
                 }
             }
         }
+
+        &.video {
+            @include card-image-full();
+
+            > article {
+                > .content {
+                    padding: 53px 19px 17px 19px;
+                    height:250px;
+
+                    >h2 {
+                        display: none;
+                    }
+                    > p.excerpt {
+                        height:132px;
+                        padding-top:10px;
+                        padding-bottom:8px;
+                    }
+
+                    > .category {
+                        color:white;
+                    }
+                    > .author {
+                        position: absolute;
+                        bottom: 10px;
+                    }
+                }
+            }
+        }
+
+
+        &.without__image {
+            background:color(white);
+            .content {
+                >.category{
+                    line-height: 1.43;
+                }
+                padding:36px 30px;
+
+                height:100%;
+
+                h2 {
+                    display: none; // checking with anita
+                }
+
+                >p.excerpt {
+                    display:block;
+                    font-size: rem(15);
+                    height:80px;
+                    max-height:80px;
+                    line-height: 1.33;
+                    margin-top: 7px;
+                }
+
+                .author {
+                    position: absolute;
+                    bottom:0px;
+                    font-family:$font-family-sans-serif;
+                    display:block;
+                    padding-bottom: 36px;
+                }
+
+            }
+        }  
     }
 }
+
+
+
+
+
+
 
 
 
@@ -52,39 +130,46 @@
 
         a.card {
             @include card-image-top(auto, 160px);
-            height:250px;
-            max-height:250px;
-
+            
             > article {
 
                 > figure{
                     margin-bottom:6px;
                 }
 
-
                 > .content{
-                    height:80px;
 
-                    .author {
-                        font-size: rem(11);
+                    > h2{
+                        font-size: rem(17);
+                        line-height:1.29;
+                        margin-top:5px;
+                        max-height:22px;
                     }
 
+                    > p.excerpt {
+                        font-size: rem(15);
+                        height:17px;
+                        line-height: 1;
+                        margin-top: 2px;
+                    }
+
+                    > .author{
+                        margin-top:5px;
+                        position: static;
+
+                        >p {
+                            margin: 0;
+                            padding: 0;
+                            padding-right:5px;
+                        }                        
+                    }
                 }
             }
 
 
             &.without__image {
                 .content {
-                    padding:70px 30px 5px 30px;
-
-                    .author {
-                        position: static;
-                    }
-
                     h2 {
-                        font-size: rem(17);
-                        font-weight:normal;
-                        line-height: 1.29;
                         max-height:70px;
                     }
                 }
@@ -142,42 +227,120 @@
                     }
                 }
             }
-
         }
     }
 }
 
 
+
+
+
+
+
+
+
+
 .card-sm-mobile{
-    @media screen and (max-width: $sm-break-down) {
+
+    @media screen and (max-width: $sm-break-down){
         @include card-sm-base();
+        margin-bottom:7vw;
+
 
         a.card {
-            @include card-image-left(89px, 85px);
-            height: 90px;
+            @include card-image-top(auto, auto);
+            height:auto;
 
             > article {
 
-
                 > figure{
-                    margin-right:8px;
+                    margin-bottom:6px;
+                }
+
+                > .content{
+                
+                
+                    > h2{
+                        font-size: rem(17);
+                        line-height:1.29;
+                        margin-top:5px;
+                        max-height:44px;
+                    }
+
+                    > p.excerpt {
+                        display:none;
+
+                    }
+
+                    > .author{
+                        display:none;
+                        >p {
+                            margin: 0;
+                            padding: 0;
+                            padding-right:5px;
+                        }
+                    }
                 }
             }
 
+
+            &.without__image {
+                .content {
+                    h2 {
+                        max-height:45px;
+                    }
+                }
+            }  
 
             &.social {
                 .content {
                     .icon {
                         display:none;
                     }
+
                     >p {
-                        max-height:44px;
+                        max-height:65px;
+                        margin-bottom:6px;
                     }
                 }
+
+                &.facebook {
+                    .content{
+
+                    }
+                }
+                &.twitter {
+                    .content{
+                        .icon {
+                            width:22px;
+                            height:18px;
+                            background-size:contain;
+                        }
+                    }
+                }
+
                 &.instagram{ 
                     &.without__content {
-                        .content {
-                            padding-top:25px;
+                        @include card-image-top(auto, 209px);
+                        .author {
+                            display:block;
+                        }
+                    }
+                }
+                &.without__image {
+
+                    .content {
+                        padding-top:31px;
+                        .category {
+                            margin-bottom:10px;
+                        }
+                        >p {
+                            max-height:90px;
+                        }
+                        .icon {
+                            display:block;
+                            position:absolute;
+                            bottom:20px;
                         }
                     }
                 }
@@ -185,5 +348,3 @@
         }
     }
 }
-
-
