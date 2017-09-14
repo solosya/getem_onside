@@ -24,6 +24,14 @@
                 <div class="row">
                     <div class="col-md-9">
 
+                        <time datetime="{{publishedDate}}">{{article.publishedDate}}</time>
+                        
+                        <h1>{{ quotes.smarten(article.title) }}</h1>
+                        
+                        <p class="author">{{ article.createdBy['displayName'] }}</p>
+
+
+
                         <div id="owl-thumbnails" class="owl-carousel owl-shep-theme" data-slider-id="1">
                             {% for image in article.media %}
                                 {% set articleImg = _Media.getMediaUrl(image,1094, 515, {'crop': 'fill', 'gravity': 'auto'} ) %}

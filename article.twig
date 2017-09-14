@@ -11,6 +11,12 @@
     {% set articleImg = _Media.getMediaUrl(article.media[0],1094, 515, {'crop': 'fill', 'gravity': 'auto'} ) %}
 {% endif %}
 
+{% set carousel = "" %}
+{% if article.media|length > 1 %}
+    {% set carousel = "owl-thumbnails" %}
+{% endif %}
+
+
 {% set publishDate = _AppHelper.getDateTimeBasedOnTimezone(article.publishDate, 'F, Y') %}
 
 {% set articles = _Article.getPopularArticles({ limit: 5, excludeArticleIds : article.id }) %}
@@ -39,29 +45,54 @@
                             
                             <p class="author">{{ article.createdBy['displayName'] }}</p>
 
-{#                             <div class="time_to_read">
-                                {% set readtime = 3 %}
-                                {% if article.readingTime > 3 %}
-                                    {% set readtime = 4 %}
-                                {% endif %}
-                                {% if article.readingTime > 4 %}
-                                    {% set readtime = 7 %}
-                                {% endif %}
-                                {% if article.readingTime > 7 %}
-                                    {% set readtime = 10 %}
-                                {% endif %}
-
-                                <img src="{{networkData.templatePath}}/static/images/reading_time/{{readtime}}_min.svg" />
-                                <p>{{article.readingTime}} minute read</p>
-                            </div>
- #}                        </div><!--content-block-top-->
+                        </div><!--content-block-top-->
 
 
 
 
 
                         {% if articleImg %} 
-                             <figure class="featured">
+
+                            <div id="{{carousel}}" class="owl-carousel owl-shep-theme" data-slider-id="1">
+                                {% for image in article.media %}
+                                    {% set articleImg = _Media.getMediaUrl(image,1094, 515, {'crop': 'fill', 'gravity': 'auto'} ) %}
+
+                                    <figure class="featured">
+                                        <img src="{{articleImg}}" class="img-responsive">
+                                        {% if image.type == 'video' %} 
+                                            {% set mediaUrl = "" %}
+                                            {% if image.media.isSystemVideo == 'TRUE'%}
+                                                {% set mediaUrl = _Media.getMediaVideoUrl(image, 0, 0,{resource_type: 'video', format: 'mp4'})  %}
+                                            {% endif %}
+
+                                            <a  href="javascript:void(0)" 
+                                                itemprop="video" 
+                                                class="video-overlay video-player" 
+                                                data-source="{{image.source}}" 
+                                                data-video-id="{{image.videoId}}" 
+                                                data-url="{{mediaUrl}}" 
+                                                data-poster="{{image.path}}" 
+                                                data-caption="{{article.title | raw}}">
+                                                
+                                                <div class="icons">
+                                                   <div class="icon"><i class="fa fa-play"></i></div>
+                                                </div>
+                                            </a>
+                                        {% endif %}
+                                        <figcaption>
+                                            <p>{{image.caption}}</p>
+                                        </figcaption>
+                                    </figure>
+                                {% endfor %}
+                            </div>
+
+
+
+
+
+
+
+{#                              <figure class="featured">
                                  <img src="{{articleImg}}" class="img-responsive">
                                  {% if article.media[0].type == 'video' %} 
                                      {% set mediaUrl = "" %}
@@ -78,7 +109,7 @@
                                      <p>{{article.media[0].caption}}</p>
                                  </figcaption>
                              </figure>
-                         {% endif %}
+ #}                         {% endif %}
 
                     </div>
 
