@@ -27,6 +27,7 @@
                     // background:orange;
                 }
                 > p.excerpt {
+                    line-height: 1.33;
                     // background:pink;
                 }
                 .author {
@@ -121,7 +122,6 @@
                     > p.excerpt {
                         font-size: rem(15);
                         height:40px;
-                        line-height: 1;
                         margin-top: 3px;
                     }
 
