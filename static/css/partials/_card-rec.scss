@@ -73,7 +73,11 @@
             .content {
                 height:100%;
 
-                h2 {
+                .author {
+                    position: static;
+                }
+
+            h2 {
                     font-family:$font-family-serif;
                     font-size: rem(24);
                     font-weight:bold;

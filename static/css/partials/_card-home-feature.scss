@@ -33,6 +33,13 @@
                 }
 
                 .author{
+
+                    &.video {
+                        .icon {
+                            display:none;
+                        }
+                    } 
+                    
                     p{
                         font-family: $font-family-sans-serif;
                         color:white;
