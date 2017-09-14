@@ -68,7 +68,7 @@
 				"short_description": "Carousel images",
 				"featured_color": null,
 				"status": "1",
-				"blogLayoutFileName": "layout-carousel",
+				"blogLayoutFileName": null,
 				"thumbCloudinaryPublicId": null,
 				"thumbCloudinaryCloudName": null,
 				"thumbCdnPath": null,
