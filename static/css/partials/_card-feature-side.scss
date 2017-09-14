@@ -47,20 +47,6 @@
                 }               
             }
         }
-        &.without__image {
-            .content {
-                h2 {
-                    max-height:19px;
-                }
-                p.excerpt {
-                    display:block;
-                    margin-top:2px;
-                    max-height:35px;
-                    font-size:rem(12);
-                }
-            }
-        }
-
         &.social {
             .content {
                 .icon {

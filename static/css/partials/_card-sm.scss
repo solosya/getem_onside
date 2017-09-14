@@ -58,14 +58,19 @@
 
                 > .content{
                     height:100%;
+
+                    .author {
+                        font-size: rem(11);
+                    }
+
                 }
             }
 
 
             &.without__image {
-                background:color(offwhite);
+                background:color(white);
                 .content {
-                    padding:63px 20px 5px 20px;
+                    padding:70px 30px 5px 30px;
 
                     height:100%;
 
@@ -75,19 +80,6 @@
                         line-height: 1.29;
                         max-height:70px;
                     }
-
-                    .author {
-                        &:after {
-                            content:'';
-                            position: absolute;
-                            display:block;
-                            width: 62px;
-                            height:1px;
-                            background:color(lightgrey);
-                            margin-top:20px;
-                        }
-                    }
-
                 }
             }  
 

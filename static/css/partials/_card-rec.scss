@@ -1,5 +1,6 @@
 @mixin card-rec-base() {
     a.card {
+        background: color(white);
         article {
             position:relative;
 
@@ -27,14 +28,17 @@
                     font-weight:bold;
                     margin-top: 12px;
                     padding-bottom:18px;
-                    border-bottom:1px solid color(grey);
+                    height:82px;
+                    border-bottom: 1px solid color(lightergrey);
                     line-height: 1.3;
                 }
                 >p.excerpt {
                     display:none;
                 }
 
-                .author {
+                > .author {
+                    position: absolute;
+                    bottom: 8px;
                     line-height:1.36;
                     &.video {
                         .icon {
@@ -42,6 +46,7 @@
                         }
                     }                    
                 }
+
 
                 // .author{
                 //     position:absolute;
@@ -69,22 +74,17 @@
                 height:100%;
 
                 h2 {
-                    font-family:$font-family-sans-serif;
-                    font-size: rem(20);
-                    font-weight:600;
+                    font-family:$font-family-serif;
+                    font-size: rem(24);
+                    font-weight:bold;
                     margin-top: 12px;
-                    line-height: 1.3;
-                    max-height:52px;
+                    line-height: 1.33;
+                    height:64px;
                 }
 
                 p.excerpt {
-                    font-size: rem(15);
-                    display:block;
-                    margin-top:10px;
-                    max-height:35px;
-                    line-height: 1.13;
+                    display: none;
                 }
-
             }
         }  
 

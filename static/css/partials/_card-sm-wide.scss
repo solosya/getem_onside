@@ -23,6 +23,7 @@
                 > .category{
                 }
                 > h2{
+                    font-weight: bold;
                     // background:orange;
                 }
                 > p.excerpt {
@@ -53,38 +54,32 @@
         &.without__image {
             background:color(white);
             .content {
-                padding:43px 20px 5px 20px;
+                >.category{
+                    line-height: 1.43;
+                }
+                padding:36px 30px;
 
                 height:100%;
 
                 h2 {
-                    font-size: rem(17);
-                    line-height: 1.29;
-                    max-height:45px;
+                    display: none; // checking with anita
                 }
 
                 >p.excerpt {
                     display:block;
                     font-size: rem(15);
-                    height:60px;
-                    max-height:60px;
+                    height:80px;
+                    max-height:80px;
                     line-height: 1.33;
                     margin-top: 7px;
                 }
 
                 .author {
+                    position: absolute;
+                    bottom:0px;
                     font-family:$font-family-sans-serif;
                     display:block;
-                    margin-top:10px;
-                    &:after {
-                        content:'';
-                        position: absolute;
-                        display:block;
-                        width: 62px;
-                        height:1px;
-                        background:color(lightgrey);
-                        margin-top:20px;
-                    }
+                    padding-bottom: 36px;
                 }
 
             }
