@@ -4,13 +4,14 @@
             position:relative;
 
             > figure {
-                margin-right:30px;
+                margin-right:24px;
             }
 
             > .content {
                 width:100%;
                 height:100%;
                 position:relative;
+                padding-top:6px;
 
                 > .category{
                 }
@@ -25,6 +26,11 @@
                 >p.excerpt {
                     display:none;
                 }
+
+                .author {
+                    line-height:1.36;
+                }
+
                 // .author{
                 //     position:absolute;
                 //     bottom:5px;
@@ -153,8 +159,8 @@
     @media screen and (min-width: $mmd-break){
         @include card-rec-base();
 
-        height:192px;
-        
+        height:159px;
+        margin-bottom:39px;
 
 
         a.card {
@@ -170,7 +176,7 @@
 
                     h2{
                         font-size: rem(24);
-                        margin-bottom:15px;
+                        margin-bottom:14px;
                     }
 
                     // .author{
