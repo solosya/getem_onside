@@ -38,6 +38,11 @@
                     }
                     > time {
                     }
+                    &.video {
+                        .icon {
+                            @include smallVideoIcon();
+                        }
+                    }                    
                 }
                     
                 > time{
@@ -131,12 +136,7 @@
                             margin: 0;
                             padding: 0;
                             padding-right:5px;
-                        }
-
-                        .icon {
-                            @include instagramIcon();
-                        }
-                        
+                        }                        
                     }
                 }
             }
@@ -152,10 +152,6 @@
 
             &.social {
                 .content {
-                    .icon {
-                        display:none;
-                    }
-
                     >p {
                         max-height:65px;
                         margin-bottom:6px;
@@ -164,19 +160,19 @@
 
                 &.facebook {
                     .content{
-                        .icon {
-                            width:10px;
-                            height:20px;
-                            background-size:contain;
+                        > .author {
+                            .icon {
+                                @include instagramIcon();
+                            }
                         }
                     }
                 }
                 &.twitter {
                     .content{
-                        .icon {
-                            width:22px;
-                            height:18px;
-                            background-size:contain;
+                        > .author {
+                            .icon {
+                                @include instagramIcon();
+                            }
                         }
                     }
                 }
@@ -184,6 +180,13 @@
                 &.instagram{ 
                     &.without__content {
                         @include card-image-top(auto, 209px);
+                    }
+                    .content {
+                        > .author {
+                            .icon {
+                                @include instagramIcon();
+                            }
+                        }                        
                     }
                 }
                 &.without__image {
@@ -278,11 +281,7 @@
 
                 &.facebook {
                     .content{
-                        .icon {
-                            width:10px;
-                            height:20px;
-                            background-size:contain;
-                        }
+
                     }
                 }
                 &.twitter {

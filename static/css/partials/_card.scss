@@ -19,6 +19,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     z-index: 100;
+    margin-right: 9px;
 }
 
 @mixin instagramIcon {
@@ -29,6 +30,9 @@
 }
 @mixin twitterIcon {
     @include socialIcon('../icons/twitter.svg');
+}
+@mixin smallVideoIcon {
+    @include socialIcon('../icons/video-circle.svg');
 }
 
 a.card {

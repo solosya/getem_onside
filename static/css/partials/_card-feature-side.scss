@@ -39,12 +39,12 @@
                 .author{
                     position:absolute;
                     bottom:0;
-
-                    .icon {
-                        @include instagramIcon();
+                    &.video {
+                        .icon {
+                            @include smallVideoIcon();
+                        }
                     }
-                }
-               
+                }               
             }
         }
         &.without__image {
@@ -60,6 +60,7 @@
                 }
             }
         }
+
         &.social {
             .content {
                 .icon {
@@ -83,7 +84,7 @@
                     }
                 }
             }
-            &.instagram{ 
+            &.instagram{
 
                 &.without__content {
                     .content{
@@ -97,6 +98,35 @@
                     }
                 }
             }
+
+            &.facebook {
+                .content {
+                    > .author {
+                        .icon {
+                            @include instagramIcon();
+                        }
+                    }
+                }
+            }
+            &.twitter {
+                .content {
+                    > .author {
+                        .icon {
+                            @include instagramIcon();
+                        }
+                    }
+                }
+            }
+            &.instagram {
+                .content {
+                    > .author {
+                        .icon {
+                            @include instagramIcon();
+                        }
+                    }
+                }
+            }
+
         }
     }
 }
