@@ -205,19 +205,19 @@
             <div class="row related-articles">
                 <div class="col-md-9">
                     <h1>RELATED ARTICLES</h1>
-                </div>
                 
-                <div class="row">
-                    {% for i in 0..2 if articles[i] %}
-                        <div class="col-sm-3">
-                            {{this.render('partials/_single-article.twig', {
-                                article: articles[i], 
-                                position: (articleCount+1),
-                                imageSize: {width: 300, height: 180},
-                                containerClass: 'card-sm-wide card-sm-wide-mobile'
-                            }) | raw}}
-                        </div>
-                    {% endfor %}
+                    <div class="row">
+                        {% for i in 0..2 if articles[i] %}
+                            <div class="col-sm-3">
+                                {{this.render('partials/_single-article.twig', {
+                                    article: articles[i], 
+                                    position: (articleCount+1),
+                                    imageSize: {width: 300, height: 180},
+                                    containerClass: 'card-sm-wide card-sm-wide-mobile'
+                                }) | raw}}
+                            </div>
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
 
