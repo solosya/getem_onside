@@ -65,7 +65,7 @@
                 }
             }
 
-            &.facebook, &.twitter, &.instagram, &.youtube{
+            &.facebook, &.twitter, &.instagram {
                 .content{
                     >p {
                         font-size: rem(15);
@@ -77,17 +77,56 @@
                 }
             }
             &.instagram{
+                @include card-image-full;
+                text-align: center;
 
-                &.without__content {
-                    .content{
-                        // padding-top:34px;
-                        >p {
-                            margin-top:0;
+                .content{
+                    color: white;
+                    >p {
+                        padding-top: 15px;
+                        color: white;
+                        font-size:rem(18);
+                        font-weight:normal;
+                        line-height:1.33;
+                        height:19px;
+                    }
+                    > .icon {
+                        @include instagramIcon();
+                        margin: 5px;                       
+                    }
+                    .category {
+                        color: white;
+                    }
+                    .author {
+                        > * {
+                            color: white;
                         }
-                        >.author{
-                            position:static;
+                        > p {
+                            border-right: 1px solid white;
+                        }                        
+                        position: relative;
+                    }
+                }
+
+                &:not(.without__content) {
+                    .content {
+                        .author {
+                            bottom: -26px;
                         }
                     }
+                }
+
+                &.without__content {
+                    .content {
+                        > .icon {
+                            @include instagramIcon();
+                            margin-top: 65px;   
+                            margin-bottom: 20px;                    
+                        }
+                        > p {
+                            display: none;
+                        }
+                    }           
                 }
             }
 

@@ -181,7 +181,7 @@
                     }
                 }
 
-                &:not(.without__content) {
+                &:not(without__content) {
                     .content {
                         .author {
                             bottom: -26px;
