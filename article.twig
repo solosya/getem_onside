@@ -7,13 +7,15 @@
 
 
 {% set articleImg = false %}
+
+
 {% if article.media|length > 0 %}
     {% set articleImg = _Media.getMediaUrl(article.media[0],1094, 515, {'crop': 'fill', 'gravity': 'auto'} ) %}
 {% endif %}
 
 {% set carousel = "" %}
 {% if article.media|length > 1 %}
-    {% set carousel = "owl-thumbnails" %}
+    {% set carousel = "owl-carousel" %}
 {% endif %}
 
 
@@ -53,7 +55,7 @@
 
                         {% if articleImg %} 
                             <div class="image-container">
-                                <div id="{{carousel}}" class="owl-carousel owl-shep-theme" data-slider-id="1">
+                                <div id="{{carousel}}" class="{{carousel}} owl-shep-theme" data-slider-id="1">
                                     {% for image in article.media %}
                                         {% set articleImg = _Media.getMediaUrl(image,1094, 515, {'crop': 'fill', 'gravity': 'auto'} ) %}
 

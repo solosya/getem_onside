@@ -189,7 +189,7 @@ $('document').ready(function() {
     }), 750);
 
 
-    $("#owl-thumbnails").owlCarousel({
+    $("#owl-carousel").owlCarousel({
         items: 1,
         // thumbs: true,
         // thumbsPrerendered: true,
