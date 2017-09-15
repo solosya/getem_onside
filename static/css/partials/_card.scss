@@ -16,12 +16,25 @@
 }
 
 @mixin twitterCorner() {
-    @include cornerIcon('../icons/twitter-inverse.svg');
+    @include cornerIcon('../icons/twitter.svg');
 }
 
 @mixin inverseTwitterCorner() {
     @include cornerIcon('../icons/twitter-inverse.svg');
 }
+
+@mixin facebookCorner() {
+    @include cornerIcon('../icons/facebook.svg');
+}
+
+@mixin instagramCorner() {
+    @include cornerIcon('../icons/instagram.svg');
+}
+
+@mixin inverseFacebookCorner() {
+    @include cornerIcon('../icons/facebook-inverse.svg');
+}
+
 
 @mixin iconMiddle($url) {
     position:absolute;
@@ -47,9 +60,8 @@
 }
 
 @mixin instagramIconMiddle() {
-    @include iconMiddle('../icons/instagram-inverse.svg');
+    @include iconMiddle('../icons/instagram.svg');
 }
-
 
 @mixin videoIconMiddle() {
     @include iconMiddle('../icons/video-circle.svg');

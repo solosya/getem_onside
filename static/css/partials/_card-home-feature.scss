@@ -124,16 +124,15 @@
             }
 
 
-            &.facebook{
-                .content{
-                    >p {
-                        max-height:130px;
-                        font-size:rem(22);
-                        line-height:1.27;
-                    }
-
+            &.facebook {    
+                &:before{
+                    @include inverseFacebookCorner();
                 }
+
                 &.without__image {
+                    &:before{
+                        @include facebookCorner();
+                    }                    
                     .content {
                         > p {
                             color:black;
