@@ -1,5 +1,6 @@
 {{ set(this, 'title', _Blog.getBlogTitle()) }}
 {% set networkData = _Network.getNetworkData() %}
+{% set blogData    = _Blog.getBlog() %}
 
 
 {{this.registerJs("CardController();")}}
@@ -28,7 +29,7 @@
                     <div class="col-sm-9 header">
                         <div class="hk">
                             <h2>{{this.title}}</h2>
-                            <p></p>
+                            <p>{{blogData.short_description}}</p>
                         </div>
                     </div>
                 </div>
