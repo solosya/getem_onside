@@ -11,33 +11,33 @@ var screenArticles_1 =
 ';
 
 var systemCardTemplate = 
-'<div class="{{containerClass}} "> \
-    <a  itemprop="url" \
-        href="{{url}}" \
-        class="card swap" \
-        data-id="{{articleId}}" \
-        data-position="{{position}}" \
-        data-social="0" \
-        data-article-image="{{{imageUrl}}}" \
-        data-article-text="{{title}}"> \
-        \
-        <article class="">\
-            {{#if hasMedia}}\
-                <figure>\
-                    <img class="img-responsive lazyload" data-original="{{imageUrl}}" src="{{imageUrl}}" style="background-image:url("{{placeholder}}"")>\
-                </figure>\
-            {{/if}} \
-        \
-            <div class="content">\
-                    <div class="category">{{label}}</div>\
-                    <h2>{{{ title }}}</h2>\
-                    <p>{{{ excerpt }}}</p>\
-                    <div class="author">\
-                        <img src="{{profileImg}}" class="img-circle">\
-                        <p>{{ createdBy.displayName }}</p>\
-                    </div>\
-            </div>\
-        </article>'+
+'<div class="{{containerClass}}">'+
+    '<a  itemprop="url"' +
+        'href="{{url}}" ' +
+        'class="card swap" ' +
+        'data-id="{{articleId}}" ' +
+        'data-position="{{position}}" ' +
+        'data-social="0" ' +
+        'data-article-image="{{{imageUrl}}}" ' +
+        'data-article-text="{{title}}"> ' +
+        '<article class="">' +
+            '{{#if hasMedia}}' +
+                '<figure>' +
+                    '<img class="img-responsive lazyload" data-original="{{imageUrl}}" src="{{imageUrl}}" style="background-image:url("{{placeholder}}"")>' +
+                '</figure>' +
+            '{{/if}} ' +
+            '<div class="content">' +
+                    '<div class="category">{{label}}</div>' +                    
+                    '<h2 class="{{videoClass}}">{{{ title }}}</h2>' +
+                    '<p class="excerpt">{{ excerpt }}</p>' +                 
+                    '<div class="author {{videoClass}}">' +
+                        '<div class="icon"></div>' +
+                        '<p>{{ createdBy.displayName }}</p>' +
+                        '<time datetime="{{publishDate}}">{{publishDate}}</time>' +
+                    '</div>' +
+                    '<time datetime="{{publishDate}}">{{publishDate}}</time>' +
+                '</div>' +
+        '</article>'+
         
         '{{#if userHasBlogAccess}}'+
             '<div class="btn_overlay articleMenu">'+
