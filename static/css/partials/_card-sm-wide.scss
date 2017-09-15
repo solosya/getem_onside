@@ -6,6 +6,7 @@
     }
 
     a.card {
+        @include card-image-top(auto, 160px);
         height:250px;
 
         > article {
@@ -118,8 +119,27 @@
                     }                    
                 }
 
+                &.instagram {
+                    > figure{
+                        &:before{
+                            @include instagramIconMiddle();
+                        }
+                    }                    
+                }
             }  
         }
+
+        &.instagram {
+            @include card-image-top(auto, 209px);
+            > article {
+                .content {
+                    .author {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+
     }
 }
 
@@ -136,7 +156,6 @@
         @include card-sm-wide-base();
 
         a.card {
-            @include card-image-top(auto, 160px);
             
             > article {
 

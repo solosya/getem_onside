@@ -143,18 +143,25 @@
 
 
             &.instagram{
-                .content{
-                    >p {
-                        min-height:20px;
-                        max-height:130px;
-                        font-size:rem(22);
-                        line-height:1.27;
+                &:before{
+                    @include instagramCorner();
+                }
+
+                .content {
+                    .icon {
+                        display: inline-block;
+                        margin-bottom:285px;
                     }
                 }
-                &.without__caption {
+
+                &.without__content {
+                    background: red;
                     .content {
-                        > h2 {
+                        > p {
                             display: none;
+                        }
+                        .author {
+                            bottom: -30px;
                         }
                     }
                 }
@@ -221,7 +228,6 @@
         @include card-home-feature-base();
 
         margin-bottom:20px;
-        // height:210px;
         height:60vw;
 
         a.card {
