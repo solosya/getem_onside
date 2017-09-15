@@ -130,11 +130,19 @@
         }
 
         &.instagram {
-            @include card-image-top(auto, 209px);
-            > article {
-                .content {
-                    .author {
-                        margin-top: 0;
+            &.without__content {
+                @include card-image-top(auto, 209px);
+                > article {
+                    .content {
+                        .author {
+                            margin-top: 0;
+                        }
+                    }
+                    > figure {
+                        &:before{
+                            @include instagramIconMiddle();
+                            top:95px;
+                        }                        
                     }
                 }
             }

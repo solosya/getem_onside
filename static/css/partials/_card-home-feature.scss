@@ -147,18 +147,14 @@
                     @include instagramCorner();
                 }
 
-                .content {
-                    .icon {
-                        display: inline-block;
-                        margin-bottom:285px;
-                    }
-                }
-
                 &.without__content {
-                    background: red;
                     .content {
                         > p {
                             display: none;
+                        }
+                        .icon {
+                            display: inline-block;
+                            margin-bottom:285px;
                         }
                         .author {
                             bottom: -30px;

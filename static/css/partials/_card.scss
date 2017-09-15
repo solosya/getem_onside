@@ -61,7 +61,6 @@
 
 @mixin instagramIconMiddle() {
     @include iconMiddle('../icons/instagram.svg');
-    top:95px;
 }
 
 @mixin videoIconMiddle() {
