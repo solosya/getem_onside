@@ -19,6 +19,10 @@
     @include cornerIcon('../icons/twitter-inverse.svg');
 }
 
+@mixin inverseTwitterCorner() {
+    @include cornerIcon('../icons/twitter-inverse.svg');
+}
+
 @mixin videoIconMiddle() {
     position:absolute;
     content: '';
@@ -52,7 +56,7 @@
     @include socialIcon('../icons/facebook.svg');
 }
 @mixin twitterIcon {
-    @include socialIcon('../icons/twitter.svg');
+    @include socialIcon('../icons/twitter-inverse.svg');
 }
 @mixin smallVideoIcon {
     @include socialIcon('../icons/video-circle.svg');

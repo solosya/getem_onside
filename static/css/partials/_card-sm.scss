@@ -43,7 +43,11 @@
                         .icon {
                             @include smallVideoIcon();
                         }
-                    }                    
+                    }
+                    .icon {
+                        position: relative;
+                        bottom:-5px;
+                    }                  
                 }
                     
                 > time{
@@ -51,7 +55,7 @@
             }
         }
 
-        &.video {
+        &.video, &.social {
             @include card-image-full();
 
             > article {
@@ -62,19 +66,35 @@
                     >h2 {
                         display: none;
                     }
-                    > p.excerpt {
+
+                    .category {
+                        color: white;
+                    }
+
+                    >p {
+                        color: white;
+                        padding-top: 8px;
+                        font-size:rem(17);
                         height:132px;
                         padding-top:10px;
                         padding-bottom:8px;
+                        font-weight:normal;
+                        line-height:1.29;
                     }
 
-                    > .category {
-                        color:white;
-                    }
                     > .author {
                         position: absolute;
-                        bottom: 10px;
+                        bottom:17px;
+                        // padding-bottom: 19px;
+                        > * {
+                            color: white;
+                        }
+                        > p {
+                            border-right: 1px solid white;
+                        }
                     }
+
+
                 }
             }
         }
@@ -127,7 +147,6 @@
 .card-sm{
     @media screen and (min-width: $sm-break){
         @include card-sm-base();
-
         a.card {
             @include card-image-top(auto, 160px);
             
@@ -166,59 +185,83 @@
             &.without__image {
                 .content {
                     h2 {
-                        max-height:70px;
+                        max-height:80px;
                     }
                 }
             }  
 
             &.social {
                 .content {
-                    >p {
-                        max-height:65px;
-                        margin-bottom:6px;
+                    padding-top: 59px;
+
+                    .author {
+                        bottom: 2px;
+                    }
+                    .p {
+                        font-size: rem(15);
+                        line-height: 1.33;
+                        height:80px;
                     }
                 }
 
-                &.facebook {
+
+                &.twitter{
                     .content{
                         > .author {
                             .icon {
-                                @include instagramIcon();
+                                @include twitterIcon();
                             }
-                        }
+                        }                    
                     }
-                }
-                &.twitter {
-                    .content{
-                        > .author {
-                            .icon {
-                                @include instagramIcon();
-                            }
-                        }
+                    &.without__image {
+                        background: color(red);
                     }
                 }
 
+
+
+                &.facebook{
+                    .content{
+                        > .author {
+                            .icon {
+                                @include facebookIcon();
+                            }
+                        }                    
+                        >p {
+                            font-weight:600;
+                            line-height:1.33;
+                        }
+                    }
+                    &.without__image {
+                        .content{
+                            >p {
+                                font-size:rem(18);
+                                max-height:84px;
+                                font-weight:normal;
+                                line-height:1.56;
+                            }
+                        }
+                    }
+
+                }
                 &.instagram{ 
-                    &.without__content {
-                        @include card-image-top(auto, 209px);
-                    }
-                    .content {
+                    .content{
                         > .author {
                             .icon {
                                 @include instagramIcon();
                             }
-                        }                        
-                    }
-                }
-                &.without__image {
-                    .content {
-                        .icon {
-                            display:block;
-                            position:absolute;
-                            bottom:20px;
                         }
                         >p {
-                            max-height:70px;
+                            font-size:rem(20);
+                            font-weight:600;
+                            line-height:1.33;
+                            max-height:80px;
+                        }
+                    }
+
+                    &.without__content {
+                        .content{
+                            padding-top:115px;
                         }
                     }
                 }

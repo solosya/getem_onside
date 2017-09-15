@@ -5,7 +5,7 @@
 
     a.card {
         height:100%;
-
+        background: pink;
         > article {
             > figure{
                 margin-right:15px;
@@ -36,6 +36,12 @@
                 >p.excerpt {
                     display:none;
                 }
+                .author {
+                    .icon {
+                        position: relative;
+                        bottom:-4px;
+                    }                  
+                }
                 // .author{
                 //     position:absolute;
                 //     bottom:0;
@@ -62,7 +68,7 @@
             &.facebook, &.twitter, &.instagram, &.youtube{
                 .content{
                     >p {
-                        font-size: rem(12);
+                        font-size: rem(15);
                         margin-top:10px;
                         max-height:50px;
                         font-weight:600;
@@ -89,7 +95,7 @@
                 .content {
                     > .author {
                         .icon {
-                            @include instagramIcon();
+                            @include facebookIcon();
                         }
                     }
                 }
@@ -98,7 +104,7 @@
                 .content {
                     > .author {
                         .icon {
-                            @include instagramIcon();
+                            @include twitterIcon();
                         }
                     }
                 }

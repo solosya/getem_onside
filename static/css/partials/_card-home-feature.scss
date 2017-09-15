@@ -106,8 +106,15 @@
                     }
                 }
             }
-            &.twitter {               
+            &.twitter {    
+                &:before{
+                    @include twitterCorner();
+                }
+
                 &.without__image {
+                    &:before{
+                        @include inverseTwitterCorner();
+                    }                    
                     .content {
                         > p {
                             color:black;
@@ -116,11 +123,6 @@
                 }
             }
 
-            &.twitter {
-                &:before{
-                    @include twitterCorner();
-                }
-            }
 
             &.facebook{
                 .content{
