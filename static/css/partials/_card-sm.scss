@@ -111,17 +111,16 @@
                 height:100%;
 
                 h2 {
-                    // display: none; // checking with anita
+                    display: none; // checking with anita
                 }
 
                 >p.excerpt {
-                    display:none;
-                    // display:block;
-                    // font-size: rem(15);
-                    // height:80px;
-                    // max-height:80px;
-                    // line-height: 1.33;
-                    // margin-top: 7px;
+                    display:block;
+                    font-size: rem(15);
+                    height:80px;
+                    max-height:80px;
+                    line-height: 1.33;
+                    margin-top: 7px;
                 }
 
                 .author {
@@ -157,13 +156,18 @@
                 > .content{
 
                     > h2{
-                        display: none;
+                        font-size:rem(17);
+                        line-height:1.29;
+                        max-height:44px;
+                        margin-top:5px;
+
                     }
 
                     > p.excerpt {
-                        font-size: rem(15);
-                        height:80px;
-                        margin-top: 2px;
+                        display:none;
+                        // font-size: rem(15);
+                        // height:80px;
+                        // margin-top: 2px;
                     }
 
                     > .author{
