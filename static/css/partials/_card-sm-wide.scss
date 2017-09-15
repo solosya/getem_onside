@@ -6,6 +6,7 @@
     }
 
     a.card {
+        @include card-image-top(auto, 160px);
         height:250px;
 
         > article {
@@ -92,7 +93,7 @@
         } 
 
         &.social {
-            background: yellow;
+            // background: pink;
             > article {
                 .content {
                     .author {
@@ -118,8 +119,35 @@
                     }                    
                 }
 
+                &.instagram {
+                    > figure{
+                        &:before{
+                            @include instagramIconMiddle();
+                        }
+                    }                    
+                }
             }  
         }
+
+        &.instagram {
+            &.without__content {
+                @include card-image-top(auto, 209px);
+                > article {
+                    .content {
+                        .author {
+                            margin-top: 0;
+                        }
+                    }
+                    > figure {
+                        &:before{
+                            @include instagramIconMiddle();
+                            top:95px;
+                        }                        
+                    }
+                }
+            }
+        }
+
     }
 }
 
@@ -136,7 +164,6 @@
         @include card-sm-wide-base();
 
         a.card {
-            @include card-image-top(auto, 160px);
             
             > article {
 

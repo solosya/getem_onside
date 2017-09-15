@@ -79,7 +79,7 @@
 
                         p{
                             color:white;
-                            border-right: 1px solid color(white);
+                            border-right: 1px solid white; line-height: 1;;
                         }
                         time{
                             font-family:$font-family-sans-serif;
@@ -149,7 +149,7 @@
                         .content {
                             > p.excerpt {
                                 display:inline-block;
-                                color:pink;
+                                // color:pink;
                             }
                         }
                     }
@@ -217,7 +217,7 @@
                     .author{
                         p{
                             color:white;
-                            border-right: 1px solid color(white);
+                            border-right: 1px solid white; line-height: 1;;
                         }
                         time{
                             font-family:$font-family-sans-serif;
