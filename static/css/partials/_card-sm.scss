@@ -230,24 +230,20 @@
                     }
                 }
 
-                &.instagram{ 
+                &.instagram{
                     .content{
                         > .author {
                             .icon {
                                 @include instagramIcon();
                             }
-                        }
-                        >p {
-                            font-size:rem(20);
-                            font-weight:600;
-                            line-height:1.33;
-                            max-height:80px;
-                        }
+                        }                    
                     }
-
                     &.without__content {
-                        .content{
-                            padding-top:115px;
+                        .content {
+                            .category {
+                                position: absolute;
+                                bottom:45px;
+                            }
                         }
                     }
                 }
