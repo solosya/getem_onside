@@ -23,19 +23,36 @@
     @include cornerIcon('../icons/twitter-inverse.svg');
 }
 
-@mixin videoIconMiddle() {
+@mixin iconMiddle($url) {
     position:absolute;
     content: '';
     width: 20px;
     height: 20px;
-    background-image: url(../icons/video-circle.svg);
+    background-image: url($url);
     background-repeat: no-repeat;
     background-size: contain;
     // top: 50%;
     // left: 50%;
     left:140px;
     top:70px;
-    z-index: 100;
+    z-index: 100;    
+}
+
+@mixin twitterIconMiddle() {
+    @include iconMiddle('../icons/twitter-inverse.svg');
+}
+
+@mixin facebookIconMiddle() {
+    @include iconMiddle('../icons/facebook-inverse.svg');
+}
+
+@mixin instagramIconMiddle() {
+    @include iconMiddle('../icons/instagram-inverse.svg');
+}
+
+
+@mixin videoIconMiddle() {
+    @include iconMiddle('../icons/video-circle.svg');
 }
 
 @mixin socialIcon($url) {

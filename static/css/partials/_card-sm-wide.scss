@@ -92,11 +92,24 @@
         } 
 
         &.social {
-            &.without__image {
-                .author {
-
+            background: yellow;
+            > article {
+                .content {
+                    .author {
+                        .icon {
+                            display: none;
+                        }                    
+                    }
                 }
-            }
+
+                &.twitter {
+                    > figure{
+                        &:before{
+                            @include twitterIconMiddle();
+                        }
+                    }                    
+                }
+            }  
         }
     }
 }
@@ -160,92 +173,96 @@
             }
 
             &.social {
-                .content {
-                    .author {
-                        bottom: 2px;
-                    }
-                    .p {
-                        font-size: rem(15);
-                        line-height: 1.33;
-                        height:80px;
-                    }
-                }
 
-
-                &.twitter{
-                    .content{
-                        > .author {
-                            .icon {
-                                @include twitterIcon();
-                            }
-                        }                    
-                        >p {
-                            font-size:rem(20);
-                            font-weight:600;
-                            line-height:1.33;
-                            max-height:80px;
-                        }
-                    }
-                    &.without__image {
-                        .content{
-                            >p {
-                                font-size:rem(18);
-                                max-height:84px;
-                                font-weight:normal;
-                                line-height:1.56;
-                            }
-                        }
-                    }
-                }
-
-
-
-                &.facebook{
-                    .content{
-                        > .author {
-                            .icon {
-                                @include facebookIcon();
-                            }
-                        }                    
-                        >p {
-                            font-weight:600;
-                            line-height:1.33;
-                        }
-                    }
-                    &.without__image {
-                        .content{
-                            >p {
-                                font-size:rem(18);
-                                max-height:84px;
-                                font-weight:normal;
-                                line-height:1.56;
-                            }
-                        }
-                    }
-
-                }
-                &.instagram{ 
-                    .content{
-                        > .author {
-                            .icon {
-                                @include instagramIcon();
-                            }
-                        }
-                        >p {
-                            font-size:rem(20);
-                            font-weight:600;
-                            line-height:1.33;
-                            max-height:80px;
-                        }
-                    }
-
-                    &.without__content {
-                        .content{
-                            padding-top:115px;
-                        }
-                    }
-                }
             }
+
+            // &.social {
+            //     .content {
+            //         .author {
+            //             bottom: 2px;
+            //         }
+            //         .p {
+            //             font-size: rem(15);
+            //             line-height: 1.33;
+            //             height:80px;
+            //         }
+            //     }
+
+
+            //     &.twitter{
+            //         .content{
+            //             > .author {
+            //                 .icon {
+            //                     @include twitterIcon();
+            //                 }
+            //             }                    
+            //             >p {
+            //                 font-size:rem(20);
+            //                 font-weight:600;
+            //                 line-height:1.33;
+            //                 max-height:80px;
+            //             }
+            //         }
+            //         &.without__image {
+            //             .content{
+            //                 >p {
+            //                     font-size:rem(18);
+            //                     max-height:84px;
+            //                     font-weight:normal;
+            //                     line-height:1.56;
+            //                 }
+            //             }
+            //         }
+            //     }
+
+
+
+            //     &.facebook{
+            //         .content{
+            //             > .author {
+            //                 .icon {
+            //                     @include facebookIcon();
+            //                 }
+            //             }                    
+            //             >p {
+            //                 font-weight:600;
+            //                 line-height:1.33;
+            //             }
+            //         }
+            //         &.without__image {
+            //             .content{
+            //                 >p {
+            //                     font-size:rem(18);
+            //                     max-height:84px;
+            //                     font-weight:normal;
+            //                     line-height:1.56;
+            //                 }
+            //             }
+            //         }
+
+            //     }
+            //     &.instagram{ 
+            //         .content{
+            //             > .author {
+            //                 .icon {
+            //                     @include instagramIcon();
+            //                 }
+            //             }
+            //             >p {
+            //                 font-size:rem(20);
+            //                 font-weight:600;
+            //                 line-height:1.33;
+            //                 max-height:80px;
+            //             }
+            //         }
+
+            //         &.without__content {
+            //             .content{
+            //                 padding-top:115px;
+            //             }
+            //         }
+            //     }
+            // }
 
         }
     }
