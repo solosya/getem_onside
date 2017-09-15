@@ -61,7 +61,7 @@
 			{
 				"id": "716",
 				"guid": "5e994f7a-3eb1-408e-9740-ece27d85c118",
-				"title": "image",
+				"title": "News & Social",
 				"type": "channel",
 				"is_default": null,
 				"network_id": "327",
@@ -82,12 +82,12 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861433",
-				"url": "http:\/\/theme.aap.io\/@image"
+				"url": "http:\/\/theme.aap.dev\/@news-social"
 			},
 			{
 				"id": "718",
 				"guid": "5e994f7a-3eb1-408e-9740-ece27d85c119",
-				"title": "New Zealand",
+				"title": "Game Feeds",
 				"type": "channel",
 				"is_default": null,
 				"network_id": "327",
@@ -108,12 +108,12 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861433",
-				"url": "http:\/\/theme.aap.io\/@new-zealand"
+				"url": "http:\/\/theme.aap.dev\/@feeds"
 			},
 			{
 				"id": "723",
 				"guid": "4edecaf3-c3e8-4768-9454-9895b646e986",
-				"title": "World",
+				"title": "Trivia",
 				"type": "channel",
 				"is_default": null,
 				"network_id": "327",
@@ -134,12 +134,12 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493862086",
-				"url": "http:\/\/theme.aap.io\/@world"
+				"url": "http:\/\/theme.aap.dev\/@trivia"
 			},
 			{
 				"id": "720",
 				"guid": "667a8f2d-47ee-40db-89d0-86dadc56bfd0",
-				"title": "Business",
+				"title": "Podcasts",
 				"type": "channel",
 				"is_default": null,
 				"network_id": "327",
@@ -160,14 +160,14 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861466",
-				"url": "http:\/\/theme.aap.io\/@Business"
+				"url": "http:\/\/theme.aap.dev\/@podcasts"
 			},
 
 
 			{
 				"id": "730",
 				"guid": "23bf1bee-0461-4693-9f0a-65b00ba6987c",
-				"title": "Sport",
+				"title": "Your Say",
 				"type": "channel",
 				"is_default": null,
 				"network_id": "327",
@@ -187,12 +187,12 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861482",
-				"url": "http:\/\/theme.aap.io\/@sport"
+				"url": "http:\/\/theme.aap.dev\/@yoursay"
 			},
 			{
 				"id": "731",
 				"guid": "b1b7603e-85c9-4c74-bb11-e53cdfe92616",
-				"title": "Community",
+				"title": "Newsletter",
 				"type": "channel",
 				"is_default": null,
 				"network_id": "327",
@@ -212,33 +212,7 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861446",
-				"url": "http:\/\/theme.aap.io\/@community"
-			},
-			{
-				"id": "722",
-				"guid": "52c7ab9e-94d4-4af2-835a-a4c7dd01752f",
-				"title": "Weather",
-				"type": "channel",
-				"is_default": null,
-				"network_id": "327",
-				"short_description": "On 13 – 14 November more than 320 practitioners from across the state came together for the second time.<¡¡>And then more stuff here",
-				"featured_color": null,
-				"status": "1",
-				"blogLayoutFileName": null,
-				"thumbCloudinaryPublicId": null,
-				"thumbCloudinaryCloudName": null,
-				"thumbCdnPath": null,
-				"thumbMediaWidth": null,
-				"thumbMediaHeight": null,
-				"cloudinary_public_id": null,
-				"cloudinary_cloud_name": null,
-				"cdn_path": "http://res.cloudinary.com/cognitives/image/upload/c_fit,dpr_auto,f_auto,fl_lossy,h_455,q_auto,w_1280/goaeoqqqf24jjnjvslc7.jpg",
-				"coverMediaWidth": null,
-				"coverMediaHeight": null,
-				"total_views": "0",
-				"total_articles": "0",
-				"created_at": "1493861496",
-				"url": "http:\/\/theme.aap.io\/@conference-2014"
+				"url": "http:\/\/theme.aap.dev\/@Newsletter"
 			}
 		],
 		"styling": {
