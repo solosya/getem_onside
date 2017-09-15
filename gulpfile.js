@@ -88,7 +88,6 @@ gulp.task('scripts', function(){
         './static/development/js/plugins/jquery.lazyload.min.js',
         './static/development/js/plugins/jquery.dotdotdot.min.js',
         './static/development/js/plugins/owl.carousel.min.js',
-        './static/development/js/plugins/owl.carousel2.thumbs.min.js',
         
         './static/development/js/sdk/cloudinary/jquery.cloudinary.js',
         './static/development/js/sdk/common.js',

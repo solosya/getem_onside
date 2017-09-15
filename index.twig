@@ -19,7 +19,7 @@
 
 
 <!-- used to index each article as we loop over throughout the template -->
-{% set articleCount = _AppHelper.getApplicationEnv() == 'DEV' ? 7 : 0 %}
+{% set articleCount = _AppHelper.getApplicationEnv() == 'DEV' ? 0 : 0 %}
 {% set dev = _AppHelper.getApplicationEnv() == 'DEV' ? true : false %}
 
 
@@ -305,7 +305,7 @@
                                 containerClass: 'col-sm-1 card-sm feature-side-mobile'
                             }) | raw}}
                             {% set ruralCount = (dev) ? articleCount : ruralCount + 1 %}
-                            {% if i < 2 %}
+                            {% if i < 3 %}
                                 <hr class="divide visible-xs-block">
                             {% endif %}
                         {% endfor %}
@@ -337,7 +337,7 @@
                                 containerClass: 'col-sm-1 card-sm feature-side-mobile'
                             }) | raw}}
                             {% set ruralCount = (dev) ? articleCount : ruralCount + 1 %}
-                            {% if i < 2 %}
+                            {% if i < 3 %}
                                 <hr class="divide visible-xs-block">
                             {% endif %}
                         {% endfor %}
@@ -369,7 +369,7 @@
                                 containerClass: 'col-sm-1 card-sm feature-side-mobile'
                             }) | raw}}
                             {% set ruralCount = (dev) ? articleCount : ruralCount + 1 %}
-                            {% if i < 2 %}
+                            {% if i < 3 %}
                                 <hr class="divide visible-xs-block">
                             {% endif %}
                         {% endfor %}

@@ -1,4 +1,4 @@
-body.layout-landing {
+body.layout-landing, body.auth.login {
     height:100%;
     background:color(red);
 
@@ -23,8 +23,9 @@ body.layout-landing {
         .logo {
            img {
                position:relative;
-               top:-35px;
-               left:40px;
+               top: -15px;
+               left: 40px;
+               width: 220px;
                @media screen and (max-width: $sm-break) {
                    left:0;
                }
