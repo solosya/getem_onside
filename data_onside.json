@@ -42,7 +42,7 @@
 				"short_description": "Default blog for Getem Onside.",
 				"featured_color": null,
 				"status": "1",
-				"blogLayoutFileName": null,
+				"blogLayoutFileName": "layout-landing",
 				"thumbCloudinaryPublicId": null,
 				"thumbCloudinaryCloudName": null,
 				"thumbCdnPath": null,
