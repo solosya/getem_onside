@@ -19,17 +19,27 @@
 
 
 <!-- used to index each article as we loop over throughout the template -->
-{% set articleCount = _AppHelper.getApplicationEnv() == 'DEV' ? 8 : 0 %}
+{% set articleCount = _AppHelper.getApplicationEnv() == 'DEV' ? 7 : 0 %}
 {% set dev = _AppHelper.getApplicationEnv() == 'DEV' ? true : false %}
 
 
 {% set sections =  {
-        "social": {
+        "social field": {
             "feed": "",
             "link": "",
             "limit" : 10
         }, 
-        "trivia": {
+        "tennis": {
+            "feed": "",
+            "link": "",
+            "limit" : 10
+        },
+        "cricket": {
+            "feed": "",
+            "link": "",
+            "limit" : 10
+        }, 
+        "other sport": {
             "feed": "",
             "link": "",
             "limit" : 10
@@ -138,13 +148,13 @@
                             }) | raw}}
                             {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
                             {% if i < 4 %}
-                                <hr class="divide15 visible-md-block visible-lg-block">
+                                <hr class="divide13 visible-md-block visible-lg-block">
                                 <hr class="divide10 visible-xs-block visible-sm-block">
                             {% endif %}
 
                         {% endfor %}
 
-                        <hr class="divide15 visible-md-block visible-lg-block space-only">
+                        <hr class="divide13 visible-md-block visible-lg-block space-only">
                         <hr class="divide10 visible-xs-block visible-sm-block space-only">
 
                         <div class="advert visible-md-block visible-lg-block">
@@ -224,7 +234,7 @@
                     limit: limit, 
                     non_pinned: articlesArr.existingNonPinnedCount, 
                     articles: articles,
-                    card_style: "col-sm-12 card-search card-search-mob",
+                    card_style: "card-rec card-rec-tablet card-rec-mobile",
                     container:"mainAjaxArticles",
                     loadtype: "search"
                 }) | raw }}
@@ -242,25 +252,23 @@
 
 
         <div class="container">
-
-
-           {% if articles[articleCount] %}
+            {% if sections['social field'].feed.articles|length > 0 %}
                 {% set ruralCount = (dev) ? articleCount : 0 %}
 
                 <section>
                     <div class="row">
                         <div class="col-sm-9 section-header">
                             <div class="hk">
-                                <h2>delete this block</h2>
+                                <h2>social field</h2>
                                 <p></p>
                             </div>
                         </div>
                     </div>
 
                     <div class="row four-cols">
-                        {% for i in 0..3 if articles[articleCount] %}
+                        {% for i in 0..3 if sections['social field'].feed.articles[ruralCount] %}
                             {{this.render('partials/_single-article.twig', {
-                                article: articles[articleCount], 
+                                article: sections['social field'].feed.articles[ruralCount], 
                                 imageSize: {width:300},
                                 containerClass: 'col-sm-1 card-sm feature-side-mobile'
                             }) | raw}}
@@ -273,25 +281,26 @@
                     </div>
                 </section>
             {% endif %}
+        </div>
 
-
-            {% if sections['trivia'].feed.articles|length > 0 %}
+        <div class="container">
+            {% if sections['tennis'].feed.articles|length > 0 %}
                 {% set ruralCount = (dev) ? articleCount : 0 %}
 
                 <section>
                     <div class="row">
                         <div class="col-sm-9 section-header">
                             <div class="hk">
-                                <h2>trivia</h2>
+                                <h2>tennis</h2>
                                 <p></p>
                             </div>
                         </div>
                     </div>
 
                     <div class="row four-cols">
-                        {% for i in 0..3 if sections['trivia'].feed.articles[ruralCount] %}
+                        {% for i in 0..3 if sections['tennis'].feed.articles[ruralCount] %}
                             {{this.render('partials/_single-article.twig', {
-                                article: sections['trivia'].feed.articles[ruralCount], 
+                                article: sections['tennis'].feed.articles[ruralCount], 
                                 imageSize: {width:300},
                                 containerClass: 'col-sm-1 card-sm feature-side-mobile'
                             }) | raw}}
@@ -304,8 +313,70 @@
                     </div>
                 </section>
             {% endif %}
+        </div>
 
+        <div class="container">
+            {% if sections['cricket'].feed.articles|length > 0 %}
+                {% set ruralCount = (dev) ? articleCount : 0 %}
 
+                <section>
+                    <div class="row">
+                        <div class="col-sm-9 section-header">
+                            <div class="hk">
+                                <h2>cricket</h2>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row four-cols">
+                        {% for i in 0..3 if sections['cricket'].feed.articles[ruralCount] %}
+                            {{this.render('partials/_single-article.twig', {
+                                article: sections['cricket'].feed.articles[ruralCount], 
+                                imageSize: {width:300},
+                                containerClass: 'col-sm-1 card-sm feature-side-mobile'
+                            }) | raw}}
+                            {% set ruralCount = (dev) ? articleCount : ruralCount + 1 %}
+                            {% if i < 2 %}
+                                <hr class="divide visible-xs-block">
+                            {% endif %}
+                        {% endfor %}
+
+                    </div>
+                </section>
+            {% endif %}
+        </div>
+
+        <div class="container">
+            {% if sections['other sport'].feed.articles|length > 0 %}
+                {% set ruralCount = (dev) ? articleCount : 0 %}
+
+                <section>
+                    <div class="row">
+                        <div class="col-sm-9 section-header">
+                            <div class="hk">
+                                <h2>other sport</h2>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row four-cols">
+                        {% for i in 0..3 if sections['other sport'].feed.articles[ruralCount] %}
+                            {{this.render('partials/_single-article.twig', {
+                                article: sections['other sport'].feed.articles[ruralCount], 
+                                imageSize: {width:300},
+                                containerClass: 'col-sm-1 card-sm feature-side-mobile'
+                            }) | raw}}
+                            {% set ruralCount = (dev) ? articleCount : ruralCount + 1 %}
+                            {% if i < 2 %}
+                                <hr class="divide visible-xs-block">
+                            {% endif %}
+                        {% endfor %}
+
+                    </div>
+                </section>
+            {% endif %}
         </div>
 
 
