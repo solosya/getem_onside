@@ -19,7 +19,7 @@
 
 
 <!-- used to index each article as we loop over throughout the template -->
-{% set articleCount = _AppHelper.getApplicationEnv() == 'DEV' ? 0 : 0 %}
+{% set articleCount = _AppHelper.getApplicationEnv() == 'DEV' ? 7 : 0 %}
 {% set dev = _AppHelper.getApplicationEnv() == 'DEV' ? true : false %}
 
 
@@ -242,37 +242,6 @@
 
 
         <div class="container">
-
-
-           {% if articles[articleCount] %}
-                {% set ruralCount = (dev) ? articleCount : 0 %}
-
-                <section>
-                    <div class="row">
-                        <div class="col-sm-9 section-header">
-                            <div class="hk">
-                                <h2>delete this block</h2>
-                                <p></p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row four-cols">
-                        {% for i in 0..3 if articles[articleCount] %}
-                            {{this.render('partials/_single-article.twig', {
-                                article: articles[articleCount], 
-                                imageSize: {width:300},
-                                containerClass: 'col-sm-1 card-sm feature-side-mobile'
-                            }) | raw}}
-                            {% set ruralCount = (dev) ? articleCount : ruralCount + 1 %}
-                            {% if i < 2 %}
-                                <hr class="divide visible-xs-block">
-                            {% endif %}
-                        {% endfor %}
-
-                    </div>
-                </section>
-            {% endif %}
 
 
             {% if sections['trivia'].feed.articles|length > 0 %}

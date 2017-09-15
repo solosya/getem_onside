@@ -1,6 +1,6 @@
 @mixin card-rec-base() {
     a.card {
-        background: pink;
+        // background: pink;
         article {
             position:relative;
 
@@ -94,7 +94,7 @@
 
 
         &.social {
-            background: yellow;
+            // background: pink;
 
             .author {
                 position: absolute;
@@ -181,13 +181,13 @@
                     }
                 }
 
-                &:not(without__content) {
-                    .content {
-                        .author {
-                            bottom: -26px;
-                        }
-                    }
-                }
+                // &:not(without__content) {
+                //     .content {
+                //         .author {
+                //             bottom: -26px;
+                //         }
+                //     }
+                // }
 
                 &.without__content {
                     .content {
