@@ -23,7 +23,7 @@
                 > .category{
                 }
                 > h2{
-                    font-weight: bold;
+                    // font-weight: bold;
                     // background:orange;
                 }
                 > p.excerpt {
@@ -156,13 +156,18 @@
                 > .content{
 
                     > h2{
-                        display: none;
+                        font-size:rem(17);
+                        line-height:1.29;
+                        max-height:44px;
+                        margin-top:5px;
+
                     }
 
                     > p.excerpt {
-                        font-size: rem(15);
-                        height:80px;
-                        margin-top: 2px;
+                        display:none;
+                        // font-size: rem(15);
+                        // height:80px;
+                        // margin-top: 2px;
                     }
 
                     > .author{
