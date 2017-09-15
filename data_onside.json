@@ -16,7 +16,7 @@
 			"disqus": [
 				
 			],
-			"googleTagManager": [
+			"googleTagMannager": [
 				
 			]
 		},
@@ -56,7 +56,7 @@
 				"total_views": "6",
 				"total_articles": "10",
 				"created_at": "1493860104",
-				"url": "http:\/\/themedev.cognitives.io/"
+				"link": "http:\/\/themedev.cognitives.io/"
 			},
 			{
 				"id": "716",
@@ -82,7 +82,7 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861433",
-				"url": "http:\/\/theme.aap.dev\/@news-social"
+				"link": "http:\/\/theme.aap.dev\/@news-social"
 			},
 			{
 				"id": "718",
@@ -91,7 +91,7 @@
 				"type": "channel",
 				"is_default": null,
 				"network_id": "327",
-				"short_description": "<p>Each year, the Office of the Senior Practitioner hosts the FACS Practice Conference, which brings together over 500 FACS practitioners, plus more live streamers, to reflect, learn and share knowledge and skills about practice with children and families.</p><p>Practitioners are able to hear local and international speakers, take part in workshops and master classes and network with fellow colleagues, speakers and presenters.</p><p>While each conference focuses on a particular theme, practice always remains at the heart of learning and new knowledge. Practitioners who attend the conference always talk about how the learning from the conference inspires and excites them to try new and different things in their work.</p><p>Videos of each of the keynote speakers at the last three conferences are available to view on these pages.</p><p>Watch this space for information about the next Practice Conference in 2017.</p>",
+				"short_description": "Each year, the Office of the Senior Practitioner hosts the FACS Practice Conference, which brings together over 500 FACS practitioners, plus more live streamers, to reflect, learn and share knowledge and skills about practice with children and families.</p><p>Practitioners are able to hear local and international speakers, take part in workshops and master classes and network with fellow colleagues, speakers and presenters.</p><p>While each conference focuses on a particular theme, practice always remains at the heart of learning and new knowledge. Practitioners who attend the conference always talk about how the learning from the conference inspires and excites them to try new and different things in their work.</p><p>Videos of each of the keynote speakers at the last three conferences are available to view on these pages.</p><p>Watch this space for information about the next Practice Conference in 2017.",
 				"featured_color": null,
 				"status": "1",
 				"blogLayoutFileName": "layout-community",
@@ -108,11 +108,11 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861433",
-				"url": "http:\/\/theme.aap.dev\/@feeds"
+				"link": "http:\/\/theme.aap.dev\/@feeds"
 			},
 			{
 				"id": "723",
-				"guid": "4edecaf3-c3e8-4768-9454-9895b646e986",
+				"guid": "4edecaf3-c3e8-4768-9454-9895b646e987",
 				"title": "Trivia",
 				"type": "channel",
 				"is_default": null,
@@ -134,7 +134,7 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493862086",
-				"url": "http:\/\/theme.aap.dev\/@trivia"
+				"link": "http:\/\/theme.aap.dev\/@trivia"
 			},
 			{
 				"id": "720",
@@ -160,7 +160,7 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861466",
-				"url": "http:\/\/theme.aap.dev\/@podcasts"
+				"link": "http:\/\/theme.aap.dev\/@podcasts"
 			},
 
 
@@ -187,7 +187,7 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861482",
-				"url": "http:\/\/theme.aap.dev\/@yoursay"
+				"link": "http:\/\/theme.aap.dev\/@yoursay"
 			},
 			{
 				"id": "731",
@@ -212,7 +212,7 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861446",
-				"url": "http:\/\/theme.aap.dev\/@Newsletter"
+				"link": "http:\/\/theme.aap.dev\/@Newsletter"
 			},
 			{
 				"id": "731",
@@ -237,7 +237,7 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861446",
-				"url": "http:\/\/theme.aap.dev\/@tennis"
+				"link": "http:\/\/theme.aap.dev\/@tennis"
 			},
 			{
 				"id": "731",
@@ -262,7 +262,7 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861446",
-				"url": "http:\/\/theme.aap.dev\/@cricket"
+				"link": "http:\/\/theme.aap.dev\/@cricket"
 			},
 			{
 				"id": "731",
@@ -287,7 +287,7 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861446",
-				"url": "http:\/\/theme.aap.dev\/@other-sport"
+				"link": "http:\/\/theme.aap.dev\/@other-sport"
 			},
 			{
 				"id": "731",
@@ -312,7 +312,7 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861446",
-				"url": "http:\/\/theme.aap.dev\/@social"
+				"link": "http:\/\/theme.aap.dev\/@social"
 			}
 		],
 		"styling": {
