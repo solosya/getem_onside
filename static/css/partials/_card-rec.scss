@@ -125,13 +125,14 @@
                         line-height:1.44;
                     }
                 }
-                &.without__image {
-                }
             }
 
 
 
-            &.facebook{
+            &.twitter{
+                .category {
+                    display: none;
+                }
                 .content{
                     > .author {
                         .icon {
@@ -139,22 +140,15 @@
                         }
                     }                    
                     >p {
-                        font-weight:600;
-                        line-height:1.33;
+                        padding-top:28px;
+                        font-size:rem(18);
+                        max-height:84px;
+                        font-weight:normal;
+                        line-height:1.44;
                     }
                 }
-                &.without__image {
-                    .content{
-                        >p {
-                            font-size:rem(18);
-                            max-height:84px;
-                            font-weight:normal;
-                            line-height:1.56;
-                        }
-                    }
-                }
-
             }
+            
             &.instagram{ 
                 .content{
                     > .author {

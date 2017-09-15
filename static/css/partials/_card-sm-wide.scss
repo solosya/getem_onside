@@ -109,6 +109,15 @@
                         }
                     }                    
                 }
+
+                &.facebook {
+                    > figure{
+                        &:before{
+                            @include facebookIconMiddle();
+                        }
+                    }                    
+                }
+
             }  
         }
     }
@@ -170,10 +179,6 @@
                         max-height:80px;
                     }
                 }
-            }
-
-            &.social {
-
             }
 
             // &.social {
@@ -341,12 +346,7 @@
                     }
                 }
 
-                &.facebook {
-                    .content{
-
-                    }
-                }
-                &.twitter {
+                &.twitter, &.facebook {
                     .content{
                         .icon {
                             width:22px;

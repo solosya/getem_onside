@@ -1541,6 +1541,393 @@
 				"width": 600
 			}
 		},
+
+
+		{
+			"guid": null,
+			"articleId": null,
+			"socialId": "1",
+			"templatePath": "https:\/\/d3pbdxdl8c65wb.cloudfront.net\/themes\/M7kOKBL0ZLR5zx",
+			"displayOrder": "2",
+			"isPinned": "0",
+			"pinnedAt": null,
+			"status": "1",
+			"titleOriginal": null,
+			"title": null,
+			"titlePreview": "",
+			"excerpt": null,
+			"keywords": null,
+			"createdDate": "May 04 2017",
+			"userHasBlogAccess": 0,
+			"isPromoted": "0",
+			"readingTime": "1",
+			"total": {
+				"share": "0"
+			},
+			"blog": {
+				"id": "717",
+				"title": "Get Em on Side",
+				"url": "http:\/\/theme.aap.io/",
+				"owner": {
+					"id": "570",
+					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
+					"name": "Tim Campbell",
+					"username": "Tcampbell",
+					"email": "Tcampbell@pagemasters.com.au",
+					"bio": null,
+					"display_name": "Tim Campbell",
+					"media": {
+						"id": null,
+						"cloudName": null,
+						"path": null
+					}
+				},
+				"media": {
+					"cover": {
+						"id": null,
+						"cloudName": null,
+						"path": null
+					},
+					"thumb": {
+						"id": null,
+						"cloudName": null,
+						"path": null
+					}
+				}
+			},
+			"channel": {
+				"guid": null,
+				"title": null
+			},
+			"createdBy": {
+				"name": null,
+				"displayName": null,
+				"media": {
+					"id": null,
+					"cloudName": null,
+					"path": null
+				}
+			},
+			"hasMedia": true,
+			"hasPreviewMedia": false,
+			"featuredMediaOriginal": {
+				"id": "t0mm3cbkylyunqcsvp6i",
+				"cloudName": "cognitives",
+				"path": "https:\/\/res.cloudinary.com\/cognitives\/image\/upload\/v1493861210\/t0mm3cbkylyunqcsvp6i.jpg",
+				"type": "video"
+			},
+			"featuredMedia": {
+				"id": "t0mm3cbkylyunqcsvp6i",
+				"cloudName": "cognitives",
+				"path": "https:\/\/res.cloudinary.com\/cognitives\/image\/upload\/v1493861210\/t0mm3cbkylyunqcsvp6i.jpg",
+				"type": "image",
+				"media": {
+					"url": "http:\/\/res.cloudinary.com\/cognitives\/image\/upload\/c_fill,dpr_auto,f_auto,fl_lossy,g_faces,h_720,q_auto,w_1280\/t0mm3cbkylyunqcsvp6i",
+					"height": "720",
+					"width": "1280"
+				}
+			},
+			"previewMedia": false,
+			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24354\/roosters-snare-tigers-star-james-tedesco",
+			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=3e297d23-4f17-4ecc-84fe-4c4fa826a5e7",
+			"publishDate": "May 04 2017",
+			"metaPublishDate": "2017-05-04",
+			"publishDateTime": "2017-05-04 11:26:42",
+			"metaUpdateDate": "2017-05-04",
+			"label": "Get Em on Side",
+		    "social": {
+		        "id": "1",
+		        "guid": "ac97adf9-c99f-4892-9661-7011cac669ed",
+		        "blog": {
+		            "id": "1",
+		            "guid": "663526d3-38a9-4ddd-97b7-473e70093126",
+		            "title": "Blog Title"
+		        },
+		        "source": "twitter",
+		        "sourceRefId": "FfmuSwl0CTE",
+		        "content": "Senyawa Is Turning Indonesian Music On Its Head: VICE Meets",
+		        "url": "http://www.youtube.com/watch?v=FfmuSwl0CTE",
+		        "publishDate": "Nov 23 2016",
+		        "status": "1",
+		        "hasMedia": "FALSE",
+		        "user": {
+		            "name": "vice",
+		            "media": {
+		                "path": "https://yt3.ggpht.com/-SuohYAOTZvs/AAAAAAAAAAI/AAAAAAAAAAA/JHg2bUQ0Gjc/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+		            }
+		        },
+		        "media": {
+		            "path": "https://i.ytimg.com/vi/FfmuSwl0CTE/maxresdefault.jpg",
+		            "type": "image",
+		            "videoUrl": "http://www.youtube.com/watch?v=FfmuSwl0CTE"
+		        }
+		    },		
+    		"publisher": {
+				"name": "Get Em on Side UAT",
+				"url": "http:\/\/res.cloudinary.com\/cognitives\/image\/upload\/c_lpad,dpr_auto,f_auto,fl_lossy,h_60,q_auto,w_600\/thwonhdizwdbwl7x6dqx",
+				"height": 60,
+				"width": 600
+			}
+		},
+
+
+		{
+			"guid": null,
+			"articleId": null,
+			"socialId": "1",
+			"templatePath": "https:\/\/d3pbdxdl8c65wb.cloudfront.net\/themes\/M7kOKBL0ZLR5zx",
+			"displayOrder": "2",
+			"isPinned": "0",
+			"pinnedAt": null,
+			"status": "1",
+			"titleOriginal": null,
+			"title": null,
+			"titlePreview": "",
+			"excerpt": null,
+			"keywords": null,
+			"createdDate": "May 04 2017",
+			"userHasBlogAccess": 0,
+			"isPromoted": "0",
+			"readingTime": "1",
+			"total": {
+				"share": "0"
+			},
+			"blog": {
+				"id": "717",
+				"title": "Get Em on Side",
+				"url": "http:\/\/theme.aap.io/",
+				"owner": {
+					"id": "570",
+					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
+					"name": "Tim Campbell",
+					"username": "Tcampbell",
+					"email": "Tcampbell@pagemasters.com.au",
+					"bio": null,
+					"display_name": "Tim Campbell",
+					"media": {
+						"id": null,
+						"cloudName": null,
+						"path": null
+					}
+				},
+				"media": {
+					"cover": {
+						"id": null,
+						"cloudName": null,
+						"path": null
+					},
+					"thumb": {
+						"id": null,
+						"cloudName": null,
+						"path": null
+					}
+				}
+			},
+			"channel": {
+				"guid": null,
+				"title": null
+			},
+			"createdBy": {
+				"name": null,
+				"displayName": null,
+				"media": {
+					"id": null,
+					"cloudName": null,
+					"path": null
+				}
+			},
+			"hasMedia": true,
+			"hasPreviewMedia": false,
+			"featuredMediaOriginal": {
+				"id": "t0mm3cbkylyunqcsvp6i",
+				"cloudName": "cognitives",
+				"path": "https:\/\/res.cloudinary.com\/cognitives\/image\/upload\/v1493861210\/t0mm3cbkylyunqcsvp6i.jpg",
+				"type": "video"
+			},
+			"featuredMedia": {
+				"id": "t0mm3cbkylyunqcsvp6i",
+				"cloudName": "cognitives",
+				"path": "https:\/\/res.cloudinary.com\/cognitives\/image\/upload\/v1493861210\/t0mm3cbkylyunqcsvp6i.jpg",
+				"type": "image",
+				"media": {
+					"url": "http:\/\/res.cloudinary.com\/cognitives\/image\/upload\/c_fill,dpr_auto,f_auto,fl_lossy,g_faces,h_720,q_auto,w_1280\/t0mm3cbkylyunqcsvp6i",
+					"height": "720",
+					"width": "1280"
+				}
+			},
+			"previewMedia": false,
+			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24354\/roosters-snare-tigers-star-james-tedesco",
+			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=3e297d23-4f17-4ecc-84fe-4c4fa826a5e7",
+			"publishDate": "May 04 2017",
+			"metaPublishDate": "2017-05-04",
+			"publishDateTime": "2017-05-04 11:26:42",
+			"metaUpdateDate": "2017-05-04",
+			"label": "Get Em on Side",
+		    "social": {
+		        "id": "1",
+		        "guid": "ac97adf9-c99f-4892-9661-7011cac669ed",
+		        "blog": {
+		            "id": "1",
+		            "guid": "663526d3-38a9-4ddd-97b7-473e70093126",
+		            "title": "Blog Title"
+		        },
+		        "source": "facebook",
+		        "sourceRefId": "FfmuSwl0CTE",
+		        "content": "Senyawa Is Turning Indonesian Music On Its Head: VICE Meets",
+		        "url": "http://www.youtube.com/watch?v=FfmuSwl0CTE",
+		        "publishDate": "Nov 23 2016",
+		        "status": "1",
+		        "hasMedia": "TRUE",
+		        "user": {
+		            "name": "vice",
+		            "media": {
+		                "path": "https://yt3.ggpht.com/-SuohYAOTZvs/AAAAAAAAAAI/AAAAAAAAAAA/JHg2bUQ0Gjc/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+		            }
+		        },
+		        "media": {
+		            "path": "https://i.ytimg.com/vi/FfmuSwl0CTE/maxresdefault.jpg",
+		            "type": "image",
+		            "videoUrl": "http://www.youtube.com/watch?v=FfmuSwl0CTE"
+		        }
+		    },		
+    		"publisher": {
+				"name": "Get Em on Side UAT",
+				"url": "http:\/\/res.cloudinary.com\/cognitives\/image\/upload\/c_lpad,dpr_auto,f_auto,fl_lossy,h_60,q_auto,w_600\/thwonhdizwdbwl7x6dqx",
+				"height": 60,
+				"width": 600
+			}
+		},
+
+
+		{
+			"guid": null,
+			"articleId": null,
+			"socialId": "1",
+			"templatePath": "https:\/\/d3pbdxdl8c65wb.cloudfront.net\/themes\/M7kOKBL0ZLR5zx",
+			"displayOrder": "2",
+			"isPinned": "0",
+			"pinnedAt": null,
+			"status": "1",
+			"titleOriginal": null,
+			"title": null,
+			"titlePreview": "",
+			"excerpt": null,
+			"keywords": null,
+			"createdDate": "May 04 2017",
+			"userHasBlogAccess": 0,
+			"isPromoted": "0",
+			"readingTime": "1",
+			"total": {
+				"share": "0"
+			},
+			"blog": {
+				"id": "717",
+				"title": "Get Em on Side",
+				"url": "http:\/\/theme.aap.io/",
+				"owner": {
+					"id": "570",
+					"guid": "b596da97-f460-4278-baf1-a0c4a2523617",
+					"name": "Tim Campbell",
+					"username": "Tcampbell",
+					"email": "Tcampbell@pagemasters.com.au",
+					"bio": null,
+					"display_name": "Tim Campbell",
+					"media": {
+						"id": null,
+						"cloudName": null,
+						"path": null
+					}
+				},
+				"media": {
+					"cover": {
+						"id": null,
+						"cloudName": null,
+						"path": null
+					},
+					"thumb": {
+						"id": null,
+						"cloudName": null,
+						"path": null
+					}
+				}
+			},
+			"channel": {
+				"guid": null,
+				"title": null
+			},
+			"createdBy": {
+				"name": null,
+				"displayName": null,
+				"media": {
+					"id": null,
+					"cloudName": null,
+					"path": null
+				}
+			},
+			"hasMedia": true,
+			"hasPreviewMedia": false,
+			"featuredMediaOriginal": {
+				"id": "t0mm3cbkylyunqcsvp6i",
+				"cloudName": "cognitives",
+				"path": "https:\/\/res.cloudinary.com\/cognitives\/image\/upload\/v1493861210\/t0mm3cbkylyunqcsvp6i.jpg",
+				"type": "video"
+			},
+			"featuredMedia": {
+				"id": "t0mm3cbkylyunqcsvp6i",
+				"cloudName": "cognitives",
+				"path": "https:\/\/res.cloudinary.com\/cognitives\/image\/upload\/v1493861210\/t0mm3cbkylyunqcsvp6i.jpg",
+				"type": "image",
+				"media": {
+					"url": "http:\/\/res.cloudinary.com\/cognitives\/image\/upload\/c_fill,dpr_auto,f_auto,fl_lossy,g_faces,h_720,q_auto,w_1280\/t0mm3cbkylyunqcsvp6i",
+					"height": "720",
+					"width": "1280"
+				}
+			},
+			"previewMedia": false,
+			"url": "http:\/\/theme.aap.io\/2017\/05\/04\/24354\/roosters-snare-tigers-star-james-tedesco",
+			"editUrl": "http:\/\/theme.aap.io\/admin\/article\/edit?guid=3e297d23-4f17-4ecc-84fe-4c4fa826a5e7",
+			"publishDate": "May 04 2017",
+			"metaPublishDate": "2017-05-04",
+			"publishDateTime": "2017-05-04 11:26:42",
+			"metaUpdateDate": "2017-05-04",
+			"label": "Get Em on Side",
+		    "social": {
+		        "id": "1",
+		        "guid": "ac97adf9-c99f-4892-9661-7011cac669ed",
+		        "blog": {
+		            "id": "1",
+		            "guid": "663526d3-38a9-4ddd-97b7-473e70093126",
+		            "title": "Blog Title"
+		        },
+		        "source": "facebook",
+		        "sourceRefId": "FfmuSwl0CTE",
+		        "content": "Senyawa Is Turning Indonesian Music On Its Head: VICE Meets",
+		        "url": "http://www.youtube.com/watch?v=FfmuSwl0CTE",
+		        "publishDate": "Nov 23 2016",
+		        "status": "1",
+		        "hasMedia": "FALSE",
+		        "user": {
+		            "name": "vice",
+		            "media": {
+		                "path": "https://yt3.ggpht.com/-SuohYAOTZvs/AAAAAAAAAAI/AAAAAAAAAAA/JHg2bUQ0Gjc/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+		            }
+		        },
+		        "media": {
+		            "path": "https://i.ytimg.com/vi/FfmuSwl0CTE/maxresdefault.jpg",
+		            "type": "image",
+		            "videoUrl": "http://www.youtube.com/watch?v=FfmuSwl0CTE"
+		        }
+		    },		
+    		"publisher": {
+				"name": "Get Em on Side UAT",
+				"url": "http:\/\/res.cloudinary.com\/cognitives\/image\/upload\/c_lpad,dpr_auto,f_auto,fl_lossy,h_60,q_auto,w_600\/thwonhdizwdbwl7x6dqx",
+				"height": 60,
+				"width": 600
+			}
+		},
+
+
+
 		{
 			"guid": "98f1d0d8-0325-46a3-9013-bfa25a92492a",
 			"articleId": "24362",
