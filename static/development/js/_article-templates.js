@@ -10,6 +10,10 @@ var screenArticles_1 =
 </div>\
 ';
 
+var divider = 
+'<hr class="divide18 visible-md-block visible-lg-block">' +
+'<hr class="divide10 visible-xs-block visible-sm-block">';
+
 var systemCardTemplate = 
 '<div class="{{containerClass}}">'+
     '<a  itemprop="url"' +

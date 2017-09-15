@@ -187,7 +187,8 @@
                             }) | raw}}
                             {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
                             
-                            <hr class="divide visible-xs-block">
+                            <hr class="divide18 visible-md-block visible-lg-block space-only">
+                            <hr class="divide10 visible-xs-block visible-sm-block space-only">
 
                         {% endfor %}
 
@@ -236,7 +237,8 @@
                     articles: articles,
                     card_style: "card-rec card-rec-tablet card-rec-mobile",
                     container:"mainAjaxArticles",
-                    loadtype: "search"
+                    loadtype: "search",
+                    border: "none"
                 }) | raw }}
 
 
