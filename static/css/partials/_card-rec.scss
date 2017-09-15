@@ -189,9 +189,7 @@
         @include card-rec-base();
 
         height:159px;
-        margin-bottom:39px;
-
-
+        
         a.card {
             @include card-image-left(234px, 159px);
             

@@ -52,10 +52,10 @@
                             }) | raw}}
                             {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
                             
-<!--                             {% if i != 6 %}
+                             {% if i != 6 %}
                                 <hr class="divide18 visible-md-block visible-lg-block">
                                 <hr class="divide10 visible-xs-block visible-sm-block">
-                            {% endif %} -->
+                            {% endif %}
                         {% endfor %}
 
 
@@ -111,7 +111,8 @@
                     articles: articles,
                     card_style: "card-rec card-rec-tablet card-rec-mobile",
                     container:"mainAjaxArticles",
-                    loadtype: "search"
+                    loadtype: "search",
+                    border: "visible"
                 }) | raw }}
 
 
