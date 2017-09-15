@@ -76,6 +76,13 @@
 
 
                     .author{
+
+                        &.video {
+                            .icon {
+                                display:none;
+                            }
+                        } 
+                        
                         p {
                             color:white;
                             border-right: 1px solid color(white);

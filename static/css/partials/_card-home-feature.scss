@@ -33,6 +33,13 @@
                 }
 
                 .author{
+
+                    &.video {
+                        .icon {
+                            display:none;
+                        }
+                    } 
+                    
                     p{
                         font-family: $font-family-sans-serif;
                         color:white;
@@ -81,35 +88,33 @@
                 padding-top:31px;
                 .icon {
                     display: inline-block;
-                    margin-bottom:230px;
+                    margin-bottom:210px;
                 }
 
-                > p {
-                    font-size: rem(34);
-                    font-weight:600;
-                    margin-top: 0;
-                    margin-bottom:6px;
-                    overflow:hidden;
-                    max-height: 80px;
-                    line-height: 1.18;
-
+                >p {
+                    margin-top: 5px;
+                    height:84px;
+                    font-size:rem(22);
+                    line-height:1.27;
+                    // margin-bottom: 10px;
                 }
+
                 > .author {
+                    bottom: -11px;
                     .icon {
                         display: none;
                     }
                 }
             }
-            &.twitter{
-                .content{
-                    >p {
-                        max-height:130px;
-                        font-size:rem(22);
-                        line-height:1.27;
-                    }
-
+            &.twitter {    
+                &:before{
+                    @include twitterCorner();
                 }
+
                 &.without__image {
+                    &:before{
+                        @include inverseTwitterCorner();
+                    }                    
                     .content {
                         > p {
                             color:black;
@@ -118,16 +123,16 @@
                 }
             }
 
-            &.facebook{
-                .content{
-                    >p {
-                        max-height:130px;
-                        font-size:rem(22);
-                        line-height:1.27;
-                    }
 
+            &.facebook {    
+                &:before{
+                    @include inverseFacebookCorner();
                 }
+
                 &.without__image {
+                    &:before{
+                        @include facebookCorner();
+                    }                    
                     .content {
                         > p {
                             color:black;
@@ -164,7 +169,8 @@
     @media screen and (min-width: $mmd-break){
         @include card-home-feature-base();
 
-        height:413px;
+        height:400px;
+
         a.card {
             article {
                 > .content {

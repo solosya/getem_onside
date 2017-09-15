@@ -1,14 +1,70 @@
-@mixin videoIcon() {
+@mixin cornerIcon($url) {
     position:absolute;
     content: '';
     width: 24px;
     height: 24px;
-    background-image: url(../icons/video-circle.svg);
+    background-image: url($url);
     background-repeat: no-repeat;
     background-size: contain;
     top: 34px;
     left: 30px;
     z-index: 100;
+}
+
+@mixin videoCorner() {
+    @include cornerIcon('../icons/video-circle.svg');
+}
+
+@mixin twitterCorner() {
+    @include cornerIcon('../icons/twitter.svg');
+}
+
+@mixin inverseTwitterCorner() {
+    @include cornerIcon('../icons/twitter-inverse.svg');
+}
+
+@mixin facebookCorner() {
+    @include cornerIcon('../icons/facebook.svg');
+}
+
+@mixin instagramCorner() {
+    @include cornerIcon('../icons/instagram.svg');
+}
+
+@mixin inverseFacebookCorner() {
+    @include cornerIcon('../icons/facebook-inverse.svg');
+}
+
+
+@mixin iconMiddle($url) {
+    position:absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: contain;
+    // top: 50%;
+    // left: 50%;
+    left:140px;
+    top:70px;
+    z-index: 100;    
+}
+
+@mixin twitterIconMiddle() {
+    @include iconMiddle('../icons/twitter-inverse.svg');
+}
+
+@mixin facebookIconMiddle() {
+    @include iconMiddle('../icons/facebook-inverse.svg');
+}
+
+@mixin instagramIconMiddle() {
+    @include iconMiddle('../icons/instagram.svg');
+}
+
+@mixin videoIconMiddle() {
+    @include iconMiddle('../icons/video-circle.svg');
 }
 
 @mixin socialIcon($url) {
@@ -29,7 +85,7 @@
     @include socialIcon('../icons/facebook.svg');
 }
 @mixin twitterIcon {
-    @include socialIcon('../icons/twitter.svg');
+    @include socialIcon('../icons/twitter-inverse.svg');
 }
 @mixin smallVideoIcon {
     @include socialIcon('../icons/video-circle.svg');
@@ -53,7 +109,7 @@ a.card {
 
             &.video {
                 &:before{
-                    @include videoIcon();
+                    @include videoCorner();
                 }
             }
 
@@ -133,7 +189,6 @@ a.card {
                 vertical-align:top;
                 line-height:1.36;
                 
-
                 .icon {
                     display: none;
                 }
@@ -160,6 +215,7 @@ a.card {
                     color:color(mediumgrey);
                     font-size: rem(11);
                     font-weight: 300;
+                    padding-left:3px;
                 }
             }
 

@@ -1,6 +1,6 @@
 @mixin card-rec-base() {
     a.card {
-        background: color(white);
+        background: pink;
         article {
             position:relative;
 
@@ -38,13 +38,17 @@
 
                 > .author {
                     position: absolute;
-                    bottom: 8px;
-                    line-height:1.36;
+                    bottom: 2px;
+                    line-height:1.67;
                     &.video {
                         .icon {
                             @include smallVideoIcon();
                         }
-                    }                    
+                    }
+                    .icon {
+                        position: relative;
+                        bottom:-8px;
+                    }               
                 }
 
 
@@ -90,40 +94,35 @@
 
 
         &.social {
+            background: yellow;
+
+            .author {
+                position: absolute;
+                bottom: 0;
+            }
+
             .content {
                 .icon {
                     display:none;
                 }
-
-                >p {
-                    margin-top:10px;
-                    max-height:65px;
-                    margin-bottom:6px;
-                }
             }
 
             &.twitter{
+                .category {
+                    display: none;
+                }
                 .content{
                     > .author {
                         .icon {
-                            @include instagramIcon();
+                            @include twitterIcon();
                         }
                     }                    
                     >p {
-                        font-size:rem(20);
-                        font-weight:600;
-                        line-height:1.33;
-                        max-height:80px;
-                    }
-                }
-                &.without__image {
-                    .content{
-                        >p {
-                            font-size:rem(18);
-                            max-height:84px;
-                            font-weight:normal;
-                            line-height:1.56;
-                        }
+                        padding-top:28px;
+                        font-size:rem(18);
+                        max-height:84px;
+                        font-weight:normal;
+                        line-height:1.44;
                     }
                 }
             }
@@ -131,29 +130,25 @@
 
 
             &.facebook{
+                .category {
+                    display: none;
+                }
                 .content{
                     > .author {
                         .icon {
-                            @include instagramIcon();
+                            @include facebookIcon();
                         }
                     }                    
                     >p {
-                        font-weight:600;
-                        line-height:1.33;
+                        padding-top:28px;
+                        font-size:rem(18);
+                        max-height:84px;
+                        font-weight:normal;
+                        line-height:1.44;
                     }
                 }
-                &.without__image {
-                    .content{
-                        >p {
-                            font-size:rem(18);
-                            max-height:84px;
-                            font-weight:normal;
-                            line-height:1.56;
-                        }
-                    }
-                }
-
             }
+            
             &.instagram{ 
                 .content{
                     > .author {

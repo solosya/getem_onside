@@ -75,7 +75,8 @@
                     }
 
 
-                    .author{
+                    >.author{
+
                         p{
                             color:white;
                             border-right: 1px solid color(white);
@@ -133,18 +134,22 @@
                     }
                 }
 
-                &.twitter, &.instagram{
+                &.twitter, &.facebook{
                     .content{
+                        >h2 {
+                            display: none;
+                        }
                         >p {
                             font-size:rem(22);
-                            line-height:1.18;
+                            line-height:1.27;
                         }
 
                     }
                     &.without__image {
                         .content {
-                            > p {
-                                color:black;
+                            > p.excerpt {
+                                display:inline-block;
+                                color:pink;
                             }
                         }
                     }
@@ -267,7 +272,7 @@
                     }
                 }
 
-                &.twitter, &.instagram{
+                &.twitter, &.facebook{
                     .content{
                         >p {
                             font-size:rem(22);
