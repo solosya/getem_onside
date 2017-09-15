@@ -17,6 +17,7 @@
 
 
 
+{% set popularArticles = _Article.getPopularArticles({ limit: 10, sortBy: 'VIEWS', scope: 'network' }) %}
 
 
 
@@ -75,15 +76,12 @@
                             <h2>What you&rsquo;re cheering for</h2>
                         </div>
 
-                        {% for i in 0..3 if articles[articleCount] %}
+                        {% for i in 0..3 if popularArticles[i] %}
                             {{this.render('partials/_single-article.twig', {
-                                article: articles[articleCount], 
-                                position: articleCount + 1, 
+                                article: popularArticles[i], 
                                 imageSize: {width:95},
                                 containerClass: 'feature-side feature-side-tablet feature-side-mobile'
-                            }) | raw}}
-                            {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
-                            
+                            }) | raw}}                            
 
                             {% if i != 3 %}
                                 <hr class="divide18 visible-md-block visible-lg-block">
