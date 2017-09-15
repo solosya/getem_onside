@@ -6,8 +6,8 @@
 
 {{this.registerJs("CardController();")}}
 
-{% set limit = 30 %}
 
+{% set limit = 18 %}
 {% set articlesArr = _Blog.getBlogFeed({'limit': limit, 'offset': 0}) %}
 {% set articles = articlesArr.articles %}
 {% set popularArticles = _Article.getPopularArticles({ limit: 10, sortBy: 'VIEWS', scope: 'network' }) %}
@@ -247,11 +247,10 @@
 
             <section class="advert" style="background:gray;height:100px;"></section>
 
-        </div>
 
 
 
-        <div class="container">
+
             {% if sections['social field'].feed.articles|length > 0 %}
                 {% set ruralCount = (dev) ? articleCount : 0 %}
 
@@ -281,9 +280,13 @@
                     </div>
                 </section>
             {% endif %}
-        </div>
 
-        <div class="container">
+
+
+
+
+
+
             {% if sections['tennis'].feed.articles|length > 0 %}
                 {% set ruralCount = (dev) ? articleCount : 0 %}
 
@@ -313,9 +316,11 @@
                     </div>
                 </section>
             {% endif %}
-        </div>
 
-        <div class="container">
+
+
+
+
             {% if sections['cricket'].feed.articles|length > 0 %}
                 {% set ruralCount = (dev) ? articleCount : 0 %}
 
@@ -345,9 +350,11 @@
                     </div>
                 </section>
             {% endif %}
-        </div>
 
-        <div class="container">
+
+
+
+
             {% if sections['other sport'].feed.articles|length > 0 %}
                 {% set ruralCount = (dev) ? articleCount : 0 %}
 
