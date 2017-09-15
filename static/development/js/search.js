@@ -35,6 +35,7 @@ SearchController.Listing = (function ($) {
 
                             var article = articleTemplate(data.articles[i]);
                             $('.ajaxArticles').append(article);
+
                         }
                         if(data.articles.length < 20) {
                             $(btnObj).css('display', 'none');

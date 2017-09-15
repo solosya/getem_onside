@@ -486,7 +486,8 @@ Card.prototype.events = function()
             'containerClass': container.data('containerclass'),
             'container': container,
             'nonpinned' : container.data('offset'),
-            'blog_guid' : container.data('blogid')
+            'blog_guid' : container.data('blogid'),
+            'border' : container.data('border'),
         };
 
         if ( container.data('loadtype')) {
@@ -508,8 +509,19 @@ Card.prototype.events = function()
                 var html = "";
                 for (var i in data.articles) {
                     html += self.renderCard(data.articles[i], cardClass);
+
+                    if (i !== data.articles.length) {
+                        if (options.border == "visible") {
+                            html += '<hr class="divide18 visible-md-block visible-lg-block">';
+                            html += '<hr class="divide10 visible-xs-block visible-sm-block">';
+                        } else {
+                            html += '<hr class="divide18 visible-md-block visible-lg-block space-only">';
+                            html += '<hr class="divide10 visible-xs-block visible-sm-block space-only">';
+                        }
+                    }
                 }
                 container.append(html);
+
 
                 $(".card .content > p, .card h2").dotdotdot();
                 
