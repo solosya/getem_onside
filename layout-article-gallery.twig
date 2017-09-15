@@ -2,83 +2,46 @@
 {{ set(this, 'title', article.title) }}
 {{ this.registerLinkTag({rel:'amphtml', href:_AppHelper.getServerUrl(false)~'?amp=1'}) }}
 
+{% set blogInfo = _Blog.getBlog() %}
+{% set networkData = _Network.getNetworkData() %}
+
 
 {% set articleImg = false %}
 {% if article.media|length > 0 %}
     {% set articleImg = _Media.getMediaUrl(article.media[0],1094, 515, {'crop': 'fill', 'gravity': 'auto'} ) %}
 {% endif %}
 
+{% set carousel = "" %}
+{% if article.media|length > 1 %}
+    {% set carousel = "owl-thumbnails" %}
+{% endif %}
+
+
 {% set publishDate = _AppHelper.getDateTimeBasedOnTimezone(article.publishDate, 'F, Y') %}
 
+{% set articles = _Article.getPopularArticles({ limit: 5, excludeArticleIds : article.id }) %}
+{% set testCount = 0 %}
 
-<main id="main" class="gallery" role="main">
+
+<main id="main" class="container" role="main">
 
 
 
     <article class="article-main">
 
 
-        <div class="gallery-row">
-
-            <div class="container">
+            <div class="page-content">
                 <div class="row">
                     <div class="col-md-9">
 
-                        <time datetime="{{publishedDate}}">{{article.publishedDate}}</time>
-                        
-                        <h1>{{ quotes.smarten(article.title) }}</h1>
-                        
-                        <p class="author">{{ article.createdBy['displayName'] }}</p>
 
 
-
-                        <div id="owl-thumbnails" class="owl-carousel owl-shep-theme" data-slider-id="1">
-                            {% for image in article.media %}
-                                {% set articleImg = _Media.getMediaUrl(image,1094, 515, {'crop': 'fill', 'gravity': 'auto'} ) %}
-
-                                <figure class="featured">
-                                    <img src="{{articleImg}}" class="img-responsive">
-                                    {% if image.type == 'video' %} 
-                                        {% set mediaUrl = "" %}
-                                        {% if image.media.isSystemVideo == 'TRUE'%}
-                                            {% set mediaUrl = _Media.getMediaVideoUrl(image, 0, 0,{resource_type: 'video', format: 'mp4'})  %}
-                                        {% endif %}
-
-                                        <a  href="javascript:void(0)" 
-                                            itemprop="video" 
-                                            class="video-overlay video-player" 
-                                            data-source="{{image.source}}" 
-                                            data-video-id="{{image.videoId}}" 
-                                            data-url="{{mediaUrl}}" 
-                                            data-poster="{{image.path}}" 
-                                            data-caption="{{article.title | raw}}">
-                                            
-                                            <div class="icons">
-                                               <div class="icon"><i class="fa fa-play"></i></div>
-                                            </div>
-                                        </a>
-                                    {% endif %}
-                                    <figcaption>
-                                        <p>{{image.caption}}</p>
-                                    </figcaption>
-                                </figure>
-                            {% endfor %}
-                        </div>
-                        <div class="owl-thumbs" data-slider-id="1">
-
-                            {% for image in article.media %}
-                                {% set articleImg = _Media.getMediaUrl(image,152, 95, {'crop': 'fill', 'gravity': 'auto'} ) %}
-                                <img src="{{articleImg}}" class="owl-thumb-item">
-                            {% endfor %}
-
-                        </div>
 
                         <div class="content-block-top">
 
-                            <p class="category">{{article.label}}</p
-                            ><time datetime="{{publishedDate}}">{{article.publishedDate}}</time>
+                            <time datetime="{{publishedDate}}">{{article.publishedDate}}</time>
                             
-                            {# <h1>{{ quotes.smarten(article.title) }}</h1> #}
+                            <h1>{{ quotes.smarten(article.title) }}</h1>
                             
                             <p class="author">{{ article.createdBy['displayName'] }}</p>
 
@@ -86,25 +49,118 @@
 
 
 
+
+
+                        {% if articleImg %} 
+                            <div class="image-container">
+                                <div id="{{carousel}}" class="owl-carousel owl-shep-theme" data-slider-id="1">
+                                    {% for image in article.media %}
+                                        {% set articleImg = _Media.getMediaUrl(image,1094, 515, {'crop': 'fill', 'gravity': 'auto'} ) %}
+
+                                        <figure class="featured">
+                                            <img src="{{articleImg}}" class="img-responsive">
+                                            {% if image.type == 'video' %} 
+                                                {% set mediaUrl = "" %}
+                                                {% if image.media.isSystemVideo == 'TRUE'%}
+                                                    {% set mediaUrl = _Media.getMediaVideoUrl(image, 0, 0,{resource_type: 'video', format: 'mp4'})  %}
+                                                {% endif %}
+
+                                                <a  href="javascript:void(0)" 
+                                                    itemprop="video" 
+                                                    class="video-overlay video-player" 
+                                                    data-source="{{image.source}}" 
+                                                    data-video-id="{{image.videoId}}" 
+                                                    data-url="{{mediaUrl}}" 
+                                                    data-poster="{{image.path}}" 
+                                                    data-caption="{{article.title | raw}}">
+                                                    
+                                                    <div class="icons">
+                                                       <div class="icon"><i class="fa fa-play"></i></div>
+                                                    </div>
+                                                </a>
+                                            {% endif %}
+
+
+                                            <figcaption>
+                                                <p>{{image.caption}}</p>
+                                            </figcaption>
+                                        </figure>
+                                    {% endfor %}
+                                </div>
+                                <div class="social-share">
+                                    <div class="links">
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u={{article.url}}&title={{ article.title|url_encode }}" class="btn btn-post"></a
+                                        ><a href="https://twitter.com/share?text={{ article.title|url_encode }}&url={{article.url}}" class="btn btn-tweet"></a
+                                        ><a href="mailto://" class="btn btn-email"></a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                         {% endif %}
+                    </div>
+
+                </div>
+
+
+                <div class="row article-row">
+                    <div class="col-md-6 min-height">
+{#                         <div class="article_content">
+                            {{ article.content | _resizeImages({'width': 400}) | raw }}
+                        </div><!-- .content-->
+ #}                    </div>
+
+
+                    <div class="col-md-3">
+                        <div class="article-sidebar">
+
+                            <div class="row">
+
+                                <div class="col-sm-9">
+                                    <div class="ad-side-container">
+                                        <div class="ad-square" style="width:300px;"></div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-9 col-sm-4">
+                                    <div class="advert visible-md-block visible-lg-block">
+                                        <img src="{{networkData.templatePath}}/static/images/the-short-side-cta.png">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div><!-- .page-content-->
+
+
+
+            <div class="row related-articles">
+                <div class="col-md-9">
+                    <h1>RELATED ARTICLES</h1>
+                
+                    <div class="row">
+                        {% for i in 0..2 if articles[i] %}
+                            <div class="col-sm-3">
+                                {{this.render('partials/_single-article.twig', {
+                                    article: articles[i], 
+                                    position: (articleCount+1),
+                                    imageSize: {width: 300, height: 180},
+                                    containerClass: 'card-sm-wide card-sm-wide-mobile'
+                                }) | raw}}
+                            </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
-        </div>
 
-{#         <div class="container">
-
-            <div class="row article-row">
-                <div class="col-md-6">
-
-                    <div class="article_content">
-                        {{ article.content | _resizeImages({'width': 400}) | raw }}
-                    </div><!-- .content-->
-
-                </div>
-
-
-            </div>
-        </div><!-- .page-content--> #}
 
     </article>
 </main><!--site-main-->
