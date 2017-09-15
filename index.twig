@@ -19,7 +19,7 @@
 
 
 <!-- used to index each article as we loop over throughout the template -->
-{% set articleCount = _AppHelper.getApplicationEnv() == 'DEV' ? 8 : 0 %}
+{% set articleCount = _AppHelper.getApplicationEnv() == 'DEV' ? 0 : 0 %}
 {% set dev = _AppHelper.getApplicationEnv() == 'DEV' ? true : false %}
 
 
@@ -138,13 +138,13 @@
                             }) | raw}}
                             {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
                             {% if i < 4 %}
-                                <hr class="divide15 visible-md-block visible-lg-block">
+                                <hr class="divide13 visible-md-block visible-lg-block">
                                 <hr class="divide10 visible-xs-block visible-sm-block">
                             {% endif %}
 
                         {% endfor %}
 
-                        <hr class="divide15 visible-md-block visible-lg-block space-only">
+                        <hr class="divide13 visible-md-block visible-lg-block space-only">
                         <hr class="divide10 visible-xs-block visible-sm-block space-only">
 
                         <div class="advert visible-md-block visible-lg-block">

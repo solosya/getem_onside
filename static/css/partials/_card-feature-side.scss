@@ -2,12 +2,14 @@
     // clear:both;
     font-family: $base-font-family;
 
-
     a.card {
         height:100%;
         background: pink;
         > article {
+            position: relative;
+
             > figure{
+                height: 96px;
                 margin-right:15px;
                 &.video {
                     &:before{
@@ -83,16 +85,16 @@
                 .content{
                     color: white;
                     >p {
-                        padding-top: 15px;
+                        margin-top: 5px;
                         color: white;
-                        font-size:rem(18);
+                        font-size: rem(15);
                         font-weight:normal;
                         line-height:1.33;
                         height:19px;
                     }
                     > .icon {
                         @include instagramIcon();
-                        margin: 5px;                       
+                        margin: 8px 5px 5px 5px;                       
                     }
                     .category {
                         color: white;
@@ -102,7 +104,7 @@
                             color: white;
                         }
                         > p {
-                            border-right: 1px solid white;
+                            border-right: 1px solid white; line-height: 1;
                         }                        
                         position: relative;
                     }
@@ -111,7 +113,10 @@
                 &:not(.without__content) {
                     .content {
                         .author {
-                            bottom: -26px;
+                            bottom: 8px;
+                            > .icon {
+                                display: none;
+                            }
                         }
                     }
                 }
@@ -119,9 +124,21 @@
                 &.without__content {
                     .content {
                         > .icon {
-                            @include instagramIcon();
-                            margin-top: 65px;   
-                            margin-bottom: 20px;                    
+                            @include instagramIconMiddle();
+                            top: 20px;   
+                            margin-bottom: 15px;                    
+                        }
+                        .category {
+                            position:relative;
+                            top:62px;
+                            text-align: center;
+                        }
+                        .author {
+                            position: relative;
+                            bottom: -60px;
+                            > .icon {
+                                display: none;
+                            }
                         }
                         > p {
                             display: none;
