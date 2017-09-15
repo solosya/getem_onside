@@ -51,6 +51,9 @@ div[class*="col-sm"] {
     }
 }
 
+.min-height {
+    min-height: 1px;
+}
 
 .addSpaceMobile {
     @media screen and (max-width: $sm-break-down){
@@ -95,6 +98,11 @@ hr.divide18 {
 }
 hr.divide15 {
     margin:15px 0;
+    border: 0;
+    border-top: 1px solid color(lightergrey);
+}
+hr.divide13 {
+    margin:13px 0;
     border: 0;
     border-top: 1px solid color(lightergrey);
 }

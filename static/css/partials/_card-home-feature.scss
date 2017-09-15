@@ -43,7 +43,7 @@
                     p{
                         font-family: $font-family-sans-serif;
                         color:white;
-                        border-right: 1px solid color(white);
+                        border-right: 1px solid white; line-height: 1;;
                     }
                     >time {
                         color:white;
@@ -143,18 +143,21 @@
 
 
             &.instagram{
-                .content{
-                    >p {
-                        min-height:20px;
-                        max-height:130px;
-                        font-size:rem(22);
-                        line-height:1.27;
-                    }
+                &:before{
+                    @include instagramCorner();
                 }
-                &.without__caption {
+
+                &.without__content {
                     .content {
-                        > h2 {
+                        > p {
                             display: none;
+                        }
+                        .icon {
+                            display: inline-block;
+                            margin-bottom:285px;
+                        }
+                        .author {
+                            bottom: -30px;
                         }
                     }
                 }
@@ -221,7 +224,6 @@
         @include card-home-feature-base();
 
         margin-bottom:20px;
-        // height:210px;
         height:60vw;
 
         a.card {

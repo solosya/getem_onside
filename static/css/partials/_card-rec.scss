@@ -1,6 +1,6 @@
 @mixin card-rec-base() {
     a.card {
-        background: pink;
+        // background: pink;
         article {
             position:relative;
 
@@ -94,7 +94,7 @@
 
 
         &.social {
-            background: yellow;
+            // background: pink;
 
             .author {
                 position: absolute;
@@ -149,25 +149,57 @@
                 }
             }
             
-            &.instagram{ 
+            &.instagram{
+                @include card-image-full;
+                text-align: center;
+
                 .content{
-                    > .author {
-                        .icon {
-                            @include instagramIcon();
-                        }
-                    }
+                    color: white;
                     >p {
-                        font-size:rem(20);
-                        font-weight:600;
+                        padding-top: 15px;
+                        color: white;
+                        font-size:rem(18);
+                        font-weight:normal;
                         line-height:1.33;
-                        max-height:80px;
+                        height:47px;
+                    }
+                    > .icon {
+                        @include instagramIcon();
+                        margin: 5px;                       
+                    }
+                    .category {
+                        color: white;
+                    }
+                    .author {
+                        > * {
+                            color: white;
+                        }
+                        > p {
+                            border-right: 1px solid white; line-height: 1;
+                        }                        
+                        position: relative;
                     }
                 }
 
+                // &:not(without__content) {
+                //     .content {
+                //         .author {
+                //             bottom: -26px;
+                //         }
+                //     }
+                // }
+
                 &.without__content {
-                    .content{
-                        padding-top:115px;
-                    }
+                    .content {
+                        > .icon {
+                            @include instagramIcon();
+                            margin-top: 65px;   
+                            margin-bottom: 20px;                    
+                        }
+                        > p {
+                            display: none;
+                        }
+                    }           
                 }
             }
         }
