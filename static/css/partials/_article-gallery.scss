@@ -13,6 +13,7 @@ body.layout-article-gallery {
 			}
 		}
 		.sidebar {
+			z-index:10000;
 			display: inline-block;
 		    position: absolute;
 		    right: 0;
