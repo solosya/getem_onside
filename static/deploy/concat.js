@@ -28779,34 +28779,38 @@ var screenArticles_1 =
 </div>\
 ';
 
+var divider = 
+'<hr class="divide18 visible-md-block visible-lg-block">' +
+'<hr class="divide10 visible-xs-block visible-sm-block">';
+
 var systemCardTemplate = 
-'<div class="{{containerClass}} "> \
-    <a  itemprop="url" \
-        href="{{url}}" \
-        class="card swap" \
-        data-id="{{articleId}}" \
-        data-position="{{position}}" \
-        data-social="0" \
-        data-article-image="{{{imageUrl}}}" \
-        data-article-text="{{title}}"> \
-        \
-        <article class="">\
-            {{#if hasMedia}}\
-                <figure>\
-                    <img class="img-responsive lazyload" data-original="{{imageUrl}}" src="{{imageUrl}}" style="background-image:url("{{placeholder}}"")>\
-                </figure>\
-            {{/if}} \
-        \
-            <div class="content">\
-                    <div class="category">{{label}}</div>\
-                    <h2>{{{ title }}}</h2>\
-                    <p>{{{ excerpt }}}</p>\
-                    <div class="author">\
-                        <img src="{{profileImg}}" class="img-circle">\
-                        <p>{{ createdBy.displayName }}</p>\
-                    </div>\
-            </div>\
-        </article>'+
+'<div class="{{containerClass}}">'+
+    '<a  itemprop="url"' +
+        'href="{{url}}" ' +
+        'class="card swap" ' +
+        'data-id="{{articleId}}" ' +
+        'data-position="{{position}}" ' +
+        'data-social="0" ' +
+        'data-article-image="{{{imageUrl}}}" ' +
+        'data-article-text="{{title}}"> ' +
+        '<article class="">' +
+            '{{#if hasMedia}}' +
+                '<figure>' +
+                    '<img class="img-responsive lazyload" data-original="{{imageUrl}}" src="{{imageUrl}}" style="background-image:url("{{placeholder}}"")>' +
+                '</figure>' +
+            '{{/if}} ' +
+            '<div class="content">' +
+                    '<div class="category">{{label}}</div>' +                    
+                    '<h2 class="{{videoClass}}">{{{ title }}}</h2>' +
+                    '<p class="excerpt">{{ excerpt }}</p>' +                 
+                    '<div class="author {{videoClass}}">' +
+                        '<div class="icon"></div>' +
+                        '<p>{{ createdBy.displayName }}</p>' +
+                        '<time datetime="{{publishDate}}">{{publishDate}}</time>' +
+                    '</div>' +
+                    '<time datetime="{{publishDate}}">{{publishDate}}</time>' +
+                '</div>' +
+        '</article>'+
         
         '{{#if userHasBlogAccess}}'+
             '<div class="btn_overlay articleMenu">'+
@@ -29551,7 +29555,8 @@ Card.prototype.events = function()
             'containerClass': container.data('containerclass'),
             'container': container,
             'nonpinned' : container.data('offset'),
-            'blog_guid' : container.data('blogid')
+            'blog_guid' : container.data('blogid'),
+            'border' : container.data('border'),
         };
 
         if ( container.data('loadtype')) {
@@ -29573,8 +29578,19 @@ Card.prototype.events = function()
                 var html = "";
                 for (var i in data.articles) {
                     html += self.renderCard(data.articles[i], cardClass);
+
+                    if (i !== data.articles.length) {
+                        if (options.border == "visible") {
+                            html += '<hr class="divide18 visible-md-block visible-lg-block">';
+                            html += '<hr class="divide10 visible-xs-block visible-sm-block">';
+                        } else {
+                            html += '<hr class="divide18 visible-md-block visible-lg-block space-only">';
+                            html += '<hr class="divide10 visible-xs-block visible-sm-block space-only">';
+                        }
+                    }
                 }
                 container.append(html);
+
 
                 $(".card .content > p, .card h2").dotdotdot();
                 
@@ -30389,10 +30405,10 @@ $('document').ready(function() {
     }), 750);
 
 
-    $("#owl-thumbnails").owlCarousel({
+    $("#owl-carousel").owlCarousel({
         items: 1,
-        thumbs: true,
-        thumbsPrerendered: true,
+        // thumbs: true,
+        // thumbsPrerendered: true,
         URLhashListener:true,
         startPosition: 'URLHash',
         pagination: true,
@@ -30448,6 +30464,7 @@ SearchController.Listing = (function ($) {
 
                             var article = articleTemplate(data.articles[i]);
                             $('.ajaxArticles').append(article);
+
                         }
                         if(data.articles.length < 20) {
                             $(btnObj).css('display', 'none');

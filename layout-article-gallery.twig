@@ -13,7 +13,7 @@
 
 {% set carousel = "" %}
 {% if article.media|length > 1 %}
-    {% set carousel = "owl-thumbnails" %}
+    {% set carousel = "owl-carousel" %}
 {% endif %}
 
 
@@ -53,11 +53,11 @@
 
                         {% if articleImg %} 
                             <div class="image-container">
-                                <div id="{{carousel}}" class="owl-carousel owl-shep-theme" data-slider-id="1">
+                                <div id="{{carousel}}" class="{{carousel}} owl-shep-theme">
                                     {% for image in article.media %}
                                         {% set articleImg = _Media.getMediaUrl(image,1094, 515, {'crop': 'fill', 'gravity': 'auto'} ) %}
 
-                                        <figure class="featured">
+                                        <figure class="featured" data-hash="{{loop.index}}">
                                             <img src="{{articleImg}}" class="img-responsive">
                                             {% if image.type == 'video' %} 
                                                 {% set mediaUrl = "" %}
@@ -79,14 +79,15 @@
                                                     </div>
                                                 </a>
                                             {% endif %}
-
-
                                             <figcaption>
-                                                <p>{{image.caption}}</p>
+                                                <p>{{image.caption | raw}}</p>
                                             </figcaption>
+
                                         </figure>
+
                                     {% endfor %}
                                 </div>
+
                                 <div class="social-share">
                                     <div class="links">
                                         <a href="https://www.facebook.com/sharer/sharer.php?u={{article.url}}&title={{ article.title|url_encode }}" class="btn btn-post"></a
@@ -102,22 +103,25 @@
 
                 </div>
 
+            </div><!-- .page-content-->
 
 
 
 
-                <div class="sidebar">
-                    <div class="ad-side-container">
-                        <div class="ad-square" style="width:300px;"></div>
-                    </div>
 
-                    <div class="advert visible-md-block visible-lg-block">
-                        <img src="{{networkData.templatePath}}/static/images/the-short-side-cta.png">
-                    </div>
-
+            <div class="sidebar">
+                <div class="ad-side-container">
+                    <div class="ad-square" style="width:300px;"></div>
                 </div>
 
-            </div><!-- .page-content-->
+                <div class="advert visible-md-block visible-lg-block">
+                    <img src="{{networkData.templatePath}}/static/images/the-short-side-cta.png">
+                </div>
+
+            </div>
+
+
+
 
 
 
