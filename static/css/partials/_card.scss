@@ -85,11 +85,19 @@
     @include socialIcon('../icons/facebook.svg');
 }
 @mixin twitterIcon {
-    @include socialIcon('../icons/twitter-inverse.svg');
+    @include socialIcon('../icons/twitter.svg');
 }
 @mixin smallVideoIcon {
     @include socialIcon('../icons/video-circle.svg');
 }
+
+@mixin inverseFacebookIcon {
+    @include socialIcon('../icons/facebook-inverse.svg');
+}
+@mixin inverseTwitterIcon {
+    @include socialIcon('../icons/twitter-inverse.svg');
+}
+
 
 a.card {
 

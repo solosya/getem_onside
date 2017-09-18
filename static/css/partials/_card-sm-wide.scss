@@ -208,6 +208,25 @@
                         height:80px;
                     }
                 }
+
+                &.twitter {
+                    .content {
+                        > .author {
+                            .icon {
+                                @include twitterIcon;
+                            }
+                        }
+                    }
+                }
+                &.facebook {
+                    .content {
+                        > .author {
+                            .icon {
+                                @include facebookIcon;
+                            }
+                        }
+                    }
+                }
             }
 
             // &.social {

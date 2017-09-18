@@ -108,12 +108,12 @@
             }
             &.twitter {    
                 &:before{
-                    @include twitterCorner();
+                    @include inverseTwitterCorner();
                 }
 
                 &.without__image {
                     &:before{
-                        @include inverseTwitterCorner();
+                        @include twitterCorner();
                     }                    
                     .content {
                         > p {

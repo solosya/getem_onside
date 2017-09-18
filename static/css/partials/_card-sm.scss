@@ -235,7 +235,7 @@
                     .content{
                         > .author {
                             .icon {
-                                @include twitterIcon();
+                                @include inverseTwitterIcon();
                             }
                         }                    
                     }
@@ -250,7 +250,7 @@
                     .content{
                         > .author {
                             .icon {
-                                @include facebookIcon();
+                                @include inverseFacebookIcon();
                             }
                         }                    
                     }
