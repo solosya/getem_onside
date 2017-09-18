@@ -63,10 +63,6 @@
                     padding: 53px 19px 17px 19px;
                     height:250px;
 
-                    >h2 {
-                        display: none;
-                    }
-
                     .category {
                         color: white;
                     }
@@ -99,6 +95,34 @@
             }
         }
 
+        &.video {
+            > article {
+                > .content {
+                    >h2 {
+                        color: white;
+                        padding-top: 8px;
+                        font-size:rem(17);
+                        height:132px;
+                        padding-top:10px;
+                        padding-bottom:8px;
+                        font-weight:normal;
+                        line-height:1.29;
+                    }                    
+                }
+            }
+        }
+
+
+        &.social {
+            > article {
+                > .content {
+                    >h2 {
+                        display: none;
+                    }                    
+                }
+            }
+        }
+
 
         &.without__image {
             background:color(white);
@@ -118,7 +142,7 @@
                     display:block;
                     font-size: rem(15);
                     height:80px;
-                    max-height:80px;
+                    height:80px;
                     line-height: 1.33;
                     margin-top: 7px;
                 }
@@ -158,7 +182,7 @@
                     > h2{
                         font-size:rem(17);
                         line-height:1.29;
-                        max-height:44px;
+                        height:44px;
                         margin-top:5px;
 
                     }
@@ -187,7 +211,7 @@
             &.without__image {
                 .content {
                     h2 {
-                        max-height:80px;
+                        height:80px;
                     }
                 }
             }  
@@ -290,7 +314,7 @@
                         font-size: rem(17);
                         line-height:1.29;
                         margin-top:5px;
-                        max-height:44px;
+                        height:44px;
                     }
 
                     > p.excerpt {
@@ -313,7 +337,7 @@
             &.without__image {
                 .content {
                     h2 {
-                        max-height:45px;
+                        height:45px;
                     }
                 }
             }  
@@ -325,7 +349,7 @@
                     }
 
                     >p {
-                        max-height:65px;
+                        height:65px;
                         margin-bottom:6px;
                     }
                 }
@@ -361,7 +385,7 @@
                             margin-bottom:10px;
                         }
                         >p {
-                            max-height:90px;
+                            height:90px;
                         }
                         .icon {
                             display:block;

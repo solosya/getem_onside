@@ -127,8 +127,15 @@ hr.divide10 {
 }
 
 .ad-large-vert {
-    height:619.5px;
-    background: color(grey);
+    height:600px;
+    text-align: right;
+    &:after {
+        content: "Advertisement";
+        font-size: rem(10);
+        color: color(grey);
+        position: relative;
+        bottom:4px;
+    }
 }
 
 ._btn {
