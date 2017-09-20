@@ -174,8 +174,19 @@
                     }
                 }
             }
-
-        }
+            > article {
+                > .content {
+                    > .author {
+                        > p {
+                            border: none;
+                        }
+                        > time {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }        
     }
 }
 

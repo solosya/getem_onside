@@ -97,10 +97,16 @@
             // background: pink;
             > article {
                 .content {
-                    .author {
+                    > .author {
+                        > p {
+                            border: none;
+                        }
+                        > time {
+                            display: none;
+                        }
                         .icon {
                             display: none;
-                        }                    
+                        }                        
                     }
                 }
 
@@ -127,7 +133,7 @@
                         }
                     }                    
                 }
-            }  
+            }
         }
 
         &.instagram {

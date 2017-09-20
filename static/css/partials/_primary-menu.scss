@@ -57,6 +57,10 @@
         font-size:  rem(14);
         font-weight: 600;
     }
+
+    a:hover {
+        color:black;
+    }
     
     a.active {
         color:#8a8b93;
@@ -149,8 +153,7 @@
                 }
                 &:hover{
                     text-decoration: none;
-                    color: white;
-                    background: color(darkblue);
+                    color: black;
                 }
 
                 // &:after {

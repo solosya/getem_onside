@@ -72,6 +72,19 @@
         &.social {
             // background: pink;
 
+            > article {
+                > .content {
+                    > .author {
+                        > p {
+                            border: none;
+                        }
+                        > time {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
             .author {
                 position: absolute;
                 bottom: 0;
