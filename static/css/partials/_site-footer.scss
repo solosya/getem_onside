@@ -2,7 +2,7 @@
     width: 100%;
     margin-top: 0;
     padding-top:45px;
-    background: rgba(0,0,0,.85);
+    background: black;
     height:265px;
     @media screen and (max-width: $sm-break-down) {
         height:auto;
@@ -38,6 +38,10 @@
             border-bottom:1px solid color(transwhite);
             padding-bottom:10px;
             margin-bottom:10px;
+        }
+
+        @media screen and (min-width: $sm-break) and (max-width: $md-break) {
+            min-height: 66px;
         }
 
         > li {

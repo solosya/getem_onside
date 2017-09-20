@@ -118,7 +118,15 @@
                 > .content {
                     >h2 {
                         display: none;
-                    }                    
+                    }
+                    > .author {
+                        > p {
+                            border: none;
+                        }
+                        > time {
+                            display: none;
+                        }
+                    }
                 }
             }
         }
