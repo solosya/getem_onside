@@ -59,6 +59,7 @@
             @include card-image-full();
 
             > article {
+                @include tintbefore(0.5, 2);
                 > .content {
                     padding: 53px 19px 17px 19px;
                     height:250px;
