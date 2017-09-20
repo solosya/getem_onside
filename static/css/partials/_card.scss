@@ -240,7 +240,7 @@ a.card {
     width:auto;
     z-index:99999;
     width:28px;
-    position:relative;
+    position:absolute;
     visibility:hidden;
     @include opacity(0);
     @include transition((opacity(0), 2s ease-out));
