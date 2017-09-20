@@ -4,7 +4,8 @@
 
     a.card {
         height:96px;
-        position:absolute;
+        position:relative;
+
         > article {
             position: relative;
 
@@ -46,18 +47,22 @@
                         position: relative;
                         bottom:-4px;
                     }                  
-                }
-                // .author{
-                //     position:absolute;
-                //     bottom:0;
-                //     &.video {
-                //         .icon {
-                //             @include smallVideoIcon();
-                //         }
-                //     }
-                // }               
+                }              
             }
         }
+        &.game-feed {
+            @include card-image-full;
+
+            .content{
+                >p {
+                    font-size: rem(15);
+                    margin-top:10px;
+                    height:50px;
+                    font-weight:600;
+                    line-height:1.33;
+                }
+            }                     
+        }        
         &.social {
             .content {
                 .icon {
@@ -106,9 +111,9 @@
                         > * {
                             color: white;
                         }
-                        > p {
-                            border-right: 1px solid white; line-height: 1;
-                        }                        
+                        // > p {
+                        //     border-right: 1px solid white; line-height: 1;
+                        // }
                         position: relative;
                     }
                 }

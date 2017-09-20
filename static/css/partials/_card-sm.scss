@@ -6,6 +6,7 @@
     }
 
     a.card {
+        position:relative;
         height:250px;
 
         > article {
@@ -87,7 +88,7 @@
                             color: white;
                         }
                         > p {
-                            border-right: 1px solid white; line-height: 1;
+                            // border-right: 1px solid white; line-height: 1;
                         }
                     }
 
@@ -276,14 +277,14 @@
                             }
                         }                    
                     }
-                    &.without__content {
-                        .content {
-                            .category {
-                                position: absolute;
-                                bottom:45px;
-                            }
-                        }
-                    }
+                    // &.without__content {
+                    //     .content {
+                    //         .category {
+                    //             position: absolute;
+                    //             bottom:45px;
+                    //         }
+                    //     }
+                    // }
                 }
             }
         }
