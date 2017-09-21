@@ -22,7 +22,7 @@
                     font-weight: 700;
                     margin-top: 0;
                     overflow:hidden;
-                    margin-bottom:6px;
+                    margin-bottom:20px;
                     height: 85px;
                     max-width:353px;
                     line-height: 1.18;
@@ -85,10 +85,8 @@
         }   
         &.social {
             .content {
-                padding-top:31px;
                 .icon {
                     display: inline-block;
-                    margin-bottom:210px;
                 }
 
                 >p {
@@ -100,7 +98,6 @@
                 }
 
                 > .author {
-                    bottom: -11px;
                     .icon {
                         display: none;
                     }
@@ -150,14 +147,10 @@
                 &.without__content {
                     .content {
                         > p {
-                            display: none;
+                            height: 20px;
                         }
                         .icon {
                             display: inline-block;
-                            margin-bottom:285px;
-                        }
-                        .author {
-                            bottom: -30px;
                         }
                     }
                 }
@@ -177,7 +170,10 @@
         a.card {
             article {
                 > .content {
-                    padding: 260px 20px 10px 30px;
+                    position: absolute;
+                    bottom: 30px;
+                    padding-right: 30px;
+                    padding-left: 30px;
 
                     h2{
                         font-size: rem(34);

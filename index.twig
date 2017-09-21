@@ -19,7 +19,7 @@
 
 
 <!-- used to index each article as we loop over throughout the template -->
-{% set articleCount = _AppHelper.getApplicationEnv() == 'DEV' ? 7 : 0 %}
+{% set articleCount = _AppHelper.getApplicationEnv() == 'DEV' ? 8 : 0 %}
 {% set dev = _AppHelper.getApplicationEnv() == 'DEV' ? true : false %}
 
 
@@ -149,8 +149,7 @@
                             }) | raw}}
                             {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
                             {% if i < 4 %}
-                                <hr class="divide13 visible-md-block visible-lg-block">
-                                <hr class="divide10 visible-xs-block visible-sm-block">
+                                <hr class="divide13 visible-md-block visible-lg-block visible-sm-block">
                             {% endif %}
 
                         {% endfor %}
@@ -268,14 +267,14 @@
                     </div>
 
                     <div class="row four-cols">
-                        {% for i in 0..3 if sections['social field'].feed.articles[ruralCount] %}
+                        {% for i in 0..11 if sections['social field'].feed.articles[ruralCount] %}
                             {{this.render('partials/_single-article.twig', {
                                 article: sections['social field'].feed.articles[ruralCount], 
                                 imageSize: {width:300},
                                 containerClass: 'col-sm-1 card-sm feature-side-mobile'
                             }) | raw}}
                             {% set ruralCount = (dev) ? articleCount : ruralCount + 1 %}
-                            {% if i < 2 %}
+                            {% if i < 11 %}
                                 <hr class="divide visible-xs-block">
                             {% endif %}
                         {% endfor %}
