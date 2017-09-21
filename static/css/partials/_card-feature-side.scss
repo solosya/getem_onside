@@ -248,7 +248,6 @@
     @media screen and (min-width: $sm-break) and (max-width: $mmd-break-down) {
         @include card-feature-side-base();
 
-        height:70px;
         &.divideright {
             &:after {
                 content: '';
