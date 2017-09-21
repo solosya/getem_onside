@@ -69,7 +69,7 @@ div[class*="col-sm"] {
     margin-bottom: 30px;
     &:after {
         content: '';
-        border-bottom: 1px solid color(lightgrey);
+        border-bottom: 1px solid color(lightergrey);
         padding: 0px 15px 30px 15px;
         position: absolute;
         bottom:-15px;
@@ -136,11 +136,13 @@ hr.divide10 {
 
 .ad-square {
     height:250px;
-    background: color(grey);
-
-    // @media screen and (max-width: $mmd-break){
-    //     margin: 30px 0;
-    // }
+    &:after {
+        content: "Advertisement";
+        font-size: rem(10);
+        color: color(grey);
+        position: relative;
+        bottom:4px;
+    }
 }
 
 .ad-large-vert {
@@ -308,28 +310,41 @@ span.leadsentence{
 }
 
 @media (max-width: 767px) {
-    .two-cols .col-md-1,
     .two-cols .col-sm-1,
     .two-cols .col-lg-1 {
         width: 100%;
         *width: 100%;
     }
 }
-@media (min-width: 768px) {
-    .two-cols .col-md-1,
+@media (min-width: $sm-break) {
     .two-cols .col-sm-1,
     .two-cols .col-lg-1 {
         width: 50%;
         *width: 50%;
     }
 
-    .two-cols .col-md-2,
     .two-cols .col-sm-2,
     .two-cols .col-lg-2  {
         width: 100%;
         *width: 100%;
     }
 }
+
+
+@media (min-width: $mmd-break) {
+    .two-cols .col-md-1 {
+        width: 50%;
+        *width: 50%;
+    }
+
+    .two-cols .col-md-2  {
+        width: 100%;
+        *width: 100%;
+    }
+}
+
+
+
 
 @media (min-width: 768px) {
     .four-cols .col-md-1,

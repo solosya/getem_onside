@@ -87,7 +87,7 @@ body.special {
         margin-top:50px;
     }
     .most-popular {
-        @media screen and (max-width: $sm-break-down){
+        @media screen and (min-width: $md-break){
             margin:40px 0;
         }
 
