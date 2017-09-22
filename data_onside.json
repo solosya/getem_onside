@@ -56,7 +56,8 @@
 				"total_views": "6",
 				"total_articles": "10",
 				"created_at": "1493860104",
-				"link": "http:\/\/themedev.cognitives.io/"
+				"link": "http:\/\/themedev.cognitives.io/",
+				"url": "http:\/\/themedev.cognitives.io/"
 			},
 			{
 				"id": "716",
@@ -82,7 +83,8 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861433",
-				"link": "http:\/\/theme.aap.dev\/@news-social"
+				"link": "http:\/\/theme.aap.dev\/@news-social",
+				"url": "http:\/\/theme.aap.dev\/@news-social"
 			},
 			{
 				"id": "718",
@@ -108,7 +110,8 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861433",
-				"link": "http:\/\/theme.aap.dev\/@feeds"
+				"link": "http:\/\/theme.aap.dev\/@feeds",
+				"url": "http:\/\/theme.aap.dev\/@feeds"
 			},
 			{
 				"id": "723",
@@ -134,7 +137,8 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493862086",
-				"link": "http:\/\/theme.aap.dev\/@trivia"
+				"link": "http:\/\/theme.aap.dev\/@trivia",
+				"url": "http:\/\/theme.aap.dev\/@trivia"
 			},
 			{
 				"id": "720",
@@ -160,11 +164,12 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861466",
-				"link": "http:\/\/theme.aap.dev\/@podcasts"
+				"link": "http:\/\/theme.aap.dev\/@podcasts",
+				"url": "http:\/\/theme.aap.dev\/@podcasts"
 			},
 			{
 				"id": "730",
-				"guid": "23bf1bee-0461-4693-9f0a-65b00ba6987c",
+				"guid": "44bf1bee-0461-4693-9f0a-65b00ba6987c",
 				"title": "Essendon Vs Collingwood",
 				"type": "channel",
 				"is_default": null,
@@ -185,11 +190,12 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861482",
-				"link": "http:\/\/theme.aap.dev\/@afl1"
+				"link": "http:\/\/theme.aap.dev\/@afl1",
+				"url": "http:\/\/theme.aap.dev\/@afl1"
 			},
 			{
 				"id": "731",
-				"guid": "b1b7603e-85c9-4c74-bb11-e53cdfe92616",
+				"guid": "b1b7603e-85c9-4c78-bb11-e53cdfe92616",
 				"title": "Richmond Vs West Coast",
 				"type": "channel",
 				"is_default": null,
@@ -210,11 +216,12 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861446",
-				"link": "http:\/\/theme.aap.dev\/@afl2"
+				"link": "http:\/\/theme.aap.dev\/@afl2",
+				"url": "http:\/\/theme.aap.dev\/@afl2"
 			},
 			{
-				"id": "731",
-				"guid": "b1b7603e-85c9-4c74-bb98-e53cdfe92616",
+				"id": "732",
+				"guid": "b1b7603e-85c9-4c77-bb98-e53cdfe92616",
 				"title": "Roosters Vs Hounds",
 				"type": "channel",
 				"is_default": null,
@@ -235,11 +242,12 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861446",
-				"link": "http:\/\/theme.aap.dev\/@nrl1"
+				"link": "http:\/\/theme.aap.dev\/@nrl1",
+				"url": "http:\/\/theme.aap.dev\/@nrl1"
 			},
 			{
-				"id": "731",
-				"guid": "b1b7603e-85c9-4c74-bb67-e53cdfe92616",
+				"id": "733",
+				"guid": "b1b7603e-85c9-4c76-bb67-e53cdfe92616",
 				"title": "Cricket",
 				"type": "channel",
 				"is_default": null,
@@ -260,11 +268,12 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861446",
-				"link": "http:\/\/theme.aap.dev\/@cricket"
+				"link": "http:\/\/theme.aap.dev\/@cricket",
+				"url": "http:\/\/theme.aap.dev\/@cricket"
 			},
 			{
-				"id": "731",
-				"guid": "b1b7603e-85c9-4c74-bb43-e53cdfe92616",
+				"id": "734",
+				"guid": "b1b7603e-85c9-4c75-bb43-e53cdfe92616",
 				"title": "Other sport",
 				"type": "channel",
 				"is_default": null,
@@ -285,11 +294,12 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861446",
-				"link": "http:\/\/theme.aap.dev\/@other-sport"
+				"link": "http:\/\/theme.aap.dev\/@other-sport",
+				"url": "http:\/\/theme.aap.dev\/@other-sport"
 			},
 			{
-				"id": "731",
-				"guid": "b1b7603e-85c9-4c74-bb34-e53cdfe92616",
+				"id": "735",
+				"guid": "b1b7603e-85c9-4c73-bb34-e53cdfe92616",
 				"title": "Social Field",
 				"type": "channel",
 				"is_default": null,
@@ -310,7 +320,8 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861446",
-				"link": "http:\/\/theme.aap.dev\/@social"
+				"link": "http:\/\/theme.aap.dev\/@social",
+				"url": "http:\/\/theme.aap.dev\/@social"
 			}
 		],
 		"styling": {
@@ -437,7 +448,7 @@
 					"is_new_tab": "0",
 					"menu_type": "header",
 					"type": "blog",
-					"menu_blog_id": "720",
+					"menu_blog_id": "730",
 					"menu_page_id": null,
 					"position": "2",
 					"status": "1",
