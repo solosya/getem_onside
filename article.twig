@@ -59,7 +59,7 @@
                                     {% for image in article.media %}
                                         {% set articleImg = _Media.getMediaUrl(image,1094, 515, {'crop': 'fill', 'gravity': 'auto'} ) %}
 
-                                        <figure class="featured">
+                                        <figure class="featured" data-hash="{{loop.index}}">
                                             <img src="{{articleImg}}" class="img-responsive">
                                             {% if image.type == 'video' %} 
                                                 {% set mediaUrl = "" %}
@@ -82,21 +82,21 @@
                                                 </a>
                                             {% endif %}
 
+                                            <div class="social-share">
+                                                <div class="links">
+                                                    <a href="https://www.facebook.com/sharer/sharer.php?u={{article.url}}&title={{ article.title|url_encode }}" class="btn btn-post"></a
+                                                    ><a href="https://twitter.com/share?text={{ article.title|url_encode }}&url={{article.url}}" class="btn btn-tweet"></a
+                                                    ><a href="mailto://" class="btn btn-email"></a>
+                                                </div>
+                                            </div>
 
                                             <figcaption>
                                                 <p>{{image.caption}}</p>
                                             </figcaption>
+
                                         </figure>
                                     {% endfor %}
                                 </div>
-                                <div class="social-share">
-                                    <div class="links">
-                                        <a href="https://www.facebook.com/sharer/sharer.php?u={{article.url}}&title={{ article.title|url_encode }}" class="btn btn-post"></a
-                                        ><a href="https://twitter.com/share?text={{ article.title|url_encode }}&url={{article.url}}" class="btn btn-tweet"></a
-                                        ><a href="mailto://" class="btn btn-email"></a>
-                                    </div>
-                                </div>
-
                             </div>
 
                          {% endif %}
