@@ -42,6 +42,17 @@
                                 <a href="#" id="menu-mobile" class="menu-mobile"></a>
 
                                 <div class="menuContainer">
+                                    
+                                    <div id="menu-search" class="secondary-menu menu-search">
+                                        <ul><li>
+                                            <form method="get" id="searchformmob" action="{{networkData.defaultBlogUrl}}/search">
+                                                <div><input type="text" class="field" name="s" id="header-search" placeholder="Search" required=""></div>
+                                                <button class="btn btn-default" type="submit" id="searchsubmit">
+                                                    <span class="icon-search icon"></span>
+                                                </button>
+                                            </form>
+                                        </ul></li>
+                                    </div>
 
                                     <ul id="menu-primary-menu" class="menu">
                                         {% set menuItems = blog.blogHeaderMenu %}
