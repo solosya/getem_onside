@@ -22,6 +22,8 @@
 {% set articleCount = _AppHelper.getApplicationEnv() == 'DEV' ? 0 : 0 %}
 {% set dev = _AppHelper.getApplicationEnv() == 'DEV' ? true : false %}
 
+{% set tabletCount = 0 %}
+{% set desktopCount = 0 %}
 
 {% set sections =  {
         "social field": {
@@ -188,6 +190,9 @@
 
 
 
+                    {% set desktopCount = articleCount %}
+                    {% set tabletCount = articleCount %}
+
                     <!--  display side stories for desktop   -->
                     <div class="col-md-3 visible-xs-block visible-md-block visible-lg-block">
 
@@ -199,14 +204,14 @@
                         <hr class="divide10 visible-xs-block visible-sm-block space-only">
 
 
-                        {% for i in 0..2 if articles[articleCount] %}
+                        {% for i in 0..2 if articles[desktopCount] %}
                             {{this.render('partials/_single-article.twig', {
-                                article: articles[articleCount], 
-                                position: articleCount + 1, 
+                                article: articles[desktopCount], 
+                                position: desktopCount + 1, 
                                 imageSize: {width:300},
                                 containerClass: 'feature-side feature-side-tablet feature-side-mobile'
                             }) | raw}}
-                            {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
+                            {% set desktopCount = (dev) ? desktopCount : desktopCount + 1 %}
                             
                             {% if i != 2 %}
                                 <hr class="divide18 visible-md-block visible-lg-block">
@@ -215,7 +220,34 @@
                         {% endfor %}
 
                     </div>
+
+                    <!-- tablet displays three more wide cards -->                    
+                    <div class="col-sm-8 visible-sm-block">
+
+                        {% for i in 0..2 if articles[tabletCount] %}
+
+                            {{this.render('partials/_single-article.twig', {
+                                article: articles[tabletCount], 
+                                position: tabletCount + 1, 
+                                imageSize: {width:300},
+                                containerClass: 'card-rec card-rec-tablet card-rec-mobile'
+                            }) | raw}}
+                            {% set tabletCount = (dev) ? tabletCount : tabletCount + 1 %}
+                            
+                            <hr class="divide18 visible-md-block visible-lg-block space-only">
+                            <hr class="divide10 visible-xs-block visible-sm-block space-only">
+
+                        {% endfor %}
+
+                    </div>
+
+                    {% set articleCount = tabletCount %}                    
+
                 </div>
+
+            </div>
+
+
 
 
 {#                 {{ this.render('partials/ajaxarticles.twig', {
