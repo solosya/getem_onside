@@ -19,7 +19,7 @@
 
 
 <!-- used to index each article as we loop over throughout the template -->
-{% set articleCount = _AppHelper.getApplicationEnv() == 'DEV' ? 8 : 0 %}
+{% set articleCount = _AppHelper.getApplicationEnv() == 'DEV' ? 0 : 0 %}
 {% set dev = _AppHelper.getApplicationEnv() == 'DEV' ? true : false %}
 
 
@@ -348,7 +348,7 @@
                     </div>
 
                     <div class="row four-cols one-deck">
-                        {% for i in 0..0 if sections['cricket'].feed.articles[ruralCount] %}
+                        {% for i in 0..3 if sections['cricket'].feed.articles[ruralCount] %}
                             {{this.render('partials/_single-article.twig', {
                                 article: sections['cricket'].feed.articles[ruralCount], 
                                 imageSize: {width:300},
@@ -379,7 +379,7 @@
                     </div>
 
                     <div class="row four-cols one-deck">
-                        {% for i in 0..1 if sections['other sport'].feed.articles[ruralCount] %}
+                        {% for i in 0..3 if sections['other sport'].feed.articles[ruralCount] %}
                             {{this.render('partials/_single-article.twig', {
                                 article: sections['other sport'].feed.articles[ruralCount], 
                                 imageSize: {width:300},
