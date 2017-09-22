@@ -162,12 +162,10 @@
 				"created_at": "1493861466",
 				"link": "http:\/\/theme.aap.dev\/@podcasts"
 			},
-
-
 			{
 				"id": "730",
 				"guid": "23bf1bee-0461-4693-9f0a-65b00ba6987c",
-				"title": "Your Say",
+				"title": "Essendon Vs Collingwood",
 				"type": "channel",
 				"is_default": null,
 				"network_id": "327",
@@ -187,12 +185,12 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861482",
-				"link": "http:\/\/theme.aap.dev\/@yoursay"
+				"link": "http:\/\/theme.aap.dev\/@afl1"
 			},
 			{
 				"id": "731",
 				"guid": "b1b7603e-85c9-4c74-bb11-e53cdfe92616",
-				"title": "Newsletter",
+				"title": "Richmond Vs West Coast",
 				"type": "channel",
 				"is_default": null,
 				"network_id": "327",
@@ -212,12 +210,12 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861446",
-				"link": "http:\/\/theme.aap.dev\/@Newsletter"
+				"link": "http:\/\/theme.aap.dev\/@afl2"
 			},
 			{
 				"id": "731",
 				"guid": "b1b7603e-85c9-4c74-bb98-e53cdfe92616",
-				"title": "Tennis",
+				"title": "Roosters Vs Hounds",
 				"type": "channel",
 				"is_default": null,
 				"network_id": "327",
@@ -237,7 +235,7 @@
 				"total_views": "0",
 				"total_articles": "0",
 				"created_at": "1493861446",
-				"link": "http:\/\/theme.aap.dev\/@tennis"
+				"link": "http:\/\/theme.aap.dev\/@nrl1"
 			},
 			{
 				"id": "731",
@@ -428,7 +426,92 @@
 			"pageStatus": null,
 			"link": "http:\/\/theme.aap.dev\/@feeds",
 			"isExternal": 0,
-			"children": []
+			"children": [
+				{
+					"id": "6358",
+					"guid": "667a8f2d-47ee-40db-89d0-86dadc56bfd0",
+					"blog_id": "730",
+					"parent_id": null,
+					"label": "Essendon Vs Collingwood",
+					"url": "",
+					"is_new_tab": "0",
+					"menu_type": "header",
+					"type": "blog",
+					"menu_blog_id": "720",
+					"menu_page_id": null,
+					"position": "2",
+					"status": "1",
+					"is_external_url": null,
+					"updated_at": "1493862105",
+					"created_at": "1493862105",
+					"blogGuid": "23bf1bee-0461-4693-9f0a-65b00ba6987c",
+					"blogTitle": "Essendon Vs Collingwood",
+					"blogStatus": "1",
+					"is_default": null,
+					"short_description": "",
+					"pageGuid": null,
+					"pageTitle": null,
+					"pageStatus": null,
+					"link": "http:\/\/theme.aap.dev\/@afl1",
+					"isExternal": 0
+				},
+				{
+					"id": "6358",
+					"guid": "667a8f2d-47ee-40db-89d0-86dadc56bfd0",
+					"blog_id": "730",
+					"parent_id": null,
+					"label": "Richmod Vs West Coast",
+					"url": "",
+					"is_new_tab": "0",
+					"menu_type": "header",
+					"type": "blog",
+					"menu_blog_id": "720",
+					"menu_page_id": null,
+					"position": "2",
+					"status": "1",
+					"is_external_url": null,
+					"updated_at": "1493862105",
+					"created_at": "1493862105",
+					"blogGuid": "23bf1bee-0461-4693-9f0a-65b00ba6987c",
+					"blogTitle": "Richmod Vs West Coast",
+					"blogStatus": "1",
+					"is_default": null,
+					"short_description": "",
+					"pageGuid": null,
+					"pageTitle": null,
+					"pageStatus": null,
+					"link": "http:\/\/theme.aap.dev\/@afl2",
+					"isExternal": 0
+				},
+				{
+					"id": "6358",
+					"guid": "667a8f2d-47ee-40db-89d0-86dadc56bfd0",
+					"blog_id": "730",
+					"parent_id": null,
+					"label": "Roosters Vs Hounds",
+					"url": "",
+					"is_new_tab": "0",
+					"menu_type": "header",
+					"type": "blog",
+					"menu_blog_id": "720",
+					"menu_page_id": null,
+					"position": "2",
+					"status": "1",
+					"is_external_url": null,
+					"updated_at": "1493862105",
+					"created_at": "1493862105",
+					"blogGuid": "23bf1bee-0461-4693-9f0a-65b00ba6987c",
+					"blogTitle": "Roosters Vs Hounds",
+					"blogStatus": "1",
+					"is_default": null,
+					"short_description": "",
+					"pageGuid": null,
+					"pageTitle": null,
+					"pageStatus": null,
+					"link": "http:\/\/theme.aap.dev\/@nrl1",
+					"isExternal": 0
+				}
+			]
 		},
 		{
 			"id": "6358",
