@@ -3,7 +3,6 @@
     font-family: $base-font-family;
 
     a.card {
-        height:96px;
         position:relative;
 
         > article {
@@ -242,9 +241,29 @@
     @media screen and (min-width: $sm-break) and (max-width: $mmd-break-down) {
         @include card-feature-side-base();
 
+        height: 75px;
+
         &.article-sidebar {
             a.card {
-                @include card-image-left(54px);  
+                height: 100%;
+
+                @include card-image-left(57px);  
+                > article {
+                    > .content {
+                        h2 {
+                            font-size: rem(15);
+                            height: 40px;
+                        }
+                        > .author {
+                            position: absolute;
+                            bottom: -3px;
+                        }
+                    }
+
+                    > figure {
+                        height: 75px;
+                    }                    
+                }
                 &:not(.without__image) {
                     > article {
                         > .content {
