@@ -147,7 +147,7 @@
 					height: 440px;
 					width: 960px;
 
-					@media screen and (max-width: $sm-break) {
+					@media screen and (max-width: $mmd-break-down) {
 						height: 100%;
 						width: 100%;
 					}
