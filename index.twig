@@ -92,12 +92,12 @@
 
                         {% endif %}
 
-                        <!-- display six stories for tablet -->
+                        <!-- display five stories & CTA for tablet -->
                         <div class="row two-cols visible-sm-block">
 
                             <hr class="divide18 space-only" style="clear:both">
 
-                            {% for i in 0..5 if articles[articleCount] %}
+                            {% for i in 0..4 if articles[articleCount] %}
                                 {{this.render('partials/_single-article.twig', {
                                     article: articles[articleCount], 
                                     position: articleCount + 1, 
@@ -107,6 +107,10 @@
                                 {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
 
                             {% endfor %}
+
+                            <div class="col-sm-1">
+                                <img src="{{networkData.templatePath}}/static/images/the-short-side-cta.png">
+                            </div>
 
                             {% set articleCount = (dev) ? articleCount : articleCount - 6 %}
   
@@ -224,7 +228,7 @@
                         <hr class="divide10 visible-xs-block visible-sm-block space-only">
 
 
-                        {% for i in 0..3 if articles[articleCount] %}
+                        {% for i in 0..2 if articles[articleCount] %}
                             {{this.render('partials/_single-article.twig', {
                                 article: articles[articleCount], 
                                 position: articleCount + 1, 
@@ -234,7 +238,7 @@
                             {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
                             
 
-                            {% if i != 3 %}
+                            {% if i != 2 %}
                                 <hr class="divide18 visible-md-block visible-lg-block">
                                 <hr class="divide10 visible-xs-block visible-sm-block">
                             {% endif %}
