@@ -82,7 +82,7 @@
                     <div class="col-xs-9 col-sm-9 col-md-6">
 
                         <!-- main article -->
-                        {% if articles[articleCount] %}                                                                
+                        {% if articles[articleCount] %}                                                          
                             {{this.render('partials/_single-article.twig', {
                                 article: articles[articleCount], 
                                 position: articleCount + 1, 
@@ -143,7 +143,6 @@
                             {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
 
                         {% endfor %}
-                        {% set articleCount = (dev) ? articleCount : articleCount - (i + 1) %}
 
                         <div class="col-sm-1">
                             <img src="{{networkData.templatePath}}/static/images/the-short-side-cta.png">
@@ -182,7 +181,7 @@
 
                             {% endfor %}
 
-                            {% set articleCount = (dev) ? articleCount : articleCount - (i + j + 1) %}
+                            {% set articleCount = (dev) ? articleCount : articleCount - (i + j) %}
 
                         </div>
 
