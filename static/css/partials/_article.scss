@@ -164,20 +164,22 @@
 
 
 				div.social-share {
-					top: 406px;
+					bottom:45px;
 					width:144px;
 					height:45px;
-					position:absolute;
+					position:relative;
 					left:0;
 					background:black;
 					z-index:100;
 
 					@media screen and (max-width: $mobile-break) {
 						left:0;
+						bottom:0;
 						width:100%;
 					}
 
 					> .links {
+						position:absolute;
 						height:100%;
 						margin:0 auto;
 						width:175px;
