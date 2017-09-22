@@ -151,14 +151,14 @@
 
                     </div>
 
-                   <!-- most popular & 3 articles for tablets, DECREMENT TO ACHIEVE PARITY -->
+                    <!-- most popular & 3 articles for tablets, DECREMENT TO ACHIEVE PARITY -->
                     <div class="col-sm-8 row popular two-cols visible-sm-block">
                         <div class="col-sm-1 most-popular">
                             <h2>What you&rsquo;re cheering for</h2>
 
-                            {% for i in 0..3 if popularArticles[i] %}
+                            {% for p in 0..3 if popularArticles[p] %}
                                     {{this.render('partials/_single-article.twig', {
-                                        article: popularArticles[i], 
+                                        article: popularArticles[p], 
                                         imageSuppress: true, 
                                         containerClass: 'card-popular'
                                     }) | raw}}
@@ -168,7 +168,7 @@
                             <!-- <hr class="divide18 visible-sm-block space-only"> -->
 
                             <!-- THREE ARTICLES BELOW MOST POPULAR -->
-                            {% for i in 0..2 if articles[articleCount] %}
+                            {% for j in 0..2 if articles[articleCount] %}
                                 {{this.render('partials/_single-article.twig', {
                                     article: articles[articleCount], 
                                     position: articleCount + 1, 
@@ -176,13 +176,13 @@
                                     containerClass: 'feature-side-tablet'
                                 }) | raw}}
                                 {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
-                                {% if i != 2 %}
+                                {% if j != 2 %}
                                     <hr class="divide15 visible-sm-block">
                                 {% endif %}                                
 
                             {% endfor %}
 
-                            {% set articleCount = (dev) ? articleCount : articleCount - (i + 1) %}
+                            {% set articleCount = (dev) ? articleCount : articleCount - (i + j + 1) %}
 
                         </div>
 
