@@ -6,6 +6,10 @@
     padding-left: 15px;
     padding-right: 15px;
    -webkit-tap-highlight-color: transparent; 
+   @media screen and (max-width : $sm-break-down) {
+      top: 35vw;
+   }
+
  }
   .owl-shep-theme .owl-nav .owl-next {
     background-image: url('../images/gallery-right.svg');

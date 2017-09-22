@@ -3,13 +3,28 @@ body.layout-article-gallery {
 	article.article-main {
 
 		position:relative;
+		.page-content {
 
-		.image-container {
-			min-height: 850px;
+			.image-container {
+				min-height: 850px;
+				figure.featured {
+					height:440px;
 
-			figcaption {
-				width:600px;
-				margin-top:40px;
+					@media screen and (max-width : $sm-break-down) {
+						height:60vw;
+					}
+
+
+					figcaption {
+						width:600px;
+						margin-top:40px;
+						float: left;
+
+						@media screen  and (max-width : 992px) {
+							width:100%;
+						}
+					}
+				}
 			}
 		}
 		.sidebar {
@@ -18,7 +33,14 @@ body.layout-article-gallery {
 		    position: absolute;
 		    right: 0;
 		    top: 635px;
+
+		    @media screen and (max-width : $mmd-break-down) {
+				position:static;
+				margin-top:40px;
+		    }
+
 		}
+
 	}
 
 }
@@ -26,39 +48,4 @@ body.layout-article-gallery {
 body.article {
 
 
-	// .gallery {
-
-	// 		margin-bottom:0;
-
-
-	// 		.gallery-row {
-	// 			padding-top:62px;
-	// 			// background:color(galleryback);
-
-
-
-	// 			figure {
-
-	// 				> figcaption {
-	// 					 > p {
-	// 					 	float:none;
-	// 					 	text-align:center;
-	// 						color:white;
-	// 					 }
-	// 				}
-	// 			}
-
-	// 			img.owl-thumb-item {
-	// 				width:152px;
-	// 				height:96px;
-	// 				margin-right:10px;
-	// 			}
-
-
-	// 		}
-
-
-	// 	}
-	// }
-	
 }
