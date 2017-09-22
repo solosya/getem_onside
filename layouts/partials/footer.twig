@@ -1,4 +1,4 @@
-{% set logo = networkData.templatePath~'/static/images/footer-logo.png'%}
+{% set logo = networkData.templatePath~'/static/images/getem_onside_footer.svg'%}
 {# {% if networkData.logoMedia | length > 0 %}
     {% set logo = _Media.getMediaUrl(networkData.logoMedia, 290, 80, {'crop': 'fit'} )%}
 {% endif %}
@@ -14,7 +14,7 @@
             <div class="col-sm-2">
                 <a class="footer-brand" 
                     href="{{networkData.defaultBlogUrl}}" 
-                    style="background-image:url({{logo}})"
+                    style="background-image:url({{logo}}); position:relative; top:10px;"
                     rel="Home" 
                     tabindex="-1" 
                     title="Home">
@@ -25,7 +25,7 @@
 
                 <ul class="menu">
                     {% set menuItems = blog.blogFooterMenu %}
-                    {% for i in 0..4  %}
+                    {% for i in 0..2  %}
 
                        {% set activeClass = (menuItems[i].link == _AppHelper.getServerUrl()) ? 'active' : ''%}
                        {% set externalClass = (menuItems[i].isExternal) ? 'external-link' : '' %}
@@ -47,7 +47,7 @@
                 </ul>
 
                 <ul id="" class="menu padded">
-                    {% for i in 5..8  %}
+                    {% for i in 3..5  %}
                        <li>
                             <a href="{{menuItems[i].link |raw}}" class="{{activeClass}} {{externalClass}}" {% if menuItems[i].target != "" %}target="{{menuItems[i].target}}"{% endif %}>
                                 {% if menuItems[i].label != "" %}

@@ -58,7 +58,8 @@
 
 
     {% if _AppHelper.getApplicationEnv() == 'PROD'%}
-    <link rel="stylesheet" href="{{networkData.templatePath}}/static/deploy/concat.min.css?v=d2dd76a4" type="text/css" media="all">
+
+    <link rel="stylesheet" href="{{networkData.templatePath}}/static/deploy/concat.min.css?v=ff8bd955" type="text/css" media="all">
 
     {% else %}
 {#             <link type="text/css" rel="stylesheet" href="{{networkData.templatePath}}/static/css/jquery.fancybox.css?ver=2" />
@@ -117,6 +118,13 @@
         <!-- End Google Analytics -->
     {% endif %}
     
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5508656297557751",
+    enable_page_level_ads: true
+  });
+</script>
 
 
     {{ this.head() }}

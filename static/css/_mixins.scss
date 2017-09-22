@@ -1,4 +1,4 @@
-@mixin tintbefore($value:0.4) {
+@mixin tintbefore($value:0.4, $z:1) {
 	&:before {
 	  content: '';
 	  position: absolute;
@@ -7,10 +7,10 @@
 	  width: 100%;
 	  opacity: $value;
 	  background-color: #000;
-	  z-index: 1;
+	  z-index: $z;
 	}
 }
-@mixin tintafter($value:0.4) {
+@mixin tintafter($value:0.4, $z:1) {
 	&:after {
 	  content: '';
 	  position: absolute;
@@ -19,7 +19,7 @@
 	  width: 100%;
 	  opacity: $value;
 	  background-color: #000;
-	  z-index: 1;
+	  z-index: $z;
 	}
 }
 

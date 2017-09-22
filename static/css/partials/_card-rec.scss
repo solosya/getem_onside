@@ -1,5 +1,6 @@
 @mixin card-rec-base() {
     a.card {
+        position: relative;
         // background: pink;
         article {
             position:relative;
@@ -12,7 +13,6 @@
                         display: none;
                     }
                 }
-
             }
 
             > .content {
@@ -71,6 +71,19 @@
 
         &.social {
             // background: pink;
+
+            > article {
+                > .content {
+                    > .author {
+                        > p {
+                            border: none;
+                        }
+                        > time {
+                            display: none;
+                        }
+                    }
+                }
+            }
 
             .author {
                 position: absolute;
@@ -151,7 +164,7 @@
                             color: white;
                         }
                         > p {
-                            border-right: 1px solid white; line-height: 1;
+                            // border-right: 1px solid white; line-height: 1;
                         }                        
                         position: relative;
                     }

@@ -6,6 +6,7 @@
     }
 
     a.card {
+        position:relative;
         height:250px;
 
         > article {
@@ -59,6 +60,7 @@
             @include card-image-full();
 
             > article {
+                @include tintbefore(0.5, 2);
                 > .content {
                     padding: 53px 19px 17px 19px;
                     height:250px;
@@ -86,7 +88,7 @@
                             color: white;
                         }
                         > p {
-                            border-right: 1px solid white; line-height: 1;
+                            // border-right: 1px solid white; line-height: 1;
                         }
                     }
 
@@ -118,7 +120,15 @@
                 > .content {
                     >h2 {
                         display: none;
-                    }                    
+                    }
+                    > .author {
+                        > p {
+                            border: none;
+                        }
+                        > time {
+                            display: none;
+                        }
+                    }
                 }
             }
         }
@@ -195,7 +205,6 @@
                     }
 
                     > .author{
-                        margin-top:5px;
                         position: static;
 
                         >p {
@@ -267,14 +276,14 @@
                             }
                         }                    
                     }
-                    &.without__content {
-                        .content {
-                            .category {
-                                position: absolute;
-                                bottom:45px;
-                            }
-                        }
-                    }
+                    // &.without__content {
+                    //     .content {
+                    //         .category {
+                    //             position: absolute;
+                    //             bottom:45px;
+                    //         }
+                    //     }
+                    // }
                 }
             }
         }
