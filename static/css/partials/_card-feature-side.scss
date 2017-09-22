@@ -3,7 +3,6 @@
     font-family: $base-font-family;
 
     a.card {
-        height:96px;
         position:relative;
 
         > article {
@@ -242,9 +241,47 @@
     @media screen and (min-width: $sm-break) and (max-width: $mmd-break-down) {
         @include card-feature-side-base();
 
+        height: 96px;
+
+        a.card {
+            @include card-image-left(80px);
+
+            height: 100%;
+            article {
+                > .content {
+                    h2{
+                        font-size: rem(15);
+                        height: 40px;
+                        line-height: 1.3;
+                    }
+                    p.excerpt {
+                        display:none;
+                    }
+                }
+            }
+        }
+
+
         &.article-sidebar {
+            height: 75px;
             a.card {
-                @include card-image-left(54px);  
+                @include card-image-left(57px);  
+                > article {
+                    > .content {
+                        h2 {
+                            font-size: rem(15);
+                            height: 40px;
+                        }
+                        > .author {
+                            position: absolute;
+                            bottom: -3px;
+                        }
+                    }
+
+                    > figure {
+                        height: 75px;
+                    }                    
+                }
                 &:not(.without__image) {
                     > article {
                         > .content {
@@ -276,23 +313,6 @@
             &:last-child {
                 &:after {
                     display:none;
-                }
-            }
-        }
-
-
-        a.card {
-            @include card-image-left(80px);
-
-            article {
-                > .content {
-                    h2{
-                        font-size: rem(12);
-                        height: 33px;
-                    }
-                    p.excerpt {
-                        display:none;
-                    }
                 }
             }
         }
