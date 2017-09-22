@@ -113,6 +113,8 @@ body.special {
     }
 
     .section-header {
+        clear: both;
+
         p>a {
             margin:0;
             font-family: $font-family-sans-serif;

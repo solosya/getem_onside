@@ -324,6 +324,8 @@
     @media screen and (max-width: $sm-break-down){
         @include card-feature-side-base();
 
+        height: 96px;
+
         a.card {
             @include card-image-left(89px);
 
