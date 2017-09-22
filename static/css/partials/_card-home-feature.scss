@@ -209,85 +209,23 @@
 }
 
 
-
-
-
-
 .home-feature-mobile {
     @media screen and (max-width: $sm-break-down){
         @include card-home-feature-base();
 
         margin-bottom:20px;
-        height:60vw;
+        height: 200px;
 
         a.card {
             article {
-        
                 > .content {
-                    padding: 0 20px 15px 10px;
-                    position:absolute;
-                    bottom:0;
-
-                    .category{
-                        margin-bottom:5px;
-                    }
+                    position: absolute;
+                    bottom: 15px;
+                    padding-right: 15px;
+                    padding-left: 15px;
 
                     h2{
-                        font-size: rem(26);
-                        margin-bottom: 5px;
-                        height: 60px;
-                        line-height: 1.15;
-                    }
-                }
-            }
-
-            &.social {
-                .content {
-
-                    padding: 16px 20px 5px 10px;
-
-                    .icon {
-                        margin-bottom:45px;
-                    }
-
-                    > p {
-                        font-size: rem(26);
-                        margin-top: 5px;
-                        min-height:20px;
-                        height: 60px;
-                        line-height: 1.15;
-                    }
-                }
-
-                &.twitter, &.instagram{
-                    .content{
-                        >p {
-                            height:45px;
-                            font-size:rem(18);
-                            line-height:1.22;
-                            margin-bottom:10px;
-                        }
-
-                    }
-                }
-
-                &.instagram{
-                    &.without__content {
-                        .content {
-                            .icon {
-                                margin-bottom: 90px;
-                            }
-                            >p {
-                                margin:0;
-                            }
-                        }
-                    }
-                }
-                &.youtube{
-                    .content{
-                        .icon {
-                            margin-bottom:90px;
-                        }
+                        font-size: rem(20);
                     }
                 }
             }

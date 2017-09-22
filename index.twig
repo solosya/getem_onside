@@ -219,6 +219,9 @@
                                 <img src="{{networkData.templatePath}}/static/images/the-short-side-cta.png">
                             </a>
                         </div>
+
+                        <hr class="divide13 visible-xs-block space-only">
+
                     </div>
                     {% endif %}
 
@@ -256,7 +259,7 @@
                     {% set tabletCount = articleCount %}
 
                     <!--  display side stories for desktop   -->
-                    <div class="col-md-3 visible-xs-block visible-md-block visible-lg-block">
+                    <div class="col-md-3 visible-md-block visible-lg-block">
 
                         <div class="advert visible-md-block visible-lg-block ad-large-vert">
                             <img src="{{networkData.templatePath}}/static/images/ads/300x600.jpg">
@@ -303,13 +306,32 @@
 
                     </div>
 
+                    <!-- mobile displays three more wide cards -->
+                    <!-- using desktop count until design is fixed! -->
+                    <div class="col-sm-8 visible-xs-block">
+
+                        {% for i in 0..2 if articles[desktopCount] %}
+
+                            {{this.render('partials/_single-article.twig', {
+                                article: articles[desktopCount], 
+                                position: desktopCount + 1, 
+                                imageSize: {width:300},
+                                containerClass: 'card-rec card-rec-tablet card-rec-mobile'
+                            }) | raw}}
+                            {% set desktopCount = (dev) ? desktopCount : desktopCount + 1 %}
+                            
+                            <hr class="divide18 visible-md-block visible-lg-block space-only">
+                            <hr class="divide10 visible-xs-block visible-sm-block space-only">
+
+                        {% endfor %}
+
+                    </div>
+
+
+
                     {% set articleCount = tabletCount %}                    
 
                 </div>
-
-            </div>
-
-
 
 
 {#                 {{ this.render('partials/ajaxarticles.twig', {
