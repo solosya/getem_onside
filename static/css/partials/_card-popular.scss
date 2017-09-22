@@ -1,7 +1,7 @@
 .most-popular {
     counter-reset: my-badass-counter;
 }
-.most-popular > div:before {
+.most-popular > div.card-popular:before {
     content: counter(my-badass-counter);
     counter-increment: my-badass-counter;
 }
