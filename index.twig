@@ -348,7 +348,7 @@
                     </div>
 
                     <div class="row four-cols one-deck">
-                        {% for i in 0..3 if sections['cricket'].feed.articles[ruralCount] %}
+                        {% for i in 0..0 if sections['cricket'].feed.articles[ruralCount] %}
                             {{this.render('partials/_single-article.twig', {
                                 article: sections['cricket'].feed.articles[ruralCount], 
                                 imageSize: {width:300},
@@ -379,7 +379,7 @@
                     </div>
 
                     <div class="row four-cols one-deck">
-                        {% for i in 0..3 if sections['other sport'].feed.articles[ruralCount] %}
+                        {% for i in 0..1 if sections['other sport'].feed.articles[ruralCount] %}
                             {{this.render('partials/_single-article.twig', {
                                 article: sections['other sport'].feed.articles[ruralCount], 
                                 imageSize: {width:300},
