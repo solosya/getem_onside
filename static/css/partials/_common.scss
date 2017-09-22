@@ -365,15 +365,15 @@ span.leadsentence{
 
 @media (min-width:768px) {
     .one-deck {
-        height: 250px;
-        *height: 250px;
+        max-height: 250px;
+        *max-height: 250px;
         overflow: hidden;
     }
 }
 @media (max-width:767px) {
     .one-deck {
-        height: 330px;
-        *height: 330px;
+        max-height: 360px;
+        *max-height: 360px;
         overflow: hidden;
     }
 }
