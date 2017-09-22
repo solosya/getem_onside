@@ -226,9 +226,7 @@
         a.card {
             @include card-image-left(80px, 96px);
 
-
-            article {
-            
+            article {            
                 > .content {
                     h2{
                         height: 60px;
@@ -243,6 +241,26 @@
 .feature-side-tablet {
     @media screen and (min-width: $sm-break) and (max-width: $mmd-break-down) {
         @include card-feature-side-base();
+
+        &.article-sidebar {
+            a.card {
+                @include card-image-left(54px);  
+                &:not(.without__image) {
+                    > article {
+                        > .content {
+                            > .author {
+                                > p {
+                                    border: none;
+                                }
+                                > time {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
         &.divideright {
             &:after {
@@ -287,7 +305,6 @@
 
         a.card {
             @include card-image-left(89px);
-
 
             article {
             
