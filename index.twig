@@ -128,6 +128,74 @@
                         </div>
                     </div>
 
+
+                    <!-- display five stories & CTA for tablet -->
+                    <div class="col-sm-8 row two-cols visible-sm-block">
+                        <hr class="divide18 space-only" style="clear:both">
+
+                        {% for i in 0..4 if articles[articleCount] %}
+                            {{this.render('partials/_single-article.twig', {
+                                article: articles[articleCount], 
+                                position: articleCount + 1, 
+                                imageSize: {width:300},
+                                containerClass: (i < 4) ? 'col-sm-1 feature-side-tablet with-rule' : 'col-sm-1 feature-side-tablet with-space', 
+                            }) | raw}}
+                            {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
+
+                        {% endfor %}
+                        {% set articleCount = (dev) ? articleCount : articleCount - (i + 1) %}
+
+                        <div class="col-sm-1">
+                            <img src="{{networkData.templatePath}}/static/images/the-short-side-cta.png">
+                        </div>
+
+                    </div>
+
+                   <!-- most popular & 3 articles for tablets, DECREMENT TO ACHIEVE PARITY -->
+                    <div class="col-sm-8 row popular two-cols visible-sm-block">
+                        <div class="col-sm-1 most-popular">
+                            <h2>What you&rsquo;re cheering for</h2>
+
+                            {% for i in 0..3 if popularArticles[i] %}
+                                    {{this.render('partials/_single-article.twig', {
+                                        article: popularArticles[i], 
+                                        imageSuppress: true, 
+                                        containerClass: 'card-popular'
+                                    }) | raw}}
+                            {% endfor %}
+
+                            <hr class="divide18 visible-sm-block space-only">
+                            <!-- <hr class="divide18 visible-sm-block space-only"> -->
+
+                            <!-- THREE ARTICLES BELOW MOST POPULAR -->
+                            {% for i in 0..2 if articles[articleCount] %}
+                                {{this.render('partials/_single-article.twig', {
+                                    article: articles[articleCount], 
+                                    position: articleCount + 1, 
+                                    imageSize: {width:300},
+                                    containerClass: 'feature-side-tablet'
+                                }) | raw}}
+                                {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
+                                {% if i != 2 %}
+                                    <hr class="divide15 visible-sm-block">
+                                {% endif %}                                
+
+                            {% endfor %}
+
+                            {% set articleCount = (dev) ? articleCount : articleCount - (i + 1) %}
+
+                        </div>
+
+                        <div class="advert col-sm-1">
+                            <img src="{{networkData.templatePath}}/static/images/ads/300x600.jpg">
+                        </div>
+
+                        <!-- we have displayed eight stories for tablet but only one for desktop / mobile -->
+                        <!-- (excluding the shared story at top) -->
+
+                    </div>
+
+
                     <!-- display five stories & CTA for desktop / mobile -->
                     {% if articles[articleCount] %}
                     <div class="col-xs-9 col-md-3 visible-xs-block visible-md-block visible-lg-block">
@@ -158,72 +226,6 @@
                         </div>
                     </div>
                     {% endif %}
-
-
-                    <!-- display five stories & CTA for tablet -->
-                    <div class="col-sm-8 row two-cols visible-sm-block">
-                        <hr class="divide18 space-only" style="clear:both">
-
-                        {% for i in 0..4 if articles[articleCount] %}
-                            {{this.render('partials/_single-article.twig', {
-                                article: articles[articleCount], 
-                                position: articleCount + 1, 
-                                imageSize: {width:300},
-                                containerClass: (i < 4) ? 'col-sm-1 feature-side-tablet with-rule' : 'col-sm-1 feature-side-tablet with-space', 
-                            }) | raw}}
-                            {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
-
-                        {% endfor %}
-
-                        <div class="col-sm-1">
-                            <img src="{{networkData.templatePath}}/static/images/the-short-side-cta.png">
-                        </div>
-
-                        {% set articleCount = (dev) ? articleCount : articleCount - 6 %}
-                    </div>
-
-                   <!-- most popular & 3 articles for tablets, DECREMENT BY SEVEN TO ACHIEVE PARITY -->
-                    <div class="col-sm-8 row popular two-cols visible-sm-block">
-                        <div class="col-sm-1 most-popular">
-                            <h2>What you&rsquo;re cheering for</h2>
-
-                            {% for i in 0..3 if popularArticles[i] %}
-                                    {{this.render('partials/_single-article.twig', {
-                                        article: popularArticles[i], 
-                                        imageSuppress: true, 
-                                        containerClass: 'card-popular'
-                                    }) | raw}}
-                            {% endfor %}
-
-                            <hr class="divide18 visible-sm-block space-only">
-                            <!-- <hr class="divide18 visible-sm-block space-only"> -->
-
-                            <!-- THREE ARTICLES BELOW MOST POPULAR -->
-                            {% for i in 0..2 if articles[articleCount] %}
-                                {{this.render('partials/_single-article.twig', {
-                                    article: articles[articleCount], 
-                                    position: articleCount + 1, 
-                                    imageSize: {width:300},
-                                    containerClass: 'feature-side-tablet'
-                                }) | raw}}
-                                {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
-                                {% if i != 2 %}
-                                    <hr class="divide15 visible-sm-block">
-                                {% endif %}                                
-
-                            {% endfor %}
-                        </div>
-
-                        <div class="advert col-sm-1">
-                            <img src="{{networkData.templatePath}}/static/images/ads/300x600.jpg">
-                        </div>
-
-                        {% set articleCount = (dev) ? articleCount : articleCount - 7 %}
-                        <!-- we have displayed eight stories for tablet but only one for desktop / mobile -->
-                        <!-- (excluding the shared story at top) -->
-
-                    </div>
-                    
 
                 </div>
             </section>
@@ -278,9 +280,7 @@
                                 <hr class="divide10 visible-xs-block visible-sm-block">
                             {% endif %}
                         {% endfor %}
-
-                        <!-- decrement count by 3 -->
-                        {% set articleCount = (dev) ? articleCount : articleCount - 3 %}
+                        {% set articleCount = (dev) ? articleCount : articleCount - (i + 1) %}
 
                     </div>
 
