@@ -472,6 +472,20 @@ Card.prototype.events = function()
 
     self.bindSocialPostPopup();
 
+    $('.showMoreArticles').on('click', function(e){
+        e.preventDefault();
+        var btn = $(e.target);
+        var container = $(btn.data('container'));
+        container.toggleClass('one-deck');
+        if (btn.html().toLowerCase() == 'show more') {
+            btn.html("SHOW LESS"); 
+        } else {
+            btn.html("SHOW MORE"); 
+        }
+    });
+
+
+
     $('.loadMoreArticles').on('click', function(e){
         console.log('loading more articles');
         e.preventDefault();

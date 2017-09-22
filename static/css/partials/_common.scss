@@ -201,7 +201,7 @@ div.fancybox-title {
     display:none !important;
 }
 
-.loadMoreArticles {
+.loadMoreArticles, .showMoreArticles {
     text-decoration: none;
     display: block;
     margin: 0 auto;
@@ -226,7 +226,10 @@ div.fancybox-title {
     }
 
 }
-
+.showMoreArticles {
+    position:static;
+    margin-top:20px;
+}
 
 button.bootbox-close-button {
     float: right;
