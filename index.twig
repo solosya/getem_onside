@@ -128,6 +128,37 @@
                         </div>
                     </div>
 
+                    <!-- display five stories & CTA for desktop / mobile -->
+                    {% if articles[articleCount] %}
+                    <div class="col-xs-9 col-md-3 visible-xs-block visible-md-block visible-lg-block">
+
+                        <hr class="divide10 visible-xs-block" style="clear:both">
+
+                        {% for i in 0..4 if articles[i] %}
+                            {{this.render('partials/_single-article.twig', {
+                                article: articles[articleCount], 
+                                position: articleCount + 1,
+                                imageSize: {width:300},
+                                containerClass: 'feature-side feature-side-tablet feature-side-mobile'
+                            }) | raw}}
+                            {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
+                            {% if i < 4 %}
+                                <hr class="divide13">
+                            {% endif %}
+
+                        {% endfor %}
+
+                        <hr class="divide13 visible-md-block visible-lg-block space-only">
+                        <hr class="divide10 visible-xs-block visible-sm-block space-only">
+
+                        <div class="">
+                            <a target="_blank" href="http://getemonside.us16.list-manage.com/subscribe?u=19a286b6a701993a54be44c9b&id=dc1298a714">
+                                <img src="{{networkData.templatePath}}/static/images/the-short-side-cta.png">
+                            </a>
+                        </div>
+                    </div>
+                    {% endif %}
+
 
                     <!-- display five stories & CTA for tablet -->
                     <div class="col-sm-8 row two-cols visible-sm-block">
@@ -192,38 +223,7 @@
                         <!-- (excluding the shared story at top) -->
 
                     </div>
-
-
-                    <!-- display five stories & CTA for desktop / mobile -->
-                    {% if articles[articleCount] %}
-                    <div class="col-xs-9 col-md-3 visible-xs-block visible-md-block visible-lg-block">
-
-                        <hr class="divide10 visible-xs-block" style="clear:both">
-
-                        {% for i in 0..4 if articles[i] %}
-                            {{this.render('partials/_single-article.twig', {
-                                article: articles[articleCount], 
-                                position: articleCount + 1,
-                                imageSize: {width:300},
-                                containerClass: 'feature-side feature-side-tablet feature-side-mobile'
-                            }) | raw}}
-                            {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
-                            {% if i < 4 %}
-                                <hr class="divide13">
-                            {% endif %}
-
-                        {% endfor %}
-
-                        <hr class="divide13 visible-md-block visible-lg-block space-only">
-                        <hr class="divide10 visible-xs-block visible-sm-block space-only">
-
-                        <div class="">
-                            <a target="_blank" href="http://getemonside.us16.list-manage.com/subscribe?u=19a286b6a701993a54be44c9b&id=dc1298a714">
-                                <img src="{{networkData.templatePath}}/static/images/the-short-side-cta.png">
-                            </a>
-                        </div>
-                    </div>
-                    {% endif %}
+                    
 
                 </div>
             </section>
