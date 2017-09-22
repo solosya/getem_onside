@@ -24,6 +24,11 @@
 {% set articles = _Article.getPopularArticles({ limit: 5, excludeArticleIds : article.id }) %}
 {% set testCount = 0 %}
 
+<!-- used to index each article as we loop over throughout the template -->
+{% set articleCount = _AppHelper.getApplicationEnv() == 'DEV' ? 2 : 0 %}
+{% set dev = _AppHelper.getApplicationEnv() == 'DEV' ? true : false %}
+
+
 
 <main id="main" class="container" role="main">
 
@@ -130,11 +135,11 @@
                                    
                                     <h2 class="sidebar-header">Latest articles</h2>
 
-                                    {% for i in 0..2 if articles[testCount] %}
+                                    {% for i in 0..2 if articles[articleCount] %}
                                         {{this.render('partials/_single-article.twig', {
-                                            article: articles[testCount], 
+                                            article: articles[articleCount], 
                                             position: (articleCount+1),
-                                            containerClass: 'feature-side feature-side-tablet feature-side-mobile'
+                                            containerClass: 'feature-side feature-side-tablet feature-side-mobile article-sidebar'
                                         }) | raw}}
                                         
                                         {% if i < 2 %}
@@ -142,7 +147,7 @@
                                             <hr class="divide10 visible-xs-block visible-sm-block">
                                         {% endif %}
 
-                                        {% set articleCount = articleCount + 1 %}
+                                        {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
                                     {% endfor %}
 
                                     <hr class="divide15 visible-md-block visible-lg-block space-only">

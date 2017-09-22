@@ -124,6 +124,12 @@ body.special {
         div.hk {
             display:flex;
 
+            &.social {
+                h2 {
+                    color: color(red);
+                }
+            }
+
             h2 {
                 font-family: $font-family-serif;
                 font-weight: bold;
