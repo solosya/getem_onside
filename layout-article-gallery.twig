@@ -79,6 +79,17 @@
                                                     </div>
                                                 </a>
                                             {% endif %}
+
+
+                                            <div class="social-share">
+                                                <div class="links">
+                                                    <a href="https://www.facebook.com/sharer/sharer.php?u={{article.url}}#{{loop.index}}&title={{ article.title|url_encode }}" class="btn btn-post"></a
+                                                    ><a href="https://twitter.com/share?text={{ article.title|url_encode }}&url={{article.url}}#{{loop.index}}" class="btn btn-tweet"></a
+                                                    ><a href="mailto://" class="btn btn-email"></a>
+                                                </div>
+                                            </div>
+
+
                                             <figcaption>
                                                 <p>{{image.caption | raw}}</p>
                                             </figcaption>
@@ -88,13 +99,6 @@
                                     {% endfor %}
                                 </div>
 
-                                <div class="social-share">
-                                    <div class="links">
-                                        <a href="https://www.facebook.com/sharer/sharer.php?u={{article.url}}&title={{ article.title|url_encode }}" class="btn btn-post"></a
-                                        ><a href="https://twitter.com/share?text={{ article.title|url_encode }}&url={{article.url}}" class="btn btn-tweet"></a
-                                        ><a href="mailto://" class="btn btn-email"></a>
-                                    </div>
-                                </div>
 
                             </div>
 
