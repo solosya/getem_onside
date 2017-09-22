@@ -29541,6 +29541,20 @@ Card.prototype.events = function()
 
     self.bindSocialPostPopup();
 
+    $('.showMoreArticles').on('click', function(e){
+        e.preventDefault();
+        var btn = $(e.target);
+        var container = $(btn.data('container'));
+        container.toggleClass('one-deck');
+        if (btn.html().toLowerCase() == 'show more') {
+            btn.html("SHOW LESS"); 
+        } else {
+            btn.html("SHOW MORE"); 
+        }
+    });
+
+
+
     $('.loadMoreArticles').on('click', function(e){
         console.log('loading more articles');
         e.preventDefault();
@@ -30354,15 +30368,15 @@ $('document').ready(function() {
     });
 
 
-    // $(".sb-custom-menu > .menuContainer > ul > li").hover(function (e) {
+    $(".sb-custom-menu > .menuContainer > ul > li").hover(function (e) {
 
-    // // $(".sb-custom-menu > .menuContainer > ul > li").bind("mouseenter", function (e) {
-    //     if (pageWindow.width() > sbCustomMenuBreakPoint) {
-    //         $(this).children("ul").stop(true, false).slideToggle(0);
-    //         $(this).toggleClass('now-active');
-    //         e.preventDefault();
-    //     }
-    // });
+    // $(".sb-custom-menu > .menuContainer > ul > li").bind("mouseenter", function (e) {
+        if (pageWindow.width() > sbCustomMenuBreakPoint) {
+            $(this).children("ul").stop(true, false).slideToggle(0);
+            $(this).toggleClass('now-active');
+            e.preventDefault();
+        }
+    });
 
 
     $(".sb-custom-menu > .menuContainer > ul > li > span").on("click", function(e) {
