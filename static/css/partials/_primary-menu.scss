@@ -2,10 +2,11 @@
 .menu-mobile,
 .show-on-tablet > ul,
 .sb-custom-menu,
-.sb-custom-menu > div > ul > li > ul,
-.sb-custom-menu > div > ul li.now-active > a:after{
+.search-sub-menu,
+.search-sub-menu.now-active > a:after{
     @extend %transition;
 }
+
 
 .sb-custom-menu > div > ul > li.now-active {
     background:color(dark);
@@ -19,6 +20,67 @@
     }
 }
 
+
+.search-sub-menu{
+    margin-top:-52px;
+    width:100%;
+    &.active {
+        margin-top:0;
+    }
+
+    form{
+        position: relative;
+        background: color(lightergrey);
+    }
+
+    input.field {
+        width: 50%;
+        background-color: transparent;
+        color: #1a1818;
+        font-size: rem(30);
+        border: 0;
+        height: 30px;
+        outline: none;
+        text-align:center;
+        display:block;
+        margin: 11px auto;
+
+        @media screen and (max-width: $md-break){
+            width:78%;
+        }
+    }
+
+    button {
+        position: absolute;
+        right: 20px;
+        top:15px;
+        background-image: url(../icons/search-blk.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+        width: 15px;
+        height: 25px;
+        border: 0;
+        font-size: 30px;
+        padding: 0 10px;
+    }
+
+    .search-container{
+        width: 100%;
+        margin: 0 auto;
+        float: none;
+        padding-top: 15px;
+        padding-bottom: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        list-style: none;
+    }
+
+    .btn-default{
+        background-color: transparent;
+        border: 0;
+    }
+}
 
 
 .sb-custom-menu .menu-mobile{

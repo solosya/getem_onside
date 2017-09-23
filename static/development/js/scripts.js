@@ -128,11 +128,19 @@ $('document').ready(function() {
     //         return false;
     //     }
     // });
-
     $("ul > li.menu-item-search").on("click", function (e) {
-        $("#searchPanel").show();
-        $("#searchPanel input").focus();
+        console.log('clicked search');
+        if (window.innerWidth > sbCustomMenuBreakPoint) {
+            $("#searchpanel").toggleClass('active');
+            e.preventDefault();
+        }
     });
+    console.log('search event');
+    // $("ul > li.menu-item-search").on("click", function (e) {
+    //     console.log('clicked');
+    //     $("#searchPanel").show();
+    //     $("#searchPanel input").focus();
+    // });
     $("#searchclose").on("click", function (e) {
         $("#searchPanel").hide();
     });
