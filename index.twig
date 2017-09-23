@@ -20,10 +20,9 @@
 
 <!-- used to index each article as we loop over throughout the template -->
 {% set articleCount = _AppHelper.getApplicationEnv() == 'DEV' ? 0 : 0 %}
-{% set dev = _AppHelper.getApplicationEnv() == 'DEV' ? true : false %}
+{% set dev = _AppHelper.getApplicationEnv() == 'DEV' ? false : false %}
 
-{% set tabletCount = 0 %}
-{% set desktopCount = 0 %}
+
 
 {% set sections =  {
         "social field": {
@@ -81,7 +80,7 @@
 
                 <div class="row">
                     
-                    <div class="col-xs-9 col-sm-9 col-md-6">
+                    <div class="col-sm-9 col-md-6">
 
                         <!-- main article -->
                         <!-- Card 1 -->
@@ -96,151 +95,93 @@
 
                         {% endif %}
 
-                        {% set desktopCount = articleCount %}
-                        {% set tabletCount = articleCount %}
-
-                        <!-- most popular & wide card for desktop, mobile -->
-                        <div class="row popular two-cols visible-xs-block visible-md-block visible-lg-block">
-                            <div class="col-md-1 col-sm-5 most-popular">
-                                <h2>What you&rsquo;re cheering for</h2>
-
-                                {% for i in 0..4 if popularArticles[i] %}
-                                        {{this.render('partials/_single-article.twig', {
-                                            article: popularArticles[i], 
-                                            imageSuppress: true, 
-                                            containerClass: 'card-popular'
-                                        }) | raw}}
-                                {% endfor %}
-                            </div>
-
-                            <div class="advert visible-sm-block ad-square col-sm-4">
-                                <img src="{{networkData.templatePath}}/static/images/ads/300x250.jpg">
-                            </div>
-
-
-                            <!-- wide card for desktop & mobile -->
-                            <div class="col-sm-1 col-md-1 visible-xs-block visible-md-block visible-lg-block">
-                                <!-- Card 2 -->
-                                {% if articles[desktopCount] %}
-                                    {{this.render('partials/_single-article.twig', {
-                                        article: articles[desktopCount], 
-                                        position: desktopCount + 1, 
-                                        imageSize: {width:300},
-                                        containerClass: 'card-sm-wide card-sm-mobile'
-                                    }) | raw}}
-                                    {% set desktopCount = (dev) ? desktopCount : desktopCount + 1 %}
-                                {% endif %}
-                            </div>
-                        </div>
                     </div>
 
-                    <!-- display five stories & CTA for tablet -->
-                    <div class="col-sm-8 row two-cols visible-sm-block">
-                        <hr class="divide18 space-only" style="clear:both">
 
-                        {% for i in 0..4 if articles[tabletCount] %}
-                            <!-- Tablet Card 3-7 -->
-                            {{this.render('partials/_single-article.twig', {
-                                article: articles[tabletCount], 
-                                position: tabletCount + 1, 
-                                imageSize: {width:300},
-                                containerClass: (i < 4) ? 'col-sm-1 feature-side-tablet with-rule' : 'col-sm-1 feature-side-tablet with-space', 
-                            }) | raw}}
-                            {% set tabletCount = (dev) ? tabletCount : tabletCount + 1 %}
-
-                        {% endfor %}
-
-                        <div class="col-sm-1">
-                            <img src="{{networkData.templatePath}}/static/images/the-short-side-cta.png">
-                        </div>
-
-                    </div>                    
-
-                    <!-- most popular & 3 articles for tablets -->
-                    <div class="col-sm-8 row popular two-cols visible-sm-block">
-                        <div class="col-sm-1 most-popular">
-                            <h2>What you&rsquo;re cheering for</h2>
-
-                            {% for p in 0..3 if popularArticles[p] %}
-                                    {{this.render('partials/_single-article.twig', {
-                                        article: popularArticles[p], 
-                                        imageSuppress: true, 
-                                        containerClass: 'card-popular'
-                                    }) | raw}}
-                            {% endfor %}
-
-                            <hr class="divide18 visible-sm-block space-only">
-
-                            <!-- THREE ARTICLES BELOW MOST POPULAR -->
-                            <!-- Tablet Card 8-10 -->
-                            {% for j in 0..2 if articles[tabletCount] %}
-                                {{this.render('partials/_single-article.twig', {
-                                    article: articles[tabletCount], 
-                                    position: tabletCount + 1, 
-                                    imageSize: {width:300},
-                                    containerClass: 'feature-side-tablet'
-                                }) | raw}}
-                                {% set tabletCount = (dev) ? tabletCount : tabletCount + 1 %}
-                                {% if j != 2 %}
-                                    <hr class="divide15 visible-sm-block">
-                                {% endif %}                                
-
-                            {% endfor %}
-
-                        </div>
-
-                        <div class="advert col-sm-1">
-                            <img src="{{networkData.templatePath}}/static/images/ads/300x600.jpg">
-                        </div>
-                    </div>
 
                     <!-- display five stories & CTA for desktop / mobile -->
-                    {% if articles[desktopCount] %}
-                    <div class="col-xs-9 col-md-3 visible-xs-block visible-md-block visible-lg-block">
+                    {% if articles[articleCount] %}
+                    <div class="col-xs-9 col-sm-9 col-md-3 feature-side-panel">
+                        <hr class="divide10 visible-xs-block visible-sm-block" style="clear:both">
 
-                        <hr class="divide10 visible-xs-block" style="clear:both">
-                        <!-- Desktop Card 3-7 -->
-                        {% for i in 0..4 if articles[i] %}
-                            {{this.render('partials/_single-article.twig', {
-                                article: articles[desktopCount], 
-                                position: desktopCount + 1,
-                                imageSize: {width:300},
-                                containerClass: 'feature-side feature-side-tablet feature-side-mobile'
-                            }) | raw}}
-                            {% set desktopCount = (dev) ? desktopCount : desktopCount + 1 %}
-                            {% if i < 4 %}
-                                <hr class="divide13">
-                            {% endif %}
+                        <div class="row">
 
-                        {% endfor %}
+                            <!-- Desktop Card 3-7 -->
+                            {% for i in 0..4 if articles[i] %}
+                                <div class="col-sm-4 col-md-9">
+                                    {{this.render('partials/_single-article.twig', {
+                                        article: articles[articleCount], 
+                                        position: articleCount + 1,
+                                        imageSize: {width:300},
+                                        containerClass: 'feature-side feature-side-tablet feature-side-mobile'
+                                    }) | raw}}
+                                    {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
+                                    {% if i < 4 %}
+                                        <hr class="divide13">
+                                    {% endif %}
+                                    {% if i == 4 %}
+                                        <hr class="divide13 visible-md-block visible-lg-block space-only">
+                                        <hr class="divide10 visible-xs-block visible-sm-block space-only">
+                                    {% endif %}
 
-                        <hr class="divide13 visible-md-block visible-lg-block space-only">
-                        <hr class="divide10 visible-xs-block visible-sm-block space-only">
+                                </div>
+                            {% endfor %}
 
-                        <div class="">
-                            <a target="_blank" href="http://getemonside.us16.list-manage.com/subscribe?u=19a286b6a701993a54be44c9b&id=dc1298a714">
-                                <img src="{{networkData.templatePath}}/static/images/the-short-side-cta.png">
-                            </a>
+
+                            <div class="col-sm-4 col-md-9">
+                                <a target="_blank" href="http://getemonside.us16.list-manage.com/subscribe?u=19a286b6a701993a54be44c9b&id=dc1298a714">
+                                    <img src="{{networkData.templatePath}}/static/images/the-short-side-cta.png">
+                                </a>
+                            </div>
+
+                            <hr class="divide13 visible-xs-block space-only">
+
                         </div>
-
-                        <hr class="divide13 visible-xs-block space-only">
-
+                        {% endif %}
                     </div>
-                    {% endif %}
 
                 </div>
-            </section>
 
-            {{dump(desktopCount)}}
-            {{dump(tabletCount)}}
-            {% set articleCount = desktopCount %}
-            {% set tabletCount = articleCount %}
+                <!-- most popular & wide card for desktop, mobile -->
+                <div class="row popular" style="">
+                    <div class="col-sm-4 col-md-3 most-popular">
+                        <h2>What you&rsquo;re cheering for</h2>
+
+                        {% for i in 0..4 if popularArticles[i] %}
+                                {{this.render('partials/_single-article.twig', {
+                                    article: popularArticles[i], 
+                                    imageSuppress: true, 
+                                    containerClass: 'card-popular'
+                                }) | raw}}
+                        {% endfor %}
+                    </div>
+
+                    <div class="advert visible-sm-block ad-square col-sm-4">
+                        <img src="{{networkData.templatePath}}/static/images/ads/300x250.jpg">
+                    </div>
+
+
+                    <!-- wide card for desktop & mobile -->
+                    <div class="col-sm-9 col-md-3">
+                        <!-- Card 2 -->
+                        {% if articles[articleCount] %}
+                            {{this.render('partials/_single-article.twig', {
+                                article: articles[articleCount], 
+                                position: articleCount + 1, 
+                                imageSize: {width:300},
+                                containerClass: 'card-sm-wide card-sm-mobile'
+                            }) | raw}}
+                            {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
+                        {% endif %}
+                    </div>
+                </div>
+            </section>
 
 
             <section class="middle">
                    
                 <div class="row row-space maincards">
-                    <div class="col-sm-8 col-md-6">
+                    <div class="col-sm-9 col-md-6">
                         {% for i in 0..5 if articles[articleCount] %}
                             <!-- Card 11-16 -->
 
@@ -260,11 +201,8 @@
 
 
 
-                    {% set desktopCount = articleCount %}
-                    {% set tabletCount = articleCount %}
-
                     <!--  display side stories for desktop   -->
-                    <div class="col-md-3 visible-xs-block visible-md-block visible-lg-block">
+                    <div class="col-sm-9 col-md-3">
 
                         <div class="advert visible-md-block visible-lg-block ad-large-vert">
                             <img src="{{networkData.templatePath}}/static/images/ads/300x600.jpg">
@@ -274,14 +212,14 @@
                         <hr class="divide10 visible-xs-block visible-sm-block space-only">
 
 
-                        {% for i in 0..2 if articles[desktopCount] %}
+                        {% for i in 0..2 if articles[articleCount] %}
                             {{this.render('partials/_single-article.twig', {
-                                article: articles[desktopCount], 
-                                position: desktopCount + 1, 
+                                article: articles[articleCount], 
+                                position: articleCount + 1, 
                                 imageSize: {width:300},
                                 containerClass: 'feature-side feature-side-tablet feature-side-mobile'
                             }) | raw}}
-                            {% set desktopCount = (dev) ? desktopCount : desktopCount + 1 %}
+                            {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
                             
                             {% if i != 2 %}
                                 <hr class="divide18 visible-md-block visible-lg-block">
@@ -291,50 +229,29 @@
 
                     </div>
 
-                    <!-- tablet displays three more wide cards -->                    
-                    <div class="col-sm-8 visible-sm-block">
-
-                        {% for i in 0..2 if articles[tabletCount] %}
-
-                            {{this.render('partials/_single-article.twig', {
-                                article: articles[tabletCount], 
-                                position: tabletCount + 1, 
-                                imageSize: {width:300},
-                                containerClass: 'card-rec card-rec-tablet card-rec-mobile'
-                            }) | raw}}
-                            {% set tabletCount = (dev) ? tabletCount : tabletCount + 1 %}
-                            
-                            <hr class="divide18 visible-md-block visible-lg-block space-only">
-                            <hr class="divide10 visible-xs-block visible-sm-block space-only">
-
-                        {% endfor %}
-
-                    </div>
+                    
 
                     <!-- mobile displays three more wide cards -->
                     <!-- using desktop count until design is fixed! -->
-                    <div class="col-sm-8 visible-xs-block">
+{#                     <div class="col-sm-8 visible-xs-block">
 
-                        {% for i in 0..2 if articles[desktopCount] %}
+                        {% for i in 0..2 if articles[articleCount] %}
 
                             {{this.render('partials/_single-article.twig', {
-                                article: articles[desktopCount], 
-                                position: desktopCount + 1, 
+                                article: articles[articleCount], 
+                                position: articleCount + 1, 
                                 imageSize: {width:300},
                                 containerClass: 'card-rec card-rec-tablet card-rec-mobile'
                             }) | raw}}
-                            {% set desktopCount = (dev) ? desktopCount : desktopCount + 1 %}
+                            {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
                             
                             <hr class="divide18 visible-md-block visible-lg-block space-only">
                             <hr class="divide10 visible-xs-block visible-sm-block space-only">
 
                         {% endfor %}
 
-                    </div>
+                    </div> #}
 
-
-
-                    {% set articleCount = tabletCount %}                    
 
                 </div>
 

@@ -72,15 +72,30 @@ body.special {
             margin-bottom:0;
         }
 
+        div.feature-side-panel {
+            // background:rgba(255,0,0,.3);
+            @media screen and (max-width: $mmd-break-down){
+                margin-top:43px;
+                // padding-top:10px;
+                // border-top:1px solid color(lightgrey);
+            }
+        }
 
         div.feature-side-mobile {
-            clear:both;
+            // clear:both;
         }
         // div.card-sm-mobile {
         //     clear:both;
         // }
 
 
+    }
+
+    .row.popular {
+        @media screen and (min-width: $mmd-break){
+            position: absolute;
+            top: 620px;
+        }
     }
 
     .popular {
