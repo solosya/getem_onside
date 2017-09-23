@@ -63,6 +63,7 @@ body.special {
 
     .home-main-stories {
         margin-bottom:40px;
+        position:relative;
 
         @media screen and (max-width: $mmd-break-down){
             height:auto;
@@ -94,7 +95,7 @@ body.special {
     .row.popular {
         @media screen and (min-width: $mmd-break){
             position: absolute;
-            top: 620px;
+            top: 400px;
         }
     }
 
