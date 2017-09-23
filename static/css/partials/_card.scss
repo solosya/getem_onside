@@ -172,6 +172,12 @@ a.card {
                 font-size: rem(11);
                 color:color(red);
                 text-transform:uppercase;
+                >span {
+                    color: color(red);
+                    position: absolute;
+                    left: 10px;
+                    font-size: 40px;
+                }
             }
 
             h2{

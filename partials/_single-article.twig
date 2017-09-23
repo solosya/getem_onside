@@ -1,5 +1,6 @@
 {% import "quotes.twig" as quotes %}
 
+{% set cardNumber = _AppHelper.getApplicationEnv() == 'DEV' ? position : '' %}
 {% set imageSuppress = imageSuppress is defined and imageSuppress == true ? 'true' : 'false'  %}
 {% set swap = swap is defined and swap == 'false' ? '' : 'swap'  %}
 {% set inline = inline is defined and inline != '' ? inline : ''  %}
@@ -83,7 +84,8 @@
 
 
                 <div class="content">
-                    <div class="category">{{article.label}}</div>
+
+                    <div class="category"><span>{{cardNumber}}</span> {{article.label}}</div>
                     
                     <h2 class="{{figureClass}}">{{ articleTitle }}</h2>
                     
@@ -178,7 +180,7 @@
                 <div class="content">
                     <div class="icon"></div>
 
-                    <div class="category {{social.source}}">{{social.source}}</div>
+                    <div class="category {{social.source}}"><span>{{cardNumber}}</span> {{social.source}}</div>
                     
                     <p id="updateSocial{{article.socialId}}" data-update="0">
                              {{ quotes.smarten(social.content  | raw) }}
