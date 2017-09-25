@@ -30,17 +30,17 @@
             "link": "",
             "limit" : 12
         }, 
-        "tennis": {
+        "afl": {
             "feed": "",
             "link": "",
             "limit" : 4
         },
-        "cricket": {
+        "nrl": {
             "feed": "",
             "link": "",
             "limit" : 4
         }, 
-        "other sport": {
+        "football": {
             "feed": "",
             "link": "",
             "limit" : 4
@@ -317,27 +317,27 @@
 
 
 
-            {% if sections['tennis'].feed.articles|length > 0 %}
-                {% set tennisCount = (dev) ? articleCount : 0 %}
+            {% if sections['afl'].feed.articles|length > 0 %}
+                {% set aflCount = (dev) ? articleCount : 0 %}
 
                 <section>
                     <div class="row">
                         <div class="col-sm-9 section-header">
                             <div class="hk">
-                                <h2>tennis</h2>
+                                <h2>afl</h2>
                                 <p></p>
                             </div>
                         </div>
                     </div>
 
                     <div class="row four-cols one-deck">
-                        {% for i in 0..3 if sections['tennis'].feed.articles[tennisCount] %}
+                        {% for i in 0..3 if sections['afl'].feed.articles[aflCount] %}
                             {{this.render('partials/_single-article.twig', {
-                                article: sections['tennis'].feed.articles[tennisCount], 
+                                article: sections['afl'].feed.articles[aflCount], 
                                 imageSize: {width:300},
                                 containerClass: 'col-sm-1 card-sm feature-side-mobile with-space'
                             }) | raw}}
-                            {% set tennisCount = (dev) ? articleCount : tennisCount + 1 %}
+                            {% set aflCount = (dev) ? articleCount : aflCount + 1 %}
                         {% endfor %}
 
                     </div>
@@ -348,27 +348,27 @@
 
 
 
-            {% if sections['cricket'].feed.articles|length > 0 %}
-                {% set cricketCount = (dev) ? articleCount : 0 %}
+            {% if sections['nrl'].feed.articles|length > 0 %}
+                {% set nrlCount = (dev) ? articleCount : 0 %}
 
                 <section>
                     <div class="row">
                         <div class="col-sm-9 section-header">
                             <div class="hk">
-                                <h2>cricket</h2>
+                                <h2>nrl</h2>
                                 <p></p>
                             </div>
                         </div>
                     </div>
 
                     <div class="row four-cols one-deck">
-                        {% for i in 0..3 if sections['cricket'].feed.articles[cricketCount] %}
+                        {% for i in 0..3 if sections['nrl'].feed.articles[nrlCount] %}
                             {{this.render('partials/_single-article.twig', {
-                                article: sections['cricket'].feed.articles[cricketCount], 
+                                article: sections['nrl'].feed.articles[nrlCount], 
                                 imageSize: {width:300},
                                 containerClass: 'col-sm-1 card-sm feature-side-mobile with-space'
                             }) | raw}}
-                            {% set cricketCount = (dev) ? articleCount : cricketCount + 1 %}
+                            {% set nrlCount = (dev) ? articleCount : nrlCount + 1 %}
                         {% endfor %}
 
                     </div>
@@ -379,23 +379,23 @@
 
 
 
-            {% if sections['other sport'].feed.articles|length > 0 %}
+            {% if sections['football'].feed.articles|length > 0 %}
                 {% set sportCount = (dev) ? articleCount : 0 %}
 
                 <section>
                     <div class="row">
                         <div class="col-sm-9 section-header">
                             <div class="hk">
-                                <h2>other sport</h2>
+                                <h2>football</h2>
                                 <p></p>
                             </div>
                         </div>
                     </div>
 
                     <div class="row four-cols one-deck">
-                        {% for i in 0..3 if sections['other sport'].feed.articles[sportCount] %}
+                        {% for i in 0..3 if sections['football'].feed.articles[sportCount] %}
                             {{this.render('partials/_single-article.twig', {
-                                article: sections['other sport'].feed.articles[sportCount], 
+                                article: sections['football'].feed.articles[sportCount], 
                                 imageSize: {width:300},
                                 containerClass: 'col-sm-1 card-sm feature-side-mobile with-space'
                             }) | raw}}
