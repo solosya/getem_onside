@@ -167,7 +167,7 @@
 
 
 .card-sm-wide{
-    @media screen and (min-width: $sm-break){
+    @media screen and (min-width: $mmd-break){
         @include card-sm-wide-base();
 
         a.card {
@@ -189,9 +189,6 @@
 
                     > p.excerpt {
                         display:none;
-                        // font-size: rem(15);
-                        // height:40px;
-                        // margin-top: 3px;
                     }
 
                     > .author{
@@ -234,95 +231,6 @@
                     }
                 }
             }
-
-            // &.social {
-            //     .content {
-            //         .author {
-            //             bottom: 2px;
-            //         }
-            //         .p {
-            //             font-size: rem(15);
-            //             line-height: 1.33;
-            //             height:80px;
-            //         }
-            //     }
-
-
-            //     &.twitter{
-            //         .content{
-            //             > .author {
-            //                 .icon {
-            //                     @include twitterIcon();
-            //                 }
-            //             }                    
-            //             >p {
-            //                 font-size:rem(20);
-            //                 font-weight:600;
-            //                 line-height:1.33;
-            //                 height:80px;
-            //             }
-            //         }
-            //         &.without__image {
-            //             .content{
-            //                 >p {
-            //                     font-size:rem(18);
-            //                     height:84px;
-            //                     font-weight:normal;
-            //                     line-height:1.56;
-            //                 }
-            //             }
-            //         }
-            //     }
-
-
-
-            //     &.facebook{
-            //         .content{
-            //             > .author {
-            //                 .icon {
-            //                     @include facebookIcon();
-            //                 }
-            //             }                    
-            //             >p {
-            //                 font-weight:600;
-            //                 line-height:1.33;
-            //             }
-            //         }
-            //         &.without__image {
-            //             .content{
-            //                 >p {
-            //                     font-size:rem(18);
-            //                     height:84px;
-            //                     font-weight:normal;
-            //                     line-height:1.56;
-            //                 }
-            //             }
-            //         }
-
-            //     }
-            //     &.instagram{ 
-            //         .content{
-            //             > .author {
-            //                 .icon {
-            //                     @include instagramIcon();
-            //                 }
-            //             }
-            //             >p {
-            //                 font-size:rem(20);
-            //                 font-weight:600;
-            //                 line-height:1.33;
-            //                 height:80px;
-            //             }
-            //         }
-
-            //         &.without__content {
-            //             .content{
-            //                 padding-top:115px;
-            //             }
-            //         }
-            //     }
-            // }
-
         }
     }
 }
@@ -330,6 +238,74 @@
 
 
 
+.card-sm-wide-tablet{
+    @media screen and (min-width: $sm-break){
+        @include card-sm-wide-base();
+
+        a.card {
+            
+            > article {
+
+                > figure{
+                    margin-bottom:6px;
+                }
+
+                > .content{
+
+                    > h2{
+                        font-size: rem(15);
+                        line-height:1.29;
+                        margin-top:5px;
+                        height:40px;
+                    }
+
+                    > p.excerpt {
+                        display:none;
+                    }
+
+                    > .author{
+                        margin-top:5px;
+                        position: static;
+
+                        >p {
+                            margin: 0;
+                            padding: 0;
+                            padding-right:5px;
+                        }                        
+                    }
+                }
+            }
+
+
+            &.without__image {
+                .content {
+                    h2 {
+                        height:80px;
+                    }
+                }
+
+                &.twitter {
+                    .content {
+                        > .author {
+                            .icon {
+                                @include twitterIcon;
+                            }
+                        }
+                    }
+                }
+                &.facebook {
+                    .content {
+                        > .author {
+                            .icon {
+                                @include facebookIcon;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 

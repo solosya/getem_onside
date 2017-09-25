@@ -169,7 +169,7 @@
                                 article: articles[articleCount], 
                                 position: articleCount + 1, 
                                 imageSize: {width:300},
-                                containerClass: 'card-sm-wide card-sm-mobile'
+                                containerClass: 'card-sm-wide card-rec-tablet card-sm-mobile '
                             }) | raw}}
                             {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
                         {% endif %}
@@ -209,7 +209,7 @@
                         </div>
 
                         <hr class="divide18 visible-md-block visible-lg-block space-only">
-                        <hr class="divide10 visible-xs-block visible-sm-block space-only">
+                        <hr class="divide10 visible-xs-block space-only">
 
 
                         {% for i in 0..2 if articles[articleCount] %}
@@ -217,13 +217,13 @@
                                 article: articles[articleCount], 
                                 position: articleCount + 1, 
                                 imageSize: {width:300},
-                                containerClass: 'feature-side feature-side-tablet feature-side-mobile'
+                                containerClass: 'feature-side card-rec-tablet feature-side-mobile'
                             }) | raw}}
                             {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
                             
                             {% if i != 2 %}
                                 <hr class="divide18 visible-md-block visible-lg-block">
-                                <hr class="divide10 visible-xs-block visible-sm-block">
+                                <hr class="divide10 visible-xs-block visible-sm-block space-only">
                             {% endif %}
                         {% endfor %}
 
