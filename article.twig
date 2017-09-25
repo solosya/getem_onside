@@ -165,29 +165,7 @@
 
                             </div>
 
-
-{#                             <div class="row">
-                                <div class="col-sm-9">
-                                    <h2 class="sidebar-header">Suggested Videos</h2>
-                                </div>
-
-                                {% for i in 0..2  if articles[testCount] %}
-                                    <div class="col-md-9 col-sm-3">
-
-                                        {{this.render('partials/_single-article.twig', {
-                                            article: articles[testCount], 
-                                            position: (articleCount+1),
-                                            imageSize: {width: 300, height: 180},
-                                            containerClass: 'card-sm-wide card-sm-wide-mobile'
-                                        }) | raw}}
-                                        {% if i != 2 %}
-                                            <hr class="divide15 visible-md-block visible-lg-block">
-                                        {% endif %}
-                                    </div>
-                                {% endfor %}
-
-                            </div>
- #}                        </div>
+                        </div>
                     </div>
 
 
@@ -198,6 +176,13 @@
 
 
             <section class="advert visible-sm-block" style="background:gray;height:100px;"></section>
+
+
+            <!-- Disqus Comment Added -->
+            {% set network = _Network.getNetworkData() %}
+            {% if network.thirdPartyIntegrations['disqus'] | length > 0 and network.thirdPartyIntegrations['disqus']['shortName'] != '' %}
+                {{this.render("partials/article/_disqus_comments.twig", {disqus: network.thirdPartyIntegrations['disqus'], userId: article.createdBy['id'], url:article.url, articleId: article.id}) | raw}}
+            {% endif %} 
 
 
             <div class="row related-articles">
