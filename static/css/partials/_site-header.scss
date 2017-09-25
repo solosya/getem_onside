@@ -124,6 +124,10 @@
                 float: right;
                 text-align: right;
 
+                @media screen and (max-width: $sm-break-down){
+                    float: none;
+                }                
+
                 .social-links {
                     margin-top: 23px;
 
