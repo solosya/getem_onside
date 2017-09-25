@@ -21,8 +21,9 @@
 
 {% set publishDate = _AppHelper.getDateTimeBasedOnTimezone(article.publishDate, 'F, Y') %}
 
-{% set relatedArticles = _Article.getPopularArticles({ blogId: blogInfo.guid, limit: 3, excludeArticleIds : article.id }) %}
+{% set relatedArticles = _Article.getPopularArticles({ limit: 3, excludeArticleIds : article.id }) %}
 {% set recentArticles = _Article.getRecentArticles({ limit: 5, excludeArticleIds : article.id }) %}
+
 {% set testCount = 0 %}
 
 <!-- used to index each article as we loop over throughout the template -->
@@ -137,9 +138,11 @@
                                     <h2 class="sidebar-header">Latest articles</h2>
 
                                     {% for i in 0..2 if recentArticles[i] %}
+
                                         {{this.render('partials/_single-article.twig', {
                                             article: recentArticles[i], 
                                             position: (i+1),
+                                            isArticle: true,
                                             containerClass: 'feature-side feature-side-tablet feature-side-mobile article-sidebar'
                                         }) | raw}}
                                         
