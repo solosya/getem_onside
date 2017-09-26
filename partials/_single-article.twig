@@ -24,7 +24,7 @@
     {% set imgHeight = (imageSize.height is defined) ? imageSize.height : 0 %}
 {% endif %}
 
-{% if article.articleId > 0 or (isArticle is defined and isArticle == 'true') %}
+{% if article.articleId > 0 or article.id > 0 or (isArticle is defined and isArticle == 'true') %}
 
     {% set placeholder = 'https://placeholdit.imgix.net/~text?txtsize=33&txt=Loading&w='~imgWidth~'&h='~imgHeight~'' %}
     {% set promotedClass = (article.isPromoted) ? 'ad_icon' : '' %}
