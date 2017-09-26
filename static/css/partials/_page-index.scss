@@ -97,12 +97,18 @@ body.special {
             position: absolute;
             top: 400px;
         }
+
+        .tablet-space {
+            @media screen and (min-width: $sm-break) and (max-width: $mmd-break){
+                margin-top:40px;
+            }
+        }
     }
 
     .popular {
         // margin-top:50px;
         padding: 0;
-        margin: 50px 5px 0px 5px;
+        margin-top: 50px;
     }
     // .most-popular {
     //     @media screen and (min-width: $md-break){
