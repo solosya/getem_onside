@@ -106,18 +106,6 @@
                     </div>
                 </div>
 
-
-                {{ this.render('partials/ajaxarticles.twig', {
-                    limit: limit, 
-                    non_pinned: articlesArr.existingNonPinnedCount, 
-                    articles: articles,
-                    card_style: "card-rec card-rec-tablet card-rec-mobile",
-                    container:"mainAjaxArticles",
-                    loadtype: "search",
-                    border: "visible"
-                }) | raw }}
-
-
             </section>
 
 
