@@ -5,7 +5,7 @@
 
 {{this.registerJs("CardController();")}}
 
-{% set limit = 2 %}
+{% set limit = 5 %}
 
 {% set articlesArr = _Blog.getBlogFeed({'limit': limit, 'offset': 0}) %}
 {% set articles = articlesArr.articles %}
