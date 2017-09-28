@@ -59,9 +59,6 @@
             height:auto;
         }
         
-        // input.field {
-        //     font-size: rem(16);
-        // }
 
         .header-top {
             height:140px;
@@ -124,8 +121,10 @@
                 float: right;
                 text-align: right;
 
-                @media screen and (max-width: $sm-break-down){
+                @media screen and (max-width: $mmd-break-down){
                     float: none;
+                    text-align: left;
+
                 }                
 
                 .social-links {
@@ -144,7 +143,6 @@
                         margin-left: 13px;
                         background-repeat:no-repeat;
                         background: url('../icons/social-array.svg');
-                        // background-size:20px;
 
                         &.facebook {
                         }
@@ -168,76 +166,80 @@
 
         }
 
-        .header-bottom {
-            padding:0;
-            margin-top:2px;
-            height:19px;
-            background:color(red);
+        // .header-bottom {
+        //     padding:0;
+        //     margin-top:2px;
+        //     height:19px;
+        //     background:color(red);
 
-            @media screen and (max-width: $mmd-break){
-                display:none;
-            }
+        //     @media screen and (max-width: $mmd-break){
+        //         display:none;
+        //     }
 
-            ul.auth-links {
-                float:right;
-                padding:0;
-                margin:0;
-                line-height:1;
+        //     ul.auth-links {
+        //         float:right;
+        //         padding:0;
+        //         margin:0;
+        //         line-height:1;
 
-                >li {
-                    padding-left: 4px;
-                    padding-right: 6px;
-                    display:inline-block;
+        //         >li {
+        //             padding-left: 4px;
+        //             padding-right: 6px;
+        //             display:inline-block;
 
-                    >a {
-                        color:#fff;
-                        font-size: rem(11);
-                    }
-                }
-            }
-        }
-
-
-
-
-        .navbar-right {
-            margin-top:25px;
-            @media screen and (max-width: $mobile-break){
-                margin-top:12px;
-            }
+        //             >a {
+        //                 color:#fff;
+        //                 font-size: rem(11);
+        //             }
+        //         }
+        //     }
+        // }
 
 
 
-            .section-links ul {
-                li {
-                    display:inline-block;
-                    margin-right:37px;
+
+        // .navbar-right {
+        //     margin-top:25px;
+        //     @media screen and (max-width: $mobile-break){
+        //         margin-top:12px;
+        //     }
+
+
+
+        //     .section-links ul {
+        //         li {
+        //             display:inline-block;
+        //             margin-right:37px;
                     
-                    a {
-                        font-family: $base-font-family;
-                        font-size: rem(14);
-                        color:white;
-                        letter-spacing: 2.2px;
-                    }
-                }
-                li.menu-item-search {
-                    width:40px;
-                    a {
-                        display:block;
-                    }
-                }
-            }
-        }
+        //             a {
+        //                 font-family: $base-font-family;
+        //                 font-size: rem(14);
+        //                 color:white;
+        //                 letter-spacing: 2.2px;
+        //             }
+        //         }
+        //         li.menu-item-search {
+        //             display:none;
+        //             @media screen and (min-width: $mmd-break){
+        //                 display:list-item;
+        //                 width:40px;
+        //                 a {
+        //                     display:block;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
     }
 
-    .site-header-buffer {
-        height:15px;
-        background:black;
+    // .site-header-buffer {
+    //     height:15px;
+    //     background:black;
 
-        @media screen and (max-width: $mobile-break){
-            display:none;
-        }
-    }
+    //     @media screen and (max-width: $mobile-break){
+    //         display:none;
+    //     }
+    // }
 }
 
 
