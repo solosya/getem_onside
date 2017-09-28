@@ -192,7 +192,6 @@
 
         > li{
             float:left;
-            // display:inline-block;
             margin:0;
             position:relative;
             height:43px;
@@ -202,12 +201,20 @@
                 height:auto;
             }
 
+            &.menu-item-search {
+                display:none;
+                @media screen and (min-width: $mmd-break) {
+                    display:list-item;
+                }
+
+            }
+
+
             > a{
                 height:100%;
                 min-width:1px;
                 font-size:rem(12);
                 margin-left:22px;
-                // padding: 12px 20px 10px 10px;
                 display:block;
                 color: #fff;
                 text-transform:uppercase;
@@ -223,46 +230,35 @@
                 &:hover{
                     text-decoration: none;
                     color: black;
-                    // font-weight: 700;
+                    @media screen and (max-width: $mmd-break-down){
+                        color:gray;
+                    }
                 }
-
-                // &:after {
-                //     @media screen and (max-width: $mmd-break){
-                //         content:'';
-                //         float:right;
-                //         display:inline-block;
-                //         background-image: url('../images/arrow-thin-white.svg');
-                //         background-repeat: no-repeat;
-                //         background-size:cover;
-                //         height:21px;
-                //         width:13px;
-                //     }
-                // }
             }
+
             span.list-arrow {
-                position:absolute;
-                display:inline-block;
-                background-image: url('../images/arrow-thin-white.svg');
-                background-repeat: no-repeat;
+                @media screen and (max-width: $mmd-break-down){
+                    position:absolute;
+                    display:inline-block;
+                    background-image: url('../images/arrow-thin-white.svg');
+                    background-repeat: no-repeat;
 
-                background-size: 13px;
-                background-position: center;
-                height: 50px;
-                width: 50px;
-                right: 0;
-                top: 0;
+                    background-size: 13px;
+                    background-position: center;
+                    height: 50px;
+                    width: 50px;
+                    right: 0;
+                    top: 0;
 
 
-                &.selected {
-                    background-image: url('../images/arrow-thin-down.svg');
-                    background-size: 23px;
-                    // width: 25px;
-                    // top: 20px;
-                    // right: 15px;
-                }
+                    &.selected {
+                        background-image: url('../images/arrow-thin-down.svg');
+                        background-size: 23px;
+                    }
 
-                &:hover {
-                    cursor: pointer;
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -398,7 +394,9 @@ ul.sub-menu a:focus{
         right: 15px;
         z-index: 100;
         background: rgba(0,0,0,0.9);
-        
+        @media screen and (max-width: $sm-break-down){
+            max-width: none;
+        }
 
         .secondary-menu{
             display:block;
@@ -414,7 +412,7 @@ ul.sub-menu a:focus{
     .sb-custom-menu > div > ul > li {
         width: 100%;
         float: none;
-        display: block;
+        // display: block;
         border-bottom: 1px solid rgba(255,255,255,.3);
     }
 
