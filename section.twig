@@ -5,7 +5,7 @@
 
 {{this.registerJs("CardController();")}}
 
-{% set limit = 10 %}
+{% set limit = 7 %}
 
 {% set articlesArr = _Blog.getBlogFeed({'limit': limit, 'offset': 0}) %}
 {% set articles = articlesArr.articles %}
@@ -113,7 +113,6 @@
                     articles: articles,
                     card_style: "card-rec card-rec-tablet card-rec-mobile",
                     container:"mainAjaxArticles",
-                    loadtype: "search",
                     border: "visible"
                 }) | raw }}
 
