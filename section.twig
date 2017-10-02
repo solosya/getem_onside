@@ -79,7 +79,7 @@
                         {% for i in 0..3 if popularArticles[i] %}
                             {{this.render('partials/_single-article.twig', {
                                 article: popularArticles[i], 
-                                imageSize: {width:95},
+                                imageSize: {width:300},
                                 containerClass: 'feature-side feature-side-tablet feature-side-mobile'
                             }) | raw}}                            
 
