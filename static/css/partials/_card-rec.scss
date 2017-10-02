@@ -143,12 +143,12 @@
                 .content{
                     color: white;
                     >p {
-                        padding-top: 15px;
                         color: white;
                         font-size:rem(18);
                         font-weight:normal;
                         line-height:1.33;
                         height:47px;
+                        margin: 15px 15px 10px 15px;
                     }
                     > .icon {
                         @include instagramIcon();
