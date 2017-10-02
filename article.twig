@@ -21,7 +21,7 @@
 
 {% set publishDate = _AppHelper.getDateTimeBasedOnTimezone(article.publishDate, 'F, Y') %}
 
-{% set relatedArticles = _Article.getPopularArticles({ blogId: blogInfo.id, limit: 3, excludeArticleIds : [article.id] }) %}
+{% set relatedArticles = _Article.getPopularArticles({ blogId: article.blog.id, limit: 3, excludeArticleIds : [article.id] }) %}
 {% set recentArticles = _Article.getRecentArticles({ limit: 5, excludeArticleIds : [article.id] }) %}
 
 {% set testCount = 0 %}
