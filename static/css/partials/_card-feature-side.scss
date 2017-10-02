@@ -190,7 +190,13 @@
                     }
                 }
             }
-        }        
+        }  
+
+        &.video, &.instagram {
+            > article {
+                @include tintbefore(0.5, 2);
+            }
+        }      
     }
 }
 
