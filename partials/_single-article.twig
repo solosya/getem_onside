@@ -42,7 +42,7 @@
 
     {% set totalstring = "" %}
     {% set totals = (article.total is defined) ? article.total : false %}
-    {% if totals and article.userHasBlogAccess == '1' %}
+    {% if totals and _User.isAdminUser() %}
         {% set totalstring = "Viewed " ~ totals.view ~ " times" %}
     {% endif %}
 
