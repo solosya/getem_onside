@@ -40,6 +40,11 @@
         {% set publishDate = _AppHelper.getRelativeTime(publishDateTime) ~ " ago" %}
     {% endif %}
 
+    {% set totalstring = "" %}
+    {% set totals = (article.total is defined) ? article.total : false %}
+    {% if totals and article.userHasBlogAccess == '1' %}
+        {% set totalstring = "Viewed " ~ totals.view ~ " times" %}
+    {% endif %}
 
 
 
@@ -71,7 +76,7 @@
             data-article-image="{{articleImg}}" 
             data-article-text="{{Helper.htmlToText(article.title, -1) | raw | escape('html')}}">
 
-            <article class="{{lightbox}}">
+            <article class="{{lightbox}}" title="{{totalstring}}">
                 {% if (article.hasMedia == 'TRUE' or article.hasPreviewMedia == 'TRUE') and imageSuppress == 'false' %}
                     <figure class="{{figureClass}}">
                         <picture>
