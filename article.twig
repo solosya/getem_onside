@@ -190,15 +190,6 @@
 
             <div id="pp-donate-button"></div>
 
-            <section class="advert visible-sm-block" style="background:gray;height:100px;"></section>
-
-
-            <!-- Disqus Comment Added -->
-            {% if networkData.thirdPartyIntegrations['disqus'] | length > 0 and networkData.thirdPartyIntegrations['disqus']['shortName'] != '' %}
-                {{this.render("partials/article/_disqus_comments.twig", {disqus: networkData.thirdPartyIntegrations['disqus'], userId: article.createdBy['id'], url:article.url, articleId: article.id}) | raw}}
-            {% endif %} 
-
-            
             <div class="advert ad-banner hidden-xs hidden-sm">
                 <div id='widebanner2ID' style='width:970px;margin: 0 auto;'>
                     <script>
@@ -229,6 +220,15 @@
          
                 </div>
             </div>
+
+
+            <!-- Disqus Comment Added -->
+            {% if networkData.thirdPartyIntegrations['disqus'] | length > 0 and networkData.thirdPartyIntegrations['disqus']['shortName'] != '' %}
+                {{this.render("partials/article/_disqus_comments.twig", {disqus: networkData.thirdPartyIntegrations['disqus'], userId: article.createdBy['id'], url:article.url, articleId: article.id}) | raw}}
+            {% endif %} 
+
+            
+            
 
 
             <div class="row related-articles">
