@@ -66,8 +66,21 @@
                     <div class="col-sm-3">
 
                         <div class="advert visible-md-block visible-lg-block ad-large-vert">
-                            <img src="{{networkData.templatePath}}/static/images/ads/300x600.jpg">
+                            <div id='sidepanelAd' style='height:600px; width:300px;'>
+                                <script>
+                                    document.currentScript.parentNode.id = sidepanelID;
+                                    googletag.cmd.push(function() { googletag.display(sidepanelID); });
+                                </script>
+                            </div>
                         </div>
+                        {# <div class="advert visible-sm-block ad-square col-sm-4">
+                        <div id='boxad' class="" style='height:250px; width:300px;'>
+                                    <script>
+                                        document.currentScript.parentNode.id = boxadID;
+                                        googletag.cmd.push(function() { googletag.display(boxadID); });
+                                    </script>
+                                </div>
+                        </div> #}
 
                         <hr class="divide18 visible-md-block visible-lg-block space-only">
                         <hr class="divide10 visible-xs-block visible-sm-block space-only">
@@ -105,6 +118,38 @@
 
                     </div>
                 </div>
+
+            <div class="advert hidden-xs hidden-sm">
+                    <span class="add-text" style="display:block;width:970px;margin:0 auto;">Advertisement</span>
+                    <div id='widebannerID' style='width:970px;margin: 0 auto;'>
+                        <script>
+                            document.currentScript.parentNode.id = widebannerID;
+                            googletag.cmd.push(function() { googletag.display(widebannerID); });
+                        </script>
+                    </div>
+            </div><!--add add-header-top-->
+
+            <div class="advert add-header-top hidden-xs hidden-md hidden-lg">
+                <span class="add-text" style="display:block;width:728px;margin:0 auto;">Advertisement</span>
+                <div id='smallbannerID' style='width:728px;margin: 0 auto;'>
+                    <script>
+                        document.currentScript.parentNode.id = smallbannerID;
+                        googletag.cmd.push(function() { googletag.display(smallbannerID); });
+                    </script>
+                </div>
+            </div><!--add add-header-top-->
+            <div class="col-sm-8 hidden-sm hidden-md hidden-lg">
+                <div class="advert add-header-mob hidden-sm hidden-md hidden-lg">
+                    <div id='tinybannerAd' style='height:75px; width:300px;margin: 0 auto;'>
+                        <script>
+                            document.currentScript.parentNode.id = tinybannerID;
+                            googletag.cmd.push(function() { googletag.display(tinybannerID); });
+                        </script>
+                    </div>
+         
+                </div>
+            </div>
+
 
 
                 {{ this.render('partials/ajaxarticles.twig', {
