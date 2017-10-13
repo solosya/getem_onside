@@ -59,7 +59,7 @@
 
     {% if _AppHelper.getApplicationEnv() == 'PROD'%}
 
-    <link rel="stylesheet" href="{{networkData.templatePath}}/static/deploy/concat.min.css?v=b0ff5f0c" type="text/css" media="all">
+    <link rel="stylesheet" href="{{networkData.templatePath}}/static/deploy/concat.min.css?v=c24031b4" type="text/css" media="all">
 
     {% else %}
 {#             <link type="text/css" rel="stylesheet" href="{{networkData.templatePath}}/static/css/jquery.fancybox.css?ver=2" />
@@ -124,6 +124,7 @@
     enable_page_level_ads: true
   });
 </script>
+{{ this.render('partials/ads.twig') | raw }}
 
 
     {{ this.head() }}
@@ -142,12 +143,42 @@
     }) | raw }}
 
 
+    <div class="advert ad-banner hidden-xs hidden-sm">
+                <div id='widebannerID' style='width:970px;margin: 0 auto;'>
+                    <script>
+                        document.currentScript.parentNode.id = widebannerID;
+                        googletag.cmd.push(function() { googletag.display(widebannerID); });
+                    </script>
+                </div>
+                <span class="add-text" style="display:block;width:970px;margin:0 auto;">Advertisement</span>
+            </div><!--add add-header-top-->
+
+            <div class="advert ad-banner hidden-xs hidden-md hidden-lg">
+                <div id='smallbannerID' style='width:728px;margin: 0 auto;'>
+                    <script>
+                        document.currentScript.parentNode.id = smallbannerID;
+                        googletag.cmd.push(function() { googletag.display(smallbannerID); });
+                    </script>
+                </div>
+                <span class="add-text" style="display:block;width:728px;margin:0 auto;">Advertisement</span>
+            </div><!--add add-header-top-->
+            <div class="col-sm-8 hidden-sm hidden-md hidden-lg">
+                <div class="advert ad-banner hidden-sm hidden-md hidden-lg">
+                    <div id='tinybannerAd' style='height:75px; width:300px;margin: 0 auto;'>
+                        <script>
+                            document.currentScript.parentNode.id = tinybannerID;
+                            googletag.cmd.push(function() { googletag.display(tinybannerID); });
+                        </script>
+                    </div>
+         
+                </div>
+            </div>
+
+
     {{ content | raw }}
 
 
-
-
-
+   
     {{ this.render('partials/footer.twig', {
         blog : blogData, 
         networkData: networkData, 
