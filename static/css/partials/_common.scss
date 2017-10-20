@@ -266,6 +266,12 @@ h4.modal-title {
 figcaption{
     margin-top: 10px;
 
+    &.gallery {
+        > p {
+            font-size: rem(15);
+        }
+    }
+
     @media screen and (max-width: $sm-break){
         float: left;
         margin-bottom: 30px;
