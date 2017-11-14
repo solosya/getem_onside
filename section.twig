@@ -17,7 +17,7 @@
 
 
 
-{% set popularArticles = _Article.getPopularArticles({ limit: 10, sortBy: 'VIEWS', scope: 'network' }) %}
+{% set popularArticles = _Article.getPopularArticles({ limit: 10, sortBy: 'VIEWS', interval: 48, scope: 'network' }) %}
 
 
 
