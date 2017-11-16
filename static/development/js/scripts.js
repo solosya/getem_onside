@@ -135,7 +135,7 @@ $('document').ready(function() {
             e.preventDefault();
         }
     });
-    console.log('search event');
+
     // $("ul > li.menu-item-search").on("click", function (e) {
     //     console.log('clicked');
     //     $("#searchPanel").show();
@@ -188,13 +188,13 @@ $('document').ready(function() {
 
 
 
-    // var cardHolder = '';
-    // clearTimeout(cardHolder);
-    // cardHolder = setTimeout((function() {
-    //     $('.card .content > p, .card h2').dotdotdot({
-    //         watch: true
-    //     });
-    // }), 750);
+    var cardHolder = '';
+    clearTimeout(cardHolder);
+    cardHolder = setTimeout((function() {
+        $('.card .content > p, .card h2').dotdotdot({
+            watch: true
+        });
+    }), 750);
 
 
     $("#owl-carousel").owlCarousel({
