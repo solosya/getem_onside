@@ -1,80 +1,62 @@
-{# {% set sportsroomAddClass = ['sportsroom'] %}
-{% set businessroomAddClass = ['boardroom', 'real economy'] %}
- #}    
-
-{% set tinybannerID = 'div-gpt-ad-1507852400315-0' %}
-{% set tinybannerSlot = '/21647808462/Main_970x90_728x90_300x75/300x75' %}
-
-{% set smallbannerID = 'div-gpt-ad-1507852400315-1' %}
-{% set smallbannerSlot = '/21647808462/Main_970x90_728x90_300x75/728x90' %}
-
-{% set widebannerID = 'div-gpt-ad-1507852400315-2' %}
-{% set widebannerSlot = '/21647808462/Main_970x90_728x90_300x75/970x90' %}
-
-{% set boxadID = 'div-gpt-ad-1507852400315-3' %}
-{% set boxadSlot = '/21647808462/Main_300x600_300x250/300x250' %}
-
-{% set sidepanelID = 'div-gpt-ad-1507852400315-4' %}
-{% set sidepanelSlot = '/21647808462/Main_300x600_300x250/300x600' %}
 
 
-{% set tinybanner2ID = 'div-gpt-ad-1507867451821-0' %}
-{% set tinybanner2Slot = '/21647808462/Main_970x90_728x90_300x75/300x75_2' %}
-
-{% set smallbanner2ID = 'div-gpt-ad-1507867451821-1' %}
-{% set smallbanner2Slot = '/21647808462/Main_970x90_728x90_300x75/728x90_2' %}
-
-{% set widebanner2ID = 'div-gpt-ad-1507867451821-2' %}
-{% set widebanner2Slot = '/21647808462/Main_970x90_728x90_300x75/970x90_2' %}
-
-{# {% if (roomInfo[0] | lower in sportsroomAddClass) %}
-    {% set boxadID = 'div-gpt-ad-1488502464882-0' %}
-    {% set boxadSlot = '/268436641/boxad1/sportbox' %}
-
-    {% set sidepanelID = 'div-gpt-ad-1488502133668-1' %}
-    {% set sidepanelSlot = '/268436641/sidepanel1/sportpanel' %}
-
-    {% set smallbannerID = 'div-gpt-ad-1488502133668-2' %}
-    {% set smallbannerSlot = '/268436641/smlbanner1/sportbanner' %}
-
-    {% set tinybannerID = 'div-gpt-ad-1488502133668-3' %}
-    {% set tinybannerSlot = '/268436641/tinybanner1/sporttinybanner' %}
-
-    {% set widebannerID = 'div-gpt-ad-1490315342623-5' %}
-    {% set widebannerSlot = '/268436641/widebanner1/sportwide' %}
-
-{% endif %}
- #}
-
- 
-
-  <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
 <script>
   var googletag = googletag || {};
   googletag.cmd = googletag.cmd || [];
 </script>
 
-<script>
+ 
 
-    boxadID = '{{boxadID}}';
-    sidepanelID = '{{sidepanelID}}';
-    smallbannerID = '{{smallbannerID}}';
-    tinybannerID = '{{tinybannerID}}' ;
-    widebannerID = '{{widebannerID}}';
-    smallbanner2ID = '{{smallbanner2ID}}';
-    tinybanner2ID = '{{tinybanner2ID}}' ;
-    widebanner2ID = '{{widebanner2ID}}';
-  googletag.cmd.push(function() {
-    googletag.defineSlot('{{boxadSlot}}', [300, 250], '{{boxadID}}').addService(googletag.pubads());
-        googletag.defineSlot('{{sidepanelSlot}}', [300, 600], '{{sidepanelID}}').addService(googletag.pubads());
-        googletag.defineSlot('{{smallbannerSlot}}', [728, 90], '{{smallbannerID}}').addService(googletag.pubads());
-        googletag.defineSlot('{{tinybannerSlot}}', [300, 75], '{{tinybannerID}}').addService(googletag.pubads());
-        googletag.defineSlot('{{widebannerSlot}}', [970, 90], '{{widebannerID}}').addService(googletag.pubads());
-        googletag.defineSlot('{{smallbanner2Slot}}', [728, 90], '{{smallbanner2ID}}').addService(googletag.pubads());
-        googletag.defineSlot('{{tinybanner2Slot}}', [300, 75], '{{tinybanner2ID}}').addService(googletag.pubads());
-        googletag.defineSlot('{{widebanner2Slot}}', [970, 90], '{{widebanner2ID}}').addService(googletag.pubads());
-    googletag.pubads().enableSingleRequest();
-    googletag.pubads().collapseEmptyDivs();
-    googletag.enableServices();
-  });
+{% set adPlace = 'AdSense' %}
+
+{% set dfpAcct = '21647808462' %}
+
+<script>
+ 
+  blogName = '{{blogNetworkName}}'
+
+  googletag.cmd.push(function() {         
+                googletag.pubads().enableSingleRequest();
+                googletag.pubads().collapseEmptyDivs();
+                googletag.pubads().setCentering(true);
+                googletag.enableServices();
+                
+            });
+
+  var invSpace = '{{adPlace}}'
+  var bannerSize = [[970,90],[728,90],[300,100],[234,60],[300,75]];
+  var bannerMap = [[[1025,0],[970,90]],[[768,0],[728,90]],[[0,0],[[300,100],[234,60],[300,75]]]];
+  var mRecSize = [[300,250],[300, 100],[234,60],[300,75]];
+  var mRecMap = [[[768,0],[300,250]],[[0,0],[[300,100],[234,60],[300,75]]]];
+  var hPageSize = [[300, 600],[300,100],[234,60],[300,75]];
+  var hPageMap = [[[768,0],[300,600]],[[0,0],[[300,100],[234,60],[300,75]]]];
+    
+  var nextAdId = 1;
+  function generateNextAdName() {
+     var id = nextAdId++;
+     return 'adSlot' + id;
+  }
+
+  function loadNextAd(blogAd,adDivId,adClass,sizes,mapping) {
+    console.log(sizes);
+    console.log(mapping);
+    var adSlot = document.getElementById(adDivId);
+    var slotName = generateNextAdName();
+    var slotDiv = document.createElement('div');
+    adSlot.appendChild(slotDiv);
+    slotDiv.id = slotName;
+    slotDiv.setAttribute( 'class', 'google_ad' );
+    adSlot.id = "";
+    adSlot.setAttribute( 'class', adClass );
+    
+    googletag.cmd.push(function() {
+      var slot = googletag.defineSlot('/{{dfpAcct}}/'+blogAd, sizes, slotName).setTargeting().defineSizeMapping(mapping).addService(googletag.pubads());
+      console.log(slot);
+      googletag.display(slotName);
+      googletag.pubads().refresh([slot]);
+    });
+  }
+
+
 </script>
