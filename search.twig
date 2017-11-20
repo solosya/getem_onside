@@ -30,7 +30,7 @@
 
                 
                 <div class="row">
-                    {% for article in articles %}                                                                
+                    {% for article in articles | reverse %}                                                                
                         {{this.render('partials/_single-article.twig', {
                             article: article, 
                             position: (articleCount+1), 
