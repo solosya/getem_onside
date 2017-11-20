@@ -59,7 +59,7 @@
 
     {% if _AppHelper.getApplicationEnv() == 'PROD'%}
 
-    <link rel="stylesheet" href="{{networkData.templatePath}}/static/deploy/concat.min.css?v=3fd0200f" type="text/css" media="all">
+    <link rel="stylesheet" href="{{networkData.templatePath}}/static/deploy/concat.min.css?v=a1a4d539" type="text/css" media="all">
 
     {% else %}
 {#             <link type="text/css" rel="stylesheet" href="{{networkData.templatePath}}/static/css/jquery.fancybox.css?ver=2" />
@@ -119,12 +119,16 @@
     
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-3896055314143794",
-    enable_page_level_ads: true
-  });
+//   (adsbygoogle = window.adsbygoogle || []).push({
+//     google_ad_client: "ca-pub-3896055314143794",
+//     enable_page_level_ads: false
+//   });
 </script>
-{{ this.render('partials/ads.twig') | raw }}
+{{ this.render('partials/ads.twig', {
+        networkData: networkData,
+        blogData: blogData
+    }) | raw }}
+
 
 
     {{ this.head() }}
@@ -143,36 +147,10 @@
     }) | raw }}
 
 
-    <div class="advert ad-banner hidden-xs hidden-sm">
-                <div id='widebannerID' style='width:970px;margin: 0 auto;'>
-                    <script>
-                        document.currentScript.parentNode.id = widebannerID;
-                        googletag.cmd.push(function() { googletag.display(widebannerID); });
-                    </script>
-                </div>
-                <span class="add-text" style="display:block;width:970px;margin:0 auto;">Advertisement</span>
-            </div><!--add add-header-top-->
-
-            <div class="advert ad-banner hidden-xs hidden-md hidden-lg">
-                <div id='smallbannerID' style='width:728px;margin: 0 auto;'>
-                    <script>
-                        document.currentScript.parentNode.id = smallbannerID;
-                        googletag.cmd.push(function() { googletag.display(smallbannerID); });
-                    </script>
-                </div>
-                <span class="add-text" style="display:block;width:728px;margin:0 auto;">Advertisement</span>
-            </div><!--add add-header-top-->
-            <div class="col-sm-8 hidden-sm hidden-md hidden-lg">
-                <div class="advert ad-banner hidden-sm hidden-md hidden-lg">
-                    <div id='tinybannerAd' style='height:75px; width:300px;margin: 0 auto;'>
-                        <script>
-                            document.currentScript.parentNode.id = tinybannerID;
-                            googletag.cmd.push(function() { googletag.display(tinybannerID); });
-                        </script>
-                    </div>
-         
-                </div>
-            </div>
+    <div class="advert ad-banner">
+        <div id='bannerAd1'></div>
+        <script>loadNextAd(invSpace,'bannerAd1','bannerad',bannerSize,bannerMap)</script>
+    </div>
 
 
     {{ content | raw }}

@@ -136,8 +136,11 @@
 
                             <hr class="divide13 visible-xs-block space-only">
 
+                            
+
                         </div>
                         {% endif %}
+
                     </div>
 
                 </div>
@@ -156,15 +159,6 @@
                         {% endfor %}
                     </div>
 
-                    <div class="advert visible-sm-block ad-square col-sm-4  ad-square">
-                        <div id='boxad' class="" style='height:250px; width:300px;'>
-                                    <script>
-                                        document.currentScript.parentNode.id = boxadID;
-                                        googletag.cmd.push(function() { googletag.display(boxadID); });
-                                    </script>
-                                </div>
-                    </div>
-
 
                     <!-- wide card for desktop & mobile -->
                     <div class="col-sm-9 col-md-3 tablet-space">
@@ -181,6 +175,11 @@
                     </div>
                 </div>
             </section>
+
+            <div class="advert ad-banner">
+                <div id='bannerAd10'></div>
+                <script>loadNextAd(invSpace,'bannerAd10','bannerad',bannerSize,bannerMap)</script>
+            </div>
 
 
             <section class="middle">
@@ -209,14 +208,10 @@
                     <!--  display side stories for desktop   -->
                     <div class="col-sm-9 col-md-3">
 
-                        {# <div class="advert visible-md-block visible-lg-block ad-large-vert">
-                            <div id='sidepanelAd' style='height:600px; width:300px;'>
-                                <script>
-                                    document.currentScript.parentNode.id = sidepanelID;
-                                    googletag.cmd.push(function() { googletag.display(sidepanelID); });
-                                </script>
-                            </div>
-                        </div> #}
+                        <div class="advert" >
+                                <div id='hPageAd1'></div>
+                                <script>loadNextAd(invSpace,'hPageAd1','halfAd',hPageSize,hPageMap);</script>
+                        </div>
 
                         <hr class="divide18 visible-md-block visible-lg-block space-only">
                         <hr class="divide10 visible-xs-block space-only">
@@ -281,35 +276,9 @@
 
 
 
-            <div class="advert ad-banner hidden-xs hidden-sm">
-                <div id='widebanner2ID' style='width:970px;margin: 0 auto;'>
-                    <script>
-                        document.currentScript.parentNode.id = widebanner2ID;
-                        googletag.cmd.push(function() { googletag.display(widebanner2ID); });
-                    </script>
-                </div>
-                <span class="add-text" style="display:block;width:970px;margin:0 auto;">Advertisement</span>
-            </div><!--add add-header-top-->
-
-            <div class="advert ad-banner hidden-xs hidden-md hidden-lg">
-                <div id='smallbanner2ID' style='width:728px;margin: 0 auto;'>
-                    <script>
-                        document.currentScript.parentNode.id = smallbanner2ID;
-                        googletag.cmd.push(function() { googletag.display(smallbanner2ID); });
-                    </script>
-                </div>
-                <span class="add-text" style="display:block;width:728px;margin:0 auto;">Advertisement</span>
-            </div><!--add add-header-top-->
-            <div class="col-sm-8 hidden-sm hidden-md hidden-lg">
-                <div class="advert ad-banner hidden-sm hidden-md hidden-lg">
-                    <div id='tinybanner2Ad' style='height:75px; width:300px;margin: 0 auto;'>
-                        <script>
-                            document.currentScript.parentNode.id = tinybanner2ID;
-                            googletag.cmd.push(function() { googletag.display(tinybanner2ID); });
-                        </script>
-                    </div>
-         
-                </div>
+            <div class="advert ad-banner">
+                <div id='bannerAd2'></div>
+                <script>loadNextAd(invSpace,'bannerAd2','bannerad',bannerSize,bannerMap)</script>
             </div>
            
 
