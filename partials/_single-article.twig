@@ -68,6 +68,9 @@
         {% set articleImg = _Media.getMediaUrl(article.featuredMedia,imgWidth, imgHeight, {'crop': 'fill', 'gravity': 'faces'} ) %}
 
         <a  href="{{article.url}}" 
+            {% if article.externalUrl != "" %}
+                target="_blank"
+            {% endif %}
             class="{{swap}} card article {{hasArticleMediaClass}} {{figureClass}}" 
             data-id="{{article.articleId}}" 
             data-guid="{{article.articleId}}" 
