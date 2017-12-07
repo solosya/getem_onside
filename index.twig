@@ -106,8 +106,24 @@
 
                         <div class="row">
 
-                            <!-- Desktop Card 3-7 -->
-                            {% for i in 0..4 if articles[i] %}
+                            <div class="col-sm-4 col-md-9">
+                                {{this.render('partials/_single-article.twig', {
+                                            article: articles[articleCount], 
+                                            position: articleCount + 1,
+                                            imageSize: {width:300},
+                                            containerClass: 'feature-side feature-side-tablet feature-side-mobile'
+                                        }) | raw}}
+                                {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
+
+                                
+                                <div class="advert ad-mrec" style="margin-bottom:15px;">
+                                    <div id='mRecAd1'></div>
+                                    <script>loadNextAd(invSpace,'mRecAd1','mrec',mRecSize,mRecMap)</script>
+                                </div>
+                            </div>
+
+
+                            {% for i in 1..2 if articles[i] %}
                                 <div class="col-sm-4 col-md-9">
                                     {{this.render('partials/_single-article.twig', {
                                         article: articles[articleCount], 
@@ -161,7 +177,7 @@
 
 
                     <!-- wide card for desktop & mobile -->
-                    <div class="col-sm-9 col-md-3 tablet-space">
+                    <div class="col-sm-4 col-md-3 tablet-space" style="margin-top:0;">
                         <!-- Card 2 -->
                         {% if articles[articleCount] %}
                             {{this.render('partials/_single-article.twig', {
@@ -172,6 +188,12 @@
                             }) | raw}}
                             {% set articleCount = (dev) ? articleCount : articleCount + 1 %}
                         {% endif %}
+
+                        {# <div class="advert ad-mrec">
+                            <div id='miniAd1'></div>
+                            <script>loadNextAd(invSpace,'miniAd1','mrec',miniSize,miniMap)</script>
+                        </div> #}
+
                     </div>
                 </div>
             </section>
